@@ -1,0 +1,46 @@
+# Microsoft Ignite 2026 日本語ガイド
+
+Microsoft Ignite 2026 の開催概要、キーノート、セッション、製品発表をまとめた非公式ガイドです。
+日本語サイトと AI 向け JSON は同じデータから公開します。
+
+公開先（GitHub Pages の設定・デプロイ後）：<https://usagiandkamex.github.io/ignite-2026-info/>
+
+## AI 向け公開データ
+
+Pages の `/ignite-2026-info/llms.txt` が入口です。次の JSON は同じサイトの `data/` に置かれます。
+
+| データ | 内容 |
+| --- | --- |
+| [`event.json`](data/event.json) | 開催概要、米国太平洋時間の会期、開幕・パートナーキーノート、日本語要約、出典、確認済みの場合の公開録画 URL。 |
+| [`sessions.json`](data/sessions.json) | 公式カタログの公開セッション。`sessions[].id` はセッションの ID。`offerings[]` に開催枠ごとの ID、日時、配信形式、録画フラグ、公式詳細 URL を収録。 |
+| [`updates.json`](data/updates.json) | Book of News 全 59 発表項目の独自の日本語要約。`id` は元の Book of News 項目 ID に対応。各項目に分野、発表時の提供区分と公式出典があります。 |
+
+- `schemaVersion: 1`、`checkedOn` は日本時間の出典確認日（`YYYY-MM-DD`）。`startUtc` / `endUtc` は UTC（末尾 `Z`）。`null` は公式日時または直接録画 URL の掲載なし。本会期と個々の開催枠の時刻は別に扱います。
+- セッションの英語タイトル・分類値は公式表記。HTML では分類名を日本語にし、日時を JST で表示します。`hasOnDemand` はカタログ上で録画が案内されているという意味で、認証なしの視聴可否ではありません。
+- `counts` は収録件数。`excludedSessions` は全枠が除外されたセッション数、`excludedOfferings` は除外された枠数です。アクセス制限つきのラボなどは収録せず、公式カタログへ案内します。セッション本文、スライド、動画、認証情報は配布しません。
+- `stages` は `ga`（一般提供）、`preview`、`frontier`（Frontier 対象）、`rollout`（順次展開）、`planned`、`announced`。複数の値がある場合は、要約でどの機能がどの状態か区別します。発表時点の情報であり、日本での提供を保証するものではありません。`notes` は地域などの追加情報で、`announcementId`、確認日、個別の出典を持ちます。
+
+## ビルドと手動更新
+
+Python 3.12 以上（外部パッケージ不要）で実行します。
+
+```text
+python -m unittest discover -s tests
+python tools/build.py
+python -m http.server 8000 --directory _site
+```
+
+ローカルでは `http://localhost:8000/` で確認できます。公開用 HTML は `_site` だけに生成され、通常はコミットしません。
+
+1. セッションを更新する場合は `python tools/import_sessions.py` をリポジトリのルートから実行します。公式サイトがログインなしで使うカタログデータから、公開に必要なフィールドだけを抽出します。差分に加え、公開・除外の件数およびオンデマンド一覧を公式画面と照合します。
+2. イベント・製品発表は対応する JSON を編集します。Book of News の本文付き発表見出しと突合し、転載ではなく独自に要約します。地域、ライセンス、予定日などを追記する場合は、公式出典を付けて発表時の状態と区別します。
+3. 検証とビルドを行い、PR で出典と差分をレビューします。定期取得や自動書き換えはありません。
+
+## GitHub Pages の初回公開
+
+リポジトリ管理者が **Settings → Pages → Build and deployment → Source** を **GitHub Actions** に設定します。
+検証済みの変更を `main` にマージすると、`Ignite guide` ワークフローが HTML・JSON・`llms.txt` をデプロイします。
+設定がマージ後になった場合は、Actions の同ワークフローを `main` で手動実行できます。
+公開後、トップページ、`llms.txt`、3 つの JSON にアクセスして確認してください。
+
+Microsoft の公式プロジェクトではありません。Microsoft や各製品の名称・商標は各権利者に帰属します。リポジトリの MIT ライセンスは、リンク先の資料や商標には適用されません。

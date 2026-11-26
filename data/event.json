@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-27",
+  "name": "Microsoft Ignite 2026",
+  "startDate": "2026-11-17",
+  "endDate": "2026-11-20",
+  "timeZone": "America/Los_Angeles",
+  "venue": "Moscone Center（米国サンフランシスコ）とオンライン",
+  "summary": "Microsoft の年次技術イベント。2026 年は、AI エージェントを業務に組み込み、組織のデータを活用しながら、安全に運用・改善する方法が中心テーマでした。Azure、Microsoft Foundry、Copilot、GitHub、セキュリティ、Windows などの新機能に加え、技術セッションやハンズオンラボが開催されました。",
+  "keynotes": [
+    {
+      "sessionCode": "KEY01",
+      "title": "開幕キーノート",
+      "startUtc": "2026-11-17T18:00:00Z",
+      "endUtc": "2026-11-17T20:00:00Z",
+      "summary": "Satya Nadella と Judson Althoff が、Copilot Workspaces や Autopilot、組織の業務コンテキストをエージェントに届ける Microsoft IQ、Foundry のモデル、Agent 365 による運用管理を紹介しました。Azure の基盤や、Microsoft Perception によるセキュリティ運用も取り上げました。",
+      "sourceUrl": "https://ignite.microsoft.com/en-US/sessions/1787856726055001EpP1-1789751960282001d6eI",
+      "replayUrl": "https://www.youtube.com/watch?v=ZR4v1c4CClc"
+    },
+    {
+      "sessionCode": "KEY02",
+      "title": "パートナーキーノート：Frontier Transformation",
+      "startUtc": "2026-11-18T17:00:00Z",
+      "endUtc": "2026-11-18T18:30:00Z",
+      "summary": "企業が AI を実験段階から業務に広げるために、Microsoft とパートナーがどう協力できるかを紹介。仕事の再設計や AI 導入の拡大を、顧客の成果につなげる方法に焦点を当てました。",
+      "sourceUrl": "https://ignite.microsoft.com/en-US/sessions/1787856726366001EV17-1789751960677001d6j0",
+      "replayUrl": null
+    }
+  ],
+  "sources": [
+    {"label": "Microsoft Ignite 公式ホーム", "url": "https://ignite.microsoft.com/en-US/home"},
+    {"label": "Microsoft News：Ignite 2026 特設ページ", "url": "https://news.microsoft.com/events/ignite/2026/"},
+    {"label": "Microsoft Partner Blog：イベントガイド", "url": "https://partner.microsoft.com/en-us/blog/article/ignite-2026-know-before-you-go"},
+    {"label": "Microsoft Events（YouTube）", "url": "https://www.youtube.com/@events_msft"}
+  ]
+}
