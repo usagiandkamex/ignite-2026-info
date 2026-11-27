@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRKSP611",
+  "sessionId": "1787854985661001t5Zc",
+  "offeringId": "1787854985661001t5Zc-1791588247279001C6cQ",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Gscm0z04lJM",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 9,
+      "text": "McDermott と TCS は、AI とデータがどの事業課題を解決し、どのような価値を生むかを中心に、業務変革の取り組みを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 259,
+      "text": "McDermott は世界各地で AI Immersion Days を開き、パートナーとの学習と実際の利用を通じて、従業員が日常業務での用途を見つける機会を作ったと説明しました。"
+    },
+    {
+      "atSeconds": 1042,
+      "text": "初期の分散した試行から学び、セキュリティを優先した共通基盤と、技術者を事業部門の近くへ置く FDE の体制へ進んだと紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2505,
+      "text": "長年蓄積した専門知識を小型モデルなどで生かす構想では、速度だけでなく安全性と、国や顧客ごとに異なる情報の境界を考慮する必要があると述べました。"
+    }
+  ]
+}

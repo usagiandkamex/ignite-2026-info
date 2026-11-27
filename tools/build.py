@@ -303,8 +303,15 @@ def detail_page(s, note, video, update_links, technical_articles, recording_sour
         "unlisted": "公式カタログに公開録画の掲載がないため、話された内容・アップデート・事例・Tips は未確認です。",
     }
     if note:
-        source = next(o["sourceUrl"] for o in s["offerings"] if o["id"] == note["offeringId"])
-        evidence = link(source, "確認した開催枠の公式録画ページ")
+        youtube_source = note["basis"] == "youtube-transcript"
+        if youtube_source:
+            evidence = link(note["youtubeUrl"], "確認した公式 YouTube 録画")
+            timestamp_source = ("イベント版の字幕を取得できなかったため、公式 YouTube 版を参照しました。"
+                                "時刻は公式 YouTube 録画の目安で、イベント版では編集によりずれる場合があります。")
+        else:
+            source = next(o["sourceUrl"] for o in s["offerings"] if o["id"] == note["offeringId"])
+            evidence = link(source, "確認した開催枠の公式録画ページ")
+            timestamp_source = "時刻は公式イベント録画の目安で、YouTube 版では編集によりずれる場合があります。"
         sections = []
         for key, title in NOTE_SECTIONS.items():
             items = []
@@ -312,12 +319,14 @@ def detail_page(s, note, video, update_links, technical_articles, recording_sour
                 ref = point.get("announcementId")
                 related = f' · {link("../updates.html#" + ref, "関連する公式発表")}' if ref else ""
                 when = timestamp(point["atSeconds"])
+                if youtube_source:
+                    when = link(f'{note["youtubeUrl"]}&t={point["atSeconds"]}s', when)
                 items.append(f'<li><strong>{when}</strong> {h(point["text"])}{related}</li>')
             content = f'<ul>{"".join(items)}</ul>' if items else "<p>確認した範囲では掲載できる情報を確認できませんでした。</p>"
             sections.append(f'<section class="section card"><h2>{title}</h2>{content}</section>')
         review = f"""<div class="note">
   <p>{h(RECORDING_BASIS[note["basis"]])}の各時刻前後を参照した要約です。録画全編を確認したことを示すものではありません。
-  時刻は公式イベント録画の目安で、YouTube 版では編集によりずれる場合があります。記載の提供状況は講演時点です。</p>
+  {timestamp_source}記載の提供状況は講演時点です。</p>
   <p class="meta">確認日：{h(note["reviewedOn"])}（日本時間） · {evidence}</p>
 </div>{"".join(sections)}"""
     else:
@@ -345,7 +354,7 @@ def detail_page(s, note, video, update_links, technical_articles, recording_sour
         languages = "・".join(names[code] for code in recording_source["captionLanguages"]) or "未確認"
         times = "、".join(timestamp(t) for t in recording_source["chapterSeconds"])
         chapters = f"<p>チャプター開始：{times}</p>" if times else ""
-        recording_html = f'<p>{source} · 利用できる字幕トラック：{languages}</p>{chapters}'
+        recording_html = f'<p>{source} · 掲載された字幕トラック：{languages}</p>{chapters}'
     body = f"""
 <p class="breadcrumb"><a href="../sessions.html#session-{h(s['code'])}">{icon("back")}セッション一覧に戻る</a></p>
 <header class="intro">
@@ -458,7 +467,8 @@ def ai_index(event, catalog, updates, notes, azure, videos, recordings):
 
 各セッションの詳細はカタログの `sessions[].code`（例: `BRK449`）を使い、`data/sessions/{{code}}.json` で取得できます。人向け HTML は `session/{{code}}.html` です。
 個別 JSON の `recordingReview.status` は `reviewed`（要約あり）、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（録画の掲載なし）。
-未確認なら `recordingReview.note` は `null` です。記入済みの場合、`offeringId` は確認した開催枠、`atSeconds` はその録画の開始からの秒数です。
+未確認なら `recordingReview.note` は `null` です。記入済みの場合、`offeringId` は対応する開催枠です。
+`atSeconds` は録画開始からの秒数です。`basis` が `youtube-transcript` の場合は `youtubeUrl` の公式 YouTube 録画、その他は公式イベント録画の時刻です。
 個別 JSON の `relatedUpdates` には、確認した関連資料のみを記録します。`id` が `bon-` の項目は Book of News、`az-` は Azure Updates を参照します。
 `technicalArticles` は関連発表に紐づく公式技術ブログ・解説です。録画内で記事が紹介されたことは意味しません。
 

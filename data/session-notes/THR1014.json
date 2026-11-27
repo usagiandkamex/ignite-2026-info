@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1014", "sessionId": "1787856599957001EPtN", "offeringId": "1787856599957001EPtN-1791588257351001CeAf", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=rZQ9xkbl11Q", "basis": "captions",
+  "summary": [
+    {"atSeconds": 83, "text": "Foundry IQ の担当者が、単純な検索だけでなく、さまざまな取得手法を組み合わせて、エージェントを必要な知識に接続する取り組みを説明しました。"},
+    {"atSeconds": 202, "text": "モデルや harness が共通でも、組織固有のデータがエージェントの違いを生むと説明しました。適切な情報へ到達できるように整理することも重要です。"}
+  ],
+  "updates": [
+    {"atSeconds": 969, "text": "Foundry プロジェクトに Foundry IQ を備える新しい選択肢を案内しました。別のインスタンスを作成・管理せず、プロジェクト内で知識ベースを作り、エージェントに接続できると説明しました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 464, "text": "検索技術を重ねすぎず、まず対象の仕事を理解し、簡単でも評価方法を用意するよう勧めました。複雑な構成が必ず高い品質につながるわけではないと述べました。"}
+  ]
+}

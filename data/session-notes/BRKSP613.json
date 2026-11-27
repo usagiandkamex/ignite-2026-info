@@ -1,0 +1,30 @@
+{
+  "sessionCode": "BRKSP613",
+  "sessionId": "1787854981920001tfCF",
+  "offeringId": "1787854981920001tfCF-1791588271357001CSwz",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=l5IExj6dn9M",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 2478,
+      "text": "Insight は、資産と露出の継続把握、迅速な更新、ソフトウェア供給網の管理を組み合わせる Managed Exposure Defense Program を紹介しました。防御の準備と日常運用を扱う説明です。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 1400,
+      "text": "重要な更新による短期的な業務影響と、重大な侵害が起きた場合の影響を事業責任者と比較し、更新を先延ばしにしないための合意を作るよう勧めました。"
+    },
+    {
+      "atSeconds": 1601,
+      "text": "購入した第三者ソフトウェアと自社開発ソフトウェアの両方を準備の対象にし、反応型の対応から継続的な予防へ移る考え方を示しました。"
+    },
+    {
+      "atSeconds": 1801,
+      "text": "自社のリポジトリに含まれるオープンソースと依存関係を把握できるよう、更新し続けるソフトウェア部品表を維持する重要性を挙げました。"
+    }
+  ]
+}

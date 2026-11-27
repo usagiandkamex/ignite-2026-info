@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 import html
 import json
 import re
+import sys
 import unicodedata
 from urllib.parse import urlsplit, urlunsplit
 from urllib.request import urlopen
@@ -113,6 +114,13 @@ def main():
     if unknown:
         parser.error("No saved recording notes: " + ", ".join(sorted(unknown)))
     selected = [by_code[code] for code in dict.fromkeys(args.session_codes)]
+    youtube = [n["sessionCode"] for n in selected if n["basis"] == "youtube-transcript"]
+    if youtube:
+        print("Check these timestamps in the official YouTube transcript: " + ", ".join(youtube),
+              file=sys.stderr)
+        selected = [n for n in selected if n["basis"] != "youtube-transcript"]
+    if not selected:
+        return 1
     rows = {}
     asset_sessions = defaultdict(set)
     for row in json.loads(fetch(FEED_URL)):
@@ -126,7 +134,8 @@ def main():
     print(f"Verified public caption time references: {len(results)} sessions, "
           f"{sum(count for _, count in results)} entries.")
     print(", ".join(code for code, _ in results))
+    return int(bool(youtube))
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2231","sessionId":"1787855007168001twda","offeringId":"1787855007168001twda-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=5qyC7sicH1Q","basis":"youtube-transcript",
+  "summary":[{"atSeconds":23,"text":"業務上の概念、概念同士の関係、ポリシー、データをつなぎ、複数の AI システムが再利用できる知識の基盤を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":96,"text":"画面でオントロジーの所有者や構成を確認し、概念同士の関係を可視化する例を示しました。"}],
+  "tips":[{"atSeconds":189,"text":"AI が抽出した概念や関係をそのまま全社の知識として登録せず、業務の専門家が内容を確認し、修正・承認・却下できるようにします。"}]
+}

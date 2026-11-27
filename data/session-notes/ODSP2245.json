@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2245","sessionId":"1788987020394001KejW","offeringId":"1788987020394001KejW-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=q9glCvAqF_Y","basis":"youtube-transcript",
+  "summary":[{"atSeconds":250,"text":"CoreStory が、コードから得たシステム全体の文脈を一度整理し、開発者とエージェントの両方が再利用する考え方を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":659,"text":"アカウント停止の変更を題材に、開いていたファイルだけでは気づけなかった請求処理への影響も見つかることを示しました。"}],
+  "tips":[{"atSeconds":349,"text":"推定された業務規則をそのまま使わず、根拠となるソースファイルと行範囲を確認できるようにします。"}]
+}

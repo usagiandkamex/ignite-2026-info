@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1015", "sessionId": "1787856600124001EIJS", "offeringId": "1787856600124001EIJS-1791926728345001MSAE", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=nAMd4QI3nfA", "basis": "captions",
+  "summary": [
+    {"atSeconds": 63, "text": "Microsoft Foundry を、モデル、エージェントの実行、知識やツールとの接続、安全性の機能を組み合わせる開発基盤として紹介しました。作成初日だけでなく継続改善を重視すると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 722, "text": "GitHub Copilot アプリ内で使う Foundry Canvas を紹介しました。画面にはプレビュー表示が残っているものの、一般提供になったと登壇者が案内しました。", "announcementId": null},
+    {"atSeconds": 1153, "text": "Model Router で前月に導入した Session Affinity に触れ、動的なモデル選択でもプロンプトキャッシュの効率を考える必要があると説明しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 412, "text": "SHI の参加者は、新しい機能を学び、質問し、他の開発者の使い方を知るために Foundry の Discord コミュニティを活用していると紹介しました。"}
+  ],
+  "tips": []
+}

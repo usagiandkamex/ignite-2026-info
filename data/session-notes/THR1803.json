@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1803", "sessionId": "1787856921997001hBZj", "offeringId": "1787856921997001hBZj-1791588318405001CEy5", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=MSP-EoR_GoQ", "basis": "captions",
+  "summary": [
+    {"atSeconds": 149, "text": "Agent ID と blueprint の関係を説明し、エージェント本体だけでなく、資格情報を担う親側の構成も確認する必要があると述べました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 306, "text": "Foundry エージェントが Azure Blob Storage の財務、人事、給与データを参照する説明用構成を示しました。エージェントとプロジェクトの ID を分けて考える題材です。"},
+    {"atSeconds": 648, "text": "財務アシスタントとストレージの接続をデモしました。ツールが一つしかなくても、その接続先の権限を確認しなければ安全とは判断できないことを考える例です。"}
+  ],
+  "tips": [
+    {"atSeconds": 1049, "text": "エージェント専用の管理の孤島を増やさず、Entra の ID と blueprint、Purview のデータ利用情報、Defender の監視を合わせて管理するよう勧めました。"}
+  ]
+}

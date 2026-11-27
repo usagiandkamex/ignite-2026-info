@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2187","sessionId":"1787855002510001tEgl","offeringId":"1787855002510001tEgl-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=AIRwK_K6fbg","basis":"youtube-transcript",
+  "summary":[{"atSeconds":531,"text":"Publicis Sapient が、既存の COBOL を逐語的に変換せず、動作を記述した仕様から Java コードとテストケースを作る進め方を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":70,"text":"メインフレームで多数の COBOL 画面を運用していた米国の医療機関を、刷新の事例として紹介しました。"},{"atSeconds":323,"text":"デモでは大学の履修科目を例に、既存プログラムが業務規則に従って科目を検証し、承認結果を報告する処理を説明しました。"}],
+  "tips":[{"atSeconds":547,"text":"抽出した仕様は移行先のコード生成だけでなく、移行後も元の動作を満たすかを確認するテストにも使います。"}]
+}

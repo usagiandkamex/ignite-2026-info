@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR1008", "sessionId": "1787856599039001Efrg", "offeringId": "1787856599039001Efrg-1791587924973001F5ZY", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=hk2pMhG7A54", "basis": "captions",
+  "summary": [
+    {"atSeconds": 173, "text": "言語モデルはエージェントの一部にすぎず、指示、信頼できる知識、記憶、承認済みの操作を行うツールなどを組み合わせる必要があると説明しました。"},
+    {"atSeconds": 581, "text": "ホスティング先として Microsoft Foundry や Azure Container Apps などを比較し、基盤管理を任せたいか、独自 API やツールを細かく制御したいかで選ぶと説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 40, "text": "Datox は投資会社やファンド向けの規制報告を自動化する基盤を紹介しました。セキュリティ、ガバナンス、顧客が管理する環境への配置も含めた取り組みです。"},
+    {"atSeconds": 392, "text": "同社の方式では、機密データそのものではなくスキーマやメタデータを AI に渡し、生成した抽出コードを分離した実行環境で動かすと説明しました。"}
+  ],
+  "tips": []
+}

@@ -1,0 +1,30 @@
+{
+  "sessionCode": "BRKSP618",
+  "sessionId": "1787854983411001tL28",
+  "offeringId": "1787854983411001tL28-1791588289120001ChSU",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=uwZXEw9hQeQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 100,
+      "text": "Hitachi は、以前から使われる産業用ロボットや搬送機器を、決められた動作だけでなく AI による判断と組み合わせて活用する機会を説明しました。"
+    },
+    {
+      "atSeconds": 542,
+      "text": "物理 AI を、設備やロボットが現場を知覚し、理解し、判断して行動する仕組みとして整理しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 899,
+      "text": "製品の構想、設計、製造、稼働、保守までをつなぎ、エンジニアリング、IT、OT の情報を分断しないことが、工場で AI を拡大する土台になると述べました。"
+    },
+    {
+      "atSeconds": 1818,
+      "text": "技術導入だけでなく、製品・現場の運用改善が売上や収益へどうつながるかまで見る考え方を示しました。"
+    }
+  ]
+}

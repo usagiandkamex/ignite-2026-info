@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR1019", "sessionId": "1787856600776001EQay", "offeringId": "1787856600776001EQay-1791588135050001CWWk", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=MzOQWjv2kFU", "basis": "captions",
+  "summary": [
+    {"atSeconds": 1, "text": "Azure Friday の会場収録で、Kinectify が Azure、AI、機械学習を使って金融犯罪対策を支援する取り組みを紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 248, "text": "説明用の顧客・取引データを API に送信し、プラットフォームが不審な活動を分析する流れをデモしました。実在人物の取引を公開したものではありません。"},
+    {"atSeconds": 548, "text": "検証用のサンプル施設を題材に、分析担当者が顧客情報と取引情報を確認する画面を紹介しました。調査を支える情報をまとめる例です。"},
+    {"atSeconds": 921, "text": "同社の基盤はコンテナー化され、AKS 上で取り込み量に応じて拡縮すると説明しました。変動の大きいデータ流入への対応を挙げています。"}
+  ],
+  "tips": []
+}

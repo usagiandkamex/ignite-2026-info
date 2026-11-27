@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRKSP617",
+  "sessionId": "1787854983209001tivP",
+  "offeringId": "1787854983209001tivP-1791588288898001CVw0",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=0bWB6xJJKGw",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 11,
+      "text": "PwC のパネルでは、AI 実験を増やすだけでなく、十分な事業価値と、その実現に責任を持つ人を早期に明確にする重要性を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 304,
+      "text": "CareQuest は、医療データの不足ではなく、所在の分断と指標の意味の不統一が活用の障壁だったと紹介しました。"
+    },
+    {
+      "atSeconds": 665,
+      "text": "CareQuest の分析チームは、少人数で繰り返すデータ準備に時間を取られていた状態から、共通のプラットフォームとデータ提供の仕組みにより依頼対応を拡大する方向へ進んだと説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1997,
+      "text": "AI の許容誤差を一律にせず、社内向けの参考情報と外部公表する報告など、用途に応じた品質基準を導入時から決めるよう勧めました。"
+    }
+  ]
+}

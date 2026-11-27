@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1804", "sessionId": "1787856922152001h1jK", "offeringId": "1787856922152001h1jK-1791588318627001C2tS", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=1owDMH5qY68", "basis": "captions",
+  "summary": [
+    {"atSeconds": 206, "text": "Agent harness は、計画、作業の分解、状態管理、長い会話の圧縮、記憶などを担うと説明しました。モデルへの一回の質問応答とは異なる実行基盤です。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 443, "text": "自社のコンサルタントが作る月次の Excel 作業報告を基に、請求業務を支援するエージェントを試したデモを示しました。業務題材は実在しますが、自動化の本番稼働実績を示す説明ではありません。"},
+    {"atSeconds": 699, "text": ".NET 10 の ASP.NET Core アプリを使い、利用する MCP サービスと作業の進め方をスキルの文書に記述する構成を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1324, "text": "抽出した時間や金額を人が確認してから請求を進めるデモを示しました。計算結果をモデル任せにせず、請求システム側の再計算と人の承認を重ねる考え方です。"}
+  ]
+}

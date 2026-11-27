@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1001", "sessionId": "1787856597956001EOxm", "offeringId": "1787856597956001EOxm-1792715062319001joIj", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=l5avAwXooME", "basis": "captions",
+  "summary": [
+    {"atSeconds": 142, "text": "エージェントの登録だけでは、到達できるデータや操作、監視の全体像を把握できるとは限らないと説明しました。複数部門のエージェントを共通の統制で扱う構成を紹介しました。"},
+    {"atSeconds": 223, "text": "ID、入口とツールへの接続、全体の監視を分けて考える参照構成を示しました。アプリケーションの入口の保護や、内部環境への配置を組み合わせています。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 902, "text": "参照構成を一から組む代わりに、Marketplace の 42 社の製品から導入する選択肢を紹介しました。登壇者は同社の取締役であると関係を明示しています。"}
+  ],
+  "tips": [
+    {"atSeconds": 662, "text": "API Management で接続先や利用量、入力の安全性を確認し、Application Insights などで実行を追跡する構成を紹介しました。事後の監査だけでなく、処理前の制御も重視しています。"}
+  ]
+}

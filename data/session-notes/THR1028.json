@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1028", "sessionId": "1787856602251001Er15", "offeringId": "1787856602251001Er15-1791588151762001Ck4k", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=3erDLd5avSc", "basis": "captions",
+  "summary": [
+    {"atSeconds": 113, "text": "Foundry のマネージドなモデル利用から AKS 上の運用まで、利用者が担う基盤管理の範囲が異なる選択肢を説明しました。"},
+    {"atSeconds": 249, "text": "試行段階の GPU 選定と、本番化後の調整を別々の反復として説明しました。遅延、利用率、性能、費用を測りながら見直す必要があります。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 491, "text": "Project Optima のデモで、モデルの配置先に合う SKU と時間あたりの費用見積もりを示しました。見積もりにはサブスクリプション固有の価格を使うと説明しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 874, "text": "本番の推論では KV キャッシュの容量やバッチ処理が遅延と費用に影響すると説明しました。GPU を選んで終わりにせず、運用中の挙動も確認する内容です。"}
+  ]
+}

@@ -89,6 +89,7 @@ RECORDING_BASIS = {
     "captions": "公式録画の字幕",
     "captions-and-chapters": "公式録画の字幕と YouTube のチャプター",
     "captions-ja": "公式録画の日本語字幕",
+    "youtube-transcript": "公式 YouTube の文字起こし",
 }
 
 
@@ -373,6 +374,8 @@ def validate_session_notes(data, catalog, updates):
                     f"{sid}: expected an official YouTube watch URL")
         require(note["basis"] != "captions-and-chapters" or video is not None,
                 f"{sid}: chapter evidence requires a YouTube video")
+        require(note["basis"] != "youtube-transcript" or video is not None,
+                f"{sid}: transcript evidence requires a YouTube video")
         for section in NOTE_SECTIONS:
             points = note[section]
             require(isinstance(points, list) and (points or section != "summary"),

@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR1027", "sessionId": "1787856602081001EWLd", "offeringId": "1787856602081001EWLd-1791588258004001C6u0", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 23, "text": "AI ワークロードにもネットワーク分離を基本として適用し、外部公開やデータの持ち出しに伴うリスクを減らす設計を説明しました。"},
+    {"atSeconds": 175, "text": "VNet 内で分離しつつ、公開が必要な入口には Front Door や Application Gateway の保護を組み合わせる構成を紹介しました。ハイブリッド接続にも触れました。"}
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 341, "text": "Private Endpoint を使い、アプリが必要とする特定のリソースへのプライベート接続を設計する考え方を紹介しました。接続先の範囲を明確にすることを重視しています。"},
+    {"atSeconds": 1189, "text": "AI エージェントが外部のサービスや更新情報へ接続する用途も踏まえ、受信だけでなく送信経路も管理するよう促しました。NAT Gateway や Firewall などの選択肢を挙げました。"}
+  ]
+}

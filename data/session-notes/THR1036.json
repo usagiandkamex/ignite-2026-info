@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1036", "sessionId": "1790726060415001U0zr", "offeringId": "1790726060415001U0zr-1791840754584001zOgu", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=AqyMLg-zgkc", "basis": "captions",
+  "summary": [
+    {"atSeconds": 39, "text": "Unified Broker では、契約や請求をパートナー経由にしても、サポート提供そのものは Microsoft が担うと説明しました。"},
+    {"atSeconds": 168, "text": "パートナーは既存顧客との関係を維持し、自社の付加価値サービスも組み合わせられると説明しました。サポート契約の仲介だけに限定しない考え方です。"}
+  ],
+  "updates": [
+    {"atSeconds": 398, "text": "前年 11 月に試行を始めた Unified EA Co-sell を紹介しました。顧客のサポート需要を Microsoft に紹介するパートナーへのインセンティブを説明しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 569, "text": "CDW が試行に参加し、英国で最初の契約をまとめた例を紹介しました。顧客名は公開せず、サポート需要を見極めた案件として説明しました。"}
+  ],
+  "tips": []
+}

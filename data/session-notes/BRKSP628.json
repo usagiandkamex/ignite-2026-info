@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRKSP628",
+  "sessionId": "1787854985556001tkkD",
+  "offeringId": "1787854985556001tkkD-1791588326929001C5Lf",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=2eQL5deJf38",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 490,
+      "text": "IBM は人事向けエージェントの顧客案件で、不要な処理の削減、簡素化、自動化という順序で用途を選び、初期の概念実証から展開へ進める流れを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 255,
+      "text": "登壇者自身の IBM AskHR 利用例では、住宅購入に必要な在職証明書を依頼し、1 分未満で PDF を得られたと紹介しました。今回の顧客案件の成果とは別の個人体験です。"
+    },
+    {
+      "atSeconds": 490,
+      "text": "顧客案件では、Copilot Studio を使う最初の用途群について約 8 週間で概念実証を構築したと説明しました。全社本番化の所要時間とは区別しています。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1564,
+      "text": "最初から大きな業務へ広げず、ServiceNow のチケットを分析し、従業員が頻繁に依頼する処理から会話型の自動化対象を選ぶよう勧めました。"
+    }
+  ]
+}

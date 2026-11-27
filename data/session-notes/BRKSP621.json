@@ -1,0 +1,30 @@
+{
+  "sessionCode": "BRKSP621",
+  "sessionId": "1787854984059001tl2k",
+  "offeringId": "1787854984059001tl2k-1791588311661001CaTl",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=WjzgxTtdfno",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 71,
+      "text": "Cognizant と Microsoft は、あらゆる場所へ AI を加えるより、業務の流れを意図的に組み替えて成果につなぐことを Frontier Transformation として説明しました。"
+    },
+    {
+      "atSeconds": 1653,
+      "text": "Copilot を共通の入口とし、記録の正本は各業務システムに残しながら、Agent 365 でエージェントを監視・管理する構成を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 1201,
+      "text": "エージェントに ID を与え、所有者や利用状況を追跡し、長期間使われないものや所有者不在のものを棚卸しする必要があると述べました。"
+    },
+    {
+      "atSeconds": 1399,
+      "text": "医療情報などを扱う場合は、接続機能だけでなく DLP、Purview、Defender などの統制と、業界を理解した担当者によるユースケース選定を組み合わせるよう勧めました。"
+    }
+  ]
+}

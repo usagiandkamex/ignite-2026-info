@@ -1,21 +1,25 @@
 from collections import Counter
+from contextlib import redirect_stderr, redirect_stdout
 from copy import deepcopy
 from html.parser import HTMLParser
+from io import StringIO
 import json
 from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 from urllib.parse import urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 from build import PUBLIC_URL, build, time_range
+import check_recording_notes
 from check_recording_notes import caption_url, cue_times
 from import_azure_updates import IGNITE_TAG, snapshot as azure_snapshot
 from import_sessions import snapshot
 from site_data import (
-    DATA, FILES, NOTE_SECTIONS, azure_status, load, load_recording_sources, load_references,
+    DATA, FILES, NOTE_SECTIONS, NOTE_STATES, azure_status, load, load_recording_sources, load_references,
     load_update_editorial, read_session_notes,
     validate_catalog, validate_session_links, validate_session_notes,
 )
@@ -95,6 +99,24 @@ class RecordingEvidenceTests(unittest.TestCase):
             cue_times("<html>Sign in</html>")
         with self.assertRaisesRegex(ValueError, "unordered"):
             cue_times("WEBVTT\n\n00:02.000 --> 00:03.000\n\n00:01.000 --> 00:02.000\n")
+
+    def test_mixed_sources_check_event_notes_and_report_manual_review(self):
+        _, catalog, _, notes = load()
+        event = next(n for n in notes["notes"] if n["basis"] == "captions")
+        video = next(n for n in notes["notes"] if n["basis"] == "youtube-transcript")
+        row = {**catalog_row(event["offeringId"]), "onDemand": "https://medius.microsoft.com/player"}
+        stdout, stderr = StringIO(), StringIO()
+        with (
+            patch.object(sys, "argv", ["check_recording_notes.py", event["sessionCode"], video["sessionCode"]]),
+            patch.object(check_recording_notes, "fetch", return_value=json.dumps([row])),
+            patch.object(check_recording_notes, "verify_note", return_value=(event["sessionCode"], 1)) as verify,
+            redirect_stdout(stdout),
+            redirect_stderr(stderr),
+        ):
+            self.assertEqual(check_recording_notes.main(), 1)
+        self.assertEqual([call.args[0] for call in verify.call_args_list], [event])
+        self.assertIn("1 sessions, 1 entries", stdout.getvalue())
+        self.assertIn(f"official YouTube transcript: {video['sessionCode']}", stderr.getvalue())
 
 
 class ReferenceTests(unittest.TestCase):
@@ -232,6 +254,12 @@ class BuildTests(unittest.TestCase):
                     self.assertIn(heading, detail)
                 if note["youtubeUrl"]:
                     self.assertIn(note["youtubeUrl"], detail)
+                if note["basis"] == "youtube-transcript":
+                    seconds = note["summary"][0]["atSeconds"]
+                    self.assertIn("時刻は公式 YouTube 録画の目安", detail)
+                    self.assertIn(f'href="{note["youtubeUrl"]}&amp;t={seconds}s"', detail)
+                else:
+                    self.assertIn("時刻は公式イベント録画の目安", detail)
                 for item in note["updates"]:
                     if item["announcementId"]:
                         self.assertIn(f'../updates.html#{item["announcementId"]}', detail)
@@ -272,7 +300,8 @@ class BuildTests(unittest.TestCase):
                     self.assertIsNone(record["recordingSource"])
             published_catalog = json.loads((out / "data" / "sessions.json").read_text(encoding="utf-8"))
             self.assertEqual(published_catalog.pop("recordingReview"), {
-                "counts": counts, "reviewedSessionCodes": sorted(by_code),
+                "counts": {status: counts[status] for status in NOTE_STATES},
+                "reviewedSessionCodes": sorted(by_code),
             })
             self.assertEqual(published_catalog.pop("linkedYouTubeSessionCodes"), sorted(videos["matches"]))
             self.assertEqual(published_catalog, catalog)
@@ -298,3 +327,13 @@ class BuildTests(unittest.TestCase):
         item["announcementId"] = "bon-nonexistent"
         with self.assertRaisesRegex(ValueError, "unknown announcement"):
             validate_session_notes(invalid, catalog, updates)
+
+    def test_youtube_transcript_requires_a_video(self):
+        _, catalog, updates, notes = load()
+        note = deepcopy(next(n for n in notes["notes"] if n["youtubeUrl"]))
+        note["basis"] = "youtube-transcript"
+        data = {"schemaVersion": 1, "notes": [note]}
+        validate_session_notes(data, catalog, updates)
+        note["youtubeUrl"] = None
+        with self.assertRaisesRegex(ValueError, "transcript evidence requires a YouTube video"):
+            validate_session_notes(data, catalog, updates)

@@ -385,6 +385,18 @@
     "THR934": [
       {"id":"bon-465","context":"講演で扱ったエージェントの本番運用と継続評価に関連する Foundry の公式発表です。"}
     ],
+    "THR1014": [
+      {"id":"bon-501","context":"講演で紹介した Foundry プロジェクト内の Foundry IQ リソースに対応する公式発表です。"}
+    ],
+    "THR1015": [
+      {"id":"az-581463","context":"講演で紹介した Foundry Canvas に関連する更新です。この更新は Canvas と VS Code のガバナンス ガイダンスを扱います。"}
+    ],
+    "THR1025": [
+      {"id":"az-581220","context":"講演で扱ったソブリン対応の確認・管理に関連する Sovereign Control Panel の公式更新です。"}
+    ],
+    "THR1026": [
+      {"id":"bon-446","context":"講演で用いた Azure SRE Agent に関連する Azure の運用支援機能の公式発表です。"}
+    ],
     "THRSP1062": [
       {"id":"bon-499","context":"講演が取り上げた Work IQ と Fabric IQ による業務コンテキスト活用の公式発表です。Tia 自体の発表ではありません。"}
     ],

@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1011", "sessionId": "1787856599501001EZtz", "offeringId": "1787856599501001EZtz-1791588247950001Cr2x", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=TI1rpV1kvOo", "basis": "captions",
+  "summary": [
+    {"atSeconds": 32, "text": "モデルの選び方を複数の戦略で比較しました。まずコミュニティの問い合わせ対応を題材に、自分でモデルを選ぶエージェントの例を提示しました。"},
+    {"atSeconds": 451, "text": "質問の難しさが事前に分からない場合の選択肢として、Microsoft Foundry の Model Router にモデル選択を任せる方法を紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 784, "text": "完全な手動選択と自動ルーティングの中間として、独自の基準に沿う判断を Microsoft Decision 1.1 に支援させる例を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1228, "text": "登壇者の実験では、個別の担当エージェントだけでなく、全体を取りまとめるモデルの能力が結果を左右したと説明しました。あらゆる構成に通じる性能保証ではなく、実験からの観察です。"}
+  ]
+}
