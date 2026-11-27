@@ -1,0 +1,20 @@
+{
+  "sessionCode": "BRK216",
+  "sessionId": "1787856605783001ETLI",
+  "offeringId": "1787856605783001ETLI-1791588198796001CCPO",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 84, "text": "Copilot が依頼の性質に応じてモデルや推論量を選び、複数のモデルを同じ業務環境で使えるようにする設計を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 545, "text": "モデル選択画面で、Copilot に選択を任せる Auto と、特定モデルを指定する方法を紹介しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 787, "text": "Auto が、単純な質問と成果物の作成で異なる推論量を使う例を実演しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 664, "text": "モデルを実務に投入する前に、想定する依頼や成果物を含めた評価セットで品質を確認します。"}
+  ]
+}

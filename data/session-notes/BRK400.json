@@ -1,0 +1,21 @@
+{
+  "sessionCode": "BRK400",
+  "sessionId": "1787856634108001EZjL",
+  "offeringId": "1787856634108001EZjL-1791588267330001Cacc",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 397, "text": "Windows 365 を従業員だけでなく、Windows アプリを使うエージェントのための管理対象ワークスペースとして紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 507, "text": "Windows 365 の画面転送技術 Direct Stream の改善を紹介しました。", "announcementId": "bon-539"},
+    {"atSeconds": 1453, "text": "Windows 365 for Agents と、エージェント向け Cloud PC の構想を説明しました。", "announcementId": "bon-541"}
+  ],
+  "cases": [
+    {"atSeconds": 788, "text": "Direct Stream のデモで、Cloud PC の画面操作や、GPU を使う作業の体験を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1122, "text": "Cloud PC を開発者に提供する場合は、Git や WSL など必要なツールを入れた開発者向けイメージを候補にできます。"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "sessionCode": "BRK360",
+  "sessionId": "1787856627862001Esxb",
+  "offeringId": "1787856627862001Esxb-1791588069717001CCxA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 267, "text": "人と AI エージェントが同じ意味でデータを扱えるように、Power BI のセマンティックモデルで業務上の定義を表す方法を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 1123, "text": "Fabric IQ のオントロジーを、データの理解から業務上の判断・行動につなげる仕組みとして紹介しました。", "announcementId": "bon-503"}
+  ],
+  "cases": [
+    {"atSeconds": 408, "text": "架空の企業を題材に、GitHub Copilot と Fabric Skills でセマンティックモデルを作るデモを行いました。"}
+  ],
+  "tips": [
+    {"atSeconds": 603, "text": "AI にモデル作成を任せる前に、指標の意味など業務側の要件を明文化し、モデルが同じ定義で評価できるようにします。"}
+  ]
+}
