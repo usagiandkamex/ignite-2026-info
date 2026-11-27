@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK342","sessionId":"1787856625088001EIdJ","offeringId":"1787856625088001EIdJ-1791588335605001C6lD","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":386,"text":"Copilot Chat と Cowork が広い範囲の情報を扱えることを踏まえ、過剰共有の把握とデータ保護を導入計画に含める方法を説明しました。"}],
+  "updates":[{"atSeconds":1308,"text":"Microsoft Purview の秘密度ラベルと DLP を、Copilot が扱う機密情報の保護に用いる例を紹介しました。","announcementId":"bon-533"}],
+  "cases":[],
+  "tips":[{"atSeconds":834,"text":"リスクを個別に追う前に、Purview のデータ セキュリティ態勢管理で把握できる内容を整理します。"}]
+}

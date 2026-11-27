@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK336","sessionId":"1787856624183001EWra","offeringId":"1787856624183001EWra-1791588098160001C0av","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":300,"text":"Microsoft のサービスで作られたものに限らず、他社基盤や端末上で動くエージェントも含めて保護する方針を説明しました。"}],
+  "updates":[{"atSeconds":1050,"text":"エージェント固有の ID を、ライフサイクル全体のアクセス制御に使う構成を紹介しました。","announcementId":"bon-526"}],
+  "cases":[{"atSeconds":2460,"text":"KPMG が Agent 365 や Microsoft Perception を用いるエージェント管理の経験を共有しました。"}],
+  "tips":[]
+}

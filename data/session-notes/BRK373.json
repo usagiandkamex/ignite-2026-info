@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK373","sessionId":"1787856629889001EwSt","offeringId":"1787856629889001EwSt-1791588244141001C6lW","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":253,"text":"VS Code と GitHub Copilot を使い、Azure SQL をデータ基盤にした AI 対応アプリをローカルから開発する方法を説明しました。"}],
+  "updates":[{"atSeconds":865,"text":"開発用に Azure SQL Database のローカル コンテナーを利用する公開プレビューを取り上げました。","announcementId":null}],
+  "cases":[{"atSeconds":106,"text":"Case Desk というサポート アプリを作り、担当者が顧客への返信案を受け取る例を示しました。"}],
+  "tips":[{"atSeconds":505,"text":"Copilot にテーブル構成だけを渡すのではなく、何を作るかを記した要件と、開発で守る方針も伝えます。"}]
+}

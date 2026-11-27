@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK332","sessionId":"1787856623575001EYSY","offeringId":"1787856623575001EYSY-1791588308940001CdC5","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":228,"text":"ID のセキュリティを、ID を支える基盤、アクセス制御、脅威への対応の三つに分けて説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1178,"text":"Entra のリスク スコアに複数の観測情報を反映し、対処を判断する例を示しました。"}],
+  "tips":[{"atSeconds":97,"text":"担当部門ごとに別の事象として調べず、同じ ID の動きをシステム横断で確認します。"}]
+}

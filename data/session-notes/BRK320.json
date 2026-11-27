@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK320","sessionId":"1787856621701001E9Ma","offeringId":"1787856621701001E9Ma-1791588172987001CrWj","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":442,"text":"防御側が対応できる時間が短くなる中、SOC がエージェントを導入する準備と、先回りしてリスクを減らす方法を議論しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":284,"text":"ランサムウェア事件の観測を例に、従来の対応時間を前提とした運用を見直す必要性を説明しました。"}],
+  "tips":[{"atSeconds":977,"text":"監視データを増やすだけでなく、運用チームが限られた時間で意味のある兆候を選べるようにします。"}]
+}

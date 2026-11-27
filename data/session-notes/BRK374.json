@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK374","sessionId":"1787856630041001EHZe","offeringId":"1787856630041001EHZe-1791814912444001CazH","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":74,"text":"Azure Managed Redis の用途を、データベースの高速化、アプリの一時状態、メッセージ処理、AI に分けて説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":290,"text":"Sitecore Content Hub がコンテンツ量の多い環境で Azure Managed Redis を利用する構成を取り上げました。"}],
+  "tips":[{"atSeconds":1216,"text":"ワーカーの増減を決める指標として、CPU だけでなく、Redis で把握できるキューの未処理件数も利用します。"}]
+}

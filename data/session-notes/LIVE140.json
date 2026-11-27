@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE140","sessionId":"1793675167577001lR0o","offeringId":"1793675167577001lR0o-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":317,"text":"Azure の AI 基盤ではチップの処理性能だけでなく、仮想マシンやサーバー全体を調整して効率を改善する必要があると説明しました。"}],
+  "updates":[{"atSeconds":42,"text":"Microsoft の Arm 系プロセッサーを使う Azure Cobalt 200 仮想マシンの提供を紹介しました。","announcementId":"bon-444"}],
+  "cases":[],
+  "tips":[{"atSeconds":259,"text":"Arm への移行はチップの性能比較から始めるだけでなく、既存コードの移植に必要な作業量も見積もります。"}]
+}

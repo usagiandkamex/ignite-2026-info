@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE148","sessionId":"1793675566801001l3HS","offeringId":"1793675566801001l3HS-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":21,"text":"Copilot Code は自然言語の指示から業務用アプリを作成します。組織のデータを参照し、作ったアプリをチームに共有する流れを紹介しました。"}],
+  "updates":[{"atSeconds":431,"text":"Microsoft 365 管理センターで、作成されたアプリの利用状況・稼働状態・使用中のコネクタを確認し、組織で使えるコネクタを制御する画面を紹介しました。","announcementId":"bon-483"}],
+  "cases":[{"atSeconds":326,"text":"Excel の市場別データから作成したダッシュボードで、予算配分をスライダーで変え、地図や投資対効果の表示が更新されるデモを行いました。"}],
+  "tips":[{"atSeconds":189,"text":"生成したアプリは画面だけでなく、元の Excel データがどう反映されたかや、生成されたソースコードも確認できます。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"INV643","sessionId":"1787856658187001Etji","offeringId":"1787856658187001Etji-1789751959279001dn4k","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":150,"text":"AI を大規模に動かす Azure の基盤から、エッジや Windows 上の実行までを横断し、配置先と管理方法を説明しました。"}],
+  "updates":[{"atSeconds":430,"text":"企業向け AI ワークロードを AKS と Foundry で扱うための AKS AI Manager を紹介しました。","announcementId":null},{"atSeconds":770,"text":"既存のアプリを AI に対応させる取り組みを支援する Azure Catalyst を紹介しました。","announcementId":"bon-448"}],
+  "cases":[],
+  "tips":[{"atSeconds":1380,"text":"AI の配置先は処理性能だけで選ばず、どこで実行するか、運用やデータの制御を誰が持つかも決めます。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK372","sessionId":"1787856629730001EVsw","offeringId":"1787856629730001EVsw-1791588307796001C2w6","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":453,"text":"分析と同じ Fabric の環境に SQL Database を置き、業務アプリで発生するトランザクションと分析データをつなぐ方法を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":261,"text":"架空の社内食堂で、食品の廃棄状況を調べる業務アプリを例にしました。"},{"atSeconds":1692,"text":"Uniwise の技術責任者が SQL Database in Fabric を用いた経験を紹介しました。"}],
+  "tips":[]
+}

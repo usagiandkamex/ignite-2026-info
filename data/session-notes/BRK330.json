@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK330","sessionId":"1787856623271001Eb0f","offeringId":"1787856623271001Eb0f-1791814912680001CaGC","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":608,"text":"アプリを保護するには、コード、実行基盤、データ、AI への通信を別々ではなく一つのアプリの構成として把握する必要があると説明しました。"}],
+  "updates":[{"atSeconds":2049,"text":"Azure Firewall Premium 向けの AI Security アドオンを紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":265,"text":"Defender のインシデント グラフで、SOC 担当者が異なるリソースの関連アラートをまとめて確認する流れを示しました。"}],
+  "tips":[]
+}

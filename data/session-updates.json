@@ -54,11 +54,23 @@
     "BRK324": [
       {"id":"bon-531","context":"デモで取り上げた Microsoft Perception の製品発表です。"}
     ],
+    "BRK329": [
+      {"id":"bon-533","context":"過剰共有の発見と、AI が参照する機密情報の保護に関する公式発表です。"}
+    ],
+    "BRK330": [
+      {"id":"az-580694","context":"講演で発表した Azure Firewall Premium の AI Security アドオンの公式更新です。"}
+    ],
+    "BRK332": [
+      {"id":"bon-526","context":"講演のアクセス制御と ID によるリスク管理に関連する Microsoft Entra の発表です。"}
+    ],
     "BRK335": [
       {"id":"bon-533","context":"Microsoft 内部での取り組みとは別に、Copilot 導入時のデータ保護に関する関連発表です。"}
     ],
     "BRK338": [
       {"id":"bon-533","context":"講演のエージェント運用とデータ保護に対応する Microsoft Purview の関連発表です。"}
+    ],
+    "BRK340": [
+      {"id":"bon-522","context":"Defender によるローカル AI エージェントの実行時保護に関する参考発表です。"}
     ],
     "BRK341": [
       {"id":"bon-516","context":"講演の社内運用事例を補足する Agent 365 の関連発表です。"}
@@ -101,6 +113,10 @@
     "BRK369": [
       {"id":"az-579221","context":"セッションで紹介した Hyperscale のデータベース横断クエリに対応する公式更新です。"}
     ],
+    "BRK373": [
+      {"id":"az-579525","context":"講演で使用した Azure SQL Database ローカル コンテナーの公式更新です。"},
+      {"id":"az-579009","context":"VS Code の MSSQL 拡張からコンテナーを用意する方法を補足する更新です。"}
+    ],
     "BRK440": [
       {"id":"az-564451","context":"セッションが扱う Azure Cobalt 200 ベースの VM についての公式更新です。"}
     ],
@@ -111,6 +127,18 @@
     "BRK451": [
       {"id":"az-579612","context":"Azure Database for PostgreSQL から Azure HorizonDB へ移行する機能の公式更新です。"},
       {"id":"az-579226","context":"Oracle から Azure HorizonDB へ移行する機能の公式更新です。"}
+    ],
+    "LIVE126": [
+      {"id":"bon-453","context":"講演で解説した Azure HorizonDB の機能と提供状況を補足する公式発表です。"}
+    ],
+    "LIVE127": [
+      {"id":"bon-457","context":"講演冒頭で紹介した Microsoft Fabric HorizonDB のプレビューに対応する公式発表です。Azure HorizonDB とは別の提供形態です。"}
+    ],
+    "LIVE128": [
+      {"id":"bon-505","context":"講演で解説した Web IQ の機能と提供状況を補足する公式発表です。"}
+    ],
+    "LIVE142": [
+      {"id":"az-581135","context":"講演で紹介した Windows Server 2028 の公開プレビューに対応する Azure Updates の記事です。"}
     ]
   }
 }
