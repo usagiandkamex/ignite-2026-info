@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK310","sessionId":"1787856620099001Ex57","offeringId":"1787856620099001Ex57-1791814911505001CtiO","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":168,"text":"Microsoft IQ を使うエージェントが改善したかを判定できるように、トレース、評価用データ、継続評価を組み合わせる流れを説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":670,"text":"出張規程に従って航空券と宿泊を手配するエージェントを題材に、検索を含む処理を評価しました。"}],
+  "tips":[{"atSeconds":324,"text":"最終回答だけでは失敗箇所が分からないため、エージェントが行った操作をトレースに残してから評価します。"}]
+}

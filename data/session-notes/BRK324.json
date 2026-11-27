@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK324","sessionId":"1787856622349001EKGC","offeringId":"1787856622349001EKGC-1791588130792001CK8Y","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions-ja",
+  "summary":[{"atSeconds":975,"text":"AI を使うセキュリティ運用への移行では、製品を導入するだけでなく、人材と対応手順も整える必要があると説明しました。"}],
+  "updates":[{"atSeconds":1525,"text":"統合 SOC と Microsoft Perception を使い、調査や防御の作業をつなぐ構成を紹介しました。","announcementId":"bon-521"}],
+  "cases":[{"atSeconds":1525,"text":"統合 SOC のデモで、調査など、これまで別の画面で追っていた防御側の作業をまとめる流れを示しました。"}],
+  "tips":[{"atSeconds":975,"text":"SOC の AI 導入では、ツールの選定と同時に、誰が結果を確認し、どう対応するかを見直します。"}]
+}

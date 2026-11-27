@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK350","sessionId":"1787856626323001EznF","offeringId":"1787856626323001EznF-1791588232979001CUXf","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":431,"text":"Fabric Data Warehouse を、大規模な分析と AI の両方に使うデータ基盤として紹介しました。"}],
+  "updates":[{"atSeconds":2055,"text":"Fabric Data Warehouse をエージェントから参照するための MCP 対応を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":726,"text":"製造業の Eastman が、複数の場所にあったデータを扱うためにデータ基盤を見直した事例を取り上げました。"}],
+  "tips":[{"atSeconds":1071,"text":"高速化を検討する際は、GPU の有無だけでなく、Power BI の DirectQuery など対象の処理が適しているかを見ます。"}]
+}

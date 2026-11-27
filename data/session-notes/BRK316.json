@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK316","sessionId":"1787856621042001EDGy","offeringId":"1787856621042001EDGy-1791588155309001C8PS","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":354,"text":"脆弱性の公表から修正パッチの適用までに時間がかかる場合、その間の保護をどう強化するかを取り上げました。"}],
+  "updates":[{"atSeconds":354,"text":"パッチ適用までの露出を減らすための脆弱性シールドを紹介しました。","announcementId":"bon-521"}],
+  "cases":[],
+  "tips":[{"atSeconds":847,"text":"端末とサードパーティー製品の観測情報を個別に見ず、まとめて調べられる環境を用意します。"}]
+}

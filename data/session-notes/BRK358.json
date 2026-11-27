@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK358","sessionId":"1787856627534001EEAq","offeringId":"1787856627534001EEAq-1791588285288001C1PF","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":93,"text":"Fabric の Spark ワークロードを実行する際の、容量・課金の設定、性能調整、監視、テストの考え方を説明しました。"}],
+  "updates":[{"atSeconds":796,"text":"性能調整の選択肢として Spark Runtime 2.0 とネイティブ実行エンジンを取り上げました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":513,"text":"ジョブを安定して実行するには、容量だけでなく、ワークロードに合うプールの選択と管理ルールも確認します。"}]
+}

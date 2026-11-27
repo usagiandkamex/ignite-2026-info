@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK338","sessionId":"1787856624484001E5xH","offeringId":"1787856624484001E5xH-1795129168603001o44U","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":313,"text":"Microsoft Purview を使う場合の課題を、エージェントを把握できるか、機密データを保護できるか、後から説明・監査できるかに分けました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1192,"text":"Purview のデータ セキュリティ態勢管理画面を使い、組織で動作するエージェントとリスクを確認する例を示しました。"}],
+  "tips":[{"atSeconds":609,"text":"人がエージェントに与えた指示だけでなく、その後のエージェントの処理も監査できるよう、必要な記録を決めます。"}]
+}

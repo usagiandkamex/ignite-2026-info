@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK355","sessionId":"1787856627080001EXHJ","offeringId":"1787856627080001EXHJ-1791588097251001Caor","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":27,"text":"AI を使って業務アプリを素早く作りつつ、組織のガバナンスやデータの制御を守る方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":312,"text":"架空のペット用品企業で、セマンティック モデルに接続したシナリオ比較アプリを使う例を示しました。"},{"atSeconds":1383,"text":"ヘルスケア分野の Craneware の担当者が、管理下で業務アプリを開発する経験を紹介しました。"}],
+  "tips":[{"atSeconds":635,"text":"分析を見せる段階と、利用者がデータを書き込む段階を分け、後者にはアプリの役割に応じた権限を設けます。"}]
+}

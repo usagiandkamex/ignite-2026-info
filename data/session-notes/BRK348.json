@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK348","sessionId":"1787856626014001EdXu","offeringId":"1787856626014001EdXu-1791814914336001CbgA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":1686,"text":"機密データを見つけて分類し、分類結果を自動ラベルや DLP などの保護方針につなぐ流れを説明しました。"}],
+  "updates":[{"atSeconds":221,"text":"開かれない文書も含めて分類を更新できるよう、定期的な分類の再実行を紹介しました。","announcementId":"bon-533"}],
+  "cases":[],
+  "tips":[{"atSeconds":1324,"text":"分類器を評価するときは、誤った分類が少ないかだけでなく、保護すべきデータを見逃していないかも確認します。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK301","sessionId":"1787856618741001ENa1","offeringId":"1787856618741001ENa1-1791588242748001CtAF","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":100,"text":"Microsoft IQ を構成する Web、Foundry、Fabric、Work の各 IQ を、用途に応じて一つのエージェントから使う設計を紹介しました。"}],
+  "updates":[{"atSeconds":460,"text":"Foundry IQ で、非構造化データのナレッジ ベースにエンティティと関係を表すグラフを利用する機能を取り上げました。","announcementId":"bon-501"}],
+  "cases":[{"atSeconds":744,"text":"架空のホテル向けエージェントが、Teams だけでなく宿泊客からのメールでも質問を受け取る例を示しました。"}],
+  "tips":[{"atSeconds":460,"text":"ホテルの方針を記した文書のような非構造化データは、表形式データとは分けて、扱いやすい知識ソースにまとめます。"}]
+}

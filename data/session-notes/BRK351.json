@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK351","sessionId":"1787856626476001EYf1","offeringId":"1787856626476001EYf1-1791951603323001qJeL","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":35,"text":"OneLake を、クラウドやオンプレミスの異なる場所にあるデータを見つけ、共通の分析基盤で使うためのデータ レイクとして説明しました。"}],
+  "updates":[{"atSeconds":1680,"text":"Fabric IQ などから既存のデータや業務コンテキストを利用し、データの複製を減らす連携を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":321,"text":"データを利用可能にする際は、格納場所の統合だけでなく、カタログでの発見、ガバナンス、アクセス管理を一緒に設計します。"}]
+}

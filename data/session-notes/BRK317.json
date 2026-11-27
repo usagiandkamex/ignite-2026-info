@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK317","sessionId":"1787856621205001EEjt","offeringId":"1787856621205001EEjt-1791588323995001CuF1","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":168,"text":"Microsoft Defender Experts の実務経験をもとに、検知だけでなく、準備、調査、復旧までを一つの流れとして説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":1651,"text":"侵害への準備では、把握しにくい機器や更新が遅れたシステムがないかを点検し、インシデント対応の演習に含めます。"},{"atSeconds":2862,"text":"脅威情報は収集量ではなく、自組織に関係し、何をすべきか判断できるかを基準に活用します。"}]
+}

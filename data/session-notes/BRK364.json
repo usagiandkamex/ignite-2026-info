@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK364","sessionId":"1787856628482001EJtm","offeringId":"1787856628482001EJtm-1791588267774001CjN5","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":417,"text":"Azure Databricks と Microsoft Fabric・OneLake の役割を整理し、同じデータを業務で使うための連携を取り上げました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":648,"text":"複数のデータ・AI 基盤をつなぐときは、技術的に接続できるかだけでなく、管理方針とコストの見通しも確認します。"}]
+}

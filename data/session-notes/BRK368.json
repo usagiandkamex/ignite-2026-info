@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK368","sessionId":"1787856629108001E3Up","offeringId":"1787856629108001E3Up-1791588323549001CZ65","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":80,"text":"Azure で運用する PostgreSQL 群を、新しいハードウェアやバージョン、業務の変化に合わせて継続的に見直す考え方を紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":690,"text":"負荷に対して仮想マシンを増やすだけではストレージ I/O が残る場合があるため、ボトルネックを確認し、データの分割も検討します。"}]
+}

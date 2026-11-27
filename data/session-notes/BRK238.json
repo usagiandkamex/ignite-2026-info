@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK238","sessionId":"1787856609242001EnzD","offeringId":"1787856609242001EnzD-1791588157003001CYmK","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":346,"text":"Frontier Tuning では、自社の業務を再現する評価環境を作り、その結果からスキルや実行基盤、必要ならモデルを調整する流れを紹介しました。"}],
+  "updates":[{"atSeconds":641,"text":"モデルの追加学習だけでなく、エージェントのスキルや実行基盤を先に調整する段階を説明しました。","announcementId":"bon-465"}],
+  "cases":[{"atSeconds":346,"text":"採用や調達を担当するエージェントを題材に、実際の業務に沿ったテスト環境を検討する例を示しました。"}],
+  "tips":[{"atSeconds":197,"text":"調整前後の比較では誤りの有無だけでなく、同じ仕事を終えるまでのトークン消費も測ります。"}]
+}

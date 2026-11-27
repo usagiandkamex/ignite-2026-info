@@ -32,12 +32,67 @@
     "BRK297": [
       {"id":"bon-501","context":"Foundry IQ のナレッジベースと検索機能が共通のテーマです。"}
     ],
+    "BRK299": [
+      {"id":"bon-507","context":"Work IQ から業務アプリのコンテキストを参照し、業務スキルで操作する話に関連します。"},
+      {"id":"az-579680","context":"Microsoft Foundry で Work IQ の Business Applications を使う実装向けの補足です。"}
+    ],
+    "BRK301": [
+      {"id":"bon-497","context":"セッションで組み合わせた 4 つの IQ の関係を説明する製品発表です。"}
+    ],
+    "BRK302": [
+      {"id":"bon-507","context":"チームのやり取りと業務情報をエージェントの判断に使うデモの関連発表です。"}
+    ],
+    "BRK307": [
+      {"id":"az-581333","context":"講演のエンティティ グラフと関連する Foundry IQ の公式更新です。"}
+    ],
+    "BRK310": [
+      {"id":"bon-465","context":"トレースと評価を使ってエージェントを継続改善する講演の参考情報です。"}
+    ],
+    "BRK313": [
+      {"id":"bon-505","context":"Web IQ の検索・根拠取得機能についての公式発表です。"}
+    ],
+    "BRK324": [
+      {"id":"bon-531","context":"デモで取り上げた Microsoft Perception の製品発表です。"}
+    ],
+    "BRK335": [
+      {"id":"bon-533","context":"Microsoft 内部での取り組みとは別に、Copilot 導入時のデータ保護に関する関連発表です。"}
+    ],
+    "BRK338": [
+      {"id":"bon-533","context":"講演のエージェント運用とデータ保護に対応する Microsoft Purview の関連発表です。"}
+    ],
+    "BRK341": [
+      {"id":"bon-516","context":"講演の社内運用事例を補足する Agent 365 の関連発表です。"}
+    ],
+    "BRK347": [
+      {"id":"bon-533","context":"秘密度ラベルと AI が参照するデータの保護に関する関連発表です。"}
+    ],
+    "BRK349": [
+      {"id":"bon-503","context":"講演の Power BI セマンティック モデルと Fabric IQ を使う体験に関連する製品発表です。"}
+    ],
+    "BRK351": [
+      {"id":"bon-503","context":"講演後半の Fabric IQ と業務コンテキスト利用に関する関連発表です。"}
+    ],
+    "BRK356": [
+      {"id":"bon-497","context":"企業データのコンテキストとエージェントの継続改善を扱う Microsoft IQ の製品発表です。"}
+    ],
     "BRK359": [
       {"id":"bon-457","context":"講演の Microsoft Fabric HorizonDB と、Azure HorizonDB は別製品です。"}
     ],
     "BRK361": [
       {"id":"az-579388","context":"セッションが扱う Azure HorizonDB の一般提供の公式更新です。"},
       {"id":"az-578314","context":"Azure HorizonDB の提供リージョンについての補足です。セッション内の言及を示すものではありません。"}
+    ],
+    "BRK362": [
+      {"id":"az-579388","context":"講演で発表した Azure HorizonDB の一般提供に対応する公式更新です。"},
+      {"id":"bon-456","context":"講演後半で紹介した Database Hub とデータベース エージェントの関連発表です。"}
+    ],
+    "BRK363": [
+      {"id":"az-579216","context":"講演で実演した Database Hub の公式更新です。"},
+      {"id":"az-579644","context":"Database Hub での性能監視について補足する公式更新です。"}
+    ],
+    "BRK367": [
+      {"id":"bon-451","context":"セッションと関連する Cosmos DB の開発・検索の製品発表です。"},
+      {"id":"az-578434","context":"講演で紹介した Azure Cosmos DB のマネージド MCP サーバーに対応する公式更新です。"}
     ],
     "BRK370": [
       {"id":"az-563097","context":"セッションで紹介した Azure HorizonDB の AI モデル管理に対応する公式更新です。"},

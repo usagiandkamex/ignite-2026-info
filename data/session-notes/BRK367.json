@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK367","sessionId":"1787856628953001E5nm","offeringId":"1787856628953001E5nm-1791814920587001CYwd","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":50,"text":"Cosmos DB の AI 向けデータ層を、エージェントが業務を行うためのデータ、記憶、必要な情報の検索という三つに分けて説明しました。"}],
+  "updates":[{"atSeconds":184,"text":"Azure Cosmos DB をエージェント用ツールと接続する、マネージド MCP サーバーを取り上げました。","announcementId":null}],
+  "cases":[{"atSeconds":300,"text":"架空の小売企業で注文が一部見えないという問い合わせを題材に、関連データを調べるデモを行いました。"}],
+  "tips":[{"atSeconds":533,"text":"今回の作業に必要なコンテキストと、次の作業にも持ち越すエージェントの記憶を分けて設計します。"}]
+}

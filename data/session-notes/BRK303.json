@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK303","sessionId":"1787856619047001E5dp","offeringId":"1787856619047001E5dp-1791587924732001F1no","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":421,"text":"AI が商品や企業について回答する際、モデルを学習した時点の知識だけでは足りないため、Web IQ などで新しい情報を得る必要性を説明しました。"}],
+  "updates":[{"atSeconds":421,"text":"エージェントが、現時点の Web の情報を検索して回答の根拠にする Web IQ を紹介しました。","announcementId":"bon-505"}],
+  "cases":[],
+  "tips":[{"atSeconds":841,"text":"エージェントに見つけてもらう情報は、事実を構造化し、レビューやほかの情報源からも照合できるようにします。"}]
+}

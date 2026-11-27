@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK352","sessionId":"1787856626625001E368","offeringId":"1787856626625001E368-1791588350713001CAzj","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":157,"text":"Fabric で、データの取得・分析から業務アプリまでを同じ基盤で扱い、重要なシステムを運用する際の管理とガバナンスを説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":886,"text":"分析機能の設計時には、容量の監視や負荷が集中した場合の保護も計画に含めます。"},{"atSeconds":1627,"text":"複数の Fabric ワークロードに共通する規則は、個々の処理だけでなく OneLake Catalog の管理面からも確認します。"}]
+}

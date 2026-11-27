@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK328","sessionId":"1787856622951001Ew7y","offeringId":"1787856622951001Ew7y-1791588233205001C2bL","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":60,"text":"AI が実際に使われる端末に着目し、Intune で端末とアプリの構成を一貫して管理する重要性を説明しました。"}],
+  "updates":[{"atSeconds":281,"text":"Microsoft Intune によるサーバー管理を Insider 向けプレビューとして紹介しました。","announcementId":"bon-540"}],
+  "cases":[{"atSeconds":980,"text":"アプリの構成が変わったことを検知し、差分をインベントリに反映する仕組みを実演しました。"}],
+  "tips":[{"atSeconds":567,"text":"端末が管理下にあるかだけでなく、インベントリが網羅的で、変更をすぐ把握できるかも確認します。"}]
+}
