@@ -59,32 +59,10 @@ def speaker_directory(rows):
     }
 
 
-def enrich_speakers(session, row, directory):
-    if row is None:
-        return {**session, "speakerNames": None, "speakers": [], "unresolvedSpeakers": None}
-
-    names = row.get("speakerNames") or None
-    speaker_ids = row.get("speakerIds", [])
-    if names is not None and not isinstance(names, str):
-        raise ValueError(f"Unexpected speaker names for session {session['id']}.")
-    if not isinstance(speaker_ids, list) or any(not isinstance(value, str) or not value for value in speaker_ids):
-        raise ValueError(f"Unexpected speaker IDs for session {session['id']}.")
-
-    unique_ids = list(dict.fromkeys(speaker_ids))
-    profiles = [directory[speaker_id] for speaker_id in unique_ids if speaker_id in directory]
-    return {
-        **session,
-        "speakerNames": names,
-        "speakers": profiles,
-        "unresolvedSpeakers": sum(speaker_id not in directory for speaker_id in unique_ids),
-    }
-
-
-def snapshot(rows, checked_on, speaker_rows=None):
+def snapshot(rows, checked_on):
     if not isinstance(rows, list) or not rows:
         raise ValueError("Expected a non-empty list from the public catalog.")
 
-    directory = speaker_directory(speaker_rows) if speaker_rows is not None else {}
     sessions = {}
     excluded = set()
     seen = set()
@@ -112,8 +90,10 @@ def snapshot(rows, checked_on, speaker_rows=None):
             "type": row["sessionType"]["displayValue"],
             "levels": sorted({v["displayValue"] for v in row["sessionLevel"]}),
             "topics": sorted({v["displayValue"] for v in row["topic"]}),
+            "speakerNames": row.get("speakerNames") or None,
         }
-        info = enrich_speakers(info, row, directory)
+        if info["speakerNames"] is not None and not isinstance(info["speakerNames"], str):
+            raise ValueError(f"Unexpected speaker names for session {session_id}.")
         session = sessions.setdefault(session_id, {**info, "offerings": []})
         if any(session[key] != value for key, value in info.items()):
             raise ValueError(f"Inconsistent metadata for session {session_id}.")
@@ -141,8 +121,6 @@ def snapshot(rows, checked_on, speaker_rows=None):
         "catalogUrl": CATALOG_URL,
         "onDemandCatalogUrl": ON_DEMAND_URL,
         "sourceDataUrl": FEED_URL,
-        "speakerDirectoryUrl": SPEAKER_FEED_URL,
-        "speakerDirectoryCheckedOn": checked_on if speaker_rows is not None else None,
         "counts": summarize(ordered),
         "excludedSessions": len(excluded - sessions.keys()),
         "excludedOfferings": excluded_count,
@@ -150,11 +128,44 @@ def snapshot(rows, checked_on, speaker_rows=None):
     }
 
 
+def speaker_snapshot(rows, speaker_rows, checked_on):
+    directory = speaker_directory(speaker_rows)
+    sessions = {}
+    for row in rows:
+        if row.get("excludeFromSessionScheduler"):
+            continue
+        session_id, code = row["sessionId"], row["sessionCode"]
+        speaker_ids = row.get("speakerIds", [])
+        if not isinstance(speaker_ids, list) or any(
+                not isinstance(value, str) or not value for value in speaker_ids):
+            raise ValueError(f"Unexpected speaker IDs for session {session_id}.")
+        unique_ids = list(dict.fromkeys(speaker_ids))
+        record = {
+            "speakers": [directory[speaker_id] for speaker_id in unique_ids if speaker_id in directory],
+            "unresolvedSpeakers": sum(speaker_id not in directory for speaker_id in unique_ids),
+        }
+        if code in sessions and sessions[code] != record:
+            raise ValueError(f"Inconsistent speaker metadata for session {session_id}.")
+        sessions[code] = record
+    return {
+        "schemaVersion": 1,
+        "checkedOn": checked_on,
+        "sourceUrl": SPEAKER_FEED_URL,
+        "sessions": sessions,
+    }
+
+
 def write_snapshot(data, output):
-    sessions = data.pop("sessions")
-    header = json.dumps(data, ensure_ascii=False, indent=2).removesuffix("\n}")
+    document = {key: value for key, value in data.items() if key != "sessions"}
+    sessions = data["sessions"]
+    header = json.dumps(document, ensure_ascii=False, indent=2).removesuffix("\n}")
     records = ",\n".join("    " + json.dumps(record, ensure_ascii=False) for record in sessions)
     output.write_text(header + ',\n  "sessions": [\n' + records + "\n  ]\n}\n",
+                      encoding="utf-8", newline="\n")
+
+
+def write_speaker_snapshot(data, output):
+    output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n",
                       encoding="utf-8", newline="\n")
 
 
@@ -166,10 +177,13 @@ def main():
         rows = json.load(response)
     with urlopen(SPEAKER_FEED_URL, timeout=60) as response:
         speaker_rows = json.load(response)
-    data = snapshot(rows, datetime.now(JST).date().isoformat(), speaker_rows)
+    checked_on = datetime.now(JST).date().isoformat()
+    data = snapshot(rows, checked_on)
+    speakers = speaker_snapshot(rows, speaker_rows, checked_on)
 
     # Keep one session on each line so reviews show only the records that changed.
     write_snapshot(data, args.output)
+    write_speaker_snapshot(speakers, args.output.parent / "session-speakers.json")
     print(f"{args.output}: {data['counts']}; excluded offerings: {data['excludedOfferings']}")
 
 
