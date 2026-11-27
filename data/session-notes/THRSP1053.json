@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1053","sessionId":"1787858591608001SGcH","offeringId":"1787858591608001SGcH-1791587926929001FCIU","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=h6DiVyG7b0A","basis":"captions",
+  "summary":[{"atSeconds":49,"text":"エージェントが増えるたび個別に同じ確認を繰り返さず、組織で定めた共通のポリシーが適用される構成にする考え方を紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":319,"text":"エージェントを一覧で見られることと、作成環境でポリシーを設定できることは別です。Power Platform と Agent 365 の双方で、何を管理できるか確認します。"}]
+}

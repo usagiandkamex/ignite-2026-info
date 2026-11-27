@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK425","sessionId":"1787856637920001EzxO","offeringId":"1787856637920001EzxO-1791588157475001CfGP","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=wK9o51K5yVg","basis":"captions",
+  "summary":[{"atSeconds":272,"text":"Azure AI Gateway をクライアントと複数のモデルや MCP サーバーの間に置き、共通のポリシーを適用する構成を解説しました。"}],
+  "updates":[{"atSeconds":261,"announcementId":null,"text":"Azure AI Gateway が Ignite 会期中に一般提供になったことを発表しました。"}],
+  "cases":[{"atSeconds":161,"text":"コマツの担当者が、複数のチームが AI モデルを利用する際に、モデルへの接続方法を共通化する必要があったと説明しました。"}],
+  "tips":[{"atSeconds":1067,"text":"モデル呼び出しが HTTP 429 で失敗したときは、ゲートウェイのトレースで使用量の制限に達したかを調べます。"}]
+}

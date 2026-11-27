@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK319","sessionId":"1787856621535001EDYg","offeringId":"1787856621535001EDYg-1791588118834001CkKs","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":906,"text":"Codename MDASH を、アプリのコードに潜む問題を防御側の担当者が見つけ、修正を管理するための仕組みとして紹介しました。"}],
+  "updates":[{"atSeconds":400,"text":"非公開プレビューで顧客が利用しているコードのセキュリティ分析機能を取り上げました。","announcementId":"bon-519"}],
+  "cases":[{"atSeconds":609,"text":"架空の薬局配送アプリを題材に、発見した問題をセキュリティ担当者が開発チームと扱う流れを示しました。"}],
+  "tips":[]
+}

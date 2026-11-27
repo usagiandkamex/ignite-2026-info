@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK283","sessionId":"1787856616021001ERrz","offeringId":"1787856616021001ERrz-1791588337402001CGFe","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":210,"text":"ソフトウェアの問題が見つかる速度に対し、修正の未処理分が増える理由を説明しました。"}],
+  "updates":[{"atSeconds":485,"text":"問題のある依存パッケージを取り込む前に対策し、取り込み後の検出・修正までを支援する GitHub Advanced Security の機能を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":1381,"text":"漏えいしたシークレットは検知件数だけでなく、検知してから無効化・修正するまでの時間も追います。"}]
+}

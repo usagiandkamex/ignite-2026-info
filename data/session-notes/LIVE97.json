@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE97","sessionId":"1793672956616001FF7G","offeringId":"1793672956616001FF7G-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":57,"text":"Database Hub では複数のデータベースの状態を一つの画面で確認し、CPU、メモリ、セキュリティの問題を把握できると説明しました。"}],
+  "updates":[{"atSeconds":10,"text":"Database Hub の一般提供と、データベース運用を補助するエージェントのプレビューを案内しました。","announcementId":"bon-456"}],
+  "cases":[],
+  "tips":[{"atSeconds":57,"text":"利用者から遅延の報告を受ける前に対応できるよう、監視画面を見続けるのではなく、異常の通知を設定します。"}]
+}

@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK408", "sessionId": "1787856635338001E3Ce", "offeringId": "1787856635338001E3Ce-1791588287542001CM78",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=8fIw7yJRxpI", "basis": "captions",
+  "summary": [{"atSeconds": 491, "text": "SAP の発注・在庫・仕入先データと、Microsoft 側の会議・ファイル・メールなどを組み合わせ、エージェントが業務と日々の作業の両方を踏まえて対応できる構成を示しました。"}],
+  "updates": [{"atSeconds": 601, "text": "SAP の Joule と Microsoft の Copilot を双方向につなぎ、利用者が普段使う環境から業務情報を確認し、そのまま作業を進められる連携を紹介しました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 650, "text": "供給障害を想定したデモでは、Copilot の通知を起点に Cowork が SAP の情報を確認し、材料や在庫への影響と生産リスクを調べました。"},
+    {"atSeconds": 1405, "text": "Coca-Cola HBC は、Databricks のレイクハウスに SAP と非 SAP のデータを集めており、SAP Business Data Cloud からの取り込みも試行していると説明しました。"}
+  ],
+  "tips": []
+}

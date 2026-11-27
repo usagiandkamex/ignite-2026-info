@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK346","sessionId":"1787856625713001ED74","offeringId":"1787856625713001ED74-1791588244356001Cbj8","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":341,"text":"AI で参照できるデータが増えると露出し得る情報も増えるため、分類と保護を大規模に行う必要性を説明しました。"}],
+  "updates":[{"atSeconds":984,"text":"機密情報を把握したうえで、Copilot の入力や参照するデータなどに DLP を適用する Microsoft Purview の取り組みを紹介しました。","announcementId":"bon-533"}],
+  "cases":[{"atSeconds":1744,"text":"EY の登壇者を招き、エージェントのガバナンスや機密ラベルの運用について議論しました。"}],
+  "tips":[{"atSeconds":504,"text":"文書の量だけでなく、分類が十分に更新されていて、実際に保護が必要な情報を捉えているかを確認します。"}]
+}

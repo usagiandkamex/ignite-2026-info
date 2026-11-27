@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2201","sessionId":"1787855004002001tJ5g","offeringId":"1787855004002001tJ5g-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=21uLwey5bwQ","basis":"captions-ja",
+  "summary":[{"atSeconds":241,"text":"開発エージェントを担当者の PC ではなく Azure テナント内の短命な環境で実行し、作業の進行、承認、監査履歴を管理する構成を示しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":516,"text":"デモ用 CRM を使い、既存の不具合修正とは別に、新機能の開発を行うワークフローを作成する例を示しました。"}],
+  "tips":[{"atSeconds":1278,"text":"モデルを選ぶだけでなく、実行場所、参照できるデータ、変更できる範囲、結果の確認方法、費用の把握方法を決めます。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE77","sessionId":"1793672046450001P5XY","offeringId":"1793672046450001P5XY-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":112,"text":"Microsoft Foundry でサブスクリプション内のプロジェクト、エージェント、モデルの利用状況を横断して見ながら、支出の増加要因を探す流れを紹介しました。"}],
+  "updates":[{"atSeconds":315,"text":"エージェントやモデルを使う際の支出に境界を設定する Cost controls を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":438,"text":"設定したコスト上限に達した状態で再度実行し、呼び出しがブロックされることをデモで確認しました。"}],
+  "tips":[{"atSeconds":213,"text":"支出が増えているエージェントを特定したら、個々のトレースを順番に見る前に、複数のトレースから生成されるインサイトを使って原因を絞ります。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK340","sessionId":"1787856624787001Ez7r","offeringId":"1787856624787001Ez7r-1791588351389001CNyF","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":515,"text":"エージェントを実行時に守る前提として、まず発見し、稼働状況を把握し、管理の対象にする流れを説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":848,"text":"Defender ポータルで、未管理のものやローカル・第三者製のエージェントを発見する例を示しました。"}],
+  "tips":[{"atSeconds":251,"text":"保護対象は自社で登録したエージェントだけにせず、利用者が接続するサービスや機密データの所在も含めます。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE127","sessionId":"1793674703845001oX58","offeringId":"1793674703845001oX58-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":135,"text":"Azure HorizonDB で永続データを Azure Storage に置き、必要なデータをより高速な層から読めるようにする構成を説明しました。"}],
+  "updates":[{"atSeconds":27,"text":"Azure HorizonDB の一般提供と、別の提供形態である Fabric HorizonDB の公開プレビューを紹介しました。","announcementId":"bon-453"}],
+  "cases":[{"atSeconds":276,"text":"データベースの性能を測るベンチマークを実際に開始し、計測の様子を示しました。"}],
+  "tips":[]
+}

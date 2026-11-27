@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2122","sessionId":"1787854995639001tN7M","offeringId":"1787854995639001tN7M-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=K67US8DA0Jc","basis":"captions",
+  "summary":[{"atSeconds":62,"text":"Oracle Database を Azure 上の Oracle 環境に移す作業を、計画、準備、実行、検証の四段階に分けて説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":62,"text":"先に Estate Explorer などで既存のデータベースを把握し、移行対象を整理します。"},{"atSeconds":466,"text":"移行方式は一律に決めず、Data Guard、Data Pump、GoldenGate などから移行元と移行先に合うものを比較します。"}]
+}

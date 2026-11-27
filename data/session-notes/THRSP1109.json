@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1109",
+  "sessionId": "1787858594736001SLBb",
+  "offeringId": "1787858594736001SLBb-1791588331687001Clb0",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 189,
+      "text": "Dynatrace と Microsoft は、自律運用を人の不在と同一視せず、可視化と信頼できる状況把握を土台に、人が統制する範囲で Azure SRE Agent が対応する段階的な進め方を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 371,
+      "text": "シミュレーションのデモでは、Dynatrace の異常検知と周辺情報を Azure SRE Agent へ渡し、統制された復旧対応へつなぐ連携設定を示しました。実際の顧客障害をその場で直したものではありません。"
+    },
+    {
+      "atSeconds": 1225,
+      "text": "Commerzbank の登壇者による画面説明では、下流システムのエラーを分析し、全顧客への影響か一部利用者に限る問題かを見分ける観点を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 189,
+      "text": "エージェントに何を任せるかを決める前に、観測データの信頼性とガードレールを整え、実行してよい場面と実行させない場面を明確にするよう勧めました。"
+    }
+  ]
+}

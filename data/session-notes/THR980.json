@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR980", "sessionId": "1787856594675001EgFw", "offeringId": "1787856594675001EgFw-1791588095792001CJPm", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=QsWAsU0ez_M", "basis": "captions",
+  "summary": [
+    {"atSeconds": 20, "text": "Foundry で作り、Work IQ で情報を取得するエージェントを題材に、複数のサービスにまたがる所有と管理責任を考えると説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 323, "text": "顧客ブリーフィング用のデモエージェントで、取得した情報が Azure 側のトレースにも含まれる様子を示しました。元の情報だけでなく、観測データの取り扱いにも注意が必要な例です。"},
+    {"atSeconds": 1320, "text": "開発者が公開したエージェントを、管理者が Agent 365 から検索して見つけるデモを行いました。開発側と管理側で見える範囲が異なることを示しています。"}
+  ],
+  "tips": [
+    {"atSeconds": 730, "text": "エージェント本体だけでなく、Entra 側の ID やアプリ、Foundry 側の接続なども管理対象に含めるよう促しました。本体の無効化だけでライフサイクル管理が完了するとは限らないと説明しました。"}
+  ]
+}

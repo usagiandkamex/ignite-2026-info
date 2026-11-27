@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2160","sessionId":"1787854999619001t25A","offeringId":"1787854999619001t25A-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=YZd-f7ryP_A","basis":"captions-ja",
+  "summary":[{"atSeconds":76,"text":"文書を作る際に、エージェントが依頼を解釈する工程と、同じデータとテンプレートから同じ文書を生成する工程を分ける考え方を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":143,"text":"見積書のデモでは、顧客情報と明細を入力し、有効期限の計算や法務が用意した規約をテンプレート側で扱いました。"}],
+  "tips":[{"atSeconds":76,"text":"契約書や見積書の確定内容は、モデルに毎回自由に書かせず、管理されたデータとテンプレートで再現できるようにします。"}]
+}

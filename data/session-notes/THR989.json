@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR989", "sessionId": "1787856596088001EjX6", "offeringId": "1787856596088001EjX6-1791588327607001Ch1L", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=ct_bQkcnJ9I", "basis": "captions",
+  "summary": [
+    {"atSeconds": 1, "text": "ミラーリングを使えば ETL が不要になるのか、という問いを提示しました。デモ準備中に Power BI の行数が予想外に減った経験を、検証が必要な例として挙げました。"},
+    {"atSeconds": 384, "text": "取り込んだデータは Lakehouse や Warehouse、変換処理、セマンティックモデルを経て Power BI から使えると説明しました。データ複製と、その後の加工・提供を分けて考える内容です。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 790, "text": "古いシステムから抽出した CSV を使い、Open Mirroring の複製状態を確認するデモを行いました。説明時点では手動であり、すでに完全自動化した運用事例ではありません。"}
+  ],
+  "tips": [
+    {"atSeconds": 1154, "text": "追加データが既存の行に加算されると思い込まず、期待した件数と実際の件数を照合するよう促しました。失敗を検知できない状態を、概念実証で見落とした問題として振り返りました。"}
+  ]
+}

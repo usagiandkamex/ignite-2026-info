@@ -1,0 +1,41 @@
+{
+  "sessionCode": "BRK223",
+  "sessionId": "1787856606849001Eyyj",
+  "offeringId": "1787856606849001Eyyj-1791588324460001CcXN",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=sD5WcWgT-qY",
+  "basis": "captions-ja",
+  "summary": [
+    {
+      "atSeconds": 738,
+      "text": "中小企業の経営者を例に、事業運営、顧客獲得、請求・入金の三つの業務を Copilot と Cowork で進める方法を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 478,
+      "text": "Copilot から業務システムとつなぐプラグインや、目的別のスキルを組み合わせて使う方法を紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 826,
+      "text": "架空の経営者が Cowork に優先事項を整理させ、顧客への対応を準備するデモを行いました。"
+    },
+    {
+      "atSeconds": 1550,
+      "text": "年末商戦で注文が伸び悩むケースを使い、販促の見直しに Copilot を活用する例を示しました。"
+    },
+    {
+      "atSeconds": 2148,
+      "text": "請求・入金の確認に移り、Excel と会計データを使って財務上の次の対応を優先付けする例を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2492,
+      "text": "デモをそのまま再現するのではなく、自社で繰り返し発生する仕事を選び、そこで使っているサービスのプラグインから試します。"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1116",
+  "sessionId": "1787858595782001Sp6y",
+  "offeringId": "1787858595782001Sp6y-1791588301055001CfWr",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 292,
+      "text": "侵害後の業務再開では、他のシステムの前提となる Active Directory や Entra の信頼性をどう回復するかを、あらかじめ考えておく必要があると説明しました。"
+    },
+    {
+      "atSeconds": 440,
+      "text": "レジリエンスを保護・検知・復旧の三つで整理し、復旧できるという自信だけでなく、その根拠を示せる運用を重視しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1160,
+      "text": "Cohesity のデモでは、侵害を想定した模擬環境で、オンプレミスの Active Directory と Entra の保護・検知・復旧を一連の流れとして紹介しました。実際の顧客被害の再現ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 440,
+      "text": "社内責任者、取引先、保険会社、規制当局などへ説明できるよう、復旧準備と検証結果を文書化しておく重要性を挙げました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2109","sessionId":"1787854994254001tw4x","offeringId":"1787854994254001tw4x-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=bxNEjzNArFE","basis":"captions",
+  "summary":[{"atSeconds":14,"text":"Nerdio Manager から既存の VMware vSphere 上に VM を作成し、Azure Arc に登録して、Azure Virtual Desktop のハイブリッド ホストプールに参加させる構成を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":400,"text":"Windows アプリから、デモで vSphere 上に作成したホストの Windows 11 デスクトップに接続しました。"}],
+  "tips":[{"atSeconds":253,"text":"ホストプールごとにクローンの CPU やメモリを指定すれば、用途に合わせてサイズを変えながら同じ VM テンプレートを再利用できます。"}]
+}

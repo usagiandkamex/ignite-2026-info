@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR999", "sessionId": "1787856597624001EJQn", "offeringId": "1787856597624001EJQn-1791588228866001Cauf", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=EAQ_fw4wYMk", "basis": "captions",
+  "summary": [
+    {"atSeconds": 11, "text": "Cloud PC で問題を検知した後も企業データにアクセスできるのかを問い、端末の状態に応じて信頼を継続的に確かめる必要性を説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 199, "text": "正常な Cloud PC に疑わしい状態を模擬し、Defender の検知情報を Intune のコンプライアンス判断とアクセス制御へつなぐ防御側のデモ構成を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 843, "text": "実際の事故でアクセスを戻す際は、警告を閉じるだけでなく、調査、封じ込め、修復を済ませて信頼できる状態を確認する必要があると強調しました。"},
+    {"atSeconds": 1165, "text": "アクセス遮断を対応の終点にせず、影響範囲の確認、必要な端末や ID の保護、脅威の除去へ進むという段階を示しました。"}
+  ]
+}

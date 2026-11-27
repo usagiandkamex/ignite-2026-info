@@ -1,0 +1,33 @@
+{
+  "sessionCode": "THRSP1094",
+  "sessionId": "1787858592493001SCP1",
+  "offeringId": "1787858592493001SCP1-1791588207644001CdIM",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 34,
+      "text": "Liquidware は、従来型 VDI の更新費用などを背景に Azure Virtual Desktop と Windows 365 への移行が進み、移行後の運用管理も課題になっていると説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 512,
+      "text": "AVD と Windows 365 向けの管理製品 Fleet Control を Ignite で発表したと紹介しました。自社テナントに配置する設計と説明しています。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 1329,
+      "text": "Fleet Control はプレビュー申込の受付を始めた段階で、登壇時点では翌年 1 月上旬の案内を見込んでいると説明しました。一般提供済みの製品とは区別しています。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 782,
+      "text": "製品デモでは、よく使う操作をまとめるホーム画面やランチパッド、製品内に操作方法を質問する機能を紹介しました。顧客環境の成果報告ではありません。"
+    }
+  ],
+  "tips": []
+}

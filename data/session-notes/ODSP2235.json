@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2235","sessionId":"1787855007581001tVQQ","offeringId":"1787855007581001tVQQ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=H_4jEOvxJ98","basis":"captions",
+  "summary":[{"atSeconds":701,"text":"重みを公開したコーディングモデルを、自分の Azure サブスクリプションの AKS 上で vLLM、Ray Serve、Anyscale と組み合わせて提供する構成を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":309,"text":"Anyscale Serve でサービス定義を使い、モデルを公開する実行環境を用意する流れを示しました。"}],
+  "tips":[{"atSeconds":701,"text":"外部サービスに払うトークン費用と比較する場合は、GPU を共有できる開発者数や同時利用数を、使うモデルで実際に測ります。"}]
+}

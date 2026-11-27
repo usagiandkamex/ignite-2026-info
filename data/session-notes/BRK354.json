@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK354","sessionId":"1787856626929001EC2l","offeringId":"1787856626929001EC2l-1791588350937001C0TA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":326,"text":"Azure Data Factory や Synapse のデータ処理を Fabric へ移す理由を、顧客の経験と Fabric Data Factory の構成をもとに説明しました。"}],
+  "updates":[{"atSeconds":1810,"text":"製品に組み込まれた移行アシスタントで、移行対象の評価やコードに関する支援を受ける方法を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":1149,"text":"既存のデータ基盤をそのまま移すのではなく、Fabric 上で統合された分析環境を作る顧客の例を取り上げました。"}],
+  "tips":[{"atSeconds":1810,"text":"移行する前に対象を評価し、環境を変更するだけで済む処理と、見直しが必要な処理を分けます。"}]
+}

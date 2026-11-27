@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK424","sessionId":"1787856637764001E41z","offeringId":"1787856637764001E41z-1791588132680001CQzf","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":785,"text":"BizTalk Server などの既存統合を Logic Apps に移す際に、資産と依存関係の調査から始め、移行対象ごとに設計を見直す方法を説明しました。"}],
+  "updates":[{"atSeconds":834,"announcementId":null,"text":"既存の統合資産と依存関係の分析を支援する Logic Apps Migration Agent を紹介しました。"}],
+  "cases":[{"atSeconds":1382,"text":"複数の既存ワークフローの呼び出し関係を調べ、残せる統合資産を活用する例をデモで示しました。"}],
+  "tips":[{"atSeconds":582,"text":"既存システムの所在地や遅延要件からオンプレミス処理が必要なら、ハイブリッド配置で段階的に移行する方法を検討します。"}]
+}

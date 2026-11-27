@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1153",
+  "sessionId": "1787858601261001SCVJ",
+  "offeringId": "1787858601261001SCVJ-1791588333075001CClb",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=1QwHEKbTBSU",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 23,
+      "text": "Informatica は、エージェントが企業データを理解するには、データへの接続だけでなく意味を伝えるコンテキストの管理が重要だと説明しました。"
+    },
+    {
+      "atSeconds": 254,
+      "text": "顧客の等級や地域、四半期といった業務用語を、Fabric、Snowflake、Databricks、データレイクなどに分散した情報と結び付ける文脈層を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 428,
+      "text": "マーケティング担当者役のデモでは、高額利用顧客の一覧にシカゴという条件を追加し、マスターデータ管理の情報を使ってキャンペーン対象を絞る Copilot の利用例を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 870,
+      "text": "多数の MCP をつなげられることと安全に使えることは別であり、利用者がすべての接続先の資格情報をエージェントへ渡す設計になっていないか確認する必要があると指摘しました。"
+    }
+  ]
+}

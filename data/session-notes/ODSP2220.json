@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2220","sessionId":"1787855005987001tZpj","offeringId":"1787855005987001tZpj-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=l4SPA4-ERrI","basis":"captions",
+  "summary":[{"atSeconds":328,"text":"特権管理者が使う環境を日常業務の端末と分け、変更の相互承認と監視を組み合わせる構成を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":456,"text":"仮想管理ワークステーションに接続するとき、管理用のアカウントで FIDO キーによる認証が求められるデモを行いました。"}],
+  "tips":[{"atSeconds":328,"text":"管理環境に大きな変更を加える際は、一人だけで完結させず、別の担当者も判断できるようにします。"}]
+}

@@ -1,0 +1,36 @@
+{
+  "sessionCode": "BRKSP596",
+  "sessionId": "1787854982024001tGxB",
+  "offeringId": "1787854982024001tGxB-1791588133619001CZW1",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=92c4e5jDWbE",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 317,
+      "text": "AMD のコンピューティング基盤は Azure で提供されるだけでなく、Microsoft 365 や Copilot といった Microsoft 自社のサービスでも使われていると紹介しました。"
+    },
+    {
+      "atSeconds": 509,
+      "text": "Azure HorizonDB では、データの保存場所を分けるだけでなくストレージ処理を分離することで、クエリを実行する層の CPU をより多くクエリに回せると説明しました。"
+    },
+    {
+      "atSeconds": 895,
+      "text": "コンフィデンシャル コンピューティングでは、保護を強めながら性能や応答時間も維持できるよう、AMD と Microsoft が共同で設計を進めてきたと述べました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 387,
+      "announcementId": "bon-453",
+      "text": "一般提供が始まった PostgreSQL 互換の Azure HorizonDB を紹介。埋め込みを使った類似検索など、CPU やストレージへの負荷が大きい AI アプリを例に挙げました。"
+    },
+    {
+      "atSeconds": 1668,
+      "announcementId": null,
+      "text": "第 6 世代 AMD EPYC（Venice）を搭載する Azure DHasv8・EHasv8 仮想マシンのプレビューを紹介しました。エージェントの実行、データ検索、変換などが同時に走る AI パイプラインを想定しています。"
+    }
+  ],
+  "cases": [],
+  "tips": []
+}

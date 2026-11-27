@@ -1,0 +1,28 @@
+{
+  "sessionCode": "LIVE101",
+  "sessionId": "1793672090206001Aeum",
+  "offeringId": "1793672090206001Aeum-AAAAAAAAAAAAAAAAAAAA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 78,
+      "text": "Scott Guthrie と Jessica Hawk が、エージェントを大規模に動かす際の計算基盤、データベース、分離、既存アプリのモダナイゼーションを議論しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 461,
+      "text": "Azure Catalyst と GitHub Copilot を組み合わせ、既存アプリの改修・移行を支援する取り組みを紹介しました。",
+      "announcementId": "bon-448"
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 705,
+      "text": "技術リーダーは試作の評価だけで終えず、小さな業務で実際に運用しながらチームの学びを増やすことを勧めました。"
+    }
+  ]
+}

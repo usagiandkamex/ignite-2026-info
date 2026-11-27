@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR994", "sessionId": "1787856596851001EQ5i", "offeringId": "1787856596851001EQ5i-1791588293983001Ce5A", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=vOpXMGsoe94", "basis": "captions",
+  "summary": [
+    {"atSeconds": 147, "text": "架空企業 Bontoso を題材に、ID、データ保護、検知、ガバナンスという四つの観点でエージェントの信頼性を確認する構成を示しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 306, "text": "デモでは、利用者がアクセスできる人事文書に機密性の高い情報が含まれる状況を示しました。エージェントを通じて使える情報の範囲も把握する必要がある例です。"},
+    {"atSeconds": 683, "text": "Purview のポリシーで機密情報の扱いを制限し、DLP やデータの活動情報を使って状況を確認する防御側のデモを行いました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1124, "text": "Agent 365 でエージェントの所有者、接続先、ID、指示、環境などを確認し、何にアクセスできるかを管理側が把握する重要性を説明しました。"}
+  ]
+}

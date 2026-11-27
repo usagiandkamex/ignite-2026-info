@@ -1,0 +1,35 @@
+{
+  "sessionCode": "BRK217",
+  "sessionId": "1787856605931001EI5K",
+  "offeringId": "1787856605931001EI5K-1791588217922001CW4I",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 146,
+      "text": "SharePoint を、既存の文書・リストやアクセス権を活用して Copilot とエージェントを業務に組み込む場所として紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 489,
+      "text": "SharePoint に届いた提案依頼書（RFP）から、回答に必要な項目を Copilot が抽出する例を紹介しました。"
+    },
+    {
+      "atSeconds": 646,
+      "text": "Boehringer Ingelheim が SharePoint に保存済みの資料を使い、プロジェクト追跡を支援する仕組みを共同開発した事例を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1106,
+      "text": "まず、参考資料と既存のアクセス制御がそろっている業務を選ぶと、新しいデータ基盤やツールを導入せずに試せます。"
+    },
+    {
+      "atSeconds": 2606,
+      "text": "組織全体に共有されているサイトなど、想定より広い権限が付いていないかを確認してください。"
+    }
+  ]
+}

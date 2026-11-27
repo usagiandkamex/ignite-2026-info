@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2229","sessionId":"1787855006964001t9ij","offeringId":"1787855006964001t9ij-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=C7RSCiKbSt4","basis":"captions",
+  "summary":[{"atSeconds":304,"text":"調達依頼者を専用画面へ移動させず、普段の Microsoft Teams の会話を使って依頼を受け付ける方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":304,"text":"ノート PC の購入を依頼するデモで、必要な台数などを Teams から入力しました。"},{"atSeconds":1098,"text":"別の調達例では、契約の締結を経て Coupa へ情報を送り、購買申請を作成するまでを業務フローに含めました。"}],
+  "tips":[{"atSeconds":1098,"text":"申請だけを自動化するのではなく、承認や契約の確認に必要な担当者が適切な段階で参加できるようにします。"}]
+}

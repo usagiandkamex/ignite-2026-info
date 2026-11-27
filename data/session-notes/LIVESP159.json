@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP159","sessionId":"1787855009729001tTDo","offeringId":"1787855009729001tTDo-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":13,"text":"Dell が、質問への回答から時間のかかる作業までエージェントが担うようになると、処理を常にクラウドへ置くのではなく、端末やデータセンターも使い分ける必要があると説明しました。"}],
+  "updates":[{"atSeconds":154,"text":"大きなモデルを組織内で実行する選択肢として、Foundry Local と組み合わせた Dell Private Cloud を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":105,"text":"試験導入を広げる際は、先に配置先を決めるのではなく、処理ごとに必要な性能やデータの管理要件に合う場所を選びます。"}]
+}

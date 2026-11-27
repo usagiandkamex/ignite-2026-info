@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK363","sessionId":"1787856628329001EEBg","offeringId":"1787856628329001EEBg-1791951573069001Nulr","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":132,"text":"Database Hub で、データベース群の発見、監視、運用支援を一か所から行う体験を紹介しました。"}],
+  "updates":[{"atSeconds":982,"text":"Database Hub による監視に加え、データベースで発生した問題の検知を支援する Database Agent を紹介しました。","announcementId":"bon-456"}],
+  "cases":[{"atSeconds":243,"text":"Database Hub を有効にし、SQL、PostgreSQL、Cosmos DB にまたがるリソースを調べる手順を実演しました。"}],
+  "tips":[{"atSeconds":542,"text":"同じインベントリでも、担当する範囲に合わせてビューを作り、必要なリソースを絞り込みます。"}]
+}

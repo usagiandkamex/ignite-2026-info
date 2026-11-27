@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2184","sessionId":"1787855002205001thge","offeringId":"1787855002205001thge-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=rioeoWxm7l8","basis":"captions-ja",
+  "summary":[{"atSeconds":53,"text":"appCURE が、既存の Windows アプリを MSIX に変換するだけでなく、手作業でのパッケージングや古い配布方式も見直す考え方を説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":194,"text":"誰にアプリの利用を認めるかは Microsoft Entra で管理し、割り当て後にアプリをどう配信・実行するかは別の役割として設計します。"}]
+}

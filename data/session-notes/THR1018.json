@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1018", "sessionId": "1787856600616001E5FE", "offeringId": "1787856600616001E5FE-1791588144237001CVer", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=p0nu4v1lTuQ", "basis": "captions",
+  "summary": [
+    {"atSeconds": 277, "text": "エージェント向けのデータには、鮮度と業務文脈が必要だと説明しました。すべてを即時処理するのではなく、変化にすぐ反応すべき情報を見極める考え方です。"}
+  ],
+  "updates": [
+    {"atSeconds": 145, "text": "Azure SQL と SQL Server 2025 の Change event streaming を紹介しました。データベースの変化をイベントとして送る機能で、セッション時点ではプレビューだと明示しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 687, "text": "Azure SQL から Fabric Eventstream へ変更イベントを送り、リアルタイムの処理につなぐ構成を示しました。既存の SQL データを活用する例です。"},
+    {"atSeconds": 947, "text": "通常のチケット販売と不自然な販売増加を模擬したライブデモを行いました。実際の大会の取引ではなく、異常な変化を捉えるためのサンプルです。"}
+  ],
+  "tips": []
+}

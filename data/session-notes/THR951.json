@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR951", "sessionId": "1787856590169001E9rd", "offeringId": "1787856590169001E9rd-1791588161719001CG9m", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=-2a4MCyEKV8", "basis": "captions",
+  "summary": [
+    {"atSeconds": 240, "text": "学習責任者の立場を演じる対話形式で、AI Skills Navigator を組織全体の能力開発に展開する際の疑問を取り上げました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 503, "text": "新製品の発表に追随して学びたいという設定で、Microsoft が用意する Featured playlists を紹介しました。イベントに参加していない社員も公式の学習経路を探せる例です。"},
+    {"atSeconds": 748, "text": "顧客調査や商談準備を助ける AI エージェントをチームで作りたい、という依頼から、AI と対話して学習プレイリストを組み立てるデモを行いました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1094, "text": "業務から離れて学習サイトを開くだけでなく、Microsoft Copilot の Learning agent 内から AI Skills Navigator を利用する選択肢も紹介しました。"}
+  ]
+}

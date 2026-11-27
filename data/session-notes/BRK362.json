@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK362","sessionId":"1787856628173001EjIS","offeringId":"1787856628173001EjIS-1791588129860001CUGS","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":62,"text":"アプリ、分析、AI エージェントを支える Microsoft のデータベースを、トランザクション処理、Fabric 連携、運用管理に分けて紹介しました。"}],
+  "updates":[{"atSeconds":204,"text":"マネージド PostgreSQL の Azure HorizonDB の一般提供を発表しました。","announcementId":"bon-453"}],
+  "cases":[{"atSeconds":2350,"text":"複数種類のデータベースを管理する場面で、Database Hub とデータベース エージェントを使う運用例を示しました。"}],
+  "tips":[]
+}

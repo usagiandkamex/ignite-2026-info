@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK244","sessionId":"1787856610200001EYMD","offeringId":"1787856610200001EYMD-1791587924228001FSUX","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":61,"text":"Foundry で音声エージェントを開発し、使う音声モデル、運用、電話との連携まで計画する流れを紹介しました。"}],
+  "updates":[{"atSeconds":197,"text":"音声合成の HD Voices V3 と、用途に合わせた声の表現を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":1425,"text":"ASUS の担当者が、コールセンター向けの音声エージェント VoiceGenio を開発した経験を共有しました。"}],
+  "tips":[{"atSeconds":803,"text":"複雑な会話は一つのエージェントに任せきらず、内容に応じて専門のエージェントへ引き継ぐ構成も検討します。"}]
+}

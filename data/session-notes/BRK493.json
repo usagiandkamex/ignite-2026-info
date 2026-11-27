@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK493",
+  "sessionId": "1787856648260001E7KA",
+  "offeringId": "1787856648260001E7KA-1791588119519001ClDp",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=hbQ9nhZztgQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 519,
+      "text": "Agent 365 に関連する支援領域として、AI 活用の助言、安全な導入と統制、業務変革、FinOps for AI、利用定着を整理しました。これらを継続的に支える AI Center of Excellence もサービス機会として紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 183,
+      "text": "顧客との対話では、動いているエージェント、アクセス先、実行コストを把握できるか、それぞれの回答に誰が責任を持つかを確認するよう勧めました。リスクと費用はモデル・データ・ツールなど複数の層に生じると説明しました。"
+    },
+    {
+      "atSeconds": 2204,
+      "text": "顧客に提案する前に自社のエージェントへ Agent 365 を適用し、最初の利用者として経験を積むことを、スキル習得とサービス立ち上げの出発点に挙げました。"
+    }
+  ]
+}

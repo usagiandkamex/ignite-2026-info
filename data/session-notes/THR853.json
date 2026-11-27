@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR853",
+  "sessionId": "1787856575177001Eg2u",
+  "offeringId": "1787856575177001Eg2u-1791587925940001Fz7Y",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=dHKrofLTF4E",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 381, "text": "Work IQ の人と組織のコンテキストを使い、Copilot の回答を組織固有の職位や人員指標の定義に合わせる方法を紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 754, "announcementId": null, "text": "経営・部門責任者が組織横断で人員データを分析するための Workforce Intelligence プラグインを、Frontier 向けとして紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 1014, "text": "管理者向け画面で上司と部下の階層に関するデータ品質の問題を見つけ、管理センターのチャットで調査する例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 548, "text": "人員数を聞く前に、正社員だけを数えるのか、契約社員やインターンも含めるのかを組織で決めておきます。"}
+  ]
+}

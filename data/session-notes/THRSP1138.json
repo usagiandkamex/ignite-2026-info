@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1138",
+  "sessionId": "1787858599037001S3X3",
+  "offeringId": "1787858599037001S3X3-1791588347092001CQNJ",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=6ahTu8ErcJE",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 323,
+      "text": "会議室から Copilot へ渡る情報が乏しいと、要約やアクション項目も一般的なものになるため、会議室機器まで含めた AI 活用の準備が必要だと説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 540,
+      "text": "会議ボードの紹介では、Windows の Teams Rooms と端末内の AI 処理を組み合わせる構成を示しました。個人用 PC だけでなく会議室側にも AI 向け計算資源を持たせる例です。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 948,
+      "text": "機器の選定時は、AI が端末内とクラウドのどちらで動くかを確認し、両者を組み合わせて必要な性能を確保するよう勧めました。"
+    },
+    {
+      "atSeconds": 948,
+      "text": "出席者や発言者を識別できるか、誰の提案や担当作業として Copilot に伝わるかまで、入力データの質を確認する観点を示しました。"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "sessionCode": "BRKSP593",
+  "sessionId": "1787854982999001tMXt",
+  "offeringId": "1787854982999001tMXt-1791588270912001CKws",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 1135,
+      "text": "TD SYNNEX は、中小企業を支援するパートナー向けに「Destination AI for SMBs」を紹介しました。支援側のスキル習得から、顧客の課題発見、価値の検証、提供と定着までを段階に分けています。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 437,
+      "announcementId": null,
+      "text": "特定ベンダーに依存しないパートナー向け研修の一つとして、新たに提供を始めた AI Skills Foundation を挙げ、AI 活用に必要なスキルを学べると説明しました。"
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 204,
+      "text": "AI Game Plan を顧客との対話に使い、AI で解決する価値のある課題を掘り下げます。対話で分かった内容を文書に残し、必要なスキルも確認します。"
+    }
+  ]
+}

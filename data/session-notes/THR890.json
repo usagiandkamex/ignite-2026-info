@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR890", "sessionId": "1787856580783001EvAN", "offeringId": "1787856580783001EvAN-1791588290227001CpyV", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=pCJZzuZXFA8", "basis": "captions",
+  "summary": [
+    {"atSeconds": 216, "text": "どの端末でも満たせるほど緩くも、ほとんどの端末が使えないほど厳しくもならないよう、実効性を重視して保護の基準を決めたと説明しました。"},
+    {"atSeconds": 340, "text": "利用者には何を直すべきかを知らせ、IT 管理者には Intune などの MDM で Windows 11 端末の基準への適合状況を管理できるようにする方針を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 2, "text": "Windows 端末の基本的な保護をそろえる取り組みとして Windows Baseline Protection を紹介しました。", "announcementId": "bon-540"}
+  ],
+  "cases": [
+    {"atSeconds": 734, "text": "Windows のセキュリティ画面で、デモ端末に不足している保護が二つあることを確認し、修正を始めるボタンを示しました。"}
+  ],
+  "tips": []
+}

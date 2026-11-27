@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK484",
+  "sessionId": "1787856646898001EgZT",
+  "offeringId": "1787856646898001EgZT-1791588099308001CLUc",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=8G4Gg-gF22w",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 8,
+      "text": "エージェントの開発そのものではなく、業務プロセス全体の変革、企業を理解するコンテキスト、信頼性・拡張性・経済性を備えた運用をパートナーの支援領域として整理しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1366,
+      "text": "社名を明かさないコンサルティング企業の例として、案件ごとにセキュリティと展開の基盤を作り直す負担を紹介しました。GitHub と Foundry、ID・監査の統制を共通基盤化し、その後の AI アプリで再利用したと説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 631,
+      "text": "PoC から本番への移行で繰り返し生じる課題には、Well-Architected Framework の知見を反映した AI ランディングゾーンやリポジトリを出発点にする考え方を紹介しました。"
+    }
+  ]
+}

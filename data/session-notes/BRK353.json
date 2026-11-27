@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK353","sessionId":"1787856626777001EA7r","offeringId":"1787856626777001EA7r-1791814916661001CfYA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":271,"text":"Fabric Data Factory のデータ取り込みと配信を、ショートカット、ミラーリング、Copy Job、Event Streams の使い分けから説明しました。"}],
+  "updates":[{"atSeconds":391,"text":"拡張ミラーリングで、変更データのフィードを利用する構成を取り上げました。","announcementId":null}],
+  "cases":[{"atSeconds":840,"text":"チケット販売を例に、Copy Job と Event Streams を組み合わせて販売イベントを取り込むデモを行いました。"}],
+  "tips":[]
+}

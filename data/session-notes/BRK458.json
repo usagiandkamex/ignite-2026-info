@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK458",
+  "sessionId": "1787856642950001EvvA",
+  "offeringId": "1787856642950001EvvA-1791588325815001CKEm",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=wy8gMMhhIOY",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 319, "text": "エネルギー設備を AI で支援するには、運転・保全情報だけでなく、設計データや文書、既存の業務手順も結び付けて、判断に使える文脈を整えます。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 765, "text": "ABB の登壇者が、既存の産業オートメーションから、デジタル技術と AI を使った自律運用へ段階的に近づく方針を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 642, "text": "既存作業を速くするだけでなく、データが結び付いたことでどの業務手順を作り直せるかも検討します。"},
+    {"atSeconds": 1401, "text": "設備運用を自律化するときは、自動化する判断、人への通知で足りる判断、運転員の承認が必要な判断を分けます。"}
+  ]
+}

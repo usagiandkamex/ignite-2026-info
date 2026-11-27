@@ -1,0 +1,22 @@
+{
+  "sessionCode": "BRK453",
+  "sessionId": "1787856642196001E70E",
+  "offeringId": "1787856642196001E70E-1791588100918001CIYP",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=01UqBkgi99M",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 1034, "text": "Azure Files では、多数のクライアントが一つの共有を並列に読み書きする地震探査データ処理などを想定し、共有単位で容量、IOPS、スループットを確保する設計を説明しました。"},
+    {"atSeconds": 2609, "text": "Blob Storage から GPU にデータを運ぶ経路で CPU に処理が集中しないよう、RDMA を使う仕組みと通常の経路を対比しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 506, "announcementId": null, "text": "VM Scale Sets の Flexible オーケストレーションと連携し、障害ドメインの割り当てと管理を行うブロックストレージの機能をプレビューとして紹介しました。"},
+    {"atSeconds": 543, "announcementId": null, "text": "Azure Disk Storage では、指定期間中の書き換えや削除を防ぐ変更不可のスナップショットがプレビューになりました。"},
+    {"atSeconds": 1406, "announcementId": null, "text": "次世代 Azure Elastic SAN を発表し、新しい二つの階層によって、より高い性能や規模が必要なワークロードに対応すると説明しました。"},
+    {"atSeconds": 2724, "announcementId": null, "text": "大容量データを低遅延・高スループットで扱う AI ワークロード向けに、Azure Blob Storage の Turbo Tier を公開プレビューとして紹介しました。"}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 846, "text": "データの転送を始める前に Blob、Files、NetApp Files のどれに置くかを見極め、移行先を決めてから Azure Storage Mover を使います。"}
+  ]
+}

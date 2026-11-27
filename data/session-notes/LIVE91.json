@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE91","sessionId":"1793675463506001gPhe","offeringId":"1793675463506001gPhe-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":161,"text":"Azure SRE Agent に任せる本番対応と、人の承認が必要な対応を分け、運用担当者がツールの権限を管理する流れを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":84,"text":"注文処理が止まった想定のデモで、エージェントがデータベース障害を検出し、復旧の経緯と影響を GitHub Issue に記録しました。"}],
+  "tips":[{"atSeconds":467,"text":"導入の初期は、何度も発生して調査工数がかかり、安全な対応手順がすでにある障害を一つか二つ選びます。"}]
+}

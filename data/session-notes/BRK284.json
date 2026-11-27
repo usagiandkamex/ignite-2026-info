@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK284","sessionId":"1787856616168001EPp9","offeringId":"1787856616168001EPp9-1791588352303001Cj36","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":181,"text":"AI の試作品が短期間で動いても、本番化には別の準備が要るという課題を、Foundry と Azure AI Landing Zones の観点から説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":374,"text":"PoC をそのまま本番に移すのではなく、実際の導入からまとめられた参照アーキテクチャを設計の出発点にします。"}]
+}

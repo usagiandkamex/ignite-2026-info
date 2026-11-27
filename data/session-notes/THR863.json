@@ -1,0 +1,18 @@
+{
+  "sessionCode": "THR863",
+  "sessionId": "1787856576682001EnCW",
+  "offeringId": "1787856576682001EnCW-1791588277430001CkL8",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=MoN5Y7N508w",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 154, "text": "Microsoft Marketplace でアプリやエージェントを販売する際に、利用者に届く画面、実行場所、収益化の方法をどう選ぶかを解説しました。"}
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 467, "text": "Teams や Copilot など利用者の入口と、差別化の核になるデータや処理の実行場所は別々に設計できます。"},
+    {"atSeconds": 766, "text": "オファーの種類を決める前に、データを置く場所、運用担当、AI 推論費用を負担する主体を確認します。"},
+    {"atSeconds": 990, "text": "問い合わせ型の掲載は、直販から始めたり、見込み客に伝わる製品説明を比較したりする場合の選択肢です。"}
+  ]
+}

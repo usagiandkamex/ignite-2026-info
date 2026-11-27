@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR985", "sessionId": "1787856595452001ENDX", "offeringId": "1787856595452001ENDX-1791588228643001Cyim", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=YImxqMNAndU", "basis": "captions",
+  "summary": [
+    {"atSeconds": 148, "text": "登壇者の提案構成として、Azure Data Lake Storage 上のオープン形式のデータに、Snowflake や Azure Databricks がそれぞれ計算処理を持ち込む設計を紹介しました。Microsoft の標準構成の発表ではありません。"},
+    {"atSeconds": 821, "text": "データ製品ごとに専用エージェントと MCP 接続を分け、アクセス範囲、利用枠、停止手段を個別に管理する設計パターンを示しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 1035, "text": "二つの設計で同じ質問の結果を比べる例と、東西の担当者が自分の目標について尋ねる例をデモの題材にしました。説明用の人物とデータによる比較です。"}
+  ],
+  "tips": [
+    {"atSeconds": 329, "text": "想定したファイル直接参照が成立せず、別エンジン経由の接続になった場合には、複数の処理系で課金が生じうると説明しました。設計名だけでなく実際の参照経路を確かめるよう促しました。"}
+  ]
+}

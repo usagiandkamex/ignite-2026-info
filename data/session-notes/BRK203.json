@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK203", "sessionId": "1787856603799001ERbS", "offeringId": "1787856603799001ERbS-1791588070407001CFZy",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 63, "text": "Chat、Cowork、Code、Autopilot の役割の違いを整理し、Copilot Code が個々の業務に合うアプリを作るための体験だと説明しました。"}],
+  "updates": [{"atSeconds": 164, "text": "Copilot Code で作ったアプリも、組織の管理下で公開・利用できるようにする方針を紹介しました。", "announcementId": "bon-483"}],
+  "cases": [{"atSeconds": 363, "text": "架空の小売企業で、在庫がない商品に対して店舗スタッフが代替品を提案できるアプリを題材にしました。"}],
+  "tips": [{"atSeconds": 1350, "text": "試作を組織に広げる前に、誰が公開できるかと、公開後のセキュリティ・利用状況をどう管理するかを決めます。"}]
+}

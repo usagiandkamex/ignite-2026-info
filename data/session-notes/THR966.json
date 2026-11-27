@@ -1,0 +1,27 @@
+{
+  "sessionCode": "THR966",
+  "sessionId": "1787856592525001ENZL",
+  "offeringId": "1787856592525001ENZL-1791588293767001Ckrm",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 765,
+      "text": "仮想マシンに慣れた運用担当者向けに、Pod、Deployment、Service と宣言的な構成管理を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 124,
+      "text": "Web アプリに負荷をかけ、CPU 使用率が上がると Pod を増やして処理するデモを行いました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1088,
+      "text": "水平スケールを使うときは Deployment だけでなく、メトリクスと増減の条件を Horizontal Pod Autoscaler で指定します。"
+    }
+  ]
+}

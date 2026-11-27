@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK540",
+  "sessionId": "1787856655493001Eeqv",
+  "offeringId": "1787856655493001Eeqv-1791814922444001C4tb",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ji05P21fIFU",
+  "basis": "captions-ja",
+  "summary": [
+    {
+      "atSeconds": 100,
+      "text": "日本向け総括として、指数関数的に伸びる AI の能力をどう成果へ変えるか、その影響に組織がどう備えるかという、今回のキーノートの二つの問いを振り返りました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 5590,
+      "text": "組織内のエージェントの不適切な動作を防ぐ保護と、エージェントを使って組織を守る Microsoft Perception の一般提供を、異なる防御のテーマとして整理しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 482,
+      "text": "トヨタの登壇内容を振り返り、Foundry と Microsoft IQ を使って人や状況に関する知識を蓄積し、応答を継続的に改善する Toyota AI Agent の取り組みを紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1259,
+      "text": "AI の可視化を資産の一覧だけで終えず、誰・どのシステム・どのデータへつながるかまで把握し、IT Ops・SecOps・FinOps の観点から管理するよう説明しました。Microsoft 以外のエージェントも対象にする方向を示しました。"
+    }
+  ]
+}

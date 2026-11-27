@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP165","sessionId":"1787855010982001tzJO","offeringId":"1787855010982001tzJO-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":101,"text":"IBM が、Azure のデータ・ガバナンス基盤とエージェントを組み合わせて、試験導入から本番運用につなげる取り組みを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":223,"text":"受注から入金までの流れを、28工程から11工程に組み直すデモを行いました。自動化する箇所と人の判断を残す箇所を分けました。"}],
+  "tips":[{"atSeconds":281,"text":"運用に入ったらトークン使用量だけで評価せず、サービス水準目標（SLO）を使い、任せた業務を期待どおりに処理できているかを見ます。"}]
+}

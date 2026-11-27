@@ -1,0 +1,16 @@
+{
+  "sessionCode": "THR898", "sessionId": "1787856582007001EDno", "offeringId": "1787856582007001EDno-1791588290449001CWk6", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 423, "text": "Azure Chaos Studio では、ワークスペースが対象のクラスターに接続して実験を実行できるかを、開始前に検証できると説明しました。"},
+    {"atSeconds": 605, "text": "実験シナリオは自然言語から作成できるほか、ポータルで編集し、用意されたアクションを追加できると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 61, "text": "Azure Chaos Studio の新機能として、実験をまとめるワークスペースと、AKS 上のワークロードの回復性を調べる拡張機能を案内しました。", "announcementId": "bon-442"}
+  ],
+  "cases": [
+    {"atSeconds": 127, "text": "架空の Contoso のチケット販売サイトを使い、通常どおりサイトが動くことを確かめてから、AKS の回復性を調べる実験に進みました。"}
+  ],
+  "tips": [
+    {"atSeconds": 832, "text": "依存サービスの障害を技術要素だけで捉えず、たとえばチケットを買いたい人がサイトにたどり着けなくなる、という利用者への影響に結び付けて考えるよう勧めました。"}
+  ]
+}

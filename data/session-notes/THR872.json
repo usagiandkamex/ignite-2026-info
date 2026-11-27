@@ -1,0 +1,21 @@
+{
+  "sessionCode": "THR872",
+  "sessionId": "1787856578081001EXvd",
+  "offeringId": "1787856578081001EXvd-1791588265786001CtDC",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=F8xxE_-CDV8",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 82, "text": "モデル学習後に変わった事実へ対応するため、Web IQ で最新の Web 情報を取得し、回答に出典を付ける方法を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 415, "announcementId": "bon-505", "text": "Foundry の既存の Web 検索が Web IQ へ移行し、対象の Foundry エージェントや Responses API では既存の利用を続けられると説明しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 657, "text": "大学向け AI サービスの事例では、Web IQ への切り替え後、複数モデルで回答の正確さ、速度、トークン使用量を比較しました。"},
+    {"atSeconds": 1206, "text": "バーミンガム大学の例では、学生が日常のトラブルに遭ったときに大学の支援情報を探すための応答を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 832, "text": "検索連携を比較するときは、天気のような単純な質問だけでなく、出典の検証が難しい実務の質問も評価に入れます。"}
+  ]
+}

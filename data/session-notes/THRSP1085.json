@@ -1,0 +1,37 @@
+{
+  "sessionCode": "THRSP1085",
+  "sessionId": "1787858589973001Stwz",
+  "offeringId": "1787858589973001Stwz-1791588237724001C9sw",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 124,
+      "text": "Replit をアプリ作成の入口に使い、Microsoft Fabric のセマンティックモデルと既存のアクセス権を生かして業務アプリを作る流れを説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 170,
+      "text": "登壇者は、Replit の Enterprise プラン向け Microsoft Fabric アプリテンプレートを会期中の月曜日に公開したと紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 408,
+      "text": "デモでは店舗売上のダッシュボードを自然言語で生成し、店舗ごとにメモを残す機能を追加しました。実際の顧客導入事例ではなく、販売管理を題材にしたアプリ作成例です。"
+    },
+    {
+      "atSeconds": 900,
+      "text": "公開操作のデモでは Fabric 側のワークスペースやアプリ項目に加え、メモ機能に必要な SQL データベースを用意する過程を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 609,
+      "text": "開発は Replit、公開後の実行と利用者アクセスは Fabric と役割を分けます。本番では設定済みの Fabric 容量を使用し、利用者は Replit に入らずアプリを使えると説明しました。"
+    }
+  ]
+}

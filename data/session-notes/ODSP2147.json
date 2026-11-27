@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2147","sessionId":"1787854998237001tt8n","offeringId":"1787854998237001tt8n-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=pi5h_WSwe18","basis":"captions",
+  "summary":[{"atSeconds":1,"text":"Devolutions が、自己ホスト型の特権アクセス管理（PAM）を用意し、資格情報を登録するところまでを、既存のインストールがない検証環境で説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":462,"text":"管理画面から ID プロバイダーの利用者を取り込み、管理対象に追加する流れを実演しました。"}],
+  "tips":[]
+}

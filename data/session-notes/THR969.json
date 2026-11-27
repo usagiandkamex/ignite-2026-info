@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR969", "sessionId": "1787856592981001E5r7", "offeringId": "1787856592981001E5r7-1791588121836001C0Z2", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=deNpTk93qgA", "basis": "captions",
+  "summary": [
+    {"atSeconds": 35, "text": "架空企業の顧客ポータルと AI サポートを題材に、防御上の判断を練習するシミュレーションを紹介しました。実際の被害事例の報告ではありません。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 181, "text": "シミュレーションでは、本来の顧客範囲を越えて注文情報を返す場面を示しました。自然言語で応答できることと、適切な権限で情報を扱うことは別だと分かる例です。"},
+    {"atSeconds": 492, "text": "GitHub や Azure DevOps のリポジトリを Defender に接続し、検査結果を Exposure Management でまとめて把握する防御側の流れを紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 887, "text": "検知、証拠の確認、開発側への修正作業の引き継ぎを一続きで学べるよう、AI Skills Navigator の関連プレイリストを案内しました。"}
+  ]
+}

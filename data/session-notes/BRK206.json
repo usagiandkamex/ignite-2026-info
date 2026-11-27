@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK206",
+  "sessionId": "1787856604250001E4UM",
+  "offeringId": "1787856604250001E4UM-1791588131276001C4x6",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 91, "text": "Microsoft 365 の Copilot が、質問に答えるだけでなく、アプリ内で直接編集や作業を進める体験へ変わってきたと説明しました。"}],
+  "updates": [{"atSeconds": 723, "text": "法務、財務、営業など、職種ごとの作業に合わせた Copilot のスキルを紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 633, "text": "Word の資料を題材に、Copilot のタスクペインから、求める成果を伝えて文書を編集する例を示しました。"}],
+  "tips": [{"atSeconds": 147, "text": "一つずつ操作を指示する代わりに、完成させたい資料や判断に必要な結果を伝えて依頼します。"}, {"atSeconds": 1478, "text": "重要なファイルでは、編集履歴を使い、人の変更と Copilot が行った変更を確認できるようにします。"}]
+}

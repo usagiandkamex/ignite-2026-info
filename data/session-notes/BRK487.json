@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK487",
+  "sessionId": "1787856647353001EOcm",
+  "offeringId": "1787856647353001EOcm-1791588267111001Ciqj",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=MRwKaWjwmPU",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 203,
+      "text": "SMB 向け CSP パートナーの機会を、エージェントの単発開発ではなく、顧客データへの接続、セキュリティ、性能改善、複数顧客への展開を含むソリューション事業として説明しました。Foundry、Copilot Studio、GitHub Copilot、Fabric、Azure の役割を整理しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 427,
+      "text": "実装方法の比較用の想定例として、小規模な人事チームで入社案内、社内規則、福利厚生、休暇申請を支援するエージェントを挙げ、Copilot Studio と GitHub・Foundry を使う二つの構築方法を説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 427,
+      "text": "ツール選定では、業務が反復可能なワークフローか独自ロジックを要するか、どのデータやシステムへ接続するかを起点に判断するよう説明しました。"
+    }
+  ]
+}

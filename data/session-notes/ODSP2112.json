@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2112","sessionId":"1787854994565001tAtp","offeringId":"1787854994565001tAtp-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":94,"text":"Meta が、重みを公開する Muse Spark Open について、複数ファイルにまたがるコード作業と、文書や画面などを扱う機能を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":425,"text":"Foundry のエージェント設定で、デプロイした Muse モデルを選び、エージェントの役割を指定する流れを示しました。"}],
+  "tips":[{"atSeconds":554,"text":"モデルの仕様表だけで選ばず、実際のデバッグや複数ファイルの変更などを試し、品質、信頼性、展開先への適合を比較します。"}]
+}

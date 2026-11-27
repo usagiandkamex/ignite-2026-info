@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE95","sessionId":"1793672630629001PpnM","offeringId":"1793672630629001PpnM-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":150,"text":"欧州宇宙機関（ESA）が、Hera ミッションの複雑な科学情報を一般の人にも届けるため、音声で質問できる Hera Space Companion を作った経緯を説明しました。"}],
+  "updates":[{"atSeconds":521,"text":"Foundry で音声を中心にしたエージェントを開発・展開する際の実装パターンを、オープンソースのリポジトリとして公開したと紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":387,"text":"探査機のテレメトリを尋ねると実データを取得して可視化する機能と、アプリの品質を評価する仕組みを説明しました。"}],
+  "tips":[]
+}

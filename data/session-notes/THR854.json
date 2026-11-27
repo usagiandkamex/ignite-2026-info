@@ -1,0 +1,19 @@
+{
+  "sessionCode": "THR854",
+  "sessionId": "1787856575330001ETra",
+  "offeringId": "1787856575330001ETra-1791587926182001F4QV",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=2Q2qnRDZ38Q",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 74, "text": "組織内で使われる AI エージェントを把握し、所有者、アクセス権、セキュリティ上のシグナルを手掛かりに、利用可否や保護策を判断する流れを説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 329, "text": "要調査のエージェントを、Agent 365 の画面から既存のチケット管理を通じてセキュリティ担当者に引き継ぐ例を紹介しました。"},
+    {"atSeconds": 1359, "text": "Lumen Technologies は、エージェントを発見しただけでは承認とみなさず、まず所有者と利用者を確認する運用を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1415, "text": "個別のエージェントを審査した結果を運用ルールの見直しに生かし、次の審査で同じ判断基準を使えるようにします。"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2218","sessionId":"1787855005776001to9z","offeringId":"1787855005776001to9z-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=_IU6NaKuxdw","basis":"captions-ja",
+  "summary":[{"atSeconds":705,"text":"推薦を行うエージェントに業務で必要のない顧客データまで読める権限を与えると、情報が利用者に開示されるおそれがあると説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":705,"text":"エージェントの役割ごとに読む必要がある記録を定め、回答時の制御だけでなく、ID のアクセス権そのものを制限します。"}]
+}

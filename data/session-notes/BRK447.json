@@ -1,0 +1,21 @@
+{
+  "sessionCode": "BRK447",
+  "sessionId": "1787856641281001EX13",
+  "offeringId": "1787856641281001EX13-1791588174864001CmDH",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=FYTXNCj-2Zg",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 945, "text": "ソフトウェア企業が Microsoft の基盤で製品を作るだけでなく、Microsoft Marketplace を販売の入口とし、既存製品との連携やパートナー施策で利用者を広げる道筋を説明しました。"},
+    {"atSeconds": 2150, "text": "Frontier Accelerate for Marketplace の App Advisor を実演し、構想段階から出品まで、製品に応じた案内を受ける流れを示しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 333, "announcementId": null, "text": "GitHub Copilot Fusion を取り上げ、同じコーディング作業に対する複数モデルの結果を比べ、品質と費用の兼ね合いを見極める使い方を説明しました。"},
+    {"atSeconds": 392, "announcementId": "bon-473", "text": "Microsoft Copilot SDK の更新に触れ、Copilot のエージェント機能を自社アプリの中に組み込む用途を紹介しました。"},
+    {"atSeconds": 440, "announcementId": "bon-453", "text": "PostgreSQL 互換のマネージドデータベース Azure HorizonDB を、大規模なアプリを支える選択肢として紹介し、Fabric の HorizonDB にも言及しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 409, "text": "Microsoft 自身の例として、オンプレミスのシステムをクラウドへ移行・刷新する Azure Catalyst で GitHub Copilot を使っていることを紹介しました。"}
+  ],
+  "tips": []
+}

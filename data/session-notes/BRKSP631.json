@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRKSP631",
+  "sessionId": "1787854985981001tBGq",
+  "offeringId": "1787854985981001tBGq-1791588102520001C6hK",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=CrV_FcQ9vNQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 409,
+      "text": "Celanese と NTT DATA は、製品そのものを変えるよりも、顧客対応、需要予測、受注から納品までの運用を AI でつなぎ直す構想を議論しました。"
+    },
+    {
+      "atSeconds": 1963,
+      "text": "Celanese の登壇者は、既存業務の標準化をすべて終えてから AI に進む必要はなく、AI を業務の見直しのきっかけにもできるという自身の見解を述べました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1202,
+      "text": "Celanese は、AI 案件の成功を納期・予算の達成だけで判断せず、事業計画で定めた納期遵守率などの価値へつながるかで評価すると説明しました。具体的な改善率の達成報告ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1401,
+      "text": "従業員の不安を放置せず、AI 導入の目的を人の置き換えではなく能力を高めることとして説明し、業務部門を巻き込む必要があると述べました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK395","sessionId":"1787856633344001EnYU","offeringId":"1787856633344001EnYU-1791814911975001CWpv","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=yfcdww_PoOM","basis":"captions",
+  "summary":[{"atSeconds":798,"text":"WSL Containers は CLI で扱うコンテナーを同じ軽量 Linux VM に配置する一方、API で組み込む用途ではアプリごとに分離した VM を使う設計を説明しました。"}],
+  "updates":[{"atSeconds":16,"announcementId":null,"text":"WSL Containers は 9 月末から一般提供されており、対応する WSL ではローカルの Linux コンテナーを CLI と API から利用できます。"}],
+  "cases":[{"atSeconds":650,"text":"Windows アプリから WSL Containers の SDK を通じて Linux の描画エンジンを動かし、コーヒーメーカーのシーンを描画する例を実演しました。"}],
+  "tips":[{"atSeconds":1686,"text":"企業端末へ導入する際は、Intune で設定を管理し、Microsoft Defender for Endpoint で実行環境の可視性を確保する構成を検討します。"}]
+}

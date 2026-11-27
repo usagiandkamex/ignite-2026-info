@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1072","sessionId":"1787858587993001SE6q","offeringId":"1787858587993001SE6q-1791588096550001Czta","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=vmqqSgM8bjw","basis":"captions",
+  "summary":[{"atSeconds":52,"text":"Windows で Muse Code を使う方法として、CLI での対話に加え、画面操作を伴わない実行を CI や定期ジョブに組み込む構成を紹介しました。"}],
+  "updates":[{"atSeconds":1245,"text":"Muse CLI が使うセッションプロトコルと、独自のクライアントを作るための SDK を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":306,"text":"同じ開発作業を複数のコーディングエージェントで試し、完了までの時間と費用を比較した例を示しました。"}],
+  "tips":[]
+}

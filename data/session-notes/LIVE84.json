@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE84","sessionId":"1793673666036001lpPt","offeringId":"1793673666036001lpPt-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":88,"text":"エージェントを短期間で試作できても、本番導入では業務の流れに組み込むことが課題になります。"},{"atSeconds":200,"text":"Microsoft IQ は、SAP や Oracle、ServiceNow などの情報も取り込み、業務の文脈をまとめる基盤として紹介されました。"}],
+  "updates":[{"atSeconds":539,"text":"PostgreSQL 互換の Azure HorizonDB が講演当日に一般提供になったと案内しました。","announcementId":"bon-453"}],
+  "cases":[],
+  "tips":[]
+}

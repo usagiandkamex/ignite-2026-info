@@ -1,0 +1,22 @@
+{
+  "sessionCode": "THR856",
+  "sessionId": "1787856575631001EtU1",
+  "offeringId": "1787856575631001EtU1-1791588144950001CrpW",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 198, "text": "米国政府向けクラウドの Copilot を、州の助成金申請と市の予算案作成という二つの業務に当てはめて紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 84, "announcementId": null, "text": "政府向け Copilot の最近の更新として、モデルを自動選択するチャットと、Word、Excel、PowerPoint 上での Copilot 編集を紹介しました。"},
+    {"atSeconds": 1310, "announcementId": null, "text": "Cowork は登壇時点で米国政府向けの GCC に提供済み、GCC High は後続予定と説明しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 587, "text": "州の想定事例では、前年の配分式と最新の郡別人口をもとに、今年度の助成金配分案を Excel の別シートに作りました。"},
+    {"atSeconds": 790, "text": "市の想定事例では、複数の交付通知から助成額と使途制限を引用元つきで整理し、予算案の説明資料につなげました。"}
+  ],
+  "tips": [
+    {"atSeconds": 217, "text": "助成金や予算の判断では、Copilot の出力を下書きにとどめ、根拠資料の確認と承認を担当者が行います。"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK438","sessionId":"1787856639900001E6cl","offeringId":"1787856639900001E6cl-1791588218637001CGLI","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=3E8XAIbtqV0","basis":"captions",
+  "summary":[{"atSeconds":336,"text":"Microsoft Sovereign Private Cloud は、規制の厳しい重要業務を自組織の施設内で、必要に応じて外部接続を切った状態でも運用する選択肢です。"}],
+  "updates":[{"atSeconds":1089,"announcementId":null,"text":"コードと開発環境を組織の管理下に置ける、セルフホスト型の GitHub Enterprise Local の一般提供が紹介されました。"}],
+  "cases":[{"atSeconds":2131,"text":"ゴールデンゲートブリッジとバス・フェリーを運営する交通機関が、止められない業務を自組織の施設内で支える Azure Local の活用を紹介しました。"}],
+  "tips":[{"atSeconds":598,"text":"外部との接続を切る必要がある環境では、ワークロードやデータを移さず、Azure Local の管理プレーンを切り替えるプレビュー機能を評価します。"}]
+}

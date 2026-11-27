@@ -1,0 +1,28 @@
+{
+  "sessionCode": "BRK488",
+  "sessionId": "1787856647502001ERx1",
+  "offeringId": "1787856647502001ERx1-1791588334689001C7Jv",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=c5YIuUdDMkY",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 251,
+      "text": "SMB のモダナイゼーションを、単一エージェントのためではなく、複数の AI 業務を継続的に展開する共通基盤への投資として説明しました。エージェントが使う業務データと実行環境の距離を重視しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 690,
+      "text": "Azure Migrate と GitHub Copilot の移行・コード刷新の機能を結び付ける Azure Catalyst を紹介しました。環境の検出、移行と刷新の推奨、実行までを支援する構想をデモ映像につなげました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 1748,
+      "text": "パートナーには、評価と移行で支援を終えず、その先のモダナイゼーションや AI 活用まで含む反復可能な提案を作るよう勧めました。紹介された経済効果調査は典型的な顧客モデルを使う説明であり、特定顧客の実績とは区別しました。"
+    }
+  ]
+}

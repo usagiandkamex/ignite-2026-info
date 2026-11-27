@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2150","sessionId":"1787854998542001tVSU","offeringId":"1787854998542001tVSU-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=txtmY8YcgO4","basis":"captions-ja",
+  "summary":[{"atSeconds":581,"text":"耐量子暗号への移行を見据え、既存の Microsoft Active Directory 証明書サービス（AD CS）を全面的に置き換える前に、証明書のライフサイクル管理と統制をそろえる方法を説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":306,"text":"最初に証明書で守っているデータやシステムを分類し、重要な操作は複数人で管理し、担当者には必要最小限の権限を与えます。"}]
+}

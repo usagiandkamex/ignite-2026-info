@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2175","sessionId":"1787855001233001txnt","offeringId":"1787855001233001txnt-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=l8Y28ZbzD2w","basis":"captions-ja",
+  "summary":[{"atSeconds":1,"text":"Eptura が Microsoft 365 の予定や共同作業と、席や会議室など実際の職場のデータをつなぐ方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":178,"text":"出張先でチームの近くに席を確保し、会議室を予約して外部参加者も迎える例で、予定と施設管理の情報を組み合わせる必要性を説明しました。"}],
+  "tips":[{"atSeconds":354,"text":"会議室などのデータを AI に渡すだけでなく、施設の故障や利用状況が変わったら、元になる設備情報も更新します。"}]
+}

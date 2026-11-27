@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK461",
+  "sessionId": "1787856643398001EXTM",
+  "offeringId": "1787856643398001EXTM-1791588198102001C6Dx",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=wKKWSpcHQZk",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 673, "text": "院内のデータを Microsoft Fabric に取り込む際、まとめて処理するデータと、センサーやスマートベッドなどから連続して届くデータを分けて考えます。"},
+    {"atSeconds": 1472, "text": "Fabric の製品デモでは、病院の実データとは別のデータを用い、所有者を明確にしながら情報を統合する考え方を説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 210, "text": "Peterborough Regional Health Centre は、部門に分かれたデータをまとめ、経営部門だけでなく臨床現場にも価値を示すことをデータ基盤の計画に掲げました。"}
+  ],
+  "tips": [
+    {"atSeconds": 969, "text": "病床運用や環境サービスへの人員配置に AI の提案を使うなら、現場の担当者がその提案の根拠を確認できるようにします。"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP176","sessionId":"1787855009412001t3mJ","offeringId":"1787855009412001t3mJ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":132,"text":"SHI が、Fabric の開発で GitHub Copilot と Fabric の Copilot を使い分ける際、機能だけでなく利用枠や課金方式も考慮すると説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":237,"text":"AI が変更を作った場合も、ソース管理と CI/CD を通し、人がレビューしてから本番へ反映します。"}]
+}

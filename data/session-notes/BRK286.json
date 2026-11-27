@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK286","sessionId":"1787856616477001EQQz","offeringId":"1787856616477001EQQz-1791588353428001C9Vo","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":199,"text":"GitHub Actions の CI を例に、依存関係とランナーを信頼できる状態に保つための対策を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1980,"text":"GitHub がホストするランナーを Azure のプライベート ネットワークに接続する構成を取り上げました。"}],
+  "tips":[{"atSeconds":766,"text":"依存関係の名称だけを信頼せず、ロックファイルや変更できない参照で、CI が実際に使うバージョンを固定します。"}]
+}

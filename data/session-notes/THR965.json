@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR965", "sessionId": "1787856592373001EbnF", "offeringId": "1787856592373001EbnF-1791588291104001CQaJ", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=4ylWe4hKkpU", "basis": "captions",
+  "summary": [
+    {"atSeconds": 500, "text": "AI 活用の入り口として、チームの既存作業を改善する小さな用途を選ぶ考え方を説明しました。スクリプトを共同管理することを、その具体例に挙げました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 130, "text": "個人の USB メモリなどに蓄積した PowerShell スクリプトを、チームで共有・改善できる形にする題材を提示しました。AI を使って GitHub での共同作業に踏み出す例です。"},
+    {"atSeconds": 1110, "text": "Microsoft Engineering の例として、過去のネットワーク関連の問い合わせ記録を根拠に、サポート担当者と対話するエージェントから取り組みを始めたと紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1459, "text": "関連するオンデマンド資料として、Azure Engineering の BRK414 と Microsoft IQ の BRK308、Update and Restart の配信を案内しました。"}
+  ]
+}

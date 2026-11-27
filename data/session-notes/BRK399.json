@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK399", "sessionId": "1787856633959001Ee8N", "offeringId": "1787856633959001Ee8N-1791588117904001CT8v",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=bXRatkrcawQ", "basis": "captions",
+  "summary": [{"atSeconds": 1216, "text": "Windows 上で作業を中断せずに Copilot を使えるよう、タスクバーや検索に組み込み、OneDrive や SharePoint の情報にも手が届くようにする方針を説明しました。"}],
+  "updates": [{"atSeconds": 1070, "text": "検索結果を表示するだけでなく操作も実行できる「Actions」を紹介し、検索から開いているウィンドウを整列させました。", "announcementId": null}],
+  "cases": [{"atSeconds": 2233, "text": "Flagstar Bank は、合併後に複数の Windows バージョンが混在していた環境で、Surface と Intune を活用し、Windows 11 で端末の細かな制御や監査性を確保する取り組みを紹介しました。"}],
+  "tips": []
+}

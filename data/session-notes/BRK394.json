@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK394","sessionId":"1787856633196001EAXC","offeringId":"1787856633196001EAXC-1791588232533001CWLE","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=E2YCg6R3jrI","basis":"captions",
+  "summary":[{"atSeconds":360,"text":"WinUI で作る業務アプリを、WinApp CLI を使って開発者とエージェントの双方がビルド、テスト、パッケージ化できる流れを示しました。"}],
+  "updates":[{"atSeconds":1991,"announcementId":null,"text":"ホット リロードの改善と Visual Studio のデザイン プレビューは、提供済みの機能ではなく試作中の取り組みとして紹介されました。"}],
+  "cases":[{"atSeconds":579,"text":"航空機の整備を題材にしたサンプルアプリ Hangar で、機体の稼働状況を一覧し、対応が必要な機体の詳細を確認する画面を実演しました。"}],
+  "tips":[{"atSeconds":1391,"text":"エージェントに UI を変更させた後は、実行中のアプリの要素を調べ、クリックやスクロールで操作結果を確認できます。"}]
+}

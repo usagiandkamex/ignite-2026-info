@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR925", "sessionId": "1787856586128001EU0o", "offeringId": "1787856586128001EU0o-1793309042319001mvZP", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=tQcDJ3j1SWo", "basis": "captions",
+  "summary": [
+    {"atSeconds": 23, "text": "データウェアハウスやデータベースを OneLake とともに扱う Fabric を土台に、分析データを業務アプリからも利用できるようにする取り組みを説明しました。"},
+    {"atSeconds": 315, "text": "Fabricator は GitHub Copilot CLI SDK を使ったオープンソースの開発ツールで、Fabric のリソースや Rayfin のアプリ構成を理解できるように作られています。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 975, "text": "講演中に Fabricator に依頼していたダッシュボードの実装が終わり、生成された画面をその場で表示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 204, "text": "アプリが接続するサービスをアプリモデルにあらかじめ定義し、どのサービスに何を行うアプリなのかをレビュー時に確認できるようにします。"}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR963", "sessionId": "1787856592068001E0ZI", "offeringId": "1787856592068001E0ZI-1791588274735001CPyj", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=Ct4pYdNWTzE", "basis": "captions",
+  "summary": [
+    {"atSeconds": 101, "text": "プルリクエストをレビュー可能にする操作を、次の作業へ進む意思表示として捉え、レビューや品質確認を担うエージェントにつなぐ流れを説明しました。"},
+    {"atSeconds": 304, "text": "文書更新や重複コードの確認などの共通パターンから始め、GitHub Agentic Workflows で企業固有のプロセスに合わせる考え方を紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 571, "text": "Central Agentic Ops を、企業全体で実行場所やコストを把握し、複数チームの取り組みを管理する研究用プロトタイプとして紹介しました。完成済みの一般提供製品ではありません。"}
+  ],
+  "tips": [
+    {"atSeconds": 999, "text": "エージェント数を増やす前に、一つのチームと信頼できる一つのプロセスを選び、監視と改善を重ねてから組織へ広げるよう勧めました。"}
+  ]
+}

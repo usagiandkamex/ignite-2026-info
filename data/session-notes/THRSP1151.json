@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1151",
+  "sessionId": "1787858600958001SAMQ",
+  "offeringId": "1787858600958001SAMQ-1791588328988001Cbb7",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Lnu7shbuvg8",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 19,
+      "text": "ID も上司も明確な責任もない人を雇わないのと同じように、AI エージェントにも役割と説明責任が必要だという比喩から議論を始めました。"
+    },
+    {
+      "atSeconds": 1206,
+      "text": "Agent Accountability Framework を、エージェントに名前を付ける Assign、行動に境界を設ける Align、結果を追跡する Account の三つで整理しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 187,
+      "text": "架空の Agent 409 を使い、一つのエージェントに一つの ID を与え、組織内で確認できる登録簿を信頼できる情報源とする例を説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 682,
+      "text": "モデルの既定動作だけでなく、変化する共有データやメモリ、他のエージェントとの関係も行動へ影響するため、最初から望ましい振る舞いをするとは仮定しないよう勧めました。"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "sessionCode": "THRSP1119",
+  "sessionId": "1787858596220001SjZp",
+  "offeringId": "1787858596220001SjZp-1791588332150001CZvW",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=OBMiqpqFHL4",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 41,
+      "text": "CData は Copilot Studio エージェントから Microsoft 以外の業務データを扱う際の接続、ガバナンス、精度・費用の最適化を説明しました。"
+    },
+    {
+      "atSeconds": 245,
+      "text": "入口からレコードまでの統制と、データの意味を伝えるコンテキストを組み合わせ、必要なツール呼び出しやトークンを減らす考え方を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 384,
+      "text": "CData Labs の社内比較では、データ処理を確定的なツールへ任せる構成で、複数モデル間に 178 倍の費用差があっても同じ正答を得られたと報告しました。特定の比較条件での結果であり、一般的な削減保証ではありません。"
+    },
+    {
+      "atSeconds": 755,
+      "text": "デモでは Salesforce、Zendesk、Snowflake を参照する顧客健全性エージェントを使い、共通の用語集と用途を絞ったツール群を与える構成を紹介しました。実顧客の成果事例とは区別しています。"
+    }
+  ],
+  "tips": []
+}

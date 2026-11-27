@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRK477",
+  "sessionId": "1787856645825001E3uR",
+  "offeringId": "1787856645825001E3uR-1791588268452001Cfjk",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=glrAVNkMIoo",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 273,
+      "text": "消費財のエージェントが価値を生むには、企業固有のデータと業務知識に基づくコンテキスト、信頼、部門横断の連携が必要だと説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 602,
+      "text": "ボトラーの登壇者は、技術を追加受注の手段ではなく、顧客の獲得から成長までの関係を改善し、長期的なロイヤルティを育てる手段として位置付けました。Atlas もその方針に基づく取り組みとして説明しました。"
+    },
+    {
+      "atSeconds": 1100,
+      "text": "具体的な取り組みとして、B2B プラットフォーム上の顧客対応エージェント Frontline Customer Concierge と、収益成長管理チームの分析を支援する Profitable Revenue Guardian を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1715,
+      "text": "収益成長管理では一律の値上げではなく、商品・容量・価格帯の組み合わせと購入しやすさを考慮し、事業側が統制を保ったまま判断を速める AI 支援を重視しました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK357","sessionId":"1787856627383001E4IT","offeringId":"1787856627383001E4IT-1791588267550001C2Lb","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":217,"text":"Fabric Real-Time Intelligence で、発生したイベントを取り込み、OneLake や Eventhouse を使って分析し、対応に結び付ける流れを説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":492,"text":"Transgrid が、別々に使っていた複数のサービスを Fabric と OneLake 中心の基盤へまとめた経験を話しました。"},{"atSeconds":878,"text":"競技場の運営を題材に、状況の変化をイベントとして捉え、担当者の判断を支援するデモを行いました。"}],
+  "tips":[{"atSeconds":1521,"text":"イベントを受け取るだけでなく、どこに保存し、担当者がどの画面で分析して判断するかを一緒に設計します。"}]
+}

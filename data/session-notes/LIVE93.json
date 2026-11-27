@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE93","sessionId":"1794791064325001n9mu","offeringId":"1794791064325001n9mu-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":147,"text":"エージェントを本番で広く使う段階では、AI の支出を個々のツールに閉じず、誰が何に費用を使い、どんな業務成果が得られたかを追う必要があると議論しました。"}],
+  "updates":[{"atSeconds":351,"text":"業務部門からも AI の支出や利用状況を見渡せる Agent 365 Business Analytics を紹介しました。","announcementId":"bon-517"},{"atSeconds":734,"text":"複数の Microsoft AI サービスの支出をまとめて計画・管理する AI Flex Plan の発表に触れました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":543,"text":"エージェントごとに全社データをモデルへ渡すのではなく、業務に必要な情報に絞り、入力とトークン消費を抑えます。"}]
+}

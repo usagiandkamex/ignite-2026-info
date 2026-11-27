@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK516",
+  "sessionId": "1787856651729001EGX3",
+  "offeringId": "1787856651729001EGX3-1791588199727001CUIa",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=eSs9am5OugI",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 1705,
+      "text": "EMEA のパートナー支援を、AI 能力の構築、Microsoft と組む市場開拓、共同販売の三段階で説明しました。顧客が求めるのは設計と展開だけでなく、統制、保護、拡張まで担える能力だと述べました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 249,
+      "text": "英国の We Change AI が、NHS trust、自治体、学校向けに Navigator を構築した事例を紹介しました。Microsoft 365 の利用状況から個人ごとの不足を分析し、研修と利用支援の計画を提示したと説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 609,
+      "text": "顧客は PoC ではなく成果を求めていると述べ、パートナー自身も AI を実践し、費用対効果の説明や使いやすさの改善を通じて導入を簡素化するよう勧めました。"
+    }
+  ]
+}

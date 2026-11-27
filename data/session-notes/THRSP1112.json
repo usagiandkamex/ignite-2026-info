@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1112",
+  "sessionId": "1787858595173001SQKr",
+  "offeringId": "1787858595173001SQKr-1791588278343001CcsA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=6oFKeJoYc0c",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 185,
+      "text": "Agent 365 と Entra が ID・アクセス・ガバナンス、n8n がシステム間の処理連携、Foundry がモデルの展開を担う役割分担を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 449,
+      "text": "財務承認のデモでは、Teams から請求に関する依頼を出し、金額が 1 万ユーロを超える場合は CFO の承認へ回し、処理結果をスプレッドシートとチャットへ反映する構成を紹介しました。架空の業務フローの実演です。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1064,
+      "text": "構築時の教訓として、Entra のアプリ登録から順に設定し、クライアント ID の対応関係をそろえる必要があると説明しました。"
+    },
+    {
+      "atSeconds": 1064,
+      "text": "複数エージェントの会話が混ざらないようメモリの範囲を分離することと、プレビュー機能へのアクセス反映に待ち時間が生じ得る点を挙げました。"
+    }
+  ]
+}

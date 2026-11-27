@@ -1,0 +1,32 @@
+{
+  "sessionCode": "BRKSP625",
+  "sessionId": "1787854984905001twyj",
+  "offeringId": "1787854984905001twyj-1791588326258001CW3l",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=wq35fS1Dey4",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 9,
+      "text": "SAP と Microsoft は、エージェントを作れるかという段階から、業務の意味を理解し、責任ある行動と事業価値を期待できるかという課題へ移っていると説明しました。"
+    },
+    {
+      "atSeconds": 241,
+      "text": "SAP の業務データ、MCP、エージェント間の連携などを Microsoft のスタックと組み合わせ、各層で文脈と制御をつなぐ構成を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 599,
+      "text": "Joule Studio 内の n8n によるワークフロー機能と Microsoft のアプリをつなぐ方向性を紹介し、接続機能は今後数か月でより広く展開する計画だと説明しました。一般提供済みとは断定していません。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 241,
+      "text": "SAP Business Data Cloud と Fabric のゼロコピー共有のように、業務の文脈を持つデータを利用先へ結び付ける設計を検討する観点を示しました。"
+    }
+  ]
+}

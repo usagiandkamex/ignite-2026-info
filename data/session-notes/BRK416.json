@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK416", "sessionId": "1787856636548001EE1w", "offeringId": "1787856636548001EE1w-1791588336280001CyKk",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=2Hl6Tr81AAE", "basis": "captions",
+  "summary": [{"atSeconds": 133, "text": "Azure Monitor でエージェント固有のテレメトリからアプリやデータ基盤の監視まで扱い、担当者が異なる層の状態をつなげて調査できるようにする考え方を説明しました。"}],
+  "updates": [{"atSeconds": 770, "text": "Foundry のエージェント評価結果を Azure Monitor から参照し、回答品質をインフラの状態と照らし合わせて確認できると紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 358, "text": "家電のサポートを題材にしたデモでは、保証対応を予約する Foundry のエージェントを例に、運用担当者が実行履歴やメトリクスを確認する様子を示しました。"}],
+  "tips": [{"atSeconds": 872, "text": "原因調査の入り口として、クエリを書く前に Observability Agent に自然言語で質問し、収集済みの Azure Monitor データから調査の手がかりを得られます。"}]
+}

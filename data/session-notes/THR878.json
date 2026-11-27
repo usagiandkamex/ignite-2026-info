@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR878",
+  "sessionId": "1787856578972001EOgm",
+  "offeringId": "1787856578972001EOgm-1794778300435001qANq",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=dX0bO6Zyl0s",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 159, "text": "機密情報を扱う場面を端末、ブラウザー、AI サービスに分け、Microsoft Purview のデータ損失防止で保護を重ねる考え方を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 780, "announcementId": null, "text": "Edge for Business のプレビュー機能として、管理対象のブラウザー画面でスクリーンショットを制御する例を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 600, "text": "委託先や従業員の私物端末でも、会社が管理するブラウザー体験で業務データを保護する構成を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1247, "text": "Purview でポリシーを作る作業と、端末・ブラウザー・ネットワークで適用できる範囲の確認を分けて進めます。"}
+  ]
+}

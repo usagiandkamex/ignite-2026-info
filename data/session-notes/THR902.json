@@ -1,0 +1,15 @@
+{
+  "sessionCode": "THR902", "sessionId": "1787856582609001E7gr", "offeringId": "1787856582609001E7gr-1791588180641001C7VP", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 157, "text": "Azure AI Gateway では、観測したトークン数と公開単価からリクエストごとの費用を推定できます。OpenTelemetry やダッシュボードを使って傾向を把握する方法を説明しました。"},
+    {"atSeconds": 1189, "text": "トークンの割り当てと費用上限は別のポリシーとして扱えることを、ダッシュボードで呼び出し元別の推定費用を確認しながら説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 108, "text": "アプリやエージェントからモデルやツールへの呼び出しを仲介する Azure AI Gateway の一般提供を案内しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 483, "text": "AWS Bedrock のモデルをゲートウェイに追加し、複数のモデルの接続先を一つの別名にまとめ、優先順位と重みで振り分ける流れを実演しました。"},
+    {"atSeconds": 829, "text": "デモの推定費用を、モデルの別名、実際の接続先モデル、呼び出した利用者ごとに切り分けて確認しました。"}
+  ],
+  "tips": []
+}

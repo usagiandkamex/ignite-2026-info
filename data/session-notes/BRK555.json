@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK555",
+  "sessionId": "1789665054726001RJBT",
+  "offeringId": "1789665054726001RJBT-1791588221125001CtVw",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=5ab_5toumWU",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 183,
+      "text": "街を巡る課題を題材に、Foundry のモデル、Microsoft Agent Framework、指示、ツール、記憶を組み合わせてエージェントを構築する構成を説明しました。モデルだけでなく、周辺機能をつなぐハーネスの役割を示しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 927,
+      "text": "MCP はエージェントとツール・データを、A2A はエージェント同士をつなぐ仕組みとして区別しました。競合する方式ではなく、能力の追加と協業をそれぞれ支える補完的なものだと説明しました。"
+    },
+    {
+      "atSeconds": 1897,
+      "text": "操作手順をそのまま追うラボに加え、達成する課題を与えられて資料を参照しながら解く OpenHack 型の学習を紹介しました。手順の暗記ではなく、自分で構築して理解を定着させる狙いを説明しました。"
+    }
+  ]
+}

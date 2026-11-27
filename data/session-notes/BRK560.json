@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK560",
+  "sessionId": "1790967935667001is3c",
+  "offeringId": "1790967935667001is3c-1793255463245001Tecm",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Ia1KSxhAGn8",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 329,
+      "text": "Windows PC を AI インフラの一部として捉え、ナレッジワーカーから高度な開発者まで、動かす負荷に合うハードウェア容量を選ぶ考え方を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 797,
+      "text": "Copilot のハイブリッドインテリジェンスとして、許可に基づく PC 内の情報利用、ローカルな作業の支援、クラウドとローカルモデルへの動的な処理配分を紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1895,
+      "text": "Insight は、自社を最初の利用者にする立場でローカル AI とハイブリッドインテリジェンスの試行に参加し、その経験を顧客向けの支援へ戻していると説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 329,
+      "text": "高性能 PC を一律に選ぶのではなく、実行したい AI の仕事と必要容量から調達を考えるよう勧めました。従来別々だったクラウド・AI と端末の予算を、関連する投資として扱う視点を示しました。"
+    }
+  ]
+}

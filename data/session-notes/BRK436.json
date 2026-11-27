@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK436",
+  "sessionId": "1787856639602001Eyiw",
+  "offeringId": "1787856639602001Eyiw-1791588157956001CV4S",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 619, "text": "Azure の AI 基盤を、推論向けアクセラレーター、汎用 CPU、データ移動を担う DPU の役割から説明しました。"}],
+  "updates": [{"atSeconds": 984, "text": "Cobalt CPU の設計と、クラウドやエージェント向けの性能・電力面の考え方を紹介しました。", "announcementId": "bon-444"}],
+  "cases": [],
+  "tips": [{"atSeconds": 1334, "text": "AI 基盤の処理能力を考えるときは、演算性能だけでなく、ストレージやメモリとの間でデータを移動する負荷も確認します。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2230","sessionId":"1787855007065001tlJb","offeringId":"1787855007065001tlJb-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=KS_OwuCvflQ","basis":"youtube-transcript",
+  "summary":[{"atSeconds":215,"text":"Temporal が、実行中の状態を記録し、障害後にワークフローを続きから再開できる仕組みを紹介しました。再試行やタイムアウト、スケジューリングも扱いました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":503,"text":"実行を担うワーカーを別のサーバーで再起動すると、最初ではなく、最後に到達していた段階から処理が続くことを実演しました。"},{"atSeconds":747,"text":"ギフト購入のデモでは、実行履歴から商品検索、カートへの追加、ポイント確認などの操作を追跡しました。"}],
+  "tips":[{"atSeconds":106,"text":"業務フローを本番に出す前に、ネットワークが切れたり外部サービスが混雑したりしたときの再試行や通知を検討します。"}]
+}

@@ -1,0 +1,32 @@
+{
+  "sessionCode": "THRSP1122",
+  "sessionId": "1787858596673001SNU4",
+  "offeringId": "1787858596673001SNU4-1791588291763001CmLL",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Q5QvTzRZfCk",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 18,
+      "text": "Everpure Cloud の説明では、クラウドの計算資源だけでなく大きな費用を占めるストレージも見直し、既存の支出を抑えて AI などへ投資余力を回す観点を示しました。"
+    },
+    {
+      "atSeconds": 613,
+      "text": "Azure に統合したフルマネージドサービスとして、容量と性能を設定したストレージプールから複数のボリュームを作り、重複排除や圧縮を共有する構成を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 360,
+      "text": "Azure Red Hat OpenShift と Azure Kubernetes Service への最近の連携を紹介し、Kubernetes へ向かう移行過程で VM も扱う構成を説明しました。個別サービスの正式サポート条件はこの説明だけでは断定していません。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 613,
+      "text": "録画デモではストレージの管理操作を示し、プールを作成して Azure の VM、VMware、Kubernetes などの利用先へ接続する流れを紹介しました。"
+    }
+  ],
+  "tips": []
+}

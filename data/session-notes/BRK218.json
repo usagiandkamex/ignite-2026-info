@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK218", "sessionId": "1787856606082001E6wr", "offeringId": "1787856606082001E6wr-1791588324221001CNQv",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 474, "text": "SharePoint に蓄積された文書を、既存のガバナンスを活かしながら Copilot で使うための基盤として説明しました。"}],
+  "updates": [{"atSeconds": 1760, "text": "文書の保管だけでなく、チームが継続的に更新・参照できる情報を SharePoint から公開する体験を紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 26, "text": "エンジニアリング企業 MAIRE が、SharePoint を知識基盤とし、Copilot を文書レビューに活用した取り組みを紹介しました。"}],
+  "tips": [{"atSeconds": 1069, "text": "全社に一律に展開する前に、繰り返し発生し効果が見えやすいチーム業務を選んで見直します。"}]
+}

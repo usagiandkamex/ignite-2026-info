@@ -1,0 +1,32 @@
+{
+  "sessionCode": "THRSP1124",
+  "sessionId": "1787858596971001SCQ2",
+  "offeringId": "1787858596971001SCQ2-1791588328759001C6TN",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=OUohS2B5o1c",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 437,
+      "text": "SAS Quantum Lab を、SAS Viya の利用者が量子技術を学び、古典計算との比較実験を行い、技術の成熟に合わせて活用を広げるための環境として紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 989,
+      "text": "SAS は Quantum Lab を SAS Viya の顧客向けに利用可能と発表しました。量子計算がすべての業務で優位になるという発表ではありません。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 700,
+      "text": "不正検知を題材にしたデモでは、チューターに業務課題を伝えて検討候補の技術を学び、比較実験へ進む流れを示しました。"
+    },
+    {
+      "atSeconds": 951,
+      "text": "デモの比較結果では量子と古典を組み合わせた方式が最も良かったと説明しました。特定の実験結果であり、量子が古典計算を全面的に置き換えるという意味ではないと強調しています。"
+    }
+  ],
+  "tips": []
+}

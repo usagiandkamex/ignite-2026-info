@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK468",
+  "sessionId": "1787856644461001EnYy",
+  "offeringId": "1787856644461001EnYy-1791588286437001Ca9t",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Y-0s44QFmaQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 289,
+      "text": "Microsoft Planetary Computer を、企業が持つ顧客・業務・資産の情報に、気象や衛星画像など現実世界の地理空間コンテキストを加える基盤として説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1003,
+      "text": "EY のレジリエンス分析のデモでは、施設周辺の河川や道路などを地図で示し、気候ハザードだけでなく操業への影響と財務的影響を合わせて確認しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1999,
+      "text": "地図への表示方法は連携先ごとに確認する必要があり、質疑では Azure Maps を基盤とする Fabric の地図機能から API 経由でラスタータイルを取得する連携を説明しました。"
+    }
+  ]
+}

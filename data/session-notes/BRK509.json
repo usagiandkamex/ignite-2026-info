@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK509",
+  "sessionId": "1787856650665001EBIO",
+  "offeringId": "1787856650665001EBIO-1791588174165001CdN9",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=UJxvljD3NTA",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 37,
+      "text": "パートナー体験を Plan・Activate・Grow の三段階で整理し、分断されたツールや情報探索、背景が伝わらない共同販売の引き継ぎを改善する方針を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 842,
+      "text": "Sales Recommender を、顧客・製品・タイミングごとの成長機会を AI が優先順位付けし、その根拠と次の行動を示す体験として紹介しました。利用データやライセンス・更新情報を人が集める負担を減らす狙いを説明しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 363,
+      "text": "デモ映像では RelayCloud の担当者を登場人物に、実績ダッシュボードから成長の推奨を確認し、目標を定めてチームへ共有する計画業務を示しました。顧客の導入実績ではなく、接続された業務体験の説明例でした。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1614,
+      "text": "共同販売の準備として、Teams で Partner Center for Sales を有効にし、販売担当者ディレクトリを整え、担当者がアプリを追加してピン留めする三つの作業を勧めました。"
+    }
+  ]
+}

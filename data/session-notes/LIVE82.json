@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE82","sessionId":"1793673565230001FIua","offeringId":"1793673565230001FIua-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":20,"text":"検索を一度実行するだけの仕組みから、何を調べるか計画し、検索結果を検討して次に進むエージェントへの変化を説明しました。"}],
+  "updates":[{"atSeconds":114,"text":"エージェントによる情報検索向けに特化したモデル Microsoft Retriever と、検索に使う知識グラフの発表を紹介しました。","announcementId":"bon-501"}],
+  "cases":[{"atSeconds":167,"text":"保険分野の文書なら、自動車のメーカーや車種を識別できる形で知識グラフに表現する例が示されました。"}],
+  "tips":[{"atSeconds":137,"text":"文書を個別に渡すだけではなく、よく使う対象と関係をあらかじめ知識グラフに整理し、検索で利用できるようにします。"}]
+}

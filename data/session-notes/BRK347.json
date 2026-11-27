@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK347","sessionId":"1787856625865001EIu7","offeringId":"1787856625865001EIu7-1791588351167001CAbM","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":313,"text":"Microsoft Purview の秘密度ラベルを、分類の目印と、構成に応じて保護を付けるための仕組みとして説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":629,"text":"ラベルのある文書とない文書を使い、Copilot が取得できる内容にどのような違いが出るかを示しました。"}],
+  "tips":[{"atSeconds":1176,"text":"Microsoft 365 でいきなり全社に適用するのではなく、ラベル作成後の公開範囲と、利用者からの見え方を確認します。"}]
+}

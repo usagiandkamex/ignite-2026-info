@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK420","sessionId":"1787856637165001EL2e","offeringId":"1787856637165001EL2e-1791588324684001CZEV","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=eZRKLubrk-M","basis":"captions",
+  "summary":[{"atSeconds":454,"text":"AKS AI Manager for Foundry を使い、Foundry からモデルを AKS に配置しつつ、実行基盤はオープンソースの Kubernetes ツールで管理する構成を説明しました。"}],
+  "updates":[{"atSeconds":1114,"announcementId":"bon-447","text":"プレビューの AKS FlexNodes を使い、クラウドの外にある計算機も AKS クラスターから利用する構成を紹介しました。"}],
+  "cases":[{"atSeconds":559,"text":"架空の医薬品メーカーを題材に、製造ラインが短時間停止したときの調査をエージェントで支援するデモを行いました。"}],
+  "tips":[{"atSeconds":1145,"text":"製造ラインの画像をクラウドへ出せない場合は、推論処理を現場に置き、クラウド側のエージェントからモデルのエンドポイントに問い合わせる構成を検討します。"}]
+}

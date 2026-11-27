@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP156","sessionId":"1787855009112001tM9c","offeringId":"1787855009112001tM9c-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":260,"text":"SHI が、Agent 365 をエージェント管理の中心とし、Purview でデータを保護、Defender で活動を監視、Entra で ID を統制する役割分担を紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":123,"text":"エージェントに固有の ID を持たせ、利用者本人の操作と区別できるようにします。必要な対象だけにアクセス権を与え、動作を追跡します。"}]
+}

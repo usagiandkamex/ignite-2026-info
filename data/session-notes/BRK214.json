@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK214", "sessionId": "1787856605482001EkbC", "offeringId": "1787856605482001EkbC-1791588233878001Cuo7",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 331, "text": "エージェントは単独で運用されるわけではなく、モデル、ツール、データ、プラグインまで含めて管理する必要があると説明しました。"}],
+  "updates": [{"atSeconds": 1449, "text": "企業でエージェントの ID や所有者、関連リソースを確認する Agent 365 の考え方を紹介しました。", "announcementId": "bon-516"}],
+  "cases": [{"atSeconds": 1449, "text": "Databricks で構築したエージェントを例に、登録後に管理者が確認する ID や所有者を示しました。"}],
+  "tips": [{"atSeconds": 331, "text": "稼働数だけではなく、使うデータと外部のツールまで棚卸しし、利用開始から廃止まで責任者を決めます。"}]
+}

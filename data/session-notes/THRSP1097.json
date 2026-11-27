@@ -1,0 +1,32 @@
+{
+  "sessionCode": "THRSP1097",
+  "sessionId": "1787858592924001Sr2b",
+  "offeringId": "1787858592924001Sr2b-1791588215658001CWLK",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=2jnOxckBg1U",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 14,
+      "text": "Logitech はマウス、キーボード、ヘッドセット、会議室機器を、人と AI のやり取りを支えるインターフェースとして捉える方針を説明しました。"
+    },
+    {
+      "atSeconds": 524,
+      "text": "Microsoft との協業では、周辺機器のボタン操作や音声などの体験を Windows 365 Cloud PC でもローカル端末に近い感覚で利用できるようにする取り組みを紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 241,
+      "text": "MX Master 4 の触覚フィードバックを紹介し、入力操作だけでなく画面から手元へ情報を返す体験を説明しました。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 1049,
+      "text": "Rally System 2 Pro を紹介し、大会議室や分割可能な会議室の構成を簡素化することと、AI を利用した共同作業のための音声収集を重視していると説明しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": []
+}

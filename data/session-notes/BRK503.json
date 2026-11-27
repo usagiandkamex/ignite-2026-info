@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK503",
+  "sessionId": "1787856649769001EzGq",
+  "offeringId": "1787856649769001EzGq-1791588306895001C71i",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=w3fz88c4dUc",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 119,
+      "text": "Business Central の製品ロードマップと、CSP パートナーが利用できるプログラム・販促施策を組み合わせ、中小企業の事業成長と AI 活用を支援する進め方を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 419,
+      "text": "Business Central 内の Copilot を Microsoft 365 全体と共通の体験へ進める計画を説明し、一般提供は2027年の予定としました。現在の機能と今後のロードマップを区別して紹介しました。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 719,
+      "text": "Copilot による Business Central の編集はパートナー向け早期アクセスとして説明し、Ignite での business skills と Cowork への Business Central の展開も紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 2001,
+      "text": "AI を製品機能の追加だけで捉えず、成果を中心とする販売方法や、自社業務へのエージェント導入も見直し、パートナー自身を AI 活用型の事業へ変えるよう勧めました。"
+    }
+  ]
+}

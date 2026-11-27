@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK221",
+  "sessionId": "1787856606537001E7eU",
+  "offeringId": "1787856606537001E7eU-1791588336053001C2T6",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 604, "text": "ツールは業務データを取得し、スキルはその使い方を示し、プラグインはそれらを組み合わせるという役割分担を説明しました。"}],
+  "updates": [{"atSeconds": 1168, "text": "プラグインを組織に公開する前に、Microsoft 365 管理センターで管理者が確認する流れを紹介しました。", "announcementId": "bon-516"}],
+  "cases": [{"atSeconds": 228, "text": "架空の Caldova 社の顧客ポータル公開を題材に、既成プラグインの利用から独自プラグインの作成・管理までを実演しました。"}],
+  "tips": [{"atSeconds": 920, "text": "同僚からの感想だけで判断せず、公開前に重要な利用場面を選び、評価セットで結果を確かめます。"}]
+}

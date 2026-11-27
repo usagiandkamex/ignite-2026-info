@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK387", "sessionId": "1787856632105001EFPk", "offeringId": "1787856632105001EFPk-1791588118374001CWB0",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 646, "text": "Dynamics 365 Activate は、既存の CRM や ERP の調査、移行先への対応付け、データ移行を一連の作業として支援します。"}],
+  "updates": [{"atSeconds": 1515, "text": "SAP ECC の現行構成を評価するデモで、Dynamics 365 Activate による ERP 移行の初期調査を紹介しました。", "announcementId": "bon-485"}],
+  "cases": [{"atSeconds": 978, "text": "Salesforce からの移行デモでは、取引先や住所などのオブジェクトを、Dynamics 365 側の対応する項目やエンティティに割り当てました。"}],
+  "tips": [{"atSeconds": 216, "text": "移行計画では業務文書だけを前提にしないようにします。文書が存在しない場合や、現場での使い方が記載と異なる場合があるためです。"}]
+}

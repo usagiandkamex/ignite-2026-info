@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK506",
+  "sessionId": "1787856650216001EhrS",
+  "offeringId": "1787856650216001EhrS-1791587922727001FBez",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=jMFOEXZHXeI",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 3,
+      "text": "Microsoft AI Cloud Partner Program を、AI によって変化する顧客の購買行動に合わせてパートナーが能力と市場での差別化を育てる仕組みとして紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 722,
+      "text": "EY は、Microsoft の技術で構築した Ask EY Tax を、多数のエージェントの集合として紹介しました。税務担当者が組織の知識と経験を一貫して顧客支援へ活用し、文書処理や調査にかかる負担を減らしたと述べました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1974,
+      "text": "AI PC の支援では端末を提供するだけでなく、価値の説明、展開、実際の利用開始までを含める必要があると説明しました。クラウドとローカル処理の両方を顧客が使えるようにする視点を示しました。"
+    }
+  ]
+}

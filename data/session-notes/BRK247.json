@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK247","sessionId":"1787856610647001ED9l","offeringId":"1787856610647001ED9l-1791588131979001CbhB","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":103,"text":"本番の AI 予算を管理するには、トークン費用だけでなく、どの処理が成果や待ち時間にどう影響するかを見る必要があると説明しました。"}],
+  "updates":[{"atSeconds":759,"text":"Foundry Insights で、待ち時間、エラー、費用などの傾向を調べる使い方を紹介しました。","announcementId":"bon-465"}],
+  "cases":[],
+  "tips":[{"atSeconds":759,"text":"費用が増えたときは平均値だけを見ず、遅延やエラーと合わせて調査し、改善箇所を絞ります。"}]
+}

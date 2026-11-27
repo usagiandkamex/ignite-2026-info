@@ -1,0 +1,12 @@
+{
+  "sessionCode": "THR896", "sessionId": "1787856581700001EulX", "offeringId": "1787856581700001EulX-1791588274511001CDJr", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 222, "text": "Microsoft と VMware／Broadcom の協業を振り返り、オンプレミスの VMware 環境を使う顧客に Azure への移行先の選択肢を用意してきたと説明しました。"},
+    {"atSeconds": 536, "text": "VMware を長期に使う顧客と、短期ではほかの基盤に切り替えられない顧客を区別し、移行とモダナイゼーションを同時に進める必要はないと説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 606, "text": "AI の活用による投資効果を見込めるワークロードを移行時に刷新した銀行の例と、まず Azure に移してから Azure Migrate を使い段階的に移行する別の顧客の例を挙げました。"}
+  ],
+  "tips": []
+}

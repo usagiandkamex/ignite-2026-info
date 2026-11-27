@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK434","sessionId":"1787856639288001EBwb","offeringId":"1787856639288001EBwb-1791588287757001C0Sy","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":320,"text":"AI のストレージを、学習・追加学習で大量データを読み込む場合と、推論やエージェントがモデルや必要なデータをすばやく読み出す場合に分けて説明しました。"}],
+  "updates":[{"atSeconds":1027,"announcementId":null,"text":"Azure Blob Storage の Turbo Tier がプレビューとして紹介され、高速なオブジェクト ストレージが必要な AI や分析の用途に向けた選択肢が加わりました。"}],
+  "cases":[{"atSeconds":1251,"text":"ベンチマークの実演では、小さな I/O の処理回数を測る試験と、大きなデータを転送してスループットを測る試験を分けました。"}],
+  "tips":[{"atSeconds":2127,"text":"推論のストレージは GPU にモデルを読み込む速度に加え、参照データの鮮度とアクセス保護も考慮します。"}]
+}

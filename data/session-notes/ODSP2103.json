@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2103","sessionId":"1787854993607001tbOL","offeringId":"1787854993607001tbOL-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=mhcJFd9MDWs","basis":"captions-ja",
+  "summary":[{"atSeconds":481,"text":"ID 基盤や端末管理で障害や意図しない変更に備えるには、予防、異常の検知、復旧を別々に設計する必要があると説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":481,"text":"本番側の管理権限が失われる可能性も考え、復旧に使うバックアップには後から変更できない形でデータを保管します。"},{"atSeconds":1194,"text":"復旧計画では、依存する構成や対象テナントを確認し、切り替え手順と復旧に要する時間を実際に検証します。"}]
+}

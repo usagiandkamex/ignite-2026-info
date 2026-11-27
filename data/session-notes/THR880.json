@@ -1,0 +1,18 @@
+{
+  "sessionCode": "THR880",
+  "sessionId": "1787856579280001ECS8",
+  "offeringId": "1787856579280001ECS8-1791588327155001CQQt",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ijFzanMpxCA",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 793, "text": "Rayfin を開発ツールとし、企業データに接続するアプリを Microsoft Fabric で配備・運用する方法を紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 1018, "announcementId": "bon-460", "text": "Rayfin と Fabric アプリの一般提供を発表し、認証や企業データとの接続を含むアプリの作成・配備をデモしました。"}
+  ],
+  "cases": [
+    {"atSeconds": 578, "text": "既存のセマンティックモデルにつないだアプリで、利用者の権限を前提に、地域別の成長を自然言語で問い合わせました。"}
+  ],
+  "tips": []
+}

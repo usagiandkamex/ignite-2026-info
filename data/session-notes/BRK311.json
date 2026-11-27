@@ -1,0 +1,42 @@
+{
+  "sessionCode": "BRK311",
+  "sessionId": "1787856620252001EUUi",
+  "offeringId": "1787856620252001EUUi-1791814916888001CTVu",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 213,
+      "text": "Web IQ が最新の外部情報を取得し、回答とともに根拠を示すための実装方法を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 735,
+      "text": "参照する情報源を制御する Scopes を紹介しました。",
+      "announcementId": "bon-505"
+    },
+    {
+      "atSeconds": 2146,
+      "text": "Web IQ が一般提供になったと説明しました。",
+      "announcementId": "bon-505"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 565,
+      "text": "ゴールデンゲートブリッジの通行料金の支払い方法を題材に、追加検索が必要な問い合わせを示しました。"
+    },
+    {
+      "atSeconds": 705,
+      "text": "自動車向け問い合わせアシスタントが信頼できない情報源から車両について回答しないように、参照先を絞る例を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 366,
+      "text": "速さを優先する単純な検索と、複数の根拠を必要とする質問ではモードを使い分けます。"
+    }
+  ]
+}

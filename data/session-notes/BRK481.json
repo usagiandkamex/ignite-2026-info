@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK481",
+  "sessionId": "1787856646457001Eylw",
+  "offeringId": "1787856646457001Eylw-1791587922485001FnJH",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ldVwA2dbw0s",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 179,
+      "text": "パートナーの成長機会を、顧客が目指す AI による事業変革と、それを支えるインフラ投資の両面から整理しました。製品単体ではなく、顧客が求める成果を中心に市場開拓や支援策を構成する方針を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 604,
+      "text": "価値のある業務シナリオ、利用するモデル、エージェントのガバナンスとポリシーを顧客と決める助言サービスを、パートナーの具体的な役割として挙げました。"
+    },
+    {
+      "atSeconds": 604,
+      "text": "構築・導入に加え、Agent 365 による可視化・監査・管理や FinOps for AI を含め、利用後の統制と経済性まで支援する機会を紹介しました。"
+    }
+  ]
+}

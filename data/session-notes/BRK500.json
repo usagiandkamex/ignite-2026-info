@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK500",
+  "sessionId": "1787856649324001EYfC",
+  "offeringId": "1787856649324001EYfC-1791588284621001CS6c",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=hzgbmOYxVJY",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 4,
+      "text": "AI 変革に向けた安全な生産性基盤を顧客と整えることを、パートナーの成長機会として取り上げました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 364,
+      "text": "Copilot の比較デモで、文書の過剰共有が回答へ機密情報を取り込むリスクになることと、データ保護を設ける重要性を示しました。実際の顧客事故ではなく、同じ作業に保護を適用した場合を比較する例として提示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1032,
+      "text": "案件の発掘、ソリューション設計、導入までの段階に応じて支援策を選び、Microsoft 365 E3、Windows 365、Azure Virtual Desktop などのパートナー施策を検討するよう説明しました。MCI の利用には資格条件があることも明示しました。"
+    }
+  ]
+}

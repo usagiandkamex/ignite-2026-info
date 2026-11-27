@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK307","sessionId":"1787856619636001E66J","offeringId":"1787856619636001E66J-1791588325591001CbDi","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":517,"text":"Foundry IQ のナレッジ グラフでは、文書を一件ずつ検索するだけでなく、人、組織、概念などの関係を手掛かりに調べられると説明しました。"}],
+  "updates":[{"atSeconds":1247,"text":"具体的な実体の関係を扱うエンティティ グラフとは別に、テーマを単位とするトピック グラフも紹介しました。","announcementId":"bon-501"}],
+  "cases":[{"atSeconds":866,"text":"同じ質問に対し、エージェント型の検索とグラフを使った取得を並べて比較しました。"}],
+  "tips":[{"atSeconds":1247,"text":"対象が明確な質問と、複数資料に散らばるテーマを調べる質問とで、適した検索方法を比較します。"}]
+}

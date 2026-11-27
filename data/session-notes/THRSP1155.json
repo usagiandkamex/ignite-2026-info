@@ -1,0 +1,32 @@
+{
+  "sessionCode": "THRSP1155",
+  "sessionId": "1787858601555001SSaX",
+  "offeringId": "1787858601555001SSaX-1791588343927001Cafn",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 126,
+      "text": "Lovable と Microsoft は、自然言語によるアプリ作成の速さと、企業が求めるセキュリティ・ガバナンスを両立する連携方針を説明しました。"
+    },
+    {
+      "atSeconds": 340,
+      "text": "Excel、Fabric、Dynamics などの既存の業務データやサービスを土台に、用途に合ったアプリを Lovable で作る選択肢を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 850,
+      "text": "Deploy on Azure を、自社 Azure 環境の専用 VNet にデータプレーンを配置する選択肢として紹介しました。開発時の体験を保ちながら実行環境を企業側へ置く構成です。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 702,
+      "text": "接続するデータの機密性とネットワーク分離の要件に応じて、Lovable Cloud、Copilot のマネージドランタイム、自社環境への配置を選び分ける考え方を示しました。"
+    }
+  ]
+}

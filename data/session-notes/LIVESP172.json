@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP172","sessionId":"1787855008360001t16s","offeringId":"1787855008360001t16s-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":131,"text":"AMD が、CPU で処理を調整し、性能が必要な処理を GPU、効率を重視する処理を NPU で実行するローカル AI 開発環境を紹介しました。"}],
+  "updates":[{"atSeconds":131,"text":"CPU・GPU・NPU が192 GB のローカルメモリを共有する AMD のプラットフォームと、Windows 11 の開発者向け体験での Microsoft との協業を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[]
+}

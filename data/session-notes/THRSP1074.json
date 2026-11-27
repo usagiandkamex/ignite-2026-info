@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1074","sessionId":"1787858588293001Slkf","offeringId":"1787858588293001Slkf-1791588076446001C3w7","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=3JJZQm81HW4","basis":"captions",
+  "summary":[{"atSeconds":292,"text":"Atlassian の Rovo が Teamwork Graph にあるチームの業務情報を参照し、作業に合わせて使うモデルを選ぶ構成を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":423,"text":"Atlassian の社内事例では、Salesforce に新しい項目を追加するといった定型の改修を、チームの開発手順に組み込んだ自動化で支援しました。"}],
+  "tips":[{"atSeconds":46,"text":"個人の画面で質問に答えるだけでは効果を全社に広げにくいため、複数人が繰り返す業務手順にエージェントを組み込みます。"}]
+}

@@ -1,0 +1,33 @@
+{
+  "sessionCode": "THRSP1120",
+  "sessionId": "1787858596380001SgZB",
+  "offeringId": "1787858596380001SgZB-1791588343037001CncS",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=HFOBe1pw4as",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 290,
+      "text": "Twilio Agent Connect と Foundry の連携では、電話・メッセージ・メールを Foundry のホスト型エージェントへつなぎ、応答を顧客の利用チャネルへ戻す仕組みを説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 783,
+      "text": "Twilio Agent Connect の Foundry ネイティブ連携を紹介し、Foundry エージェントを Twilio の通信機能と結び付けるライブラリと公開リポジトリを案内しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 502,
+      "text": "航空会社を題材にしたデモでは、SMS で預け荷物の追加を依頼すると個別セッションが作られ、過去の窓側席の希望などの文脈を取り込む様子を示しました。顧客への実導入実績ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 290,
+      "text": "チャネルが変わっても過去の会話の文脈を引き継げるようにし、モデル、業務ツール、通信基盤の役割を分けて設計する考え方を示しました。"
+    }
+  ]
+}

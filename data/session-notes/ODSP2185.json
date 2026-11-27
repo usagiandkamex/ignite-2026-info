@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2185","sessionId":"1787855002308001tHeP","offeringId":"1787855002308001tHeP-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=LOeYkDtzcsE","basis":"captions",
+  "summary":[{"atSeconds":43,"text":"Copilot がメールや SharePoint の文書を参照する例を挙げ、AI の保護は組織のデータがどこまでアクセス可能かを把握することから始まると説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":483,"text":"未知の問題があっても影響が広がらないように、AI が参照できる機密データを必要な範囲に絞ります。"},{"atSeconds":709,"text":"業務に不要なコネクタは接続せず、組織が承認・管理できるものだけに絞ります。"}]
+}

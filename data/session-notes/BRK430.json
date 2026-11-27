@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK430","sessionId":"1787856638686001EsPu","offeringId":"1787856638686001EsPu-1791588322196001Cv6Z","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":422,"text":"Azure VM の容量を確保しやすくするため、希望の SKU を基準に代替候補も使う Adaptive Placement など、特定の VM サイズに依存しない設計を説明しました。"}],
+  "updates":[{"atSeconds":1061,"announcementId":null,"text":"Azure Compute Fleet の単一 VM の起動モードが一般提供となり、複数リージョンへの配置はプレビューとして案内されました。"},{"atSeconds":1182,"announcementId":null,"text":"IBM Spectrum LSF と Azure Compute Fleet の連携が一般提供になり、既存のスケジューラーを維持しながら Azure の容量を使えるようになりました。"},{"atSeconds":2046,"announcementId":null,"text":"中断を許容できる処理に向けた Azure Compute Spot Plus が公開プレビューとして紹介されました。"}],
+  "cases":[],
+  "tips":[{"atSeconds":920,"text":"常時必要な容量と、一時的に増える処理に必要な容量を分けて見積もり、後者には弾力的な調達を検討します。"}]
+}

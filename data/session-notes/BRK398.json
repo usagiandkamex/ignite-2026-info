@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK398", "sessionId": "1787856633795001E6cQ", "offeringId": "1787856633795001E6cQ-1791587923965001FkP9",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=jObh9f6s_Do", "basis": "captions",
+  "summary": [{"atSeconds": 82, "text": "ドライバー起因の障害を未然に減らす取り組みと、障害後に端末を業務へ復帰させる Windows の機能を、予防と復旧の二つに分けて説明しました。"}],
+  "updates": [{"atSeconds": 496, "text": "ドライバーの品質を、クラッシュだけでなく、インストールや起動の成否、Wi-Fi での接続の成立と維持など、利用時の信頼性も含めて評価する指標を紹介しました。", "announcementId": null}],
+  "cases": [],
+  "tips": [{"atSeconds": 694, "text": "直近の問題なら過去の時点への復元、端末の破損が深ければ Cloud Rebuild、広域障害なら Quick Machine Recovery と、障害の規模と状態に応じて使い分けます。"}]
+}

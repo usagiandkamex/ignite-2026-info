@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1092",
+  "sessionId": "1787858591006001SPXW",
+  "offeringId": "1787858591006001SPXW-1791588195776001CIpB",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=y1lMAT19PaQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 63,
+      "text": "HCLTech、Quest Diagnostics、Microsoft は、検査結果を待つ患者の不安を起点に、患者体験とソフトウェア開発の両面を AI で改善する取り組みを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 386,
+      "text": "患者の一連の体験は、複数の実際の業務を組み合わせた架空の人物 Linda を通じて説明しました。特定の実在患者の症例ではありません。"
+    },
+    {
+      "atSeconds": 1527,
+      "text": "Quest の Project Nova では、2,000 超のラボを支えるデジタル基盤として Azure 上で Epic を動かす方針を紹介し、迅速さ、機密データの保護、個別化した体験を目標に挙げました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 624,
+      "text": "患者向け体験の改善では、注文から請求までの複雑なシステム連携に加え、即時性への期待、データ増加、規制対応を同時に考慮する必要があると説明しました。"
+    }
+  ]
+}

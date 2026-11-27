@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2118","sessionId":"1787854995185001tU8a","offeringId":"1787854995185001tU8a-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=l5aQiKZeWOQ","basis":"captions",
+  "summary":[{"atSeconds":101,"text":"Veeam が、Microsoft 365 で AI を使う際に、規制要件や既存のセキュリティ運用を取り込み、変更されたデータを回復できるようにする考え方を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":243,"text":"機密ラベルが付いていないファイルでも、機密情報が含まれる可能性と、どの AI がアクセスしているかを確認する操作を紹介しました。"},{"atSeconds":290,"text":"Agent Activity Timeline でエージェントが変更したファイルを特定し、元の場所へ復元する操作を紹介しました。"}],
+  "tips":[{"atSeconds":170,"text":"少数のファイルが変更されたときに多数の SharePoint サイトを戻さずに済むよう、必要な範囲だけ復元できるかを確認します。"}]
+}

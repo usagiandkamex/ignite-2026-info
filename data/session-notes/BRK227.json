@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK227", "sessionId": "1787856607497001EUVD", "offeringId": "1787856607497001EUVD-1791588309408001Cb2p",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 302, "text": "企業の AI 基盤を、インフラ、セキュリティ、データ、日々の業務で使うツールの層に分けて説明しました。"}],
+  "updates": [{"atSeconds": 620, "text": "既存システムを AI 導入に適した状態へ移す施策として、Azure Catalyst を紹介しました。", "announcementId": "bon-448"}],
+  "cases": [],
+  "tips": [{"atSeconds": 913, "text": "アプリをモダナイズする作業とセキュリティ対策を別々に進めず、変更した構成を統合的に観測します。"}]
+}

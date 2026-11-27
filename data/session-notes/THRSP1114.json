@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1114",
+  "sessionId": "1787858595460001SOtT",
+  "offeringId": "1787858595460001SOtT-1791588331918001CLKY",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=nGetBsOpa4U",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 262,
+      "text": "Ryan Specialty と Genpact は、物件検査の資料探索や照合を AI が担い、保険引受の専門家が判断に集中できるようにする取り組みを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 631,
+      "text": "手書き、スキャン、入力済み書類や写真が混在する資料から多数のリスク項目を読み取るため、文章と画像を扱うマルチモーダルのエージェントを採用したと説明しました。"
+    },
+    {
+      "atSeconds": 1047,
+      "text": "本番での処理時間を 136 分から 1 時間未満へ短縮したと報告しました。AI が情報収集と分析を行い、専門家が結果を確認・承認する運用での成果です。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1047,
+      "text": "AI の導入自体を目的にせず、業務成果を測り、どの作業が減り、専門家の判断がどこに残るかまで明確にするよう勧めました。"
+    }
+  ]
+}

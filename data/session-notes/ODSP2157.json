@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2157","sessionId":"1787854999310001taLP","offeringId":"1787854999310001taLP-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":39,"text":"Unimax が、複数の電話基盤にまたがる電話番号や内線の状態を NumberPro で把握し、利用中、空き、予約中などを区別する方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":164,"text":"既存の Active Directory や ServiceNow などを入口に、電話・共同作業サービスの割り当てと解除を自動化する構成を説明しました。"}],
+  "tips":[{"atSeconds":215,"text":"退職時は電話関連のアカウントを無効にするだけでなく、内線の転送や、番号を再利用できる状態にする作業も計画します。"}]
+}

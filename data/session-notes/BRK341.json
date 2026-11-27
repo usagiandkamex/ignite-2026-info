@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK341","sessionId":"1787856624940001EdeO","offeringId":"1787856624940001EdeO-1791588287315001Cdqv","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":347,"text":"Microsoft のセキュリティ部門が、自社のエージェントを発見し、同じ扱いにするのではなく、リスクに応じて管理する考え方を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1826,"text":"Agent 365 で組織内のエージェントのセキュリティ対応を運用に落とし込む例を示しました。"}],
+  "tips":[{"atSeconds":716,"text":"エージェントの把握と対応を一つの部門だけに任せず、IT、セキュリティ、所有者の責任を分けます。"}]
+}

@@ -1,0 +1,32 @@
+{
+  "sessionCode": "BRKSP614",
+  "sessionId": "1787854982135001twbi",
+  "offeringId": "1787854982135001twbi-1791588271585001C9WT",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=hV6loVv4Mts",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 233,
+      "text": "AMD と Microsoft は、エージェントが継続して情報収集、推論、実行を行うことで、短いやり取りを中心としたチャットとは異なる負荷が基盤へかかると説明しました。"
+    },
+    {
+      "atSeconds": 554,
+      "text": "Foundry でモデルを使う方法と VM を直接管理する方法を比較し、後者ではゲスト OS、ドライバー、ROCm などの構成も利用者が管理する役割分担を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1212,
+      "text": "AMD Helios アーキテクチャを Azure に持ち込む今後の計画を紹介しました。現在の MI300X の説明と将来の計画を区別しています。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 1212,
+      "text": "GPU 選びでは計算性能だけでなく、モデルが収まるメモリ容量やデータ移動の帯域、使いたい提供形態を合わせて検討する観点を示しました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK281","sessionId":"1787856615724001Em6f","offeringId":"1787856615724001Em6f-1791588336956001Cipr","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":1049,"text":"コーディング エージェントの実行を守る対策と、そのエージェントが生成するコードを守る対策を分けて説明しました。"}],
+  "updates":[{"atSeconds":144,"text":"企業管理者がコーディング エージェントに適用できる予定の設定項目を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":510,"text":"エージェントの操作は分離された一時的な環境で実行し、必要なリソースだけを利用できるようにします。"}]
+}

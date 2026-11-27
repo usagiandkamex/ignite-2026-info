@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1026", "sessionId": "1787856601902001Ee19", "offeringId": "1787856601902001Ee19-1791588276975001CHif", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=XicNLZ-U860", "basis": "captions",
+  "summary": [
+    {"atSeconds": 204, "text": "Azure Container Apps の環境を処理とネットワークの分離境界として説明しました。各アプリやジョブの拡縮、リビジョン、シークレット、ID を管理できると紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 846, "text": "Debug with SRE Agent を紹介しました。新しい常設リソースを作るのではなく、一時的な読み取り専用の SRE Agent を Container Apps 内から使って調査すると説明しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 305, "text": ".NET 10 に更新してコンテナー化した音楽ストアのサンプルを使い、近代化後の本番運用を担当する設定でデモを行いました。"},
+    {"atSeconds": 519, "text": "既存版に 90%、新版に 10% のトラフィックを振り分け、問題が解消したかを確かめる段階的なリリースのデモを行いました。"}
+  ],
+  "tips": []
+}

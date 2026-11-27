@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK371","sessionId":"1787856629569001E325","offeringId":"1787856629569001E325-1791588323323001CNGB","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":335,"text":"既存の SQL アプリをモダナイズする際、同じエンジンを利用しながら実行環境を変更し、AI 機能や運用を見直す選択肢を説明しました。"}],
+  "updates":[{"atSeconds":2244,"text":"複数のデータベースを継続的に管理するための Database Hub とデータベース エージェントを取り上げました。","announcementId":"bon-456"}],
+  "cases":[{"atSeconds":684,"text":"H&R Block の担当者が、Azure SQL へのモダナイゼーションの経験を共有しました。"}],
+  "tips":[]
+}

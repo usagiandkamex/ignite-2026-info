@@ -1,0 +1,21 @@
+{
+  "sessionCode": "BRK246",
+  "sessionId": "1787856610499001EA0J",
+  "offeringId": "1787856610499001EA0J-1791588200189001CaK0",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 199, "text": "オープンウェイトモデルを、用途に合うモデルと実行環境を選んで本番運用に持ち込む方法を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 1238, "text": "Foundry のマネージド コンピューティングで、オープンモデルの推論最適化やカスタマイズを扱う機能を紹介しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 450, "text": "Hugging Face のモデルを選び、マネージド環境へ配置して推論用エンドポイントを作る流れを実演しました。"},
+    {"atSeconds": 1584, "text": "AT&T が、マネージド コンピューティングを使った経験を共有しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1004, "text": "本番配置に進むときは、同じモデルでも処理量や待ち時間の変化を観測できるようにし、拡張条件を検討します。"}
+  ]
+}

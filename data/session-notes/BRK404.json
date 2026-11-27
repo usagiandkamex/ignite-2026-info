@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK404", "sessionId": "1787856634726001E24O", "offeringId": "1787856634726001E24O-1791814916437001CEUi",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=Deb-12mZQD0", "basis": "captions",
+  "summary": [{"atSeconds": 73, "text": "Intune の管理対象が端末やアプリからエージェントやコンテナーにも広がる中、運用の手作業を増やさずにパッチ適用や保護を拡大する方針を説明しました。"}],
+  "updates": [
+    {"atSeconds": 457, "text": "Intune for Servers を発表し、アプリ、コンプライアンス、パッチなどをクラウドから管理する構想を示しました。", "announcementId": "bon-540"},
+    {"atSeconds": 580, "text": "Intune Explorer で自然言語による質問の対象を Intune データ全体に広げ、回答の確認から管理操作へ進めると説明しました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": [{"atSeconds": 1412, "text": "アプリを自動更新するときは、利用中のアプリを検知した場合にどう扱うかも決め、更新が利用者の作業を中断しないよう配慮します。"}]
+}

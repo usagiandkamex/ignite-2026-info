@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1098",
+  "sessionId": "1787858593079001Snio",
+  "offeringId": "1787858593079001Snio-1791588229785001C9UM",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=kIIh1wanO6Q",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 4,
+      "text": "CrashPlan は Microsoft 365 のバックアップ、復旧、アーカイブを組み合わせ、増え続けるデータの保護と保管費用を見直す考え方を紹介しました。"
+    },
+    {
+      "atSeconds": 253,
+      "text": "復旧のためだけに保存するのではなく、会話型 AI や MCP サーバーを通じてバックアップデータを活用する方向性を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1332,
+      "text": "登壇者は Indiana University の例として、Microsoft 365 の超過費用 100 万ドルに対し、CrashPlan のアーカイブを含む 5 年間のソリューションに 30 万ドルを充て、差額 70 万ドルの削減につながったと紹介しました。登壇者による事例報告の数値です。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 603,
+      "text": "AI により Microsoft 365 内のデータがさらに増える前提で、バックアップ費用の中でも大きな割合を占めるストレージと超過容量を確認するよう促しました。"
+    }
+  ]
+}

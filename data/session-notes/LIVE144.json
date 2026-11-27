@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE144","sessionId":"1793675404718001PCTt","offeringId":"1793675404718001PCTt-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":31,"text":"Windows で従業員とエージェントの仕事を支える際に、端末とクラウドを使い分け、保護と費用の管理も含める考え方を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":206,"text":"ソフトウェア開発を例に、短い処理を端末側に置き、複雑な推論をクラウド側に任せる構成を説明しました。"}],
+  "tips":[{"atSeconds":310,"text":"端末へモデルを置く前に、対象機器で利用できる実行環境と組織の管理方針を確認します。"}]
+}

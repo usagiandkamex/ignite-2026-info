@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK323",
+  "sessionId": "1787856622200001ENO2",
+  "offeringId": "1787856622200001ENO2-1791588069949001CZuI",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 234, "text": "Microsoft Perception が、予防、脅威調査、リスク低減に役割を分けたエージェントを組み合わせる仕組みを説明しました。"}],
+  "updates": [{"atSeconds": 234, "text": "Microsoft Perception の一般提供を紹介しました。", "announcementId": "bon-531"}],
+  "cases": [{"atSeconds": 2057, "text": "Insight と St. Luke’s が、プレビュー期間に Perception をセキュリティ運用で使った経験を共有しました。"}],
+  "tips": [{"atSeconds": 389, "text": "プレイブックを使うときは、人が関与する判断、アクセス権限、監査記録を設計に含めます。"}]
+}

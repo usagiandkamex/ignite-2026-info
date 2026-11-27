@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2181","sessionId":"1787855001892001tr0f","offeringId":"1787855001892001tr0f-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=QU5TYAvK8nw","basis":"captions",
+  "summary":[{"atSeconds":9,"text":"Arm と Microsoft が、推論以外にも CPU 処理があるエージェント型アプリの実行先として、Arm ベースの Azure Cobalt 200 VM を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":190,"text":"前世代の Cobalt 100 が、Microsoft Teams、Defender for Endpoint、Dataverse などのサービスで使われていると説明しました。"}],
+  "tips":[{"atSeconds":953,"text":"Arm への移行を検討する際は、利用しているソフトウェアの対応状況を確認し、学習資料や移行ツールを使って検証します。"}]
+}

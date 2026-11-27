@@ -1,0 +1,21 @@
+{
+  "sessionCode": "BRK445",
+  "sessionId": "1787856640975001Eumd",
+  "offeringId": "1787856640975001Eumd-1791588234558001Co4y",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 1063, "text": "ステートレスな処理を可用性ゾーンに分散する日常の障害対策と、別サイトで依存関係まで復旧する災害対策を分けて説明しました。"},
+    {"atSeconds": 1706, "text": "VM の復旧には Azure Site Recovery による管理型のオーケストレーションと、自組織で組み立てる復旧手順があり、既存環境やワークロード要件で選び分けます。"}
+  ],
+  "updates": [
+    {"atSeconds": 1357, "announcementId": null, "text": "Azure VM を別の可用性ゾーンで復旧し、IP アドレスや ARM リソース ID を維持する機能を、公開プレビューとして紹介しました。"},
+    {"atSeconds": 1379, "announcementId": null, "text": "Azure Multicloud Interconnect の接続先拡充として、AWS 向けは一般提供、Google Cloud 向けは公開プレビューと説明しました。"}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 1734, "text": "復旧計画には VM の依存関係を含め、本番に影響を与えないテストで起動順序を確かめます。"},
+    {"atSeconds": 2287, "text": "障害が起きてから経路を構成するのではなく、Azure Front Door にプライマリと切り替え先をあらかじめ登録しておきます。"}
+  ]
+}

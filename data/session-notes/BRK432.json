@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK432","sessionId":"1787856638991001ERxL","offeringId":"1787856638991001ERxL-1791814913627001CdRp","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":96,"text":"AI の実行コストと性能はモデルの推論だけで決まらず、エージェントの手順制御やデータ取得など CPU が担う処理も考慮する必要があると説明しました。"}],
+  "updates":[{"atSeconds":308,"announcementId":"bon-444","text":"Microsoft の Arm ベースの Cobalt 200 を使う Azure VM が一般提供になりました。"},{"atSeconds":448,"announcementId":null,"text":"リモート ストレージの I/O が重要なベクトル データベースなどに向けた Ebsv6・Ebdsv6 VM が一般提供になりました。"}],
+  "cases":[{"atSeconds":1753,"text":"OpenAI は ChatGPT の音声入力を題材に、ユーザーに見える応答の背後で動く処理と基盤の役割を説明しました。"}],
+  "tips":[{"atSeconds":221,"text":"小型モデルやバッチ推論では CPU も候補にし、モデルの大きさや負荷の変動に合わせて性能試験でボトルネックを確かめます。"}]
+}

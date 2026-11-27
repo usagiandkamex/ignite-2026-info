@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK276","sessionId":"1787856614982001EJgN","offeringId":"1787856614982001EJgN-1791588310757001C90t","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":131,"text":"Microsoft Copilot SDK を使い、コード補完だけでなく、既存のソフトウェアにエージェントの機能を組み込む方法を説明しました。"}],
+  "updates":[{"atSeconds":131,"text":"Microsoft と GitHub の製品に組み込まれる Copilot SDK と実行基盤を紹介しました。","announcementId":"bon-473"}],
+  "cases":[{"atSeconds":1403,"text":"内部アプリ Incident Commander が運用データを受け取り、障害の一次対応を支援する例を示しました。"}],
+  "tips":[{"atSeconds":499,"text":"アプリの状態を必要とするエージェントには、業務に必要な状態を読む専用のツールを用意します。"}]
+}

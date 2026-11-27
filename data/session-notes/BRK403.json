@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK403", "sessionId": "1787856634576001Ereg", "offeringId": "1787856634576001Ereg-1791814912210001Cp08",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=3Ht54TmwB3U", "basis": "captions",
+  "summary": [{"atSeconds": 863, "text": "Windows 365 を開発者向けの作業環境として使う方法と、業務を担う AI エージェントに専用の実行環境を持たせる方法を紹介しました。"}],
+  "updates": [
+    {"atSeconds": 333, "text": "開発者向けの Cloud PC イメージには、GitHub CLI や Python などの開発ツールをあらかじめ組み込めると紹介しました。", "announcementId": null},
+    {"atSeconds": 1698, "text": "長時間稼働するエージェントごとに専用の永続 Cloud PC を用意し、業務アプリやオンプレミスのアプリを利用させる構成を紹介しました。", "announcementId": "bon-541"}
+  ],
+  "cases": [{"atSeconds": 1113, "text": "Microsoft の業務運用チームが Windows 365 for Agents で作業を自動化した社内事例を紹介しました。判断と説明責任は人が担うと説明しています。"}],
+  "tips": [{"atSeconds": 758, "text": "全員向けイメージにすべてのツールを入れるのではなく、プロジェクト固有のエディターやアプリは、そのチームの Cloud PC に追加します。"}]
+}

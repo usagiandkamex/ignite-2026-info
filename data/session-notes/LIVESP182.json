@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP182","sessionId":"1787855010670001toNy","offeringId":"1787855010670001toNy-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":102,"text":"SAP が、エージェントから SAP Business Data Cloud を経由して業務データとその意味を利用する構成を説明しました。"}],
+  "updates":[{"atSeconds":126,"text":"BDC Connect により SAP Business Data Cloud と Microsoft Fabric の間で、データのコピーを別に持たず、メタデータを用いて双方向に共有する連携を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":233,"text":"売上を尋ねる例で、四半期、製品、会社コードなどがないと質問の解釈が分かれるため、SAP のデータ製品から業務の文脈も渡す意義を説明しました。"}],
+  "tips":[]
+}

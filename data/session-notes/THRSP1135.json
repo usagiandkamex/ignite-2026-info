@@ -1,0 +1,30 @@
+{
+  "sessionCode": "THRSP1135",
+  "sessionId": "1787858598600001STDp",
+  "offeringId": "1787858598600001STDp-1791588332841001Cbpi",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=RLNBCRPap6k",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 2,
+      "text": "NetApp 上の非構造化データを AI で活用する際、別の場所へ何重にもコピーするのではなく、既存データのある場所で参照する方針を説明しました。"
+    },
+    {
+      "atSeconds": 267,
+      "text": "Azure NetApp Files は Microsoft のファーストパーティサービスであり、NFS・SMB のファイルアクセスに加えてオブジェクトとしてのアクセスも提供することを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 640,
+      "text": "架空の Contoso Energy の録画デモでは、風車の画像や過去の点検記録を Azure NetApp Files に置いたまま AI で参照し、疑わしい状態の調査につなぐ例を示しました。実際の発電設備の検査結果ではありません。"
+    },
+    {
+      "atSeconds": 1129,
+      "text": "同じ架空事例で、全風車の再検査により画像が増える想定を置き、分析前にストレージの容量とスループットの両方を準備する流れを説明しました。"
+    }
+  ],
+  "tips": []
+}

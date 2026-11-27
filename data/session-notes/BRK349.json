@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK349","sessionId":"1787856626174001EOEX","offeringId":"1787856626174001EOEX-1791588129625001C4Tl","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":243,"text":"Power BI のセマンティック層を、人とエージェントが同じ業務上の意味で数値を理解するための基盤として説明しました。"}],
+  "updates":[{"atSeconds":424,"text":"定義を一度作って複数の環境から使うための、セマンティック層の相互運用に向けた Apache Ozy の取り組みを紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":424,"text":"ツールごとに指標を定義し直すのではなく、データの意味を共有できる形で管理します。"}]
+}

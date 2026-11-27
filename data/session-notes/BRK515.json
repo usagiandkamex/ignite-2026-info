@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK515",
+  "sessionId": "1787856651573001Ep0J",
+  "offeringId": "1787856651573001Ep0J-1791588196239001CPpM",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=6MkzoXW0xsw",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 871,
+      "text": "AI を試行から本番へ進めるには、信頼、セキュリティ、ガバナンス、信頼できるデータの扱いを後付けにせず、最初からソリューションへ組み込む必要があると説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 871,
+      "text": "ソフトウェア企業は、Microsoft Cloud との相互運用性を、顧客が安心して AI を展開できる差別化要素として設計するよう勧めました。"
+    },
+    {
+      "atSeconds": 1833,
+      "text": "再利用可能な IP と Marketplace 上で取引できるオファーを作り、共同販売へつなげる進め方を勧めました。案件ごとの個別開発にとどまらず、繰り返し提供できる形で成長することを重視しました。"
+    }
+  ]
+}

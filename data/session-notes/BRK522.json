@@ -1,0 +1,28 @@
+{
+  "sessionCode": "BRK522",
+  "sessionId": "1787856652650001E9Ew",
+  "offeringId": "1787856652650001E9Ew-1791588245733001Cg8o",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=roX9Qe39GJE",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 309,
+      "text": "医療 AI の課題を技術不足ではなく統合の難しさとして説明しました。画面やアプリを行き来し、情報が診療後に届く状態を改善するため、Dragon Copilot の業務の流れへアプリやエージェントを届ける構想を示しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 780,
+      "text": "Dragon Copilot の Marketplace は米国の医師向けに一般提供中で、アプリ・エージェントをセルフサービスで展開できると説明しました。放射線科、看護、国際展開や会話型拡張は今後の取り組みとして区別しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 2177,
+      "text": "医療での信頼は後から付け足せないと述べ、カタログから発見・購入・展開するアプリに適切な確認が行われているという安心と、顧客側の統制を重視しました。"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1025", "sessionId": "1787856601712001ErNY", "offeringId": "1787856601712001ErNY-1791588264657001CQB9", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=EDVi4DnNBno", "basis": "captions",
+  "summary": [
+    {"atSeconds": 184, "text": "データを置く国や地域の制約と、停止をどこまで許容できるかを整理して、ゾーンやリージョンを使う回復性の設計を考える必要があると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 489, "text": "ソブリン対応の状況や推奨事項、パブリッククラウドとローカル環境をまたぐ設計を確認する制御機能を、パブリックプレビューとして紹介しました。", "announcementId": null},
+    {"atSeconds": 915, "text": "Confidential VM は一般提供、Confidential GPU は翌年初めの予定と説明しました。切断環境の Azure Local に向けた鍵管理の強化も、今後の方向性として述べました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 1319, "text": "組織全体を一つの方式に揃えるのではなく、ワークロードごとに規則、AI の統制、接続断、事業継続を評価して選ぶよう勧めました。"}
+  ]
+}

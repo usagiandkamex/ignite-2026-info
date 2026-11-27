@@ -1,0 +1,16 @@
+{
+  "sessionCode": "THR897", "sessionId": "1787856581861001Eq3k", "offeringId": "1787856581861001Eq3k-1791588293328001Cvlg", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=HCahGhu2k5U", "basis": "captions",
+  "summary": [
+    {"atSeconds": 227, "text": "Windows Server の VM が稼働するホストを Azure Arc に接続し、セキュリティや稼働状況を一貫した方法で管理する流れを実演しました。"},
+    {"atSeconds": 642, "text": "Arc 対応の Windows Server 2025 で、対象のセキュリティ更新を再起動せずに適用するホットパッチを取り上げました。"}
+  ],
+  "updates": [
+    {"atSeconds": 1058, "text": "Windows Server を Microsoft Intune で管理するプレビューを発表しました。対象サーバーで、構成、コンプライアンス、アプリ、更新の管理を試せると案内しました。", "announcementId": "bon-540"}
+  ],
+  "cases": [
+    {"atSeconds": 1001, "text": "世界銀行では自社データセンター、Azure、AWS に分散した SQL Server を Azure Arc で棚卸しし、拠点をまたいで把握できるようにしたと紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 829, "text": "台数が増えたら Azure Update Manager で未適用の更新をまとめて確認し、メンテナンス時間帯に合わせてパッチ適用を予約する方法を勧めました。"}
+  ]
+}

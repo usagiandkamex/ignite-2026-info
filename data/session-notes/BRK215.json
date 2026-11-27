@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK215", "sessionId": "1787856605632001EFai", "offeringId": "1787856605632001EFai-1791588269349001CPgM",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 72, "text": "引き続きオンプレミスで運用するサーバーについて、構成の見直し、保護、パッチ適用を組み合わせてリスクを下げる考え方を説明しました。"}],
+  "updates": [{"atSeconds": 2144, "text": "オンプレミス版 Baseline Security Mode で、構成の強化や保護、パッチ適用をどう進めるかを紹介しました。", "announcementId": "bon-524"}],
+  "cases": [],
+  "tips": [{"atSeconds": 1479, "text": "移行可能な業務はクラウドも選択肢とし、オンプレミスに残す業務とは対策を分けて検討します。"}]
+}

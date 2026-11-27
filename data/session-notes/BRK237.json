@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK237","sessionId":"1787856609086001Ev89","offeringId":"1787856609086001Ev89-1791588156050001C3dj","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":221,"text":"Copilot のプラグインが、ツール、スキル、エージェントを一つの業務用途にまとめる役割を持つと説明しました。"}],
+  "updates":[{"atSeconds":434,"text":"開発者向けに、Copilot プラグインの作成を支援する Work IQ Developer Tools を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":23,"text":"Adobe のプラグインを使い、OneDrive と Creative Cloud をまたいで写真を扱う例を示しました。"}],
+  "tips":[{"atSeconds":661,"text":"プラグインを作る前に、誰が何を成し遂げたいかを仕様として言語化し、評価の基準にします。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1069","sessionId":"1787858587557001SRoh","offeringId":"1787858587557001SRoh-1791588110129001C6VU","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=8Vcp6w8C8NE","basis":"captions-ja",
+  "summary":[{"atSeconds":581,"text":"Nerdio が、既存の Citrix 環境を評価し、Azure Virtual Desktop や Windows 365 の専用・共有型など、用途に合う移行先を検討する方法を紹介しました。"}],
+  "updates":[{"atSeconds":874,"text":"vSphere 環境との連携を公開プレビューとして案内し、vCenter を使う構成をデモで示しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":71,"text":"すべての業務を一斉に移す前提を置かず、クラウドに移す対象とオンプレミスに残す対象を分けて評価します。"}]
+}

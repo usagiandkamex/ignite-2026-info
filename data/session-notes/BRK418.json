@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK418","sessionId":"1787856636851001Evwu","offeringId":"1787856636851001Evwu-1791588269795001CgI7","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=ILfFXsnodq4","basis":"captions",
+  "summary":[{"atSeconds":596,"text":"次期 Windows Server の投資領域として、OS の保護強化、ストレージとネットワークの改善、既存のサーバー環境で AI 推論を支える基盤を説明しました。"}],
+  "updates":[{"atSeconds":537,"announcementId":"bon-449","text":"Windows Server 2028 が次期リリースとして紹介され、評価用の公開プレビューが Windows Server Insider Program で案内されました。"},{"atSeconds":2355,"announcementId":null,"text":"Hyper-V の管理に特化した Windows Admin Center の仮想化モードが一般提供になりました。"}],
+  "cases":[],
+  "tips":[]
+}

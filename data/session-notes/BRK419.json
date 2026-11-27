@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK419","sessionId":"1787856636998001ES6L","offeringId":"1787856636998001ES6L-1791588310080001CIft","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":402,"text":"VMware から Hyper-V に移行する際の選択肢として、GPU の分割とライブ マイグレーション、CPU の互換性、ストレージ、管理機能を取り上げました。"}],
+  "updates":[{"atSeconds":1654,"announcementId":null,"text":"Hyper-V のホストやクラスターの管理に特化した Windows Admin Center の仮想化モードが一般提供になりました。"}],
+  "cases":[{"atSeconds":1372,"text":"移行支援を行うパートナーが、顧客の VMware 環境を Windows Server と Hyper-V に移行する取り組みを紹介しました。"}],
+  "tips":[{"atSeconds":2016,"text":"災害復旧ではストレージ装置の複製機能のほか、ストレージ方式に依存せず仮想マシン単位で複製する Hyper-V Replica も選択肢になります。"}]
+}

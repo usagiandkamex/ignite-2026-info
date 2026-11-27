@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK406", "sessionId": "1787856635039001EPGT", "offeringId": "1787856635039001EPGT-1791588097705001CXCt",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=-RhUWaygkis", "basis": "captions",
+  "summary": [{"atSeconds": 205, "text": "AI を試験導入から日常業務へ広げるには、誰のためにエージェントが動き、何にアクセスできるかを Windows 上で管理する必要があると説明しました。"}],
+  "updates": [
+    {"atSeconds": 484, "text": "Microsoft Execution Containers では、開発者がエージェントに必要なアクセスを宣言し、組織のポリシーで決めた境界を Windows が実行時に適用すると説明しました。", "announcementId": null},
+    {"atSeconds": 995, "text": "Windows のインテリジェントルーティングを紹介し、PC で動くローカルモデルと Azure 上のモデルを、タスクに応じて使い分ける考え方を説明しました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": [{"atSeconds": 450, "text": "週報を作るだけなら対象週のプロジェクト資料に絞るなど、利用者本人が見られる範囲とは別に、エージェントごとに必要最小限のアクセス範囲を設定します。"}]
+}

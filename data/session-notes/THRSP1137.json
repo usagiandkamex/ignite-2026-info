@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1137",
+  "sessionId": "1787858598890001SaFo",
+  "offeringId": "1787858598890001SaFo-1791588343701001CJ0y",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=PlKoeuRbikY",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 251,
+      "text": "ServiceNow と Microsoft は、チケット増加、障害対応、構成管理、脆弱性把握が IT 部門へ同時に負荷をかける状況を整理しました。"
+    },
+    {
+      "atSeconds": 1012,
+      "text": "Foundry IQ を使って手順書、ナレッジ記事、トラブル対応ガイドをインシデントへ結び付け、対応者が必要な知識を探す負担を減らす構想を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 501,
+      "text": "VM 停止を題材にしたデモでは、AIOps エージェントがアラートの原因と影響を調べ、組織の基準に沿ってインシデントへ昇格させ、ITSM エージェントが Foundry IQ で復旧手順を参照する流れを示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2,
+      "text": "冒頭で将来に関する説明が含まれると注意しており、デモで示した構想と実際に提供されている機能・条件は分けて確認する必要があります。"
+    }
+  ]
+}

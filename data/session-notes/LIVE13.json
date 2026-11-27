@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE13","sessionId":"1793676330973001o6jJ","offeringId":"1793676330973001o6jJ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":22,"text":"Microsoft Foundry と Fireworks の連携をもとに、企業がオープンモデルを自社のタスクに合わせて調整・配置する選択肢を説明しました。"}],
+  "updates":[{"atSeconds":22,"text":"Foundry から Fireworks のモデルを直接利用する連携を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":159,"text":"モデルを選ぶときは精度だけでなく、重みのライセンス、調整、配置をどの基盤で行うかも確認します。"}]
+}

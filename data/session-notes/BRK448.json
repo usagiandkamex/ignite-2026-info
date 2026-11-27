@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK448",
+  "sessionId": "1787856641427001EIEu",
+  "offeringId": "1787856641427001EIEu-1791588175102001CcC9",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=bOVIztVIPxk",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 159, "text": "サンドボックスを検証用の環境にとどめず、エージェントが本番で処理を繰り返し実行する際の隔離された実行基盤として捉えます。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 256, "text": "Nous Research が、Hermes Agent の基盤に Azure Container Apps Sandboxes を利用している例を紹介しました。"},
+    {"atSeconds": 2200, "text": "Cognite は、設備とセンサー値、保全情報の関係を知識グラフで整理し、サンドボックスで動く産業向けエージェントが参照できるようにした例を説明しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 225, "text": "本番の実行環境は隔離の強さだけで選ばず、短い処理と長時間の処理の両方で、文脈の引き継ぎ、通信、ID の統制が要件を満たすかを確かめます。"}
+  ]
+}

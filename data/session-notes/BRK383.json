@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK383", "sessionId": "1787856631464001E0K2", "offeringId": "1787856631464001E0K2-1791588271138001CYpm",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 451, "text": "Dynamics 365 Business Central の実演を通じて、AI を使って経費処理や仕入先登録などの業務を見直す方法を紹介しました。"}],
+  "updates": [
+    {"atSeconds": 1339, "text": "Business Central 内で経費を登録・管理できる機能と、複数の場所から領収書を集めて処理する Expense Agent を紹介しました。", "announcementId": null},
+    {"atSeconds": 812, "text": "質問への回答にとどまらず、Business Central の業務データを操作できるようにする取り組みを紹介しました。", "announcementId": null}
+  ],
+  "cases": [{"atSeconds": 1026, "text": "デモでは、Web サイトで見つけた架空の Adventure Works を仕入先として登録するよう指示しました。"}],
+  "tips": [{"atSeconds": 1956, "text": "仕入先から届く請求書の登録が滞る場合は、書類を取り込んで Business Central の仕入請求書に変換する Payables Agent が選択肢になります。"}]
+}

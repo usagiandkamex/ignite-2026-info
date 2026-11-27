@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK459",
+  "sessionId": "1787856643100001EZZI",
+  "offeringId": "1787856643100001EZZI-1791588155572001CcAI",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=mGOMXmfBlE4",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 403, "text": "行政機関ごとの業務や制度の違いを前提に、別の組織で得られた AI 導入の教訓や設計パターンを自組織に合わせて再利用する考え方を説明しました。"},
+    {"atSeconds": 841, "text": "職員の作業に AI を組み込む Copilot と、行政機関が持つデータや専門知識を回答の根拠にする Microsoft IQ の役割を説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 1250, "text": "フィンランドの税務当局 Vero は、税目ごとに個別開発していた約 70 のシステムを集約・刷新した経験を、AI 導入に至る経緯の一つとして紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 570, "text": "試行段階から、住民や行政サービスにとって何が変われば成功かを決め、対象の業務を個別の手順に分けて検討します。"}
+  ]
+}

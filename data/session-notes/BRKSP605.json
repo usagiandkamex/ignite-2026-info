@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRKSP605",
+  "sessionId": "1787854984385001tpdF",
+  "offeringId": "1787854984385001tpdF-1791588200901001CCnX",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=e1pVcSaHa-c",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 1610,
+      "text": "Microsoft はデータ主権を単に国や地域の問題として捉えず、保存時の暗号化も含め、組織が自らデータを明確に制御できることが重要だと説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 677,
+      "text": "Lenovo は Azure Local の顧客事例を紹介し、医療機関 Baptist Health ではログイン時間を短縮したと述べました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 314,
+      "text": "製造ラインの画像検査では、梱包・出荷後に欠陥が分かっても手遅れです。どれだけ早く判断が必要かという業務要件を起点に、AI を稼働させる場所を考えます。"
+    }
+  ]
+}

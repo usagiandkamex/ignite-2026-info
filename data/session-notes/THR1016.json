@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1016", "sessionId": "1787856600278001EaPz", "offeringId": "1787856600278001EaPz-1791588143790001Cvnl", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=PMPFeICncVM", "basis": "captions",
+  "summary": [
+    {"atSeconds": 120, "text": "Defender の検知・調査・対応と、幅広い外部データを扱う Sentinel を組み合わせた ISOC の体験を説明しました。組織全体の情報を見渡す構成として紹介しています。"},
+    {"atSeconds": 659, "text": "すべてのログに即時の検知や自動処理が必要とは限らないと説明しました。調査目的の保存と、リアルタイムの処理を、データの用途に合わせて考える内容です。"}
+  ],
+  "updates": [
+    {"atSeconds": 1105, "text": "Federated Data Connectors を紹介し、データをすべて取り込まずに、外部にある情報も Sentinel や ISOC の体験から参照できると説明しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 218, "text": "BlueVoyant は、Microsoft のプラットフォームに、人とプロセスの支援を組み合わせる立場から参加しました。ISOC を理解するために作成した案内サイトも紹介しました。"}
+  ],
+  "tips": []
+}

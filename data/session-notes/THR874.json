@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR874",
+  "sessionId": "1787856578385001EfjU",
+  "offeringId": "1787856578385001EfjU-1791588164414001CUwG",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=aA_6DQcClr4",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 181, "text": "会議やメールなどの業務上の変化をきっかけに、エージェントが人の指示を毎回待たずに次の作業を準備する考え方を紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 765, "announcementId": "bon-507", "text": "プレビューの Work IQ Listen では、業務の変化に応じてエージェントを起動し、関連情報を集めて次の対応を準備する流れを示しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 499, "text": "見積もり業務のデモでは、会議のアクション項目から価格担当者に確認が必要だと判断し、担当者間のやり取りを準備しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1008, "text": "エージェントは返信案や次の処理を準備するところまでとし、外部に出る操作の前には担当者の承認を挟みます。"}
+  ]
+}

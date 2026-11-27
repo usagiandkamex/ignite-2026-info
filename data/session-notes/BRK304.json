@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK304", "sessionId": "1787856619193001EGTP", "offeringId": "1787856619193001EGTP-1791588121156001CxFN",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 605, "text": "Work IQ が、人、関係者、これまでのやりとりなど、エージェントが業務を理解するためのコンテキストを扱うと説明しました。"}],
+  "updates": [{"atSeconds": 331, "text": "Microsoft 365 と外部システムをまたいで業務のコンテキストを利用する仕組みを紹介しました。", "announcementId": "bon-507"}],
+  "cases": [{"atSeconds": 1921, "text": "サポート担当者を題材に、異なるツールから業務のコンテキストを使う例を示しました。"}],
+  "tips": [{"atSeconds": 126, "text": "エージェントを評価するときは回答の文章だけでなく、顧客対応に必要な案件の背景を参照できるかを確認します。"}]
+}

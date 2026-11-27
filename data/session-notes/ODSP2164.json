@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2164","sessionId":"1787855000037001tICI","offeringId":"1787855000037001tICI-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=RxveFMJbVX0","basis":"captions",
+  "summary":[{"atSeconds":99,"text":"Action1 が、自動で本番サーバーを更新できるエージェントでも、結果の説明責任は人が負うと説明し、操作を任せてよい条件を整理しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":230,"text":"運用エージェントが会計情報を必要とする場合に、会計データベース全体への権限ではなく、承認された情報だけを返すサービスを使わせる例を挙げました。"}],
+  "tips":[{"atSeconds":379,"text":"分析、推奨、制限付きの実行の順に任せる範囲を広げ、一つの誤判断が組織全体に及ばないようにします。"}]
+}

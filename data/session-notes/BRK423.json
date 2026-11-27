@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK423","sessionId":"1787856637610001E284","offeringId":"1787856637610001E284-1791587922010001F67f","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=4_zRszUl4_o","basis":"captions",
+  "summary":[{"atSeconds":358,"text":"Azure SRE Agent を自ら本番運用した経験から、エージェント型アプリに必要な隔離実行、モデルやツールへのアクセス管理、負荷に応じた拡張を説明しました。"}],
+  "updates":[{"atSeconds":1076,"announcementId":null,"text":"複数のモデルやエージェント、ツールへのアクセスと利用量をまとめて管理する Azure AI Gateway の一般提供を発表しました。"}],
+  "cases":[{"atSeconds":2287,"text":"Deloitte は、統制下のデータを使う生成 AI アプリを Azure OpenAI と Azure Container Apps で運用する取り組みを紹介しました。"}],
+  "tips":[{"atSeconds":188,"text":"エージェントの投資効果を見極めるには、デモ用の課題ではなく、現場が実際に解決したい運用課題から始めます。"}]
+}

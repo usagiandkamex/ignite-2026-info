@@ -1,0 +1,15 @@
+{
+  "sessionCode": "THR887", "sessionId": "1787856580323001EG0e", "offeringId": "1787856580323001EG0e-1794857987262001qzjy", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 76, "text": "プロンプトで試作したアプリを、組織内で公開・運用できる業務アプリにするには何が必要かを取り上げました。"},
+    {"atSeconds": 420, "text": "Copilot Managed Runtime のアプリは React と TypeScript のコードとして Git リポジトリに置かれ、開発者が拡張できます。Microsoft 365 のサインインやコネクタ、Work IQ との接続には SDK を使います。"}
+  ],
+  "updates": [
+    {"atSeconds": 613, "text": "Copilot Managed Runtime アプリの一般提供を案内しました。実演で使ったテナントに残るプレビュー表記は、ロールアウトに伴い順次なくなると説明しました。", "announcementId": "bon-480"}
+  ],
+  "cases": [
+    {"atSeconds": 613, "text": "顧客からのフィードバックを追跡するアプリを、Copilot Studio で自然言語の指示から作るデモを行いました。"},
+    {"atSeconds": 1227, "text": "デモのアプリをチームメンバーに共有し、Cowork のアプリ用スキルでドキュメントを PDF にまとめた例も示しました。"}
+  ],
+  "tips": []
+}

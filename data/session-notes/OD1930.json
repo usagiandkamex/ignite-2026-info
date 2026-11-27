@@ -1,0 +1,7 @@
+{
+  "sessionCode":"OD1930","sessionId":"1793594384813001xogx","offeringId":"1793594384813001xogx-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=YBY_GlLUX0M","basis":"captions",
+  "summary":[{"atSeconds":127,"text":"SharePoint 管理センターで、エージェントの種類、参照先、コンテンツの機密性、読み取りと変更の違いを軸に、Microsoft 365 コンテンツへのアクセスを把握する方法を紹介しました。"}],
+  "updates":[{"atSeconds":340,"text":"エージェントの設計テンプレートを選び、そのテンプレートから作成されたエージェントをまとめて対象にした外部共有の制限を説明しました。","announcementId":null}],
+  "cases":[{"atSeconds":179,"text":"業務グループとエージェント種別を交差させたヒートマップで、どのサイトや OneDrive、Teams にアクセスが集中しているかを見るデモを行いました。"}],
+  "tips":[{"atSeconds":229,"text":"変更が行われているサイトを見つけたら、読み取りとの違いを確認したうえで、サイト所有者を特定して対応を相談します。"}]
+}

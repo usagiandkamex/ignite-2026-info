@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK249","sessionId":"1787856610944001ErzW","offeringId":"1787856610944001ErzW-1791588218863001CWHQ","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":79,"text":"エージェントの動作を観測するだけでなく、本番トラフィックを評価し、改善に結び付ける進め方を紹介しました。"}],
+  "updates":[{"atSeconds":508,"text":"Foundry のインサイト、注釈、最適化を使い、利用者の意図に合わなかった結果を改善する流れを示しました。","announcementId":"bon-465"}],
+  "cases":[{"atSeconds":256,"text":"架空の製薬会社が研究開発への投資判断に使うエージェントを題材にしました。"}],
+  "tips":[{"atSeconds":995,"text":"改善前と改善後に同じ質問を投げ、結果だけでなく利用者が追加で指示する手間も比較します。"}]
+}

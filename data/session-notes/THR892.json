@@ -1,0 +1,15 @@
+{
+  "sessionCode": "THR892", "sessionId": "1787856581086001E9A0", "offeringId": "1787856581086001E9A0-1791814915525001CFIW", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=Z9mfY_WgrOE", "basis": "captions",
+  "summary": [
+    {"atSeconds": 27, "text": "一つのドライバー障害が端末全体に波及し得るため、Driver Quality Initiative では、ドライバーの問題が利用者に届く前にリスクを減らすと説明しました。"},
+    {"atSeconds": 218, "text": "パートナーごとに異なるドライバーを Microsoft が保守する共通のクラス ドライバーに置き換えると、更新経路をそろえられると説明しました。プリンターと SoundWire オーディオを例に挙げました。"},
+    {"atSeconds": 682, "text": "Windows Endpoint Security Platform では、セキュリティ製品がユーザーモードからシステムの動作を監視できると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 485, "text": "Windows Endpoint Security Platform の一般提供を発表し、Windows 11 の 25H2 と 26H2 で利用できると説明しました。", "announcementId": "bon-540"}
+  ],
+  "cases": [
+    {"atSeconds": 905, "text": "セキュリティ製品のルールが再起動後も適用されることを実演しました。保存したルールが起動障害につながる場合には、Windows の自動回復が働く設計だと説明しました。"}
+  ],
+  "tips": []
+}

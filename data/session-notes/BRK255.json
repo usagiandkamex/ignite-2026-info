@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK255","sessionId":"1787856611856001EVuB","offeringId":"1787856611856001EVuB-1791588235695001CGbL","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":278,"text":"Foundry Local と実行環境を使い、端末上で動く AI とクラウドを組み合わせたアプリを作る構成を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":691,"text":"GitHub Copilot と Foundry Local を組み合わせ、端末上で音声入力を扱う例を実演しました。"}],
+  "tips":[{"atSeconds":278,"text":"端末上で使うモデルは、対象端末の実行環境とハードウェアで動作を確認してから配布します。"}]
+}

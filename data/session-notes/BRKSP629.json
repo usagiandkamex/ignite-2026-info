@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRKSP629",
+  "sessionId": "1787854985772001tuQE",
+  "offeringId": "1787854985772001tuQE-1791588339665001Ckaa",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions-ja",
+  "summary": [
+    {
+      "atSeconds": 1641,
+      "text": "Manulife は、人が方向を定めエージェントが業務を担う組織への移行を説明し、AI を戦略の一部ではなく中核として活用する方向を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 99,
+      "text": "Manulife の団体保険領域では、大量の取引を扱う既存アプリを Azure で移行・近代化する取り組みを紹介しました。"
+    },
+    {
+      "atSeconds": 1093,
+      "text": "Manulife が顧客成果と責任ある AI の責任を持ち、Microsoft がクラウド・データ・AI・統制の基盤、TCS が業務環境を理解したエンジニアリングを担う三者の役割分担を説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 566,
+      "text": "新しいデータソースのたびに接続を作り直さないよう、メタデータ取り込みの再利用可能なパターンと、各データの業務責任者を整えるよう勧めました。"
+    }
+  ]
+}

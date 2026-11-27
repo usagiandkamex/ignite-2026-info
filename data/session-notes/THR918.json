@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR918", "sessionId": "1787856585033001EYWe", "offeringId": "1787856585033001EYWe-1791588214029001C6M9", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=5aDXLdO2VNU", "basis": "captions",
+  "summary": [
+    {"atSeconds": 253, "text": "教育で AI を使う際には、教員や学習者が、課題などでどこまで AI の利用を認めるかという学修上の公正さの問題に直面していると指摘しました。"},
+    {"atSeconds": 529, "text": "Microsoft 365 の組織内データを参照する Copilot に加え、Cowork ではスキルとして標準的な作業手順を定義する使い方を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 1137, "text": "課題や成績などの教育データを Copilot から利用する Education MCP Server のプライベートプレビューを案内しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 1232, "text": "デモでは教育用のデータソースを Copilot で有効にし、課題、成績、講評、評価基準などを読み取れることを説明しました。"}
+  ],
+  "tips": []
+}

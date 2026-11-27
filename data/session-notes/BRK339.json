@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK339","sessionId":"1787856624637001E5B5","offeringId":"1787856624637001E5B5-1791588217692001Cy4F","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":73,"text":"端末や Cloud PC 上で利用者の権限に近い状態で動くローカル エージェントを把握し、管理する方法を説明しました。"}],
+  "updates":[{"atSeconds":883,"text":"承認済みのエージェントを一律に止めるのではなく、Intune のポリシーで実行範囲を制御する構成を紹介しました。","announcementId":"bon-529"}],
+  "cases":[{"atSeconds":427,"text":"財務担当者が四半期決算でローカル エージェントを利用する場面を題材にしました。"}],
+  "tips":[{"atSeconds":1500,"text":"利用者本人に認める権限と、その利用者を補助するエージェントに必要な権限を分けます。"}]
+}

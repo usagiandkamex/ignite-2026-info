@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK412", "sessionId": "1787856635948001E9jR", "offeringId": "1787856635948001E9jR-1791588116977001CUXt",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=eKznflnKomA", "basis": "captions",
+  "summary": [{"atSeconds": 664, "text": "エージェントによる支援を移行作業だけに限らず、既存資産の把握、アプリや基盤の設計、刷新計画の作成と実行まで広げる考え方を示しました。"}],
+  "updates": [{"atSeconds": 1875, "text": "Azure Catalyst で、資産の依存関係を踏まえ、総保有コストや基盤・アプリの設計案を含む提案を作成し、業務上の重要度や複雑さに合わせて段階的な移行計画に落とし込む機能を紹介しました。", "announcementId": "bon-448"}],
+  "cases": [{"atSeconds": 482, "text": "Lumen は、20年以上使ってきたアプリを Java 17 に移行し、同社報告では開発と移行の工数を82%削減したと紹介しました。"}],
+  "tips": [{"atSeconds": 975, "text": "移行先の基盤を設計するときは、ネットワークや ID、セキュリティ、運用管理、コンプライアンスを別々に考えず、ランディングゾーンの設計にまとめます。"}]
+}

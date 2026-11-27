@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR1033", "sessionId": "1787856603048001E0GC", "offeringId": "1787856603048001E0GC-1791588258226001CViV", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=ILcVf3DQmqE", "basis": "captions",
+  "summary": [
+    {"atSeconds": 254, "text": "AI で開発しやすくなっても、作れることと自社で作るべきことは違うと説明しました。差別化や中核能力に結びつかない部分では、購入や協業を検討する考え方です。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 600, "text": "Microsoft for Startups の Pegasus を紹介しました。多数の提案から相手を選びにくい企業に対し、顧客価値などの観点でスタートアップを見極めてつなぐ取り組みです。"},
+    {"atSeconds": 1094, "text": "AI の費用を管理するスタートアップを例に、取り組み別のトークン費用やクラウド支出を財務側が詳しく把握する用途を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1276, "text": "中核分野は自社で作る一方、技術変化を取り込むための新しい協業や、事業への影響を測る手段も組み合わせるよう勧めました。"}
+  ]
+}

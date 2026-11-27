@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2136","sessionId":"1787854997100001tuBm","offeringId":"1787854997100001tuBm-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=_W8bC1nhvrc","basis":"captions",
+  "summary":[{"atSeconds":200,"text":"Windows Autopilot で端末を登録するときのイベントを、端末の設定、アプリの導入、アカウントの設定などの段階別に記録する方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":532,"text":"登壇者が用意したポータルで、登録セッションの進行状況と端末のログを関連付けて確認しました。"}],
+  "tips":[{"atSeconds":1,"text":"登録に失敗したら、端末をリセットする前にログや最後に表示されたエラーを記録し、調査に使える状態にします。"}]
+}

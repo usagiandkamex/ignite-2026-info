@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK382", "sessionId": "1787856631314001Eynh", "offeringId": "1787856631314001Eynh-1791814918515001Cspr",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 204, "text": "Power Platform で現場の作成活動を広げながら、管理者が利用状況やリスクを把握し、必要な制御をかけるための考え方を説明しました。"}],
+  "updates": [{"atSeconds": 125, "text": "Cowork や Copilot Studio などで作ったアプリを共通の基盤に載せて管理する新しい選択肢として、Copilot Managed Runtime を紹介しました。", "announcementId": "bon-480"}],
+  "cases": [
+    {"atSeconds": 517, "text": "Novartis の担当者は、Power Platform 導入時にガバナンスを整えた経験と、現在は現場の開発者コミュニティを支援していることを説明しました。"},
+    {"atSeconds": 1694, "text": "作成者側のデモでは、Cowork に自然言語で要件を伝えて、Ignite のセッションを一覧管理するアプリの作成を始めました。"}
+  ],
+  "tips": [{"atSeconds": 804, "text": "環境ルーティングで作成者を共有の既定環境ではなく制約付きの個人環境に案内し、本番に進めるアプリやフローは IT 部門が見極めます。"}]
+}

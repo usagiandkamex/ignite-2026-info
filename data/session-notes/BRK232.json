@@ -1,0 +1,37 @@
+{
+  "sessionCode": "BRK232",
+  "sessionId": "1787856608289001EXor",
+  "offeringId": "1787856608289001EXor-1791814913161001Cf9l",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Kzr52zH-eOo",
+  "basis": "captions-and-chapters",
+  "summary": [
+    {
+      "atSeconds": 148,
+      "text": "EY、John Deere、Clyde & Co、Microsoft が、法務や財務などの現場で Copilot を試行から日常のプロセスに移す際に学んだことを共有しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 969,
+      "text": "法務向け Copilot と Legal Skills が、一般的な文章作成から職種固有の作業へ利用範囲を広げると紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 376,
+      "text": "EY はライセンスを段階的に展開し、利用者の学習を支援しました。John Deere は国をまたぐ利用者コミュニティを育てました。"
+    },
+    {
+      "atSeconds": 1456,
+      "text": "財務の手作業だった照合を Copilot に任せ、担当者が追跡情報から結果を検証する例を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2674,
+      "text": "汎用的なプロンプト講習だけでなく、受講者の役割と担当業務に沿った小さなユースケースから訓練するとよいと述べました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK302","sessionId":"1787856618898001EAOa","offeringId":"1787856618898001EAOa-1791588268002001CvT5","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":80,"text":"Work IQ の利用例として、リポジトリだけでは分からないチームの決定や仕事の事情を、エージェントの判断に取り入れる方法を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":258,"text":"Jira やコードには記録されていない二言語対応の要件を会議の文脈から参照し、リリース可否の判断が変わる例を示しました。"}],
+  "tips":[{"atSeconds":977,"text":"同じリリース確認を PR ごとに手で依頼しているなら、既存の開発ワークフローに確認を組み込むことを検討します。"}]
+}

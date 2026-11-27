@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK365", "sessionId": "1787856628645001Etkf", "offeringId": "1787856628645001Etkf-1791588243215001CYFH",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 840, "text": "Azure Cosmos DB の運用データと Fabric の分析をつなぎ、エージェントの品質を継続的に見直す構成を紹介しました。"}],
+  "updates": [],
+  "cases": [{"atSeconds": 307, "text": "旅行計画アプリ Cosmos Voyager で、過去の会話を参照して行き先や日程を提案する様子を実演しました。"}, {"atSeconds": 1324, "text": "Connectify の登壇者が、Azure と Fabric を使ったコンプライアンス業務でのエージェント運用を紹介しました。"}],
+  "tips": [{"atSeconds": 613, "text": "チャットの履歴、エージェントが再利用する記憶、埋め込み、実行状態を区別すると、後から挙動を分析しやすくなります。"}]
+}

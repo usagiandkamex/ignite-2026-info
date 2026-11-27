@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK209",
+  "sessionId": "1787856604700001Ewpl",
+  "offeringId": "1787856604700001Ewpl-1791588244804001Cz5v",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 268, "text": "Teams で同僚のように働くエージェントの設計を、会話体験、ID と権限、業務コンテキストの三つに整理しました。"}],
+  "updates": [{"atSeconds": 131, "text": "Teams 向けのエージェントを、Copilot Studio で作る方法と、Teams SDK・CLI を使ってコードから作る方法を紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 156, "text": "GitHub Copilot と Teams SDK を使い、Teams 向けのエージェントを講演中に組み立てるデモを行いました。"}],
+  "tips": [{"atSeconds": 350, "text": "エージェントの返信先を会話のスレッドにそろえるなど、人がチームで会話するときの慣習を取り入れます。"}]
+}

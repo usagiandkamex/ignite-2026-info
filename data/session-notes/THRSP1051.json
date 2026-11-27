@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1051","sessionId":"1787858591313001S6FP","offeringId":"1787858591313001S6FP-1791588178166001C3m7","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":223,"text":"Lumen は、AI の学習、推論、試験導入が複数の拠点やクラウドにまたがるため、処理の場所が変わってもポリシーを適用できるネットワークが必要だと説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":856,"text":"人が個別のチケットを作る運用に加え、ポリシーに沿ったネットワーク変更を API で受け付けられるようにする考え方を紹介しました。"}]
+}

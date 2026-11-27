@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK380", "sessionId": "1787856631006001Ed7w", "offeringId": "1787856631006001Ed7w-1791588243464001CBSB",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 142, "text": "コンタクトセンターと CRM をつなぎ、問い合わせ対応の記録だけでなく、組織の他の業務情報も応対に生かす構成を説明しました。"}],
+  "updates": [{"atSeconds": 520, "text": "Microsoft Contact Center Intelligence は、既存のコンタクトセンターや CRM を置き換えずに、Microsoft の AI とその管理機能を追加する選択肢として紹介されました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 722, "text": "登壇者は Lenovo の事例で、平均処理時間が 20％改善し、担当者の生産性が 15％向上したと報告しました。"},
+    {"atSeconds": 1233, "text": "ライブデモでは音声エージェントが英語とスペイン語を切り替え、有人窓口への転送を案内しました。デモ中に転送は完了しませんでした。"}
+  ],
+  "tips": [{"atSeconds": 35, "text": "通話時間や一件あたりの処理費用だけで判断せず、問い合わせの始まりから解決までの顧客体験も評価します。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK279","sessionId":"1787856615427001E5OT","offeringId":"1787856615427001E5OT-1791588325140001CU1a","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":158,"text":"コーディング向けの独自モデルを作る利点を、製品に合わせた調整、性能の取引条件、短い検証サイクルから説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":982,"text":"モデルの学習を進めるときは、ベンチマークの正答率だけでなく、製品内の待ち時間や実際の開発タスクも評価します。"}]
+}

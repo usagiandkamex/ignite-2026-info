@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK269","sessionId":"1787856613939001E7Tt","offeringId":"1787856613939001E7Tt-1791588270242001CAgj","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":264,"text":"手作業に偏った開発プロセスを見直し、GitHub Copilot を土台にした AIMS で複数の作業を支援する取り組みを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1028,"text":"障害報告を受けて、担当者が調査と原因の切り分けを進める作業を支援する事例を説明しました。"}],
+  "tips":[{"atSeconds":510,"text":"開発アシスタントはエディターへの導入だけで終えず、既存の業務システムやガバナンスとの接続も設計します。"}]
+}

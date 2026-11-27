@@ -1,0 +1,37 @@
+{
+  "sessionCode": "BRKSP630",
+  "sessionId": "1787854985876001tT18",
+  "offeringId": "1787854985876001tT18-1791588339892001ChGq",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=g2wSshatJ90",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 991,
+      "text": "NVIDIA と Microsoft は、Fabric でデータ処理や分析をまとめたうえで、GPU のアクセラレーションにより分析の待ち時間を減らす取り組みを紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1520,
+      "text": "Fabric の GPU を使う分析機能は、対応リージョンが限られる限定的なパブリックプレビューと説明しました。参加フォームを通じた案内が必要な段階です。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1401,
+      "text": "デモでは同じ Fabric データウェアハウスを GPU なし・ありで比較し、同時実行数を増やしたときの応答を示しました。任意の問い合わせで同じ結果になるという保証ではありません。"
+    },
+    {
+      "atSeconds": 1520,
+      "text": "UNC Health の報告・分析用途で約 5 倍の性能向上があったと登壇者が紹介しました。個別顧客の用途での結果です。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 799,
+      "text": "安い旧世代インスタンスが必ず総費用を下げるとは限らないため、単価と同時に処理時間や性能差を比較するよう勧めました。"
+    }
+  ]
+}

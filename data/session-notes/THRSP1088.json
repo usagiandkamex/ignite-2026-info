@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1088",
+  "sessionId": "1787858590418001SeX7",
+  "offeringId": "1787858590418001SeX7-1791588237951001CQKh",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=z1KkFYcyCEs",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 214,
+      "text": "Nutanix は Azure Blob Storage のデータをすべて戻し終える前に VM を起動し、残りの読み取りを Blob から行う即時復元の仕組みを説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 464,
+      "text": "NC2 on Azure へのフェイルオーバーデモでは、Prism Central を使ってオンプレミスと Azure 側の可用性ゾーンを接続する管理画面を示しました。"
+    },
+    {
+      "atSeconds": 692,
+      "text": "保護ポリシーと復旧計画を設定する例として二つの VM を使いました。金融関連の名前は登壇者が付けたもので、実顧客の金融システムの復旧実績ではないと説明しています。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 692,
+      "text": "Prism Central に災害復旧機能が含まれていても自動で有効になるわけではないため、保護ポリシーと復旧計画の設定を確認する必要があります。"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK411", "sessionId": "1787856635794001EvWl", "offeringId": "1787856635794001EvWl-1791588234103001CJ67",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=N12e3ITrZuo", "basis": "captions",
+  "summary": [{"atSeconds": 246, "text": "基幹システムを刷新する際は、コードの変換自体よりも、事業を危険にさらさずに既存の業務を引き継ぎ、組織の AI 基盤につなげることが課題だと説明しました。"}],
+  "updates": [{"atSeconds": 809, "text": "RainCode と Microsoft が手がける Cadenza を紹介しました。既存システムを実行できる状態を起点に、ソースコードから業務機能を読み解いてテストケースを作るアプローチです。", "announcementId": null}],
+  "cases": [{"atSeconds": 1457, "text": "LSEG のデータ基盤担当者は、機能の拡張と新機能の提供までの時間短縮を目指し、Microsoft や RainCode と将来のアーキテクチャを検討していると説明しました。"}],
+  "tips": [{"atSeconds": 858, "text": "AI が作った業務仕様やテストをそのまま採用せず、既存実装に対してテストを実行し、結果が一致するまで仕様とテストを見直します。"}]
+}

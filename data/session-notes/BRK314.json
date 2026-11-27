@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK314","sessionId":"1787856620707001EyJO","offeringId":"1787856620707001EyJO-1791588352983001C0oQ","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":348,"text":"Azure の障害対応で案件が増える中、エージェントを使って一次調査を支援しつつ、統制を保つ方法を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":584,"text":"架空の小売サイトで発生した障害に対し、顧客と Microsoft のエージェントが同じ案件を調べるデモを行いました。"}],
+  "tips":[{"atSeconds":1366,"text":"エージェントが判断する部分と、アクセス権などの規則を確実に適用する実行部分を分けます。"}]
+}

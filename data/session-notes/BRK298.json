@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK298","sessionId":"1787856618278001EIke","offeringId":"1787856618278001EIke-1791588200418001CWAt","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":461,"text":"仕事の判断をする場で、Chat、Cowork、MCP など異なる入口から同じ Power BI の業務指標にアクセスする方法を説明しました。"}],
+  "updates":[{"atSeconds":117,"text":"Power BI のセマンティック モデルを使う Copilot の体験を取り上げ、講演では一般提供として紹介しました。","announcementId":"bon-503"}],
+  "cases":[],
+  "tips":[{"atSeconds":461,"text":"会話ツールごとに指標の定義を作り直さず、共通のセマンティック モデルを使います。"}]
+}

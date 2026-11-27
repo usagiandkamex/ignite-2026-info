@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK390","sessionId":"1787856632584001E5Dw","offeringId":"1787856632584001E5Dw-1791588154118001C10P","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=bVlGlQy9H_g","basis":"captions",
+  "summary":[{"atSeconds":1779,"text":"MXC はエージェントの操作範囲を OS 側で制御する仕組みで、利用者本人に与えた権限をエージェントにそのまま引き継がせない設計を説明しました。"}],
+  "updates":[{"atSeconds":1978,"announcementId":"bon-543","text":"MXC では動作を監査・観察してから制限を適用する学習モードを紹介し、学習・許容モードは一般提供と案内されています。"}],
+  "cases":[{"atSeconds":897,"text":"OpenAI の登壇者が、Codex を Windows 上で動かす際に、アプリ全体とエージェントの操作を分けて隔離する考え方を紹介しました。"}],
+  "tips":[{"atSeconds":527,"text":"エージェントのタスクに必要なアクセスと利用者が承認した範囲を整理し、その境界を MXC のポリシーで強制する設計が示されました。"}]
+}

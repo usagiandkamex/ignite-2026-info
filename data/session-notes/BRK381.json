@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK381", "sessionId": "1787856631163001EgnG", "offeringId": "1787856631163001EgnG-1791588130561001CdlI",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 89, "text": "Microsoft Contact Center Intelligence の狙いは、既存のコンタクトセンター基盤を残したまま、Dynamics 365 Contact Center と同じ AI 層を加えることです。"}],
+  "updates": [{"atSeconds": 197, "text": "Web のチャットと電話の音声に対応するエージェントをまとめて管理し、会話ごとの品質を分析する機能を紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 444, "text": "架空の Contoso Bank のデモでは、カードの相談を音声エージェントが受け付け、既存の有人窓口へ引き継ぎました。"}],
+  "tips": [{"atSeconds": 283, "text": "専門エージェントごとに参照資料と担当範囲を分けます。カード案内の例では、商品パンフレットに基づき、顧客が重視する年会費や特典を確認して候補を絞りました。"}]
+}

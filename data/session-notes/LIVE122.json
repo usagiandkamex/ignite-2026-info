@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE122","sessionId":"1793674549948001linU","offeringId":"1793674549948001linU-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":110,"text":"Windows の防御の状態と、管理者権限をいつ渡すかを分け、人とエージェントが使う端末の保護を説明しました。"}],
+  "updates":[{"atSeconds":110,"text":"複数の設定を一つずつ尋ねる代わりに、Windows Baseline Protection で保護の状態を調べる仕組みを紹介しました。","announcementId":"bon-540"}],
+  "cases":[],
+  "tips":[{"atSeconds":289,"text":"日常作業を常に管理者として行わず、本当に必要な操作だけに昇格を限定します。"}]
+}

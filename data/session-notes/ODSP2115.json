@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2115","sessionId":"1787854994879001tpEZ","offeringId":"1787854994879001tpEZ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=1wsvslvXuNI","basis":"captions-ja",
+  "summary":[{"atSeconds":487,"text":"EPAM と Albert Heijn が、分割された注文の配送計画について、AI が担当者に選択肢を示し、担当者が最終判断する概念実証を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":737,"text":"デモには実データではなく模擬データを使い、出荷情報、店舗の位置、配達時間帯、倉庫の位置などを画面から取り込みました。"}],
+  "tips":[{"atSeconds":257,"text":"計画担当者によって判断が異なる作業を選び、経験者が考慮する条件を確認しながら、AI の提案を評価します。"}]
+}

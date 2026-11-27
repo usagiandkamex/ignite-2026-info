@@ -1,0 +1,36 @@
+{
+  "sessionCode": "THRSP1157",
+  "sessionId": "1787858601855001S4cx",
+  "offeringId": "1787858601855001S4cx-1791588239328001Ceki",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=iSYa7GBR-Nw",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 638,
+      "text": "Anthropic は長時間動くエージェントの信頼性を高めるため、推論と制御を行う部分を、コードやファイルを扱う実行環境から分離する設計を説明しました。"
+    },
+    {
+      "atSeconds": 899,
+      "text": "Claude の調達先と実際のホスト先は別の判断だと整理し、Foundry では Entra ID、Azure の請求、対象顧客の契約利用条件を確認する観点を示しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1142,
+      "text": "Claude Managed Agents はパブリックベータで、Anthropic から直接利用するサービスだと説明しました。Foundry がホストするエージェントと同じ提供形態ではありません。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 699,
+      "text": "実行環境を分けると、障害時にその部分だけ交換しやすくなり、資格情報を実行用サンドボックスの外に保管する設計や、セッションごとの分離にもつながると説明しました。"
+    },
+    {
+      "atSeconds": 1100,
+      "text": "モデル、エージェントのハーネス、実行基盤を層ごとに選び、Foundry に配置する場合も ID、アクセス範囲、Application Insights による動作記録を設計するよう勧めました。"
+    }
+  ]
+}

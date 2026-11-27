@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1077","sessionId":"1787858588728001SSsa","offeringId":"1787858588728001SSsa-1791588123705001ClfQ","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=j4rWCdM5k10","basis":"captions",
+  "summary":[{"atSeconds":515,"text":"Citrix と Microsoft が、仮想デスクトップを大規模に運用する顧客に向け、Azure の仮想マシンを一つのリージョンで展開する際の規模や管理を改善する取り組みを紹介しました。"},{"atSeconds":1380,"text":"外部接続を切った運用が必要な場合に、Azure Local のクラスター内でサービスを動かす構成を説明しました。"}],
+  "updates":[{"atSeconds":59,"text":"Citrix Platform Flex に関する同社の発表を取り上げました。","announcementId":null}],
+  "cases":[],
+  "tips":[]
+}

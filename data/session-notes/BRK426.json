@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK426","sessionId":"1787856638070001EJmp","offeringId":"1787856638070001EJmp-1791588351856001C2ts","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":1049,"text":"Red Hat と Azure の連携について、アプリの実行場所が異なっても管理やポリシーをそろえるハイブリッド クラウドの考え方を説明しました。"}],
+  "updates":[{"atSeconds":1293,"announcementId":null,"text":"Azure Red Hat OpenShift のホスト型コントロール プレーンが一般提供となり、制御面とワーカーノードを分離した構成を選べます。"}],
+  "cases":[{"atSeconds":582,"text":"ゲーテ・インスティトゥートは Azure Red Hat OpenShift に移行し、安定性や拡張性を確保しながら Moodle などのアプリを運用する事例を紹介しました。"}],
+  "tips":[{"atSeconds":615,"text":"環境を手で構成する代わりに、OpenShift GitOps で設定を再適用できるようにして、災害復旧時にも同じ構成を再現します。"}]
+}

@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK410", "sessionId": "1787856635643001EhaR", "offeringId": "1787856635643001EhaR-1791588196468001Ckj0",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=I4RmpEAA_bE", "basis": "captions",
+  "summary": [{"atSeconds": 173, "text": "Java、.NET、データベースの刷新をチーム横断で進める際の要件として、対象の多さに対応できること、組織ごとに調整できること、変更を統制できることを挙げました。"}],
+  "updates": [
+    {"atSeconds": 237, "text": "Azure Catalyst を発表し、アプリ、インフラ、データの調査・評価・計画・実行を一つの流れにまとめ、IT 部門と開発者が共同で進められると説明しました。", "announcementId": "bon-448"},
+    {"atSeconds": 1019, "text": "モダナイゼーション用 CLI にデータベース連携を追加し、アプリとデータベースを同時に評価し、移行を計画できると説明しました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": [{"atSeconds": 1472, "text": "チームごとに基準の解釈がばらつかないよう、移行先のフレームワーク、命名規則、避けるべき実装などを Markdown のルールブックにまとめます。"}]
+}

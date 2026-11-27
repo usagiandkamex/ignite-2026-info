@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2149","sessionId":"1787854998441001tvm1","offeringId":"1787854998441001tvm1-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=rJPeMEYTB88","basis":"captions-ja",
+  "summary":[{"atSeconds":126,"text":"Copilot で広告のコンプライアンスを確認する際、対象市場ごとの判断と、適用した規則の版、公式出典、確認日を一緒に残す仕組みを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":314,"text":"AI が作った広告を題材に、気候への影響に関する表現を確認し、判断に必要な追加情報を質問する流れを示しました。"}],
+  "tips":[{"atSeconds":623,"text":"判断基準を版管理し、基準が更新されたときに同じ入力を新しい版で再確認できるようにします。"}]
+}

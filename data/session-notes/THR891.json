@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR891", "sessionId": "1787856580930001Erqc", "offeringId": "1787856580930001Erqc-1791588176748001Cbgk", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=bWa4eDSmwNg", "basis": "captions",
+  "summary": [
+    {"atSeconds": 24, "text": "Intune にある Windows Autopatch の画面から始め、OS とドライバー、アプリの更新をどう管理するかを取り上げました。"},
+    {"atSeconds": 341, "text": "テンプレートで更新設定を一元管理し、既存ポリシーのどこに同じ設定があるかも確認できる画面を紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 734, "text": "アプリの自動更新について、対象グループごとに展開までの日数や期限を設定できる更新リングを Intune で紹介しました。", "announcementId": "bon-540"}
+  ],
+  "cases": [
+    {"atSeconds": 516, "text": "病院やラボなど、限られた時間帯にしか更新できない端末を例に、一般的な PC より厳密にメンテナンス時間を管理する必要があると説明しました。"}
+  ],
+  "tips": []
+}

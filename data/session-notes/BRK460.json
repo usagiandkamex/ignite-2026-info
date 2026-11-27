@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK460",
+  "sessionId": "1787856643249001EdAR",
+  "offeringId": "1787856643249001EdAR-1791588097028001C4nX",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=J9BOltZBo_0",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 309, "text": "医療機関が現場固有の手順を理解している強みを生かし、既製品だけに頼らず自組織でも業務用エージェントを作る取り組みを紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 710, "text": "Brown University Health は、患者情報と機密の業務情報の保護を前提に、全職員が Copilot Chat を利用できる環境を整えたと説明しました。"},
+    {"atSeconds": 1903, "text": "同院の脳神経外科医が、診察時に確認する紹介状や他職種の記録などを整理するため、自分の業務に合わせたエージェントを作った例が紹介されました。"}
+  ],
+  "tips": [
+    {"atSeconds": 834, "text": "Copilot Studio で現場の職員が試作するときは、最初から診療全体を対象にせず、小さな用途から始めます。"}
+  ]
+}

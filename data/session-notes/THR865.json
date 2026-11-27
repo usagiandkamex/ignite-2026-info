@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR865",
+  "sessionId": "1787856577012001Ed9A",
+  "offeringId": "1787856577012001Ed9A-1791588086796001CQRF",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=d8w0_Hqr1eg",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 100, "text": "AI の費用管理を IT 管理者だけの仕事にせず、現場の利用者や事業責任者も利用量と業務成果を見て判断できる運用を紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 423, "announcementId": "bon-478", "text": "Agent 365 の費用管理では、IT 管理者が支出ポリシーを設定し、対象ごとの消費量を確認するデモを行いました。"}
+  ],
+  "cases": [
+    {"atSeconds": 945, "text": "研究開発部門の運用を例に、IT 管理者が費用管理を事業側の責任者へ委任する流れを示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 759, "text": "支出上限の対象は、利用者やグループに持たせるのか、個別のエージェントなどのリソースに持たせるのかを先に決めます。"}
+  ]
+}

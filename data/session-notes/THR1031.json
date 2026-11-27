@@ -1,0 +1,33 @@
+{
+  "sessionCode": "THR1031",
+  "sessionId": "1787856602747001EPgf",
+  "offeringId": "1787856602747001EPgf-1791588152251001CEnL",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 24,
+      "text": "財務担当者が Copilot Cowork を使い、予測データを会議でレビューできる資料に変える流れを実演しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 249,
+      "text": "Cowork の財務向けプラグインとスキルを紹介。後半では予測作業をまとめる共有ワークスペースも紹介しました。",
+      "announcementId": "bon-481"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 577,
+      "text": "製品別の差異と閾値超過を表にし、原因分析とレビュー時の確認事項を一つの予測パッケージにまとめました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 607,
+      "text": "Cowork の出力をそのまま採用せず、元のセマンティックモデルと照合して正しい値や対象期間を使ったかを確認します。"
+    }
+  ]
+}

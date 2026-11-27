@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK252","sessionId":"1787856611387001ESPE","offeringId":"1787856611387001ESPE-1791588234779001CWCE","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":258,"text":"汎用モデルを組織固有の業務に合わせるために、追加学習を選ぶ場面と複数の学習方法を紹介しました。"}],
+  "updates":[{"atSeconds":560,"text":"Foundry の追加学習で、開いた重みのモデルや Microsoft MAI モデルも扱う方向性を紹介しました。","announcementId":"bon-465"}],
+  "cases":[],
+  "tips":[{"atSeconds":22,"text":"モデルを調整する前に、品質だけでなく、許容できる待ち時間や費用を対象業務に合わせて決めます。"}]
+}

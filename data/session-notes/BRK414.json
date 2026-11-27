@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK414", "sessionId": "1787856636240001E6X6", "offeringId": "1787856636240001E6X6-1791587921774001Fl1k",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=XtNCQ-HuYXk", "basis": "captions",
+  "summary": [{"atSeconds": 410, "text": "Microsoft のエンジニアリング部門では、各チームに AI ツールを渡し、現場の課題に合った実験を自分たちで行えるようにしていると説明しました。"}],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 803, "text": "Intune チームの登壇者は、製品コードではなくデモ用の .NET Framework 4.7.2 サービスを使い、切り戻ししやすいよう .NET 10 版を並行して用意する移行を示しました。"},
+    {"atSeconds": 1393, "text": "Azure Networking チームは、光ネットワークのファイバー断、機器交換、回線トラブルへの対応をデジタルワーカーが担っていると報告しました。"}
+  ],
+  "tips": [{"atSeconds": 1148, "text": "刷新エージェントに社内ライブラリの API 対応表などを渡し、他のチームでも使う知識は再利用できる形にまとめます。最終判断はエンジニアが担います。"}]
+}

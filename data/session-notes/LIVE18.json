@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE18","sessionId":"1793676492669001geEF","offeringId":"1793676492669001geEF-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":22,"text":"Azure Catalyst で既存環境を把握し、モダナイゼーションの判断・計画・実行を一連の作業として進める方法を紹介しました。"}],
+  "updates":[{"atSeconds":190,"text":"既存環境と移行の目的をもとに、ネットワークや ID、管理方針を含むプラットフォーム ランディングゾーンを生成する機能を紹介しました。","announcementId":"bon-448"}],
+  "cases":[{"atSeconds":87,"text":"既存アプリの一覧に業務上の重要度と移行の複雑さを付け、計画の判断材料にする例を示しました。"}],
+  "tips":[{"atSeconds":273,"text":"計画を実行に移す前に依存関係と前提条件がそろったかを確認し、人がレビューして承認します。"}]
+}

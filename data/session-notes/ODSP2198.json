@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2198","sessionId":"1787855003659001tURR","offeringId":"1787855003659001tURR-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=y-f1MtOoy28","basis":"captions",
+  "summary":[{"atSeconds":1122,"text":"TEKsystems が、AI で生成するコードの量を増やすより、企画から提供までの開発手順を見直すことが重要だと説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":246,"text":"製品の目的や要件を整理する担当者、設計を担うアーキテクト、少人数の開発者で構成するチームを例に挙げました。"}],
+  "tips":[{"atSeconds":667,"text":"AI の消費量に応じて費用が発生するため、システム設計の段階から FinOps を取り入れます。"}]
+}

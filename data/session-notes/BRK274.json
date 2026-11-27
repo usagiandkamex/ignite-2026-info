@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK274","sessionId":"1787856614691001Eo5M","offeringId":"1787856614691001Eo5M-1791588310531001CNWg","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":124,"text":"VS Code で自分が編集を続ける場合と、Copilot に作業を渡して進捗を確認する場合を使い分ける方法を紹介しました。"}],
+  "updates":[{"atSeconds":1100,"text":"複数のリポジトリや作業をエージェント用の専用ウィンドウから確認する体験を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":124,"text":"同じ VS Code 画面でエディターと Copilot Chat を開き、モデルや実行モードを選ぶ流れを実演しました。"}],
+  "tips":[]
+}

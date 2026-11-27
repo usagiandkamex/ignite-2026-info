@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR893", "sessionId": "1787856581235001EnhG", "offeringId": "1787856581235001EnhG-1791588164653001CxXt", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=yMETXQoXedg", "basis": "captions",
+  "summary": [
+    {"atSeconds": 147, "text": "Direct Stream のマルチパスでは、クライアントとサーバーの間で候補となる経路を事前に調整し、最初はその中から最適な接続を選ぶと説明しました。"},
+    {"atSeconds": 482, "text": "従来のクラウド向け RDP は帯域節約のために 60 fps を限定的に使っていましたが、今回の改善で、動画のような動きの多い処理でもセッションを通して 60 fps を保てる構成を示しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 8, "text": "Windows 365 と Azure Virtual Desktop のストリーミング技術の新しい名称として Direct Stream を紹介しました。", "announcementId": "bon-539"}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 905, "text": "映像の帯域効率を改善するため、対応する環境で HEVC を有効にするよう勧めました。"}
+  ]
+}

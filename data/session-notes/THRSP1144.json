@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1144",
+  "sessionId": "1787858599922001S3wd",
+  "offeringId": "1787858599922001S3wd-1791588354763001CZ71",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=C-96AyV0SnI",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 2,
+      "text": "Qualcomm は Snapdragon を使った端末内の AI 処理と Microsoft との協業を取り上げ、企業向けのインテリジェントエッジを説明しました。"
+    },
+    {
+      "atSeconds": 592,
+      "text": "処理を端末、近くのサーバー、クラウドへ振り分けるハイブリッド構成を紹介し、企業がポリシーで動作を選べることを重視しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 227,
+      "text": "パートナーの Scam AI の動画では、オンライン会議中のディープフェイク検知を Qualcomm の NPU に最適化し、端末内で動かす例を示しました。防御機能のデモであり、顧客環境の精度保証ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 592,
+      "text": "AI の実行場所はモデル性能だけで決めず、メモリ、消費電力、接続性、遅延、費用に関する企業の条件を併せて考えるよう勧めました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE99","sessionId":"1793673305107001ssll","offeringId":"1793673305107001ssll-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":79,"text":"ABB が説明した産業向け AI の狙いは、データから得た知見を、設備や人が関わる日常の業務手順に取り込むことです。"}],
+  "updates":[],
+  "cases":[{"atSeconds":292,"text":"ABB は、予測・最適化モデルと Microsoft との産業向け Copilot の取り組みを紹介し、工程や保守の担当者が会話形式で推奨事項を得る場面を説明しました。"}],
+  "tips":[{"atSeconds":174,"text":"重要インフラでは、作業のリスクに応じて範囲を分け、安全性を確かめながら順に適用します。"},{"atSeconds":406,"text":"エージェントが提案した理由を業務の知識に結び付けて説明できるようにし、最終判断の責任は人が持ちます。"}]
+}

@@ -1,0 +1,28 @@
+{
+  "sessionCode": "BRK499",
+  "sessionId": "1787856649177001ETCe",
+  "offeringId": "1787856649177001ETCe-1791588216342001CmDI",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=n6V-3UD93bY",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 254,
+      "text": "Dynamics 365 ERP の基幹業務を土台に、Work IQ のコンテキストと business skills を組み合わせ、エージェントが業務を実行する方向を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 717,
+      "text": "business skills のフレームワークとともに、経費、経費仕訳、調達から支払いまでのシナリオに関連するスキルを既に公開したと紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 717,
+      "text": "エージェントがタスクを完了できてもツール呼び出しや時間が多い場合、business skill で進め方を示し、効率や完遂率を改善する機会があると説明しました。既存のスキルを見て、追加する業務知識を検討するよう勧めました。"
+    }
+  ]
+}

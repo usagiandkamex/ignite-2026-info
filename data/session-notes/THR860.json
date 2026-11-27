@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR860",
+  "sessionId": "1787856576228001E5Fl",
+  "offeringId": "1787856576228001E5Fl-1791588293107001CgqO",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=R5O3j5GyZXU",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 530, "text": "Foundry で本番のトレースから失敗パターンを見つけ、評価、改善案の作成、再検証を繰り返すエージェント運用を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 786, "announcementId": "bon-465", "text": "改善したい質問群をもとに、Foundry の Agent Optimizer でプロンプトの変更案を作って評価する機能を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 1036, "text": "航空会社のサポート役が社内規程だけでは答えられなかった渡航手続きの質問を例に、観測した不足を次の改善課題にしました。"}
+  ],
+  "tips": [
+    {"atSeconds": 961, "text": "改善版は全ユーザーに一度に切り替えず、本番トラフィックの一部に割り当てて現行版と比較します。"}
+  ]
+}

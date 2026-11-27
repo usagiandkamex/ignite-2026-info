@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK435","sessionId":"1787856639452001EQey","offeringId":"1787856639452001EQey-1791814913867001C2Bx","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=MV_RnyoALC0","basis":"captions",
+  "summary":[{"atSeconds":317,"text":"Oracle や SAP の運用を支援するため、ワークロードの構成、バージョン、依存関係を Azure リソースとして登録し、運用担当者とエージェントが同じ情報を使う設計を説明しました。"}],
+  "updates":[{"atSeconds":192,"announcementId":"bon-446","text":"Oracle と SAP 向けの Azure Workload Center および Azure Copilot の各運用エージェントが、限定プレビューとして発表されました。"}],
+  "cases":[{"atSeconds":509,"text":"サンプルの SAP 環境を Workload Center に登録し、エージェントで構成の問題を調べる流れを実演しました。"}],
+  "tips":[{"atSeconds":735,"text":"複数の設定を変更した後は、構成の検証を再実行し、既知の問題が残っていないか確認します。"}]
+}

@@ -1,0 +1,32 @@
+{
+  "sessionCode": "BRK571",
+  "sessionId": "1791521573359001iLsm",
+  "offeringId": "1791521573359001iLsm-1791930938746001bmQL",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Lw4aIE8B9o4",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 87,
+      "text": "Copilot とエージェントを試行から事業価値へ進める前提として、信頼できる知能とコンテキスト、エージェントの統制、投資効果を挙げました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1229,
+      "text": "金融、製造、医療などの顧客との対話を基にした、約150の業界向けプラグインを GitHub で公開したと紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 403,
+      "text": "登壇者は、自身の顧客向け幹部説明会の準備で、予定表から対象を見つけ、文書・資料・利用情報を背景で集める Autopilot を使う例を紹介しました。"
+    },
+    {
+      "atSeconds": 635,
+      "text": "Bristol Myers Squibb は、長年蓄積した SharePoint の権限に想定以上の共有があると気付き、サイトや共有設定を再点検した経験を紹介しました。AI 導入を通じて既存のアクセス範囲を確認し直す必要が見えたと述べました。"
+    }
+  ],
+  "tips": []
+}

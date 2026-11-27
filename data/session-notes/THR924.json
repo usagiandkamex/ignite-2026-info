@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR924", "sessionId": "1787856683162001EvNl", "offeringId": "1787856683162001EvNl-1791588283073001CcUq", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 58, "text": "SQL の公開ロードマップを発表しました。公開済みの機能だけでなく、この先の四半期に予定されている変更も同じページで確認できます。"}
+  ],
+  "updates": [
+    {"atSeconds": 330, "text": "Microsoft Fabric の Database Hub を使い、Azure Arc 対応の SQL Server、Azure SQL Database、Fabric 内のデータベースなどを一か所から監視できると説明しました。", "announcementId": "bon-456"},
+    {"atSeconds": 593, "text": "Azure SQL Database のクラウドエンジンを、Azure アカウントなしでローカル開発に使えるコンテナーとして紹介しました。", "announcementId": "bon-455"}
+  ],
+  "cases": [
+    {"atSeconds": 1219, "text": "Visual Studio Code に切り替え、MSSQL 拡張機能のクエリパフォーマンス用ダッシュボードを実演しました。"}
+  ],
+  "tips": []
+}

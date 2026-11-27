@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK273","sessionId":"1787856614544001E44o","offeringId":"1787856614544001E44o-1791588288436001CKam","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":1057,"text":"GitHub Copilot を VS Code やターミナルなど、開発者が日常使う操作環境から使う場面を紹介しました。"}],
+  "updates":[{"atSeconds":589,"text":"チームが Slack のコード チャネルから Copilot と開発作業を調整する体験を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":126,"text":"登壇チームの Theater Log アプリを使い、一人の開発作業とチームで連携する作業を比較しました。"}],
+  "tips":[]
+}

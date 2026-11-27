@@ -1,0 +1,28 @@
+{
+  "sessionCode": "BRK494",
+  "sessionId": "1787856648411001EdsO",
+  "offeringId": "1787856648411001EdsO-1791588119745001CqZK",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=mPzE1R62rzk",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 244,
+      "text": "Microsoft Perception を、複数の AI エージェントが情報を共有し、連携したワークフローで検知や封じ込めを支援する仕組みとして説明しました。チーム間の引き継ぎや重複分析を減らし、防御の成果につなげることを重視しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 7,
+      "text": "Project Perception から Microsoft Perception として一般提供へ進むことを紹介し、提供開始日を11月19日と案内しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 482,
+      "text": "エージェントに生のシグナルを渡すだけでなく、Microsoft と他社の基盤、脅威情報をつないで対象や関係性を整理し、優先順位付けに使えるセキュリティコンテキストを整える考え方を説明しました。"
+    }
+  ]
+}

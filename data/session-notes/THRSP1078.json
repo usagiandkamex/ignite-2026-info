@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1078",
+  "sessionId": "1787858588894001SXYv",
+  "offeringId": "1787858588894001SXYv-1791588088864001C88z",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=nPdOIKjyVPc",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 305,
+      "text": "Veeam は、元データから分離したコピーの保護、迅速で安全な復旧、データと AI のガバナンスを一体で考える方針を説明しました。"
+    },
+    {
+      "atSeconds": 400,
+      "text": "バックアップ後の分析だけでなく、データの内容やアクセス状況の把握を保護プロセスの前段に取り込む考え方を示しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1053,
+      "text": "製品紹介では Veeam Data Cloud の画面を使い、Intelligent ResOps の追加機能からテナントや分析対象を選ぶ流れを示しました。顧客の導入成果ではなく、利用開始の画面説明です。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 793,
+      "text": "AI が到達できるデータ、到達させるべきでないデータ、AI が行った変更を元に戻せるか、という三つの問いで導入前の備えを確認するよう勧めました。"
+    }
+  ]
+}

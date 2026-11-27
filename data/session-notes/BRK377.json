@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK377", "sessionId": "1787856630540001E0Tx", "offeringId": "1787856630540001E0Tx-1791588285537001CIcO",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 284, "text": "Copilot Service Workspace のケース・メール対応を土台に、Dynamics 365 Contact Center で音声やデジタルの窓口を追加する構成を紹介しました。"}],
+  "updates": [{"atSeconds": 177, "text": "Workforce Engagement Management の新しいアプリでは、監督者がサポート組織の対応状況を見渡し、担当者の指導や育成に生かせます。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 910, "text": "Cowork に過去 60 日分のサポート案件を調べさせ、経緯と傾向を PowerPoint にまとめるデモを紹介しました。"},
+    {"atSeconds": 1262, "text": "BNY は、営業とサービスの両方で Dynamics 365 を使っており、社内の業務情報と Microsoft の機能を組織の管理下でつなぐ取り組みを紹介しました。"}
+  ],
+  "tips": [{"atSeconds": 120, "text": "Customer Intent Agent はまず少数の問い合わせ目的に絞って自動化し、うまく対応できるようになってから対象の目的やチャネルを増やします。"}]
+}

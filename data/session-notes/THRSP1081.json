@@ -1,0 +1,30 @@
+{
+  "sessionCode": "THRSP1081",
+  "sessionId": "1787858589365001StHQ",
+  "offeringId": "1787858589365001StHQ-1791588123948001CDPn",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=8L5aM69yd64",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 546,
+      "text": "Kyndryl は、人が方向を定め、エージェントが業務を担う組織への移行には、個別の AI ツールではなくデータ、システム、体験をつなぐ運用モデルが必要だと説明しました。"
+    },
+    {
+      "atSeconds": 847,
+      "text": "Frontier Blueprint では、AI の機会と価値、技術的準備、デジタルトラスト、人材の準備を評価し、次の優先事項を一つのスコアカードにまとめます。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 1017,
+      "text": "まず事業部門とユースケースを絞り、その中の代表的な一件について価値モデルを作り、実現可能性と利用するツールを検討する進め方を紹介しました。"
+    },
+    {
+      "atSeconds": 131,
+      "text": "Copilot の配布数やエージェントの数だけでは価値を判断できないため、利用実態、ガバナンス、費用を併せて把握する必要があると指摘しました。"
+    }
+  ]
+}

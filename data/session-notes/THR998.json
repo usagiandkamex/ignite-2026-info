@@ -1,0 +1,15 @@
+{
+  "sessionCode": "THR998", "sessionId": "1787856597469001EExW", "offeringId": "1787856597469001EExW-1791588327847001C3uW", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=aNeLiNEA82Q", "basis": "captions",
+  "summary": [
+    {"atSeconds": 153, "text": "移行前の環境では、Citrix が接続や仮想デスクトップの仲介、Azure 上の計算資源の展開、電源管理、監視などを担っていたと説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 1229, "text": "登壇者が移行した当時とは異なり、現在は Windows 365 の移行 API や、それを利用する第三者製品などの選択肢があると紹介しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 911, "text": "Windows 365 への移行プロジェクトは、6 か月という期限と予算を守って完了したと報告しました。一方で、期間内にすべてを対応するのではなく、後で最適化する項目も残したと説明しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 378, "text": "現状と利用者の種類を調べ、設計、試行、移行、旧環境の廃止へ進む段階的な進め方を紹介しました。既存の AVD をそのまま使う案も含めて比較したと述べました。"}
+  ]
+}

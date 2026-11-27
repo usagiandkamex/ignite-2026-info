@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK344", "sessionId": "1787856625393001EoiU", "offeringId": "1787856625393001EoiU-1791588198339001ClLj",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 30, "text": "人とは別にエージェント固有の ID を割り当て、誰が何を実行したかを追跡する必要性を説明しました。"}],
+  "updates": [{"atSeconds": 306, "text": "所有者のいないエージェントや長期未稼働のエージェントを管理する、ライフサイクルの考え方を紹介しました。", "announcementId": "bon-526"}],
+  "cases": [{"atSeconds": 1839, "text": "NVIDIA の登壇者が、エージェントの権限管理と実行環境の分離、監査への取り組みを共有しました。"}],
+  "tips": [{"atSeconds": 817, "text": "エージェントに考えられるすべての権限を先に渡さず、役割に必要なアクセスを決めてから追加します。"}]
+}

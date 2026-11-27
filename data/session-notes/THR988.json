@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR988", "sessionId": "1787856595933001EDe5", "offeringId": "1787856595933001EDe5-1791588266445001CifG", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=aYBK3AjDw_M", "basis": "captions",
+  "summary": [
+    {"atSeconds": 120, "text": "Microsoft IQ の各層を、Microsoft 365 の仕事の文脈、Fabric のデータと関係性、企業データからの検索など、扱う情報の違いで説明しました。"},
+    {"atSeconds": 222, "text": "Fabric のノートブックや機械学習で得た結果を、オントロジーやデータエージェントと組み合わせる流れを紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 512, "text": "販売店のコメントを題材に、AI Functions で感情、テーマ、競合、製品を抽出し、分析結果に情報を加える構成例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 738, "text": "リスクのある顧客への対応では、Logic Apps の接続を使って担当者へ知らせ、人がデータを確認して対応やエスカレーションを判断する流れを紹介しました。"}
+  ]
+}

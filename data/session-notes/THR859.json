@@ -1,0 +1,22 @@
+{
+  "sessionCode": "THR859",
+  "sessionId": "1787856576078001Ecnk",
+  "offeringId": "1787856576078001Ecnk-1791588289790001Cnqq",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=wPHFEImj-D0",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 78, "text": "Foundry の Toolbox にツールやスキルを集約し、エージェントが一つの MCP エンドポイントから必要な機能を探して使う構成を解説しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 133, "announcementId": null, "text": "複数のエージェントで同じ作業手順を使えるよう、スキルを Toolbox 経由で共有するプレビュー機能を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 619, "text": "請求書処理のデモで、エージェントが表の情報を確認し、ブラウザーを通じて請求システムに入力する流れを示しました。"},
+    {"atSeconds": 979, "text": "別のエージェントの A2A エンドポイントを Toolbox に登録し、他のツールと一緒に管理する構成を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 271, "text": "全ツールの説明を毎回コンテキストに入れず、共有するツールを Toolbox に集めて必要に応じて検索させます。"},
+    {"atSeconds": 461, "text": "ツールの利用状況や適用ポリシーを Toolbox 側で確認し、エージェントごとの設定を個別に点検する負担を減らします。"}
+  ]
+}

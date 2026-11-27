@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK386", "sessionId": "1787856631949001EQzf", "offeringId": "1787856631949001EQzf-1791588350490001C50X",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 551, "text": "Power Platform の既存機能の改善と、自然言語を使ってアプリを作成・保守する取り組みを紹介しました。"}],
+  "updates": [
+    {"atSeconds": 783, "text": "キャンバスアプリ用のネイティブコントロールとして、QR コードにも対応するバーコード読み取りや PDF 表示などを紹介しました。", "announcementId": null},
+    {"atSeconds": 990, "text": "モデル駆動型アプリでは、既存のデータビューを別の形で表示する改善として、カレンダービューを紹介しました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": [{"atSeconds": 1288, "text": "自然言語で作り始めても、既存の作成画面から始めても構いません。必要なところだけ AI に任せ、画面上で確認しながら手直しします。"}]
+}

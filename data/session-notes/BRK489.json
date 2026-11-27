@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK489",
+  "sessionId": "1787856647653001EFmV",
+  "offeringId": "1787856647653001EFmV-1791588220902001CGNJ",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 284,
+      "text": "デジタル主権を単一製品の選択ではなく、データ所在地、規制対応、機密情報の保護、事業継続などを比較するリスク管理の課題として整理しました。必要な統制は組織やワークロードごとに異なると説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 682,
+      "text": "Sovereign Control Panel のパブリックプレビューを紹介し、Azure portal でデータ所在地、暗号化、事業継続に関する主権の状態と統制をまとめて確認する機能と説明しました。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 682,
+      "text": "Data Guardian と production touch ledger について、EU・EFTA の対象となる運用から段階的に展開し、Microsoft の運用への監督と記録を強化すると説明しました。全地域への一斉提供とは述べていません。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 284,
+      "text": "製品比較の前に、自社にとって重要なリスクと、それを管理するために必要な統制水準を明らかにし、主権要件とクラウド・AI 活用のトレードオフを検討するよう勧めました。"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK312", "sessionId": "1787856620403001EBkn", "offeringId": "1787856620403001EBkn-1791814922891001CYx4",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 261, "text": "自律的なエージェントの動作を人が毎回確認するだけでは追いつかない場合に備え、実行時の制御と継続的な評価を説明しました。"}],
+  "updates": [{"atSeconds": 474, "text": "公開仕様 Agent Control Spec を使って方針を適用する Agent Controls のパブリックプレビューを発表しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 723, "text": "Agent Framework と Foundry のホスト型エージェントを使い、同様の方針を異なる実行環境で適用するデモを行いました。"}],
+  "tips": [{"atSeconds": 261, "text": "人による承認だけを唯一の対策にせず、何が許されるかを実行前に決め、実行後も評価できるようにします。"}]
+}

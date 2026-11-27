@@ -1,0 +1,18 @@
+{
+  "sessionCode": "THR869",
+  "sessionId": "1787856577619001E7og",
+  "offeringId": "1787856577619001E7og-1791814914803001CVjt",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=EL3DLbfy6WU",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 136, "text": "モバイルアプリでも、GitHub Copilot のコード変更をエミュレーターやシミュレーターの実際の画面と操作で確かめる開発方法を紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 231, "text": "Theater Log の画面変更を Mobile Canvas で確認し、コードだけでは分からない操作時の挙動を確かめました。"}
+  ],
+  "tips": [
+    {"atSeconds": 745, "text": ".NET MAUI のアプリを実装する際は、データバインディングなどフレームワーク固有の指針をスキルとしてエージェントに渡せます。"}
+  ]
+}

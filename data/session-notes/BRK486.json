@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK486",
+  "sessionId": "1787856647198001EGAW",
+  "offeringId": "1787856647198001EGAW-1791588266887001CfJJ",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=4vCdHN4wOXc",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 161,
+      "text": "AI の本番活用を妨げる要因として、分断されたデータ、業務コンテキストの不足、ガバナンス、コストを整理しました。データが利用可能でも、複数システムの業務上の関係を理解できるとは限らないと説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 624,
+      "text": "Fabric apps、Fabric IQ の統合、Horizon DB などの発表を紹介しました。Horizon DB は Azure 側と Fabric 側の提供形態を区別して説明しており、導入時には対象サービスと提供段階の確認が必要です。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1522,
+      "text": "EY は、同社のクラウドエンジニアリング組織から EY Fabric というグローバル技術基盤へ発展した経緯を説明しました。顧客支援だけでなく自社を最初の適用先にする Customer Zero の議論につなげました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2,
+      "text": "AI 自体を顧客の目標にせず、予測改善や在庫課題の解消など、業界ごとの事業成果を先に定義するよう説明しました。"
+    }
+  ]
+}
