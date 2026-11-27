@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 from build import PUBLIC_URL, build, time_range
 from import_sessions import snapshot
-from site_data import DATA, FILES, load, validate_catalog
+from site_data import DATA, FILES, NOTE_SECTIONS, load, validate_catalog, validate_session_notes
 
 
 def catalog_row(oid, *, scope=None, hidden=False, block_video=False):
@@ -85,11 +85,13 @@ class BuildTests(unittest.TestCase):
         self.assertIn('datetime="2026-11-17T14:30:00Z"', times)
 
     def test_site_matches_data_and_relative_links_resolve(self):
-        _, catalog, updates = load()
+        _, catalog, updates, notes = load()
         with TemporaryDirectory() as temp:
             out = Path(temp) / "ignite-2026-info"
             build(out)
             pages = {p.name: Page(p) for p in out.glob("*.html")}
+            detail_files = {p.stem: p for p in (out / "session").glob("*.html")}
+            self.assertEqual(set(detail_files), {s["id"] for s in catalog["sessions"]})
             self.assertEqual(pages["sessions.html"].result_ids,
                              ["session-" + s["id"] for s in catalog["sessions"]])
             self.assertEqual(pages["updates.html"].result_ids,
@@ -107,10 +109,51 @@ class BuildTests(unittest.TestCase):
                         parts = urlsplit(url)
                         self.assertFalse(parts.path.startswith("/"), url)
                         if parts.path:
-                            self.assertTrue((out / parts.path).is_file(), url)
+                            dest = out / parts.path
+                            self.assertTrue(dest.is_file(), url)
+                            if parts.fragment and dest.name in pages:
+                                self.assertIn(parts.fragment, pages[dest.name].ids)
                         elif parts.fragment:
                             self.assertIn(parts.fragment, page.ids)
             llms = (out / "llms.txt").read_text(encoding="utf-8")
             for filename in FILES:
                 self.assertIn(f"({PUBLIC_URL}data/{filename})", llms)
                 self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
+            for note in notes["notes"]:
+                detail = detail_files[note["sessionId"]].read_text(encoding="utf-8")
+                for heading in NOTE_SECTIONS.values():
+                    self.assertIn(heading, detail)
+                if note["youtubeUrl"]:
+                    self.assertIn(note["youtubeUrl"], detail)
+                for item in note["updates"]:
+                    if item["announcementId"]:
+                        self.assertIn(f'../updates.html#{item["announcementId"]}', detail)
+                detail_page = Page(detail_files[note["sessionId"]])
+                for url in detail_page.local_links:
+                    parts = urlsplit(url)
+                    if parts.path:
+                        dest = detail_files[note["sessionId"]].parent / parts.path
+                        self.assertTrue(dest.is_file(), url)
+                        self.assertTrue(dest.resolve().is_relative_to(out.resolve()), url)
+            reviewed = {n["sessionId"] for n in notes["notes"]}
+            for available, expected in [
+                (True, "内容はまだ確認していません"), (False, "公式カタログに録画の掲載がない"),
+            ]:
+                included = [s for s in catalog["sessions"] if s["id"] not in reviewed and
+                            any(o["hasOnDemand"] for o in s["offerings"]) == available]
+                if included:
+                    detail = detail_files[included[0]["id"]].read_text(encoding="utf-8")
+                    self.assertIn(expected, detail)
+                    self.assertNotIn("<h2>事例・デモ</h2>", detail)
+
+    def test_session_notes_reject_mismatched_offering_and_announcement(self):
+        _, catalog, updates, notes = load()
+        invalid = deepcopy(notes)
+        invalid["notes"][0]["offeringId"] = invalid["notes"][1]["offeringId"]
+        with self.assertRaisesRegex(ValueError, "recorded offering"):
+            validate_session_notes(invalid, catalog, updates)
+        invalid = deepcopy(notes)
+        item = next(i for n in invalid["notes"] for i in n["updates"])
+        item["announcementId"] = "bon-nonexistent"
+        with self.assertRaisesRegex(ValueError, "unknown announcement"):
+            validate_session_notes(invalid, catalog, updates)

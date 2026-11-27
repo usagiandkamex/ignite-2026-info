@@ -1,0 +1,603 @@
+{
+  "schemaVersion": 1,
+  "notes": [
+    {
+      "sessionId": "1787856726055001EpP1",
+      "offeringId": "1787856726055001EpP1-1789751960282001d6eI",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZR4v1c4CClc",
+      "basis": "captions-and-chapters",
+      "summary": [
+        {"atSeconds": 740, "text": "Satya Nadella は、個人の対話からチームで文脈を共有して作業する Copilot への広がりを説明しました。"},
+        {"atSeconds": 1454, "text": "エージェントの実行基盤だけでなく、Agent 365 でのガバナンスと Perception でのセキュリティ運用を一体として位置付けました。"}
+      ],
+      "updates": [
+        {"atSeconds": 740, "text": "共有の文脈をメンバーと Copilot が参照する Copilot Workspaces を紹介。", "announcementId": "bon-481"},
+        {"atSeconds": 3549, "text": "Autopilot が、指示を待たずに定期作業やプロジェクトを前に進める仕組みを紹介。", "announcementId": "bon-479"},
+        {"atSeconds": 1454, "text": "Microsoft Perception をエージェント環境全体のセキュリティを担う基盤として紹介。", "announcementId": "bon-531"}
+      ],
+      "cases": [
+        {"atSeconds": 3287, "text": "Chevron のチームが、個々の Cowork 利用から全社での AI 利用状況の把握へ話を広げました。"},
+        {"atSeconds": 3806, "text": "BlackRock とのデモでは、社内ナレッジを参照し、営業責任者が顧客ごとの連絡案と会議の準備を進めました。"},
+        {"atSeconds": 4597, "text": "Unilever IQ のデモでは、契約・データ・判断に関わった人を一つの業務コンテキストでたどりました。"},
+        {"atSeconds": 5273, "text": "Alaska Airlines は、Foundry でエージェントを運用しながら改善する取り組みを紹介しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 4678, "text": "作業結果だけでなく、誰が何を判断したかも組織のコンテキストに戻すと、次の判断で知識を再利用できるという例が示されました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856726366001EV17",
+      "offeringId": "1787856726366001EV17-1789751960677001d6j0",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Oe8nJV3yXtk",
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 319, "text": "Rana el Kaliouby が、AI に任せる仕事と人が担い続ける判断をどう分けるかを論じました。後半は製品、顧客事例、パートナー向け制度の紹介です。"}
+      ],
+      "updates": [
+        {"atSeconds": 2112, "text": "Copilot Home で Chat から Cowork の委任作業に移れる体験を紹介。", "announcementId": "bon-484"},
+        {"atSeconds": 4492, "text": "既存のパートナー向けパッケージの中間にあたる Partner Success Advanced を紹介。", "announcementId": null},
+        {"atSeconds": 4729, "text": "Frontier Partner specialization への参加と監査を Partner Center で開始できると説明。", "announcementId": null},
+        {"atSeconds": 5078, "text": "複数の Microsoft AI サービスの利用を一つのコミットメントで扱う AI Flex Plan を紹介。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 2880, "text": "Syndigo の事例では、小売などで使う商品情報の正確性を保つ取り組みを紹介しました。"},
+        {"atSeconds": 3526, "text": "Softcat が Copilot を約 3,000 人の従業員に展開したと紹介しました。"},
+        {"atSeconds": 4068, "text": "Culligan は Insight と協力し、業務上の課題に合わせてソリューションを共同開発しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 319, "text": "AI の導入範囲を決める際は、できることだけでなく、人に残すべき判断も先に考えるという視点が示されました。"}
+      ]
+    },
+    {
+      "sessionId": "1788461926909001vwSD",
+      "offeringId": "1788461926909001vwSD-1789751868999001dl4i",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 2125, "text": "現地限定、配信あり、後日オンデマンドの各形式を整理し、初参加者向けに会場とカタログの使い方を説明しました。"}
+      ],
+      "updates": [],
+      "cases": [
+        {"atSeconds": 2520, "text": "ハンズオンラボはスケジューラー上で LAB に続く番号を目印に探す、と具体例を示しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 3238, "text": "時間が重なる場合は第 2 候補を入れておき、移動を考慮して予定を詰め込みすぎないことを勧めました。"},
+        {"atSeconds": 3475, "text": "廊下やテーブルでの会話も学びの機会なので、会場では他の参加者や登壇者と話せる余白を作るとよいと述べました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856604868001EW7J",
+      "offeringId": "1787856604868001EW7J-1791588131512001C4ET",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 771, "text": "Work IQ を、利用者の記憶、業務コンテキスト、繰り返し使うスキルの三つに分け、Copilot が組織の働き方を理解する仕組みを解説しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 1789, "text": "外部サービスの情報も、利用者のアクセス権を守りながら同じ Work IQ の文脈から利用できることを説明しました。", "announcementId": "bon-507"}
+      ],
+      "cases": [
+        {"atSeconds": 1420, "text": "ニュージーランドでの製品展開について、判断に必要な未解決事項を自然言語で抽出するデモを実施しました。"},
+        {"atSeconds": 1928, "text": "社内の画像やブランドテンプレートを活用して、組織の様式に沿う成果物を作るデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1203, "text": "週次報告や顧客ブリーフなど反復する作業は、必要な文脈と手順をチームで再利用できる形にすると、毎回説明する手間を減らせます。"}
+      ]
+    },
+    {
+      "sessionId": "1787856605022001Ezdz",
+      "offeringId": "1787856605022001Ezdz-1791588286877001CISo",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 394, "text": "Copilot Chat と Cowork が参照できるデータを把握し、過剰共有や機密情報の露出を Microsoft Purview の制御で抑える方法を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 2580, "text": "サイト所有者が対応すべき項目を一つの一覧で確認し、その画面から対処できる公開プレビューを紹介しました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 1444, "text": "機密情報が入った未ラベルのファイルを題材に、DLP ポリシーが Copilot への回答の出力を制御する様子を実演しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1022, "text": "実際に露出している機密情報の種類を先に調べ、その種類を対象としたポリシーから試すと優先付けしやすくなります。"},
+        {"atSeconds": 1688, "text": "関連した複数のルールを同じ DLP ポリシーにまとめると、管理しやすいと紹介しました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856605173001E6Pi",
+      "offeringId": "1787856605173001E6Pi-1791588198567001CV7r",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 267, "text": "長時間動作する Autopilot を人や他のエージェントと識別し、誰が何にアクセスしたかを追跡するための設計を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 1041, "text": "Autopilot の ID とアクセス管理を Entra、データ保護と監査を Purview が担う構成を紹介しました。", "announcementId": "bon-526"}
+      ],
+      "cases": [
+        {"atSeconds": 2188, "text": "エージェントによるファイルアクセスの調査で、ID、場所、IP アドレスなどのシグナルを結び付けて操作を確認するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 496, "text": "導入前に監査の記録とコスト管理を用意し、人や委託先と同様にエージェントの活動を確認できるようにするとよいと説明しました。"},
+        {"atSeconds": 1445, "text": "共通のアクセスポリシーなどを構成のまとまりとして扱うと、複数のエージェントに一貫した設定を適用できます。"}
+      ]
+    },
+    {
+      "sessionId": "1787856605931001EI5K",
+      "offeringId": "1787856605931001EI5K-1791588217922001CW4I",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 146, "text": "SharePoint を、既存の文書・リストやアクセス権を活用して Copilot とエージェントを業務に組み込む場所として紹介しました。"}
+      ],
+      "updates": [],
+      "cases": [
+        {"atSeconds": 489, "text": "SharePoint に届いた提案依頼書（RFP）から、回答に必要な項目を Copilot が抽出する例を紹介しました。"},
+        {"atSeconds": 646, "text": "Boehringer Ingelheim が SharePoint に保存済みの資料を使い、プロジェクト追跡を支援する仕組みを共同開発した事例を紹介しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1106, "text": "まず、参考資料と既存のアクセス制御がそろっている業務を選ぶと、新しいデータ基盤やツールを導入せずに試せます。"},
+        {"atSeconds": 2606, "text": "組織全体に共有されているサイトなど、想定より広い権限が付いていないかを確認してください。"}
+      ]
+    },
+    {
+      "sessionId": "1787856608289001EXor",
+      "offeringId": "1787856608289001EXor-1791814913161001Cf9l",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Kzr52zH-eOo",
+      "basis": "captions-and-chapters",
+      "summary": [
+        {"atSeconds": 148, "text": "EY、John Deere、Clyde & Co、Microsoft が、法務や財務などの現場で Copilot を試行から日常のプロセスに移す際に学んだことを共有しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 969, "text": "法務向け Copilot と Legal Skills が、一般的な文章作成から職種固有の作業へ利用範囲を広げると紹介しました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 376, "text": "EY はライセンスを段階的に展開し、利用者の学習を支援しました。John Deere は国をまたぐ利用者コミュニティを育てました。"},
+        {"atSeconds": 1456, "text": "財務の手作業だった照合を Copilot に任せ、担当者が追跡情報から結果を検証する例を紹介しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 2674, "text": "汎用的なプロンプト講習だけでなく、受講者の役割と担当業務に沿った小さなユースケースから訓練するとよいと述べました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856608608001EBSP",
+      "offeringId": "1787856608608001EBSP-1791588069088001Cwnv",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-zLfSrdU1a8",
+      "basis": "captions-and-chapters",
+      "summary": [
+        {"atSeconds": 290, "text": "Dynamics 365 のデータや業務機能をエージェントから使い、営業・顧客対応の流れをユーザーが複数画面を行き来せずに進める構成を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 814, "text": "Dynamics 365 Activate が既存プロセスや関係者の棚卸しを支援する仕組みを紹介しました。", "announcementId": "bon-485"},
+        {"atSeconds": 1680, "text": "Copilot Studio がモデルを組み合わせる Copilot harness を活用し、アプリやワークフローに組み込めると説明しました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 1253, "text": "Visa が参加し、Copilot と Dynamics を営業支援に使う取り組みを紹介しました。"},
+        {"atSeconds": 2640, "text": "クレジットカード申し込みの接客デモで、自由形式の問いを理解しつつ、決められた手続きを進める例を示しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 2881, "text": "コンタクトセンターでは、人と AI の応対に同じ品質評価項目を適用して比較する方法が紹介されました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856609563001Ep0b",
+      "offeringId": "1787856609563001Ep0b-1791588070636001Coui",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_1ZEr5BSi3s",
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 234, "text": "Foundry でエージェントを開発・公開し、トレースを使って品質や費用を評価・改善する一連の流れを説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 748, "text": "Microsoft Copilot harness のエージェントは公開プレビュー。ホスト型エージェントでチェックポイントと復元を使う長時間実行は一般提供と説明。", "announcementId": null},
+        {"atSeconds": 1925, "text": "人が個別トレースに注釈を付ける評価機能を公開プレビューとして紹介。", "announcementId": "bon-465"}
+      ],
+      "cases": [
+        {"atSeconds": 1013, "text": "Teams の取引審査チャネルに、Python で開発したホスト型エージェントを配置するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1179, "text": "開発時点からエージェントの動作をトレースに残し、その実行データで評価と改善を回すと、試作品から本番運用に移した後も品質を確認できます。"}
+      ]
+    },
+    {
+      "sessionId": "1787856616924001Efgs",
+      "offeringId": "1787856616924001Efgs-1791588070871001CRTW",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3BPEyTu-8mw",
+      "basis": "captions-and-chapters",
+      "summary": [
+        {"atSeconds": 127, "text": "GitHub をコード生成だけでなく、課題整理、実装、レビューまで人とエージェントが協働する基盤と位置付けました。"}
+      ],
+      "updates": [
+        {"atSeconds": 534, "text": "Copilot Fusion の考え方と、複数のエージェント作業を製品に統合する方向性を紹介しました。", "announcementId": null},
+        {"atSeconds": 2611, "text": "Agent Merge がレビューやチェックの待ち時間を減らすために用意された機能として紹介されました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 943, "text": "同じ課題に対する実行結果を比較し、成功したかどうかとコストを合わせて見るデモを行いました。"},
+        {"atSeconds": 1718, "text": "Copilot アプリから GitHub と Azure DevOps の PR を開き、並行作業を確認できる様子を実演しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 127, "text": "モデルを選ぶ際はトークン数だけでなく、目的とする作業を完了できたか、完了までにいくら掛かったかを一緒に比較することを勧めました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856618592001EPDX",
+      "offeringId": "1787856618592001EPDX-1791588235919001CbbF",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 259, "text": "単発のハイブリッド検索から、複数回検索して根拠を集めるエージェント型検索へ移るときの品質・遅延・コストを比較しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 1215, "text": "反復検索を行う Microsoft-Retriever-1 を公開プレビューとして紹介しました。", "announcementId": "bon-501"}
+      ],
+      "cases": [
+        {"atSeconds": 619, "text": "一つの検索では十分でない複数段階の質問を使い、検索経路を分ける方法と、先に検索して必要時だけ深掘りする方法を実演しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1076, "text": "複雑さで検索方式を振り分ける場合は、その振り分け自体が正しいかを代表的な質問で評価することが重要です。"},
+        {"atSeconds": 1685, "text": "すべての質問で計画用モデルを呼ぶのではなく、単純な検索で足りないときだけ追加推論する手もあります。"}
+      ]
+    },
+    {
+      "sessionId": "1787856619339001E1y8",
+      "offeringId": "1787856619339001E1y8-1791588155068001Ceog",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9OXKXmAsFu4",
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 253, "text": "汎用モデルの知識だけでなく、社内の指標、業務ルール、過去の判断をエージェントに与える必要があると説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 817, "text": "Work IQ、Fabric IQ、Foundry IQ、Web IQ を組み合わせ、仕事・指標・資料・外部情報を扱う Microsoft IQ を紹介しました。", "announcementId": "bon-497"}
+      ],
+      "cases": [
+        {"atSeconds": 1015, "text": "構築デモでは Foundry IQ に知識ベースを追加し、エージェントを業務資料で根拠付けしました。"}
+      ],
+      "tips": [
+        {"atSeconds": 2166, "text": "エージェントから改善提案が出ても自動適用を前提にせず、人が変更内容を確認してから判断する方法が示されました。"},
+        {"atSeconds": 2402, "text": "エージェントを本番に持ち込む際も、既存の CI/CD とデプロイ計画を用意します。"}
+      ]
+    },
+    {
+      "sessionId": "1787856620252001EUUi",
+      "offeringId": "1787856620252001EUUi-1791814916888001CTVu",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 213, "text": "Web IQ が最新の外部情報を取得し、回答とともに根拠を示すための実装方法を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 735, "text": "参照する情報源を制御する Scopes を紹介しました。", "announcementId": "bon-505"},
+        {"atSeconds": 2146, "text": "Web IQ が一般提供になったと説明しました。", "announcementId": "bon-505"}
+      ],
+      "cases": [
+        {"atSeconds": 565, "text": "ゴールデンゲートブリッジの通行料金の支払い方法を題材に、追加検索が必要な問い合わせを示しました。"},
+        {"atSeconds": 705, "text": "自動車向け問い合わせアシスタントが信頼できない情報源から車両について回答しないように、参照先を絞る例を示しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 366, "text": "速さを優先する単純な検索と、複数の根拠を必要とする質問ではモードを使い分けます。"}
+      ]
+    },
+    {
+      "sessionId": "1787856643551001EF30",
+      "offeringId": "1787856643551001EF30-1791588285762001CWmz",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 36, "text": "Dragon Copilot for Nurses が、看護師の記録作業を支援する仕組みと、現場への導入方法を紹介しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 657, "text": "看護の経過や観察項目を記録するフローシート対応を、その時点の公開プレビューとして紹介しました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 1007, "text": "初期の非公開プレビュー参加組織として Mercy Health を紹介し、看護現場での導入事例を案内しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 480, "text": "本番の記録作業に入る前に、シミュレーション環境で会話しながら記録する場面などを練習する例が示されました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856619486001EVFL",
+      "offeringId": "1787856619486001EVFL-1791588310980001CFXq",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 352, "text": "Fabric IQ が Power BI のセマンティックモデルと業務ルールを使い、エージェントの判断に文脈を与える仕組みを説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 1200, "text": "自然言語の支援を使ってオントロジーを作成・検証・保守できる機能を紹介しました。", "announcementId": "bon-503"}
+      ],
+      "cases": [
+        {"atSeconds": 963, "text": "サプライチェーンのデモで、4 時間を超えて遅れたものだけを遅延とみなす業務ルールを Copilot に適用しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 523, "text": "既存の Power BI セマンティックモデルがある場合は作り直さず、それを起点にエージェントへ渡す文脈を足していくとよいと説明しました。"},
+        {"atSeconds": 1751, "text": "業務上の関係やルールを書き換える場合は、変更の履歴を残し、担当者の承認を通す例が示されました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856621370001E15q",
+      "offeringId": "1787856621370001E15q-1791588156528001CqcQ",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 279, "text": "Microsoft Perception が、セキュリティ運用の情報収集・調査と、複数の専用エージェントによる対応をどう組み合わせるかを説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 876, "text": "担当者が着手する前に、プレイブックでトリアージや調査、証拠収集を始める機能を紹介しました。", "announcementId": "bon-531"}
+      ],
+      "cases": [
+        {"atSeconds": 73, "text": "架空の金融会社 Caldova を舞台に、アラートを調査して対応につなげる流れを実演しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1444, "text": "検出結果を一律に扱わず、複数のシグナルを集約して、修正が最も重要な項目に調査・対応を集中させる方法を示しました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856625239001E4Y4",
+      "offeringId": "1787856625239001E4Y4-1791588197874001CXwR",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 1204, "text": "人の ID を保護する既存の対策と、エージェントの ID、権限、稼働終了までの管理を整理しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 790, "text": "フィッシング耐性のある多要素認証に加え、高保証の資格情報をアクセス条件に使うプレビューの取り組みを紹介しました。", "announcementId": "bon-526"},
+        {"atSeconds": 1977, "text": "Global Secure Access によってエージェントのトラフィックを区別する機能を紹介しました。", "announcementId": "bon-526"}
+      ],
+      "cases": [
+        {"atSeconds": 1739, "text": "Entra 管理センターで、エージェント ID のライフサイクルを自動管理する手順を実演しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1204, "text": "登録時の権限だけでなく、不要になったエージェントを廃止する条件も運用の一部として決めるとよいと説明しました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856628019001EiXI",
+      "offeringId": "1787856628019001EiXI-1791588232759001CPKo",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 338, "text": "PostgreSQL のコンピューティングをストレージから分離し、書き込みログ（WAL）と共有ストレージを使う Azure HorizonDB の内部構成を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 58, "text": "Azure HorizonDB の一般提供を紹介し、標準の PostgreSQL を必要とする本番用途を想定すると説明しました。", "announcementId": "bon-453"}
+      ],
+      "cases": [
+        {"atSeconds": 1686, "text": "約 9 TB のデータを使い、セルフホストの PostgreSQL と HorizonDB の処理を比較するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 481, "text": "フェールオーバー時にどのノードが書き込みを引き継ぐかを確認し、読み取りの拡張と可用性要件を分けて設計します。"}
+      ]
+    },
+    {
+      "sessionId": "1787856629419001E4Pf",
+      "offeringId": "1787856629419001E4Pf-1791588117679001C180",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 69, "text": "HorizonDB で AI 機能を使う際に、要求時のモデル呼び出しと、非同期パイプラインの使い分けを説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 251, "text": "HorizonDB でモデルを管理し、エンティティ抽出や埋め込みの処理を AI パイプラインとして組み込む機能を紹介しました。", "announcementId": "bon-453"}
+      ],
+      "cases": [
+        {"atSeconds": 730, "text": "取引先の情報を知識グラフに反映し、候補の取引先を探すデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 69, "text": "利用者の要求時に毎回モデルを呼ぶ必要がない処理は、非同期で先に計算しておく構成を検討できます。"},
+        {"atSeconds": 486, "text": "検索ではベクトル・全文・ハイブリッドを用途に応じて比較し、関連性が足りない場合は再順位付けを組み合わせます。"}
+      ]
+    },
+    {
+      "sessionId": "1787856640202001EbGn",
+      "offeringId": "1787856640202001EbGn-1791588234328001CsHm",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 720, "text": "Arm ベースの Cobalt 200 の設計や、コア単位の電力・性能制御、サーバー全体の最適化を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 1691, "text": "Cobalt 200 を使った Azure 仮想マシンの世代更新と、Cobalt 100 を比較対象とした性能の説明がありました。", "announcementId": "bon-444"}
+      ],
+      "cases": [
+        {"atSeconds": 1204, "text": "OpenAI の登壇者が、同じワークロードを x86 と Arm の両方へ割り当てられる構成について説明しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 2187, "text": "Arm64 移行では、依存関係の確認や CI/CD の検証を段階的に行い、提供される移行ツールを活用するよう勧めました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856640517001EIKl",
+      "offeringId": "1787856640517001EIKl-1791588245037001C6mG",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 245, "text": "Azure Local と Foundry Local を使い、接続または切断された環境で、データやモデルを現地に置いたまま AI を運用する構成を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 1254, "text": "Foundry Local のエージェント型検索の一般提供を発表しました。", "announcementId": null},
+        {"atSeconds": 1736, "text": "Foundry Local Agent Service の公開プレビューを紹介しました。", "announcementId": null},
+        {"atSeconds": 2178, "text": "プロンプトと応答を検査する Foundry Local Guardrails を公開プレビューとして紹介しました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 491, "text": "架空の Woodgrove Bank を使い、Azure Local 上の AKS に Foundry Local 拡張を入れてモデルを配置するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 726, "text": "接続・切断の両方を運用する際は、同じモデル管理方式を使えるかと、手元でモデルを評価できるかを確認します。"}
+      ]
+    },
+    {
+      "sessionId": "1787856629261001EJny",
+      "offeringId": "1787856629261001EJny-1791588196937001CxBw",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 1222, "text": "Azure SQL Database Hyperscale でコンピューティングとストレージを独立して拡張し、通常の業務処理と AI 検索を同じデータ基盤で扱う構成を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 520, "text": "Hyperscale のエラスティックプールで複数データベースをまたいだ問い合わせを行う機能を案内しました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 728, "text": "架空の医療組織 Caldova を題材に、需要に応じてコンピューティングを使うサーバーレス構成を実演しました。"},
+        {"atSeconds": 2458, "text": "CDW がエンタープライズ向けアプリで Azure SQL Hyperscale を使う事例を紹介しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1444, "text": "意味で探すベクトル検索に SQL の条件を組み合わせて、対象データや業務条件を絞り込みます。"}
+      ]
+    },
+    {
+      "sessionId": "1787856602747001EPgf",
+      "offeringId": "1787856602747001EPgf-1791588152251001CEnL",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 24, "text": "財務担当者が Copilot Cowork を使い、予測データを会議でレビューできる資料に変える流れを実演しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 249, "text": "Cowork の財務向けプラグインとスキルを紹介。後半では予測作業をまとめる共有ワークスペースも紹介しました。", "announcementId": "bon-481"}
+      ],
+      "cases": [
+        {"atSeconds": 577, "text": "製品別の差異と閾値超過を表にし、原因分析とレビュー時の確認事項を一つの予測パッケージにまとめました。"}
+      ],
+      "tips": [
+        {"atSeconds": 607, "text": "Cowork の出力をそのまま採用せず、元のセマンティックモデルと照合して正しい値や対象期間を使ったかを確認します。"}
+      ]
+    },
+    {
+      "sessionId": "1787856597314001Ery9",
+      "offeringId": "1787856597314001Ery9-1791588317023001CW6v",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 64, "text": "API がないまま使い続けている業務アプリの作業を、エージェントが Windows 365 Cloud PC 上で代行する構成を紹介しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 371, "text": "Windows 365 for Agents のコンピューター操作を使い、API で操作できないアプリの画面を利用する機能を紹介しました。", "announcementId": "bon-541"}
+      ],
+      "cases": [
+        {"atSeconds": 550, "text": "顧客との会話を受け取ったエージェントが、旧式の CRM と財務アプリに情報を反映し、承認後に顧客へメールを送るデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 262, "text": "モデル選択や実行費用に加え、どの操作で人の承認が必要かを設計し、アプリの変更時に誰が対応するかを決めておくとよいと説明しました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856634892001EbQS",
+      "offeringId": "1787856634892001EbQS-1791588323101001Cu2t",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 403, "text": "Windows の安全な初期設定、管理者権限、デバイスに保存される情報の保護、AI エージェント分離を紹介しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 403, "text": "重要な保護設定の状態をまとめて確認する Windows baseline protection を紹介しました。", "announcementId": "bon-540"},
+        {"atSeconds": 1656, "text": "Windows App 向けの Intune アプリ保護ポリシーが公開プレビューと説明しました。", "announcementId": "bon-539"}
+      ],
+      "cases": [
+        {"atSeconds": 1321, "text": "従来の MDM と宣言型管理を同じ端末条件で並べ、設定の適用方式を比較するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 547, "text": "日常作業は標準ユーザーとして実行し、管理者権限を実際に必要とする操作でだけ昇格する構成を勧めました。"}
+      ]
+    },
+    {
+      "sessionId": "1787856638536001E9Fm",
+      "offeringId": "1787856638536001E9Fm-1791588157716001C6AV",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 316, "text": "モデルの学習、推論、エージェントの実行では必要な計算・接続・分離が異なるため、Azure の基盤をそれぞれどう使うかを説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 734, "text": "Agent Grid とサンドボックスを利用し、エージェントの接続やストレージへのアクセスを管理する構成を紹介しました。", "announcementId": "bon-447"},
+        {"atSeconds": 2413, "text": "Application Gateway for Containers でエージェントの通信を中継する AI ゲートウェイを公開プレビューとして紹介しました。", "announcementId": null}
+      ],
+      "cases": [
+        {"atSeconds": 1220, "text": "同じコンテキストを再計算する構成とキャッシュを利用する構成を比較するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1298, "text": "推論の最適化では、GPU だけでなくキャッシュ、ネットワーク、ストレージの費用も合算し、目標遅延と比較します。"}
+      ]
+    },
+    {
+      "sessionId": "1787856592525001ENZL",
+      "offeringId": "1787856592525001ENZL-1791588293767001Ckrm",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 765, "text": "仮想マシンに慣れた運用担当者向けに、Pod、Deployment、Service と宣言的な構成管理を説明しました。"}
+      ],
+      "updates": [],
+      "cases": [
+        {"atSeconds": 124, "text": "Web アプリに負荷をかけ、CPU 使用率が上がると Pod を増やして処理するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1088, "text": "水平スケールを使うときは Deployment だけでなく、メトリクスと増減の条件を Horizontal Pod Autoscaler で指定します。"}
+      ]
+    },
+    {
+      "sessionId": "1787856627685001EqFG",
+      "offeringId": "1787856627685001EqFG-1791588154353001CFZk",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 381, "text": "Fabric 内のサーバーレス PostgreSQL を、OneLake と分析エンジンにつなぐ構成を説明しました。"}
+      ],
+      "updates": [
+        {"atSeconds": 2002, "text": "Microsoft Fabric HorizonDB をプレビューとして発表しました。Azure HorizonDB の一般提供とは別です。", "announcementId": "bon-457"}
+      ],
+      "cases": [
+        {"atSeconds": 1097, "text": "PostgreSQL と分析用にミラーリングしたデータの両方でクエリを実行し、大きな集計を Fabric 側で処理するデモを行いました。"}
+      ],
+      "tips": [
+        {"atSeconds": 1462, "text": "運用データと大規模集計を一つのアプリで扱う場合は、全データを運用 DB に引き寄せず、Fabric 側で集計できるか検討します。"}
+      ]
+    },
+    {
+      "sessionId": "1787856599653001ERae",
+      "offeringId": "1787856599653001ERae-1791588248175001CsAw",
+      "reviewedOn": "2026-11-27",
+      "youtubeUrl": null,
+      "basis": "captions",
+      "summary": [
+        {"atSeconds": 575, "text": "AI 導入の機会を広げるには、利用者が安心して試せる環境、学習の支援、設計に参加できる人の幅が重要だとパネルで議論しました。"}
+      ],
+      "updates": [],
+      "cases": [
+        {"atSeconds": 363, "text": "The WIT Network が、利用者の関心事項に応じてキャリアやメンターに関する情報を提示する支援を紹介しました。"}
+      ],
+      "tips": [
+        {"atSeconds": 733, "text": "エージェントにどのデータを渡すか、どの判断を任せるかを明示し、利用者の制御を保つことを勧めました。"},
+        {"atSeconds": 1338, "text": "AI の設計判断には技術担当者だけでなく、実際の業務や利用環境を知る人を加えるとよいと述べました。"}
+      ]
+    }
+  ]
+}

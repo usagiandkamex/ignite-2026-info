@@ -10,7 +10,7 @@ from import_sessions import CATALOG_URL, FEED_URL, OFFERING_ID, ON_DEMAND_URL, S
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-FILES = ("event.json", "sessions.json", "updates.json")
+FILES = ("event.json", "sessions.json", "updates.json", "session-notes.json")
 BOOK_URL = "https://news.microsoft.com/events/ignite/2026/book-of-news/"
 
 SESSION_TYPES = {
@@ -56,6 +56,21 @@ STAGES = {
     "rollout": "順次展開",
     "planned": "提供予定",
     "announced": "発表",
+}
+NOTE_SECTIONS = {
+    "summary": "話されたこと",
+    "updates": "紹介されたアップデート",
+    "cases": "事例・デモ",
+    "tips": "Tips・実践のヒント",
+}
+NOTE_STATES = {
+    "reviewed": "録画資料を確認・要約あり",
+    "pending": "オンデマンドあり・内容未確認",
+    "unlisted": "録画の掲載なし・内容未確認",
+}
+RECORDING_BASIS = {
+    "captions": "公式録画の字幕",
+    "captions-and-chapters": "公式録画の字幕と YouTube のチャプター",
 }
 
 
@@ -205,16 +220,55 @@ def validate_updates(data):
         sources(note["sources"])
 
 
+def validate_session_notes(data, catalog, updates):
+    keys(data, "schemaVersion notes", "session notes")
+    by_id = {s["id"]: s for s in catalog["sessions"]}
+    announcements = {a["id"] for a in updates["announcements"]}
+    seen = set()
+    require(isinstance(data["notes"], list), "Expected a list of recording notes")
+    for note in data["notes"]:
+        keys(note, "sessionId reviewedOn offeringId youtubeUrl basis summary updates cases tips", "session note")
+        sid = note["sessionId"]
+        require(sid in by_id and sid not in seen, f"Unknown or duplicate reviewed session: {sid}")
+        seen.add(sid)
+        iso_date(note["reviewedOn"])
+        require(any(o["id"] == note["offeringId"] and o["hasOnDemand"] for o in by_id[sid]["offerings"]),
+                f"{sid}: evidence must name the recorded offering of this session")
+        require(note["basis"] in RECORDING_BASIS, f"{sid}: unsupported recording evidence")
+        video = note["youtubeUrl"]
+        if video is not None:
+            require(isinstance(video, str) and
+                    re.fullmatch(r"https://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}", video),
+                    f"{sid}: expected an official YouTube watch URL")
+        require(note["basis"] != "captions-and-chapters" or video is not None,
+                f"{sid}: chapter evidence requires a YouTube video")
+        for section in NOTE_SECTIONS:
+            points = note[section]
+            require(isinstance(points, list) and (points or section != "summary"),
+                    f"{sid}: missing or invalid {section}")
+            for point in points:
+                keys(point, "text atSeconds announcementId" if section == "updates" else "text atSeconds",
+                     f"{sid} {section}")
+                text(point["text"], f"{sid} {section}")
+                require(type(point["atSeconds"]) is int and point["atSeconds"] >= 0,
+                        f"{sid}: timestamps must be nonnegative seconds from the start of the recording")
+                if section == "updates":
+                    ref = point["announcementId"]
+                    require(ref is None or ref in announcements, f"{sid}: unknown announcement {ref}")
+
+
 def load():
     records = []
     for filename in FILES:
         record = json.loads((DATA / filename).read_text(encoding="utf-8"))
         require(type(record["schemaVersion"]) is int and record["schemaVersion"] == 1,
                 f"{filename}: unsupported schema version")
-        iso_date(record["checkedOn"])
+        if filename != "session-notes.json":
+            iso_date(record["checkedOn"])
         records.append(record)
-    event, catalog, updates = records
+    event, catalog, updates, session_notes = records
     by_code = validate_catalog(catalog)
     validate_event(event, by_code)
     validate_updates(updates)
-    return event, catalog, updates
+    validate_session_notes(session_notes, catalog, updates)
+    return event, catalog, updates, session_notes

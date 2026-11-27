@@ -6,7 +6,10 @@ from pathlib import Path
 import shutil
 
 from import_sessions import JST
-from site_data import CATEGORIES, DATA, DELIVERY, FILES, LEVELS, ROOT, SESSION_TYPES, STAGES, TOPICS, iso_date, load, utc
+from site_data import (
+    CATEGORIES, DATA, DELIVERY, FILES, LEVELS, NOTE_SECTIONS, NOTE_STATES, RECORDING_BASIS, ROOT,
+    SESSION_TYPES, STAGES, TOPICS, iso_date, load, utc,
+)
 
 WEB = ROOT / "web"
 PUBLIC_URL = "https://usagiandkamex.github.io/ignite-2026-info/"
@@ -51,15 +54,15 @@ def event_dates(start, end):
     return f"{first.year} 年 {first.month} 月 {first.day}〜{last.day} 日"
 
 
-def site_page(filename, description, body, *, filters=False):
-    name = PAGES[filename]
+def site_page(section, description, body, *, filters=False, title=None, prefix=""):
+    name = title or PAGES[section]
     nav = []
     for page, label in PAGES.items():
-        current = ' aria-current="page"' if page == filename else ""
-        nav.append(f'<a href="{page}"{current}>{label}</a>')
+        current = ' aria-current="page"' if page == section and title is None else ""
+        nav.append(f'<a href="{prefix}{page}"{current}>{label}</a>')
     theme = (WEB / "theme.css").read_text(encoding="utf-8")
     theme_script = (WEB / "theme.js").read_text(encoding="utf-8")
-    scripts = '<script defer src="filter.js"></script>' if filters else ""
+    scripts = f'<script defer src="{prefix}filter.js"></script>' if filters else ""
     return f"""<!doctype html>
 <html lang="ja">
 <head>
@@ -71,13 +74,13 @@ def site_page(filename, description, body, *, filters=False):
 {theme_script}  </script>
   <style>
 {theme}  </style>
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="{prefix}site.css">
   {scripts}
 </head>
 <body>
   <a class="skip" href="#main">本文へ移動</a>
   <header class="top"><div class="wrap top-inner">
-    <a class="brand" href="index.html">Ignite 2026 日本語ガイド</a>
+    <a class="brand" href="{prefix}index.html">Ignite 2026 日本語ガイド</a>
     <nav aria-label="メインメニュー">{"".join(nav)}</nav>
   </div></header>
   <main id="main" class="wrap" tabindex="-1">
@@ -85,7 +88,7 @@ def site_page(filename, description, body, *, filters=False):
   </main>
   <footer class="wrap">
     <p>Microsoft の公式サイトではありません。製品名・商標は各権利者に帰属します。</p>
-    <p>{link("llms.txt", "AI 向けデータ案内")} · {link("https://github.com/usagiandkamex/ignite-2026-info", "GitHub リポジトリ")}</p>
+    <p>{link(prefix + "llms.txt", "AI 向けデータ案内")} · {link("https://github.com/usagiandkamex/ignite-2026-info", "GitHub リポジトリ")}</p>
   </footer>
 </body>
 </html>
@@ -96,17 +99,23 @@ def intro(kicker, title, lead):
     return f'<header class="intro"><p class="kicker">{h(kicker)}</p><h1>{h(title)}</h1><p>{h(lead)}</p></header>'
 
 
+def detail_path(session):
+    return f"session/{session['id']}.html"
+
+
 def overview(event, catalog, updates):
     counts = catalog["counts"]
     dates = event_dates(event["startDate"], event["endDate"])
+    by_code = {s["code"]: s for s in catalog["sessions"]}
     keynotes = []
     for item in event["keynotes"]:
         replay = f' · {link(item["replayUrl"], "YouTube で録画を見る")}' if item["replayUrl"] else ""
+        detail = link(detail_path(by_code[item["sessionCode"]]), "セッション詳細")
         keynotes.append(f"""<article class="card" id="{item['sessionCode']}">
   <p class="kicker">{item['sessionCode']}</p>
   <h3>{h(item['title'])}</h3>
   <p class="meta">{time_range(item['startUtc'], item['endUtc'])}</p>
-  <p>{h(item['summary'])}</p><p>{link(item['sourceUrl'], "公式セッション（録画案内）")}{replay}</p>
+  <p>{h(item['summary'])}</p><p>{detail} · {link(item['sourceUrl'], "公式セッション（録画案内）")}{replay}</p>
 </article>""")
     body = f"""
 {intro(f"{dates}（米国太平洋時間）", event["name"], event["summary"])}
@@ -158,45 +167,111 @@ def chips(labels):
     return " · ".join(h(label) for label in labels)
 
 
-def catalog_entry(s):
-    offers = s["offerings"]
-    has_replay = any(o["hasOnDemand"] for o in offers)
-    labels = [SESSION_TYPES[s["type"]], *[LEVELS[v] for v in s["levels"]], *[TOPICS[v] for v in s["topics"]]]
-    filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"], *labels])
+def session_labels(s):
+    return [SESSION_TYPES[s["type"]], *[LEVELS[v] for v in s["levels"]], *[TOPICS[v] for v in s["topics"]]]
+
+
+def offerings_list(s):
     items = []
-    for o in offers:
+    for o in s["offerings"]:
         when = "日時の掲載なし" if o["startUtc"] is None else time_range(o["startUtc"], o["endUtc"])
         delivery = [DELIVERY[v] for v in o["delivery"]]
         recorded = "オンデマンドあり" if o["hasOnDemand"] else "オンデマンドの掲載なし"
         items.append(f"<li>{when} · {chips([*delivery, recorded])} · {link(o['sourceUrl'], '公式詳細')}</li>")
+    return f'<ul class="offerings">{"".join(items)}</ul>'
+
+
+def note_status(s, note):
+    if note is not None:
+        return "reviewed"
+    return "pending" if any(o["hasOnDemand"] for o in s["offerings"]) else "unlisted"
+
+
+def catalog_entry(s, note):
+    state = note_status(s, note)
+    labels = session_labels(s)
+    highlights = [p["text"] for key in NOTE_SECTIONS for p in note[key]] if note else []
+    filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"], *labels, *highlights])
     return f"""<article id="session-{s['id']}" class="card result" data-result data-text="{h(filters)}"
-  data-kind="{h(s['type'])}" data-topic="{h('|'.join(s['topics']))}" data-replay="{'yes' if has_replay else 'no'}">
+  data-kind="{h(s['type'])}" data-topic="{h('|'.join(s['topics']))}"
+  data-replay="{'no' if state == 'unlisted' else 'yes'}" data-notes="{state}">
   <p class="kicker">{h(s['code'])}</p>
-  <h2 lang="en">{link(offers[0]['sourceUrl'], s['title'])}</h2>
-  <p class="meta">{chips(labels)}</p>
-  <ul class="offerings">{"".join(items)}</ul>
+  <h2 lang="en">{link(detail_path(s), s['title'])}</h2>
+  <p class="meta">{chips(labels)} · {h(NOTE_STATES[state])}</p>
+  {offerings_list(s)}
 </article>"""
 
 
-def sessions_page(catalog):
+def sessions_page(catalog, notes):
     counts = catalog["counts"]
     lead = (f"公式カタログの公開 {counts['sessions']:,} セッション・{counts['offerings']:,} 開催枠。"
             f"うちオンデマンドは {counts['onDemandSessions']:,} セッション・{counts['onDemandOfferings']:,} 枠です。")
     filters = filter_panel(select("kind", "セッション種別", SESSION_TYPES),
                            select("topic", "テーマ", TOPICS),
-                           select("replay", "録画", {"yes": "オンデマンドあり", "no": "オンデマンドの掲載なし"}))
+                           select("replay", "録画", {"yes": "オンデマンドあり", "no": "オンデマンドの掲載なし"}),
+                           select("notes", "要約の確認状況", NOTE_STATES))
     body = f"""
 {intro("公式カタログの公開データ", "セッション", lead)}
 <div class="note">
   <p>タイトルは公式の英語表記、開催枠の時刻は日本標準時（JST）です。アクセス制限などで除外したのは
   {catalog["excludedSessions"]:,} セッション・{catalog["excludedOfferings"]:,} 枠です。
   録画の表示は公式カタログ上の状態で、再生にはサインインが必要な場合があります。</p>
+  <p>各セッションに詳細ページがあります。録画資料に基づく要約はオンデマンド
+  {counts["onDemandSessions"]:,} 件のうち {len(notes):,} 件です。</p>
   <p class="meta">確認日：{h(catalog["checkedOn"])}（日本時間） · {link(catalog["catalogUrl"], "公式カタログ")}
-  · {link(catalog["onDemandCatalogUrl"], "公式オンデマンド一覧")} · {link("data/sessions.json", "セッション JSON")}</p>
+  · {link(catalog["onDemandCatalogUrl"], "公式オンデマンド一覧")} · {link("data/sessions.json", "セッション JSON")}
+  · {link("data/session-notes.json", "録画要約 JSON")}</p>
 </div>
 {filters}
-<div class="results">{"".join(catalog_entry(s) for s in catalog["sessions"])}</div>"""
+<div class="results">{"".join(catalog_entry(s, notes.get(s["id"])) for s in catalog["sessions"])}</div>"""
     return site_page("sessions.html", lead, body, filters=True)
+
+
+def timestamp(seconds):
+    hours, rest = divmod(seconds, 3600)
+    minutes, seconds = divmod(rest, 60)
+    return (f"{hours:d}:" if hours else "") + f"{minutes:02d}:{seconds:02d}"
+
+
+def detail_page(s, note):
+    state = note_status(s, note)
+    details = {
+        "pending": "公式カタログにオンデマンドの案内がありますが、内容はまだ確認していません。",
+        "unlisted": "公式カタログに録画の掲載がないため、話された内容・アップデート・事例・Tips は未確認です。",
+    }
+    if note:
+        source = next(o["sourceUrl"] for o in s["offerings"] if o["id"] == note["offeringId"])
+        evidence = link(source, "確認した開催枠の公式録画ページ")
+        if note["youtubeUrl"]:
+            evidence += " · " + link(note["youtubeUrl"], "公式 YouTube 録画")
+        sections = []
+        for key, title in NOTE_SECTIONS.items():
+            items = []
+            for point in note[key]:
+                ref = point.get("announcementId")
+                related = f' · {link("../updates.html#" + ref, "関連する公式発表")}' if ref else ""
+                when = timestamp(point["atSeconds"])
+                items.append(f'<li><strong>{when}</strong> {h(point["text"])}{related}</li>')
+            content = f'<ul>{"".join(items)}</ul>' if items else "<p>確認した範囲では掲載できる情報を確認できませんでした。</p>"
+            sections.append(f'<section class="section card"><h2>{title}</h2>{content}</section>')
+        review = f"""<div class="note">
+  <p>{h(RECORDING_BASIS[note["basis"]])}を参照した要約です。時刻は公式イベント録画の目安です。
+  YouTube 版では編集によりずれる場合があります。記載の提供状況は講演時点です。</p>
+  <p class="meta">確認日：{h(note["reviewedOn"])}（日本時間） · {evidence}</p>
+</div>{"".join(sections)}"""
+    else:
+        review = f'<div class="note"><p>{details[state]}推測による要約は掲載していません。</p></div>'
+    body = f"""
+<p class="section">{link("../sessions.html#session-" + s['id'], "セッション一覧に戻る")}</p>
+<header class="intro">
+  <p class="kicker">{h(s["code"])}</p><h1 lang="en">{h(s["title"])}</h1>
+  <p>{chips(session_labels(s))} · {NOTE_STATES[state]}</p>
+</header>
+{review}
+<section class="section card"><h2>開催枠・公式リンク</h2>{offerings_list(s)}</section>
+<p class="meta">{link("../data/session-notes.json", "AI 向け録画要約 JSON")}</p>"""
+    return site_page("sessions.html", f'{s["code"]}：{NOTE_STATES[state]}',
+                     body, title=s["title"], prefix="../")
 
 
 def announcement_entry(a, notes):
@@ -236,7 +311,7 @@ def updates_page(data):
     return site_page("updates.html", lead, body, filters=True)
 
 
-def ai_index(event, catalog, updates):
+def ai_index(event, catalog, updates, notes):
     counts = catalog["counts"]
     return f"""# Microsoft Ignite 2026 日本語ガイド
 
@@ -250,7 +325,10 @@ def ai_index(event, catalog, updates):
 
 - [イベントとキーノート]({PUBLIC_URL}data/event.json): 確認日 {event['checkedOn']}。開催概要、両キーノート、公式出典。
 - [セッション]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。`offerings` 内に公式詳細 URL と録画フラグ。
+- [録画のセッション要約]({PUBLIC_URL}data/session-notes.json): 公式録画資料を確認した {len(notes)} セッション分。`sessionId` でセッションに結合し、`offeringId` で録画の開催枠を特定。`atSeconds` はその録画の開始からの秒数。未確認のセッションは収録しません。
 - [製品発表]({PUBLIC_URL}data/updates.json): 確認日 {updates['checkedOn']}。Book of News の全 {len(updates['announcements'])} 項目の日本語要約、提供状況、公式出典。
+
+各セッションの詳細 HTML は `session/{{id}}.html` です。`{{id}}` は `sessions.json` の `sessions[].id` です。
 
 ## 参照先
 
@@ -262,22 +340,27 @@ def ai_index(event, catalog, updates):
 
 
 def build(output):
-    event, catalog, updates = load()
+    event, catalog, updates, session_notes = load()
+    notes = {n["sessionId"]: n for n in session_notes["notes"]}
     output.mkdir(parents=True, exist_ok=True)
     (output / "data").mkdir(exist_ok=True)
     files = {
         "index.html": overview(event, catalog, updates),
-        "sessions.html": sessions_page(catalog),
+        "sessions.html": sessions_page(catalog, notes),
         "updates.html": updates_page(updates),
-        "llms.txt": ai_index(event, catalog, updates),
+        "llms.txt": ai_index(event, catalog, updates, notes),
     }
     for name, content in files.items():
         (output / name).write_text(content, encoding="utf-8", newline="\n")
+    (output / "session").mkdir(exist_ok=True)
+    for s in catalog["sessions"]:
+        (output / detail_path(s)).write_text(detail_page(s, notes.get(s["id"])), encoding="utf-8", newline="\n")
     for name in FILES:
         shutil.copyfile(DATA / name, output / "data" / name)
     for name in ("filter.js", "site.css"):
         shutil.copyfile(WEB / name, output / name)
-    print(f"Built {output}: {catalog['counts']['sessions']} sessions, {len(updates['announcements'])} announcements")
+    print(f"Built {output}: {catalog['counts']['sessions']} sessions, {len(notes)} recording notes, "
+          f"{len(updates['announcements'])} announcements")
 
 
 if __name__ == "__main__":
