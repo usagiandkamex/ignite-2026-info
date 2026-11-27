@@ -51,6 +51,9 @@ pre-agent-steps:
 post-steps:
   - name: Validate updated data and build the site
     run: |
+      set -e
+      git diff --quiet "$GITHUB_SHA" -- tools tests
+      test -z "$(git ls-files --others --exclude-standard -- tools tests)"
       python -m unittest discover -s tests
       python tools/build.py
 
