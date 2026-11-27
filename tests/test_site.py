@@ -13,7 +13,7 @@ from urllib.parse import urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
-from build import PUBLIC_URL, build, time_range
+from build import PUBLIC_URL, build, detail_page, time_range
 import check_recording_notes
 from check_recording_notes import caption_url, cue_times
 from import_azure_updates import IGNITE_TAG, snapshot as azure_snapshot
@@ -32,6 +32,7 @@ def catalog_row(oid, *, scope=None, hidden=False, block_video=False):
         "sessionLevel": [], "topic": [], "restrictedScopes": scope if scope is not None else [],
         "excludeFromSessionScheduler": hidden, "startDateTime": None, "endDateTime": None,
         "deliveryTypes": [], "hasOnDemand": True, "doNotPublishVideo": block_video,
+        "speakerNames": None, "speakerIds": [],
         "description": "Not part of the published schema", "downloadVideoLink": "Not a public link",
     }
 
@@ -64,6 +65,29 @@ class SnapshotTests(unittest.TestCase):
     def test_duplicate_offering_stops_import(self):
         with self.assertRaisesRegex(ValueError, "Duplicate catalog offering"):
             snapshot([catalog_row("1-alpha"), catalog_row("1-alpha")], "2026-11-27")
+
+    def test_speakers_are_joined_by_unique_directory_id(self):
+        row = catalog_row("1-alpha")
+        row["speakerNames"] = "Mika Tanaka, Ada Example"
+        row["speakerIds"] = ["speaker-1", "speaker-2", "speaker-2"]
+        data = snapshot([row], "2026-11-27", [
+            {"speakerId": "speaker-1", "displayName": "Ada Example",
+             "jobTitle": "Azure Catalyst PM", "company": "Microsoft"},
+            {"speakerId": "speaker-2", "displayName": "Mika Tanaka",
+             "jobTitle": "Director", "company": "Microsoft"},
+            {"speakerId": "speaker-2", "displayName": "Mika Tanaka",
+             "jobTitle": "VP", "company": "Microsoft"},
+        ])
+        validate_catalog(data)
+        session = data["sessions"][0]
+        self.assertEqual(session["speakerNames"], "Mika Tanaka, Ada Example")
+        self.assertEqual(session["speakers"], [{
+            "id": "speaker-1", "name": "Ada Example", "jobTitle": "Azure Catalyst PM",
+            "company": "Microsoft",
+            "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/speaker-1",
+        }])
+        self.assertEqual(session["unresolvedSpeakers"], 1)
+        self.assertEqual(data["speakerDirectoryCheckedOn"], "2026-11-27")
 
     def test_published_schema_rejects_raw_content_fields(self):
         data = snapshot([catalog_row("1-alpha")], "2026-11-27")
@@ -171,6 +195,23 @@ class BuildTests(unittest.TestCase):
         self.assertIn("2026/11/18 00:30", times)
         self.assertIn('datetime="2026-11-17T14:30:00Z"', times)
 
+    def test_speaker_roles_are_rendered_and_escaped(self):
+        _, catalog, _, _ = load()
+        session = deepcopy(catalog["sessions"][0])
+        session.update({
+            "speakerNames": "Example Speaker",
+            "speakers": [{
+                "id": "speaker-1", "name": "<Example Speaker>", "jobTitle": "Azure Catalyst PM",
+                "company": "Microsoft", "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/speaker-1",
+            }],
+            "unresolvedSpeakers": 0,
+        })
+        html = detail_page(session, None, None, [], [], None)
+        self.assertIn("スピーカー", html)
+        self.assertIn("&lt;Example Speaker&gt;", html)
+        self.assertIn("Azure Catalyst PM · Microsoft", html)
+        self.assertNotIn("<Example Speaker>", html)
+
     def test_site_matches_data_and_relative_links_resolve(self):
         _, catalog, updates, notes = load()
         azure, videos, relations = load_references(catalog, updates, notes)
@@ -195,6 +236,13 @@ class BuildTests(unittest.TestCase):
             self.assertIn("../data/sessions/LAB700.json", lab)
             detail_data = {p.stem: p for p in (out / "data" / "sessions").glob("*.json")}
             self.assertEqual(set(detail_data), set(detail_files))
+            speaker_session = next(s for s in catalog["sessions"]
+                                   if any(profile["jobTitle"] for profile in s["speakers"]))
+            speaker_record = json.loads(detail_data[speaker_session["code"]].read_text(encoding="utf-8"))
+            self.assertEqual(speaker_record["session"]["speakers"], speaker_session["speakers"])
+            role = next(profile["jobTitle"] for profile in speaker_session["speakers"] if profile["jobTitle"])
+            self.assertIn(role,
+                          detail_files[speaker_session["code"]].read_text(encoding="utf-8"))
             self.assertFalse((out / "data" / "session-notes.json").exists())
             self.assertEqual(pages["sessions.html"].result_ids,
                              ["session-" + s["code"] for s in catalog["sessions"]])

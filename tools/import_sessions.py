@@ -5,11 +5,13 @@ from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
 import re
+from urllib.parse import quote
 from urllib.request import urlopen
 
 CATALOG_URL = "https://ignite.microsoft.com/en-US/sessions"
 ON_DEMAND_URL = CATALOG_URL + "?filter=&onDemand=1"
 FEED_URL = "https://ignite.microsoft.com/api/session/all/en-US"
+SPEAKER_FEED_URL = "https://ignite.microsoft.com/api/speaker/all/en-US"
 JST = timezone(timedelta(hours=9), "JST")
 SESSION_ID = re.compile(r"[A-Za-z0-9]+")
 SESSION_CODE = re.compile(r"[A-Z]+[0-9]+[A-Z]*")
@@ -27,10 +29,62 @@ def summarize(sessions):
     }
 
 
-def snapshot(rows, checked_on):
+def speaker_directory(rows):
+    if not isinstance(rows, list) or not rows:
+        raise ValueError("Expected a non-empty list from the public speaker directory.")
+
+    candidates = {}
+    for row in rows:
+        speaker_id, name = row["speakerId"], row["displayName"]
+        if not isinstance(speaker_id, str) or not speaker_id or not isinstance(name, str) or not name.strip():
+            raise ValueError("Speaker directory record is missing its public ID or display name.")
+        profile = {
+            "id": speaker_id,
+            "name": name,
+            "jobTitle": row.get("jobTitle") or None,
+            "company": row.get("company") or None,
+            "sourceUrl": f"https://ignite.microsoft.com/en-US/speakers/{quote(speaker_id)}",
+        }
+        for field in ("jobTitle", "company"):
+            if profile[field] is not None and not isinstance(profile[field], str):
+                raise ValueError(f"Unexpected speaker {field} for {speaker_id}.")
+        candidates.setdefault(speaker_id, []).append(profile)
+
+    # The public directory can repeat an ID. Only publish records whose repeated
+    # entries agree, so a conflicting profile is never selected arbitrarily.
+    return {
+        speaker_id: profiles[0]
+        for speaker_id, profiles in candidates.items()
+        if all(profile == profiles[0] for profile in profiles)
+    }
+
+
+def enrich_speakers(session, row, directory):
+    if row is None:
+        return {**session, "speakerNames": None, "speakers": [], "unresolvedSpeakers": None}
+
+    names = row.get("speakerNames") or None
+    speaker_ids = row.get("speakerIds", [])
+    if names is not None and not isinstance(names, str):
+        raise ValueError(f"Unexpected speaker names for session {session['id']}.")
+    if not isinstance(speaker_ids, list) or any(not isinstance(value, str) or not value for value in speaker_ids):
+        raise ValueError(f"Unexpected speaker IDs for session {session['id']}.")
+
+    unique_ids = list(dict.fromkeys(speaker_ids))
+    profiles = [directory[speaker_id] for speaker_id in unique_ids if speaker_id in directory]
+    return {
+        **session,
+        "speakerNames": names,
+        "speakers": profiles,
+        "unresolvedSpeakers": sum(speaker_id not in directory for speaker_id in unique_ids),
+    }
+
+
+def snapshot(rows, checked_on, speaker_rows=None):
     if not isinstance(rows, list) or not rows:
         raise ValueError("Expected a non-empty list from the public catalog.")
 
+    directory = speaker_directory(speaker_rows) if speaker_rows is not None else {}
     sessions = {}
     excluded = set()
     seen = set()
@@ -59,6 +113,7 @@ def snapshot(rows, checked_on):
             "levels": sorted({v["displayValue"] for v in row["sessionLevel"]}),
             "topics": sorted({v["displayValue"] for v in row["topic"]}),
         }
+        info = enrich_speakers(info, row, directory)
         session = sessions.setdefault(session_id, {**info, "offerings": []})
         if any(session[key] != value for key, value in info.items()):
             raise ValueError(f"Inconsistent metadata for session {session_id}.")
@@ -86,6 +141,8 @@ def snapshot(rows, checked_on):
         "catalogUrl": CATALOG_URL,
         "onDemandCatalogUrl": ON_DEMAND_URL,
         "sourceDataUrl": FEED_URL,
+        "speakerDirectoryUrl": SPEAKER_FEED_URL,
+        "speakerDirectoryCheckedOn": checked_on if speaker_rows is not None else None,
         "counts": summarize(ordered),
         "excludedSessions": len(excluded - sessions.keys()),
         "excludedOfferings": excluded_count,
@@ -93,19 +150,26 @@ def snapshot(rows, checked_on):
     }
 
 
+def write_snapshot(data, output):
+    sessions = data.pop("sessions")
+    header = json.dumps(data, ensure_ascii=False, indent=2).removesuffix("\n}")
+    records = ",\n".join("    " + json.dumps(record, ensure_ascii=False) for record in sessions)
+    output.write_text(header + ',\n  "sessions": [\n' + records + "\n  ]\n}\n",
+                      encoding="utf-8", newline="\n")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=Path("data") / "sessions.json")
     args = parser.parse_args()
     with urlopen(FEED_URL, timeout=60) as response:
-        data = snapshot(json.load(response), datetime.now(JST).date().isoformat())
+        rows = json.load(response)
+    with urlopen(SPEAKER_FEED_URL, timeout=60) as response:
+        speaker_rows = json.load(response)
+    data = snapshot(rows, datetime.now(JST).date().isoformat(), speaker_rows)
 
     # Keep one session on each line so reviews show only the records that changed.
-    sessions = data.pop("sessions")
-    header = json.dumps(data, ensure_ascii=False, indent=2).removesuffix("\n}")
-    records = ",\n".join("    " + json.dumps(record, ensure_ascii=False) for record in sessions)
-    args.output.write_text(header + ',\n  "sessions": [\n' + records + "\n  ]\n}\n",
-                           encoding="utf-8", newline="\n")
+    write_snapshot(data, args.output)
     print(f"{args.output}: {data['counts']}; excluded offerings: {data['excludedOfferings']}")
 
 

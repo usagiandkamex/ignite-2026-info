@@ -12,14 +12,15 @@ Pages の `/ignite-2026-info/llms.txt` が入口です。次の JSON は同じ�
 | データ | 内容 |
 | --- | --- |
 | [`event.json`](data/event.json) | 開催概要、米国太平洋時間の会期、開幕・パートナーキーノート、日本語要約、出典、確認済みの場合の公開録画 URL。 |
-| [`sessions.json`](data/sessions.json) | 公式カタログの全掲載セッション。`sessions[].code` で個別 JSON を取得できます。公開版には `recordingReview.counts` と `reviewedSessionCodes` が加わります。 |
-| `data/sessions/{code}.json` | 個別セッションの公式メタデータと確認済みの録画要約。例: `data/sessions/BRK449.json`。 |
+| [`sessions.json`](data/sessions.json) | 公式カタログの全掲載セッション。スピーカー名と、照合できた公式プロフィールの役職・所属も含みます。`sessions[].code` で個別 JSON を取得できます。 |
+| `data/sessions/{code}.json` | 個別セッションの公式メタデータ（スピーカー情報を含む）と確認済みの録画要約。例: `data/sessions/BRK449.json`。 |
 | [`updates.json`](data/updates.json) | Book of News 全 59 発表項目の独自の日本語要約。`id` は元の Book of News 項目 ID に対応。各項目に分野、発表時の提供区分と公式出典があります。 |
 | [`azure-updates.json`](data/azure-updates.json) | 公式 Azure Updates の `Microsoft Ignite` タグ付き・2026 年公開の投稿。公開版は確認済みの日本語概要と技術記事も収録します。 |
 | [`session-videos.json`](data/session-videos.json) | 公式 YouTube 動画の対応表。要約の有無にかかわらず、照合できたセッションだけを掲載します。 |
 | [`recording-sources.json`](data/recording-sources.json) | 公式プレーヤーを照合したオンデマンド枠の ID、字幕言語、チャプター開始秒。録画内容の要約ではありません。 |
 
 - `schemaVersion: 1`、`checkedOn` と `reviewedOn` は日本時間の出典確認日（`YYYY-MM-DD`）。`startUtc` / `endUtc` は UTC（末尾 `Z`）。本会期と個々の開催枠の時刻は別に扱います。
+- セッションの `speakerNames` は公式カタログ表記、`speakers` は公式スピーカーディレクトリの名前・役職・会社とプロフィール URL です。`unresolvedSpeakers` はプロフィールと照合できなかった ID 数で、`null` は元セッション情報を取得できていないことを示します。スピーカー名の文字列を分割して ID と推測で結び付けません。`speakerDirectoryCheckedOn` はプロフィールの確認日です。
 - セッションの英語タイトル・分類値は公式表記。HTML では分類名を日本語にし、日時を JST で表示します。`hasOnDemand` はカタログ上で録画が案内されているという意味で、認証なしの視聴可否ではありません。
 - 公式セッションコード（`BRK449` など）を `session/{code}.html` と `data/sessions/{code}.json` に使います。`sessions[].id` は公式の内部 ID で、開催枠との関連付け用です。個別 JSON の `recordingReview.status` は `reviewed`、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（公開録画の案内なし）です。未確認なら `recordingReview.note` は `null`。これは「紹介されたアップデート・事例・Tips が存在しなかった」という意味ではありません。
 - 録画要約の `atSeconds` は録画開始からの秒数です。公式イベント録画を参照した場合、`offeringId` が開催枠を示し、`basis` は公式英語字幕（`captions`）、英語字幕と YouTube チャプター（`captions-and-chapters`）、公式日本語字幕（`captions-ja`）のいずれかです。公式 YouTube の文字起こしを参照した場合は `basis` が `youtube-transcript` になり、時刻は `youtubeUrl` の録画を指します。版によって編集が異なることがあります。各時刻の前後を参照した要約であり、全編を確認したことは示しません。`summary` / `updates` / `cases` / `tips` を分け、確認した範囲で根拠を拾えなかった欄は空配列です。`announcementId` がある更新は `updates.json` の項目に対応します。
@@ -43,7 +44,7 @@ python -m http.server 8000 --directory _site
 
 ローカルでは `http://localhost:8000/` で確認できます。公開用 HTML は `_site` だけに生成され、通常はコミットしません。
 
-1. セッションを更新する場合は `python tools/import_sessions.py` をリポジトリのルートから実行します。公式サイトがログインなしで使うカタログデータから、公開に必要なフィールドだけを抽出します。差分に加え、公開・除外の件数およびオンデマンド一覧を公式画面と照合します。
+1. セッションを更新する場合は `python tools/import_sessions.py` をリポジトリのルートから実行します。公式サイトがログインなしで使うセッションカタログとスピーカーディレクトリから、公開に必要なフィールドだけを抽出します。差分に加え、公開・除外の件数およびオンデマンド一覧を公式画面と照合します。
 2. イベント・製品発表は対応する JSON を編集します。Book of News の本文付き発表見出しと突合し、転載ではなく独自に要約します。地域、ライセンス、予定日などを追記する場合は、公式出典を付けて発表時の状態と区別します。
 3. 検証とビルドを行い、PR で出典と差分をレビューします。定期取得や自動書き換えはありません。
 

@@ -7,7 +7,9 @@ import re
 from urllib.parse import urlsplit
 
 from import_azure_updates import AZURE_FEED, AZURE_UPDATES, END, IGNITE_TAG, START, item_url
-from import_sessions import CATALOG_URL, FEED_URL, OFFERING_ID, ON_DEMAND_URL, SESSION_CODE, SESSION_ID, summarize
+from import_sessions import (
+    CATALOG_URL, FEED_URL, OFFERING_ID, ON_DEMAND_URL, SESSION_CODE, SESSION_ID, SPEAKER_FEED_URL, summarize,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -144,9 +146,12 @@ def sources(records):
 
 def validate_catalog(data):
     keys(data, "schemaVersion checkedOn catalogUrl onDemandCatalogUrl sourceDataUrl counts "
-               "excludedSessions excludedOfferings sessions", "catalog")
+               "speakerDirectoryUrl speakerDirectoryCheckedOn excludedSessions excludedOfferings sessions", "catalog")
     require((data["catalogUrl"], data["onDemandCatalogUrl"], data["sourceDataUrl"])
             == (CATALOG_URL, ON_DEMAND_URL, FEED_URL), "Unexpected catalog sources")
+    require(data["speakerDirectoryUrl"] == SPEAKER_FEED_URL, "Unexpected speaker directory source")
+    if data["speakerDirectoryCheckedOn"] is not None:
+        iso_date(data["speakerDirectoryCheckedOn"])
     require(all(type(data[k]) is int and data[k] >= 0
                 for k in ("excludedSessions", "excludedOfferings"))
             and data["excludedSessions"] <= data["excludedOfferings"], "Invalid exclusion counts")
@@ -155,7 +160,8 @@ def validate_catalog(data):
     session_ids, offering_ids = set(), set()
     by_code = {}
     for session in sessions:
-        keys(session, "id code title type levels topics offerings", "session")
+        keys(session, "id code title type levels topics speakerNames speakers unresolvedSpeakers offerings",
+             "session")
         sid, code = session["id"], session["code"]
         require(isinstance(code, str) and SESSION_CODE.fullmatch(code), f"Invalid session code: {code!r}")
         text(session["title"], f"{code} title")
@@ -165,6 +171,24 @@ def validate_catalog(data):
         require(session["type"] in SESSION_TYPES, f"{code}: unknown type")
         options(session["levels"], LEVELS, f"{code} levels")
         options(session["topics"], TOPICS, f"{code} topics")
+        if session["speakerNames"] is not None:
+            text(session["speakerNames"], f"{code} speaker names")
+        profiles = session["speakers"]
+        require(isinstance(profiles, list), f"{code}: expected speaker profiles")
+        speaker_ids = set()
+        for profile in profiles:
+            keys(profile, "id name jobTitle company sourceUrl", f"{code} speaker")
+            text(profile["id"], f"{code} speaker ID")
+            require(profile["id"] not in speaker_ids, f"{code}: duplicate speaker ID")
+            speaker_ids.add(profile["id"])
+            text(profile["name"], f"{code} speaker name")
+            for field in ("jobTitle", "company"):
+                require(profile[field] is None or isinstance(profile[field], str),
+                        f"{code} speaker {field}: expected text or null")
+            official_url(profile["sourceUrl"])
+        unresolved = session["unresolvedSpeakers"]
+        require(unresolved is None or type(unresolved) is int and unresolved >= 0,
+                f"{code}: invalid unresolved speaker count")
         require(isinstance(session["offerings"], list) and session["offerings"], f"{code}: no offerings")
         for offering in session["offerings"]:
             keys(offering, "id startUtc endUtc delivery hasOnDemand restrictedAccess sourceUrl", f"{code} offering")

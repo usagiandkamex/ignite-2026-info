@@ -252,7 +252,9 @@ def catalog_entry(s, note, video):
     state = note_status(s, note)
     labels = session_labels(s)
     highlights = [p["text"] for key in NOTE_SECTIONS for p in note[key]] if note else []
-    filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"], *labels, *highlights])
+    speaker_terms = [s["speakerNames"] or "", *(speaker["name"] for speaker in s["speakers"])]
+    filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"],
+                        *labels, *speaker_terms, *highlights])
     return f"""<article id="session-{s['code']}" class="card result" data-result data-text="{h(filters)}"
   data-kind="{h(s['type'])}" data-topic="{h('|'.join(s['topics']))}"
   data-replay="{'no' if state == 'unlisted' else 'yes'}" data-notes="{state}" data-youtube="{'yes' if video else 'no'}">
@@ -294,6 +296,28 @@ def timestamp(seconds):
     hours, rest = divmod(seconds, 3600)
     minutes, seconds = divmod(rest, 60)
     return (f"{hours:d}:" if hours else "") + f"{minutes:02d}:{seconds:02d}"
+
+
+def speaker_section(s):
+    profiles = []
+    for speaker in s["speakers"]:
+        details = [value for value in (speaker["jobTitle"], speaker["company"]) if value]
+        profile = f' — {h(" · ".join(details))}' if details else ""
+        profiles.append(f'<li>{link(speaker["sourceUrl"], speaker["name"])}{profile}</li>')
+
+    content = f'<ul>{"".join(profiles)}</ul>' if profiles else ""
+    unresolved = s["unresolvedSpeakers"]
+    if unresolved:
+        if s["speakerNames"]:
+            content = f'<p>公式カタログの表記：{h(s["speakerNames"])}</p>{content}'
+        content += f'<p class="meta">{unresolved} 名分の公式プロフィールを照合できませんでした。</p>'
+    elif not profiles and s["speakerNames"]:
+        content = f'<p>{h(s["speakerNames"])}</p>'
+    elif not profiles and unresolved is None:
+        content = "<p>公式スピーカー情報を確認できませんでした。</p>"
+    elif not profiles:
+        content = "<p>公式カタログにスピーカー情報の掲載はありません。</p>"
+    return f'<section class="section card"><h2>スピーカー</h2>{content}</section>'
 
 
 def detail_page(s, note, video, update_links, technical_articles, recording_source):
@@ -361,6 +385,7 @@ def detail_page(s, note, video, update_links, technical_articles, recording_sour
   <p class="card-eyebrow">{badge(s["code"], "accent")} {status_badge(state)}</p>
   <h1 lang="en">{h(s["title"])}</h1><p class="meta">{chips(session_labels(s))}</p>
 </header>
+{speaker_section(s)}
 <section class="section card"><h2>録画と関連アップデート</h2>{video_html}{recording_html}{update_html}</section>
 <section class="section card"><h2>公式技術ブログ・解説</h2>{article_html}</section>
 {review}
