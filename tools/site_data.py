@@ -10,7 +10,8 @@ from import_sessions import CATALOG_URL, FEED_URL, OFFERING_ID, ON_DEMAND_URL, S
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
-FILES = ("event.json", "sessions.json", "updates.json", "session-notes.json")
+FILES = ("event.json", "sessions.json", "updates.json")
+SESSION_NOTES_DIR = DATA / "session-notes"
 BOOK_URL = "https://news.microsoft.com/events/ignite/2026/book-of-news/"
 
 SESSION_TYPES = {
@@ -71,6 +72,7 @@ NOTE_STATES = {
 RECORDING_BASIS = {
     "captions": "公式録画の字幕",
     "captions-and-chapters": "公式録画の字幕と YouTube のチャプター",
+    "captions-ja": "公式録画の日本語字幕",
 }
 
 
@@ -263,12 +265,23 @@ def load():
         record = json.loads((DATA / filename).read_text(encoding="utf-8"))
         require(type(record["schemaVersion"]) is int and record["schemaVersion"] == 1,
                 f"{filename}: unsupported schema version")
-        if filename != "session-notes.json":
-            iso_date(record["checkedOn"])
+        iso_date(record["checkedOn"])
         records.append(record)
-    event, catalog, updates, session_notes = records
+    event, catalog, updates = records
     by_code = validate_catalog(catalog)
     validate_event(event, by_code)
     validate_updates(updates)
+    session_notes = read_session_notes(SESSION_NOTES_DIR)
     validate_session_notes(session_notes, catalog, updates)
     return event, catalog, updates, session_notes
+
+
+def read_session_notes(directory):
+    require(directory.is_dir(), f"Missing session notes directory: {directory}")
+    notes = []
+    for path in sorted(directory.glob("*.json")):
+        note = json.loads(path.read_text(encoding="utf-8"))
+        require(isinstance(note, dict) and note.get("sessionId") == path.stem,
+                f"{path.name}: filename must match sessionId")
+        notes.append(note)
+    return {"schemaVersion": 1, "notes": notes}

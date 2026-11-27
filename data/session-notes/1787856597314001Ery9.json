@@ -1,0 +1,32 @@
+{
+  "sessionId": "1787856597314001Ery9",
+  "offeringId": "1787856597314001Ery9-1791588317023001CW6v",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 64,
+      "text": "API がないまま使い続けている業務アプリの作業を、エージェントが Windows 365 Cloud PC 上で代行する構成を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 371,
+      "text": "Windows 365 for Agents のコンピューター操作を使い、API で操作できないアプリの画面を利用する機能を紹介しました。",
+      "announcementId": "bon-541"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 550,
+      "text": "顧客との会話を受け取ったエージェントが、旧式の CRM と財務アプリに情報を反映し、承認後に顧客へメールを送るデモを行いました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 262,
+      "text": "モデル選択や実行費用に加え、どの操作で人の承認が必要かを設計し、アプリの変更時に誰が対応するかを決めておくとよいと説明しました。"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "sessionId": "1793671362918001gw6j",
+  "offeringId": "1793671362918001gw6j-AAAAAAAAAAAAAAAAAAAA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 13,
+      "text": "個人向けの常時稼働エージェント Autopilot を設定し、業務コンテキストから目標を提案してもらう流れを紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 445,
+      "text": "Autopilot を含む機能のテナント方針を管理者が設定する画面を紹介しました。",
+      "announcementId": "bon-479"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 313,
+      "text": "チームが集まるための時間調整と事前資料の準備を Autopilot に依頼する例を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 242,
+      "text": "重要なプロジェクトに絞って朝の連絡を用意しておくと、毎日の確認を繰り返し指示せずに済みます。"
+    }
+  ]
+}

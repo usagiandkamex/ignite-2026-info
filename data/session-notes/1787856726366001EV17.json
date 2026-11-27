@@ -1,0 +1,55 @@
+{
+  "sessionId": "1787856726366001EV17",
+  "offeringId": "1787856726366001EV17-1789751960677001d6j0",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Oe8nJV3yXtk",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 319,
+      "text": "Rana el Kaliouby が、AI に任せる仕事と人が担い続ける判断をどう分けるかを論じました。後半は製品、顧客事例、パートナー向け制度の紹介です。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 2112,
+      "text": "Copilot Home で Chat から Cowork の委任作業に移れる体験を紹介。",
+      "announcementId": "bon-484"
+    },
+    {
+      "atSeconds": 4492,
+      "text": "既存のパートナー向けパッケージの中間にあたる Partner Success Advanced を紹介。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 4729,
+      "text": "Frontier Partner specialization への参加と監査を Partner Center で開始できると説明。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 5078,
+      "text": "複数の Microsoft AI サービスの利用を一つのコミットメントで扱う AI Flex Plan を紹介。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 2880,
+      "text": "Syndigo の事例では、小売などで使う商品情報の正確性を保つ取り組みを紹介しました。"
+    },
+    {
+      "atSeconds": 3526,
+      "text": "Softcat が Copilot を約 3,000 人の従業員に展開したと紹介しました。"
+    },
+    {
+      "atSeconds": 4068,
+      "text": "Culligan は Insight と協力し、業務上の課題に合わせてソリューションを共同開発しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 319,
+      "text": "AI の導入範囲を決める際は、できることだけでなく、人に残すべき判断も先に考えるという視点が示されました。"
+    }
+  ]
+}

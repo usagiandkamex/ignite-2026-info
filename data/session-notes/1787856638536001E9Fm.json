@@ -1,0 +1,37 @@
+{
+  "sessionId": "1787856638536001E9Fm",
+  "offeringId": "1787856638536001E9Fm-1791588157716001C6AV",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 316,
+      "text": "モデルの学習、推論、エージェントの実行では必要な計算・接続・分離が異なるため、Azure の基盤をそれぞれどう使うかを説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 734,
+      "text": "Agent Grid とサンドボックスを利用し、エージェントの接続やストレージへのアクセスを管理する構成を紹介しました。",
+      "announcementId": "bon-447"
+    },
+    {
+      "atSeconds": 2413,
+      "text": "Application Gateway for Containers でエージェントの通信を中継する AI ゲートウェイを公開プレビューとして紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1220,
+      "text": "同じコンテキストを再計算する構成とキャッシュを利用する構成を比較するデモを行いました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1298,
+      "text": "推論の最適化では、GPU だけでなくキャッシュ、ネットワーク、ストレージの費用も合算し、目標遅延と比較します。"
+    }
+  ]
+}

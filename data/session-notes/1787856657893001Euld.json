@@ -1,0 +1,37 @@
+{
+  "sessionId": "1787856657893001Euld",
+  "offeringId": "1787856657893001Euld-1789751958877001dRyn",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 142,
+      "text": "Microsoft IQ が業務固有の知識をエージェントに届け、Foundry が稼働後の振る舞いを評価・改善するという考え方を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 273,
+      "text": "企業の業務コンテキストを扱う Microsoft IQ を紹介しました。",
+      "announcementId": "bon-497"
+    },
+    {
+      "atSeconds": 999,
+      "text": "自然言語で業務アプリを作る Fabric アプリの体験を紹介しました。",
+      "announcementId": "bon-460"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 491,
+      "text": "架空の家電会社 Caldova で、納入の遅れを検知し、Teams やプラグインを使って代替案を進めるサプライチェーンのデモを示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 673,
+      "text": "個人の試作を業務に展開するときは、接続先や権限を IT と確認し、管理対象のプラグインとして提供します。"
+    }
+  ]
+}

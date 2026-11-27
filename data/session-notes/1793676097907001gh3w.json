@@ -1,0 +1,32 @@
+{
+  "sessionId": "1793676097907001gh3w",
+  "offeringId": "1793676097907001gh3w-AAAAAAAAAAAAAAAAAAAA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 10,
+      "text": "Microsoft と Lovable が、アプリを作るツールと、企業内で安全に実行・管理する基盤を分ける考え方を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 297,
+      "text": "Copilot Managed Runtime における、コネクターや組織独自の接続先に対する管理ポリシーを紹介しました。",
+      "announcementId": "bon-480"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 171,
+      "text": "CRM を使うエージェント型ワークフローで、機密性のある顧客情報へのアクセスを役割に応じて制御する例を挙げました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 438,
+      "text": "利用状況を可視化できるようにしておくと、誰がどのアプリを何に使っているかを管理側が把握しやすくなります。"
+    }
+  ]
+}

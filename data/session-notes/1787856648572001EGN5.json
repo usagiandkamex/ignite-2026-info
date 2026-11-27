@@ -1,0 +1,32 @@
+{
+  "sessionId": "1787856648572001EGN5",
+  "offeringId": "1787856648572001EGN5-1791588270688001CoUr",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 174,
+      "text": "Integrated Security Operations Center（ISOC）が、Defender と Sentinel を組み合わせる運用環境であり、独立した SKU ではないと説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 559,
+      "text": "Defender ポータルの統合画面で、移行ツールとアクセス制御を扱う機能を紹介しました。",
+      "announcementId": "bon-521"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1756,
+      "text": "プレビューに参加したセキュリティサービスパートナーが、統合環境への移行経験を共有しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1028,
+      "text": "移行前に、Sentinel に送っているテーブルと利用中の検出ルールを確認し、データの保持とアクセス権を計画します。"
+    }
+  ]
+}

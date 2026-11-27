@@ -1,0 +1,26 @@
+{
+  "sessionId": "1793676041654001im8Z",
+  "offeringId": "1793676041654001im8Z-AAAAAAAAAAAAAAAAAAAA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 66,
+      "text": "Lululemon が、離れた拠点から企業アプリを利用するために Windows 365 Cloud PC を導入した経緯と運用上の効果を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 136,
+      "text": "従来の仮想デスクトップ環境とは異なり、永続 Cloud PC を Intune の運用に取り込めた事例を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 433,
+      "text": "複数国に提供する場合は、利用者のいる地域と Cloud PC の配置先をあわせて考えます。"
+    }
+  ]
+}

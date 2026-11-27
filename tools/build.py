@@ -1,7 +1,9 @@
 """Generate the static Japanese guide and AI entry point from the public JSON."""
 
 import argparse
+from collections import Counter
 from html import escape as h
+import json
 from pathlib import Path
 import shutil
 
@@ -101,6 +103,10 @@ def intro(kicker, title, lead):
 
 def detail_path(session):
     return f"session/{session['id']}.html"
+
+
+def detail_data_path(session):
+    return f"data/sessions/{session['id']}.json"
 
 
 def overview(event, catalog, updates):
@@ -219,8 +225,7 @@ def sessions_page(catalog, notes):
   <p>各セッションに詳細ページがあります。録画資料に基づく要約はオンデマンド
   {counts["onDemandSessions"]:,} 件のうち {len(notes):,} 件です。</p>
   <p class="meta">確認日：{h(catalog["checkedOn"])}（日本時間） · {link(catalog["catalogUrl"], "公式カタログ")}
-  · {link(catalog["onDemandCatalogUrl"], "公式オンデマンド一覧")} · {link("data/sessions.json", "セッション JSON")}
-  · {link("data/session-notes.json", "録画要約 JSON")}</p>
+  · {link(catalog["onDemandCatalogUrl"], "公式オンデマンド一覧")} · {link("data/sessions.json", "カタログ JSON")}</p>
 </div>
 {filters}
 <div class="results">{"".join(catalog_entry(s, notes.get(s["id"])) for s in catalog["sessions"])}</div>"""
@@ -255,8 +260,8 @@ def detail_page(s, note):
             content = f'<ul>{"".join(items)}</ul>' if items else "<p>確認した範囲では掲載できる情報を確認できませんでした。</p>"
             sections.append(f'<section class="section card"><h2>{title}</h2>{content}</section>')
         review = f"""<div class="note">
-  <p>{h(RECORDING_BASIS[note["basis"]])}を参照した要約です。時刻は公式イベント録画の目安です。
-  YouTube 版では編集によりずれる場合があります。記載の提供状況は講演時点です。</p>
+  <p>{h(RECORDING_BASIS[note["basis"]])}の各時刻前後を参照した要約です。録画全編を確認したことを示すものではありません。
+  時刻は公式イベント録画の目安で、YouTube 版では編集によりずれる場合があります。記載の提供状況は講演時点です。</p>
   <p class="meta">確認日：{h(note["reviewedOn"])}（日本時間） · {evidence}</p>
 </div>{"".join(sections)}"""
     else:
@@ -269,7 +274,7 @@ def detail_page(s, note):
 </header>
 {review}
 <section class="section card"><h2>開催枠・公式リンク</h2>{offerings_list(s)}</section>
-<p class="meta">{link("../data/session-notes.json", "AI 向け録画要約 JSON")}</p>"""
+<p class="meta">{link("../" + detail_data_path(s), "このセッションの JSON")}</p>"""
     return site_page("sessions.html", f'{s["code"]}：{NOTE_STATES[state]}',
                      body, title=s["title"], prefix="../")
 
@@ -313,6 +318,7 @@ def updates_page(data):
 
 def ai_index(event, catalog, updates, notes):
     counts = catalog["counts"]
+    opening = next(s for s in catalog["sessions"] if s["code"] == "KEY01")
     return f"""# Microsoft Ignite 2026 日本語ガイド
 
 > Microsoft Ignite 2026 の非公式ガイド。日本語の静的ページと同じ情報を、公開 JSON で提供します。
@@ -324,11 +330,13 @@ def ai_index(event, catalog, updates, notes):
 ## 公開データ
 
 - [イベントとキーノート]({PUBLIC_URL}data/event.json): 確認日 {event['checkedOn']}。開催概要、両キーノート、公式出典。
-- [セッション]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。`offerings` 内に公式詳細 URL と録画フラグ。
-- [録画のセッション要約]({PUBLIC_URL}data/session-notes.json): 公式録画資料を確認した {len(notes)} セッション分。`sessionId` でセッションに結合し、`offeringId` で録画の開催枠を特定。`atSeconds` はその録画の開始からの秒数。未確認のセッションは収録しません。
+- [セッションカタログ]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。オンデマンド案内 {counts['onDemandSessions']} セッションのうち、{len(notes)} セッションに確認済みの要約があります。`recordingReview.reviewedSessionIds` で確認済みの個別 JSON を探せます。
+- [個別セッション JSON の例]({PUBLIC_URL}{detail_data_path(opening)}): 開幕キーノート。公式メタデータ、録画の確認状況、話の要点、アップデート、事例、Tips。
 - [製品発表]({PUBLIC_URL}data/updates.json): 確認日 {updates['checkedOn']}。Book of News の全 {len(updates['announcements'])} 項目の日本語要約、提供状況、公式出典。
 
-各セッションの詳細 HTML は `session/{{id}}.html` です。`{{id}}` は `sessions.json` の `sessions[].id` です。
+各セッションの詳細はカタログの `sessions[].id` を使い、`data/sessions/{{id}}.json` で取得できます。人向け HTML は `session/{{id}}.html` です。
+個別 JSON の `recordingReview.status` は `reviewed`（要約あり）、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（録画の掲載なし）。
+未確認なら `recordingReview.note` は `null` です。記入済みの場合、`offeringId` は確認した開催枠、`atSeconds` はその録画の開始からの秒数です。
 
 ## 参照先
 
@@ -344,6 +352,8 @@ def build(output):
     notes = {n["sessionId"]: n for n in session_notes["notes"]}
     output.mkdir(parents=True, exist_ok=True)
     (output / "data").mkdir(exist_ok=True)
+    (output / "data" / "session-notes.json").unlink(missing_ok=True)
+    (output / "data" / "sessions").mkdir(exist_ok=True)
     files = {
         "index.html": overview(event, catalog, updates),
         "sessions.html": sessions_page(catalog, notes),
@@ -353,14 +363,36 @@ def build(output):
     for name, content in files.items():
         (output / name).write_text(content, encoding="utf-8", newline="\n")
     (output / "session").mkdir(exist_ok=True)
+    states = Counter()
     for s in catalog["sessions"]:
-        (output / detail_path(s)).write_text(detail_page(s, notes.get(s["id"])), encoding="utf-8", newline="\n")
+        note = notes.get(s["id"])
+        state = note_status(s, note)
+        states[state] += 1
+        (output / detail_path(s)).write_text(detail_page(s, note), encoding="utf-8", newline="\n")
+        write_json(output / detail_data_path(s), {
+            "schemaVersion": 1,
+            "catalogCheckedOn": catalog["checkedOn"],
+            "session": s,
+            "recordingReview": {"status": state, "note": note},
+        })
     for name in FILES:
-        shutil.copyfile(DATA / name, output / "data" / name)
+        if name != "sessions.json":
+            shutil.copyfile(DATA / name, output / "data" / name)
+    write_json(output / "data" / "sessions.json", {
+        **catalog,
+        "recordingReview": {
+            "counts": {state: states[state] for state in NOTE_STATES},
+            "reviewedSessionIds": sorted(notes),
+        },
+    }, indent=None)
     for name in ("filter.js", "site.css"):
         shutil.copyfile(WEB / name, output / name)
     print(f"Built {output}: {catalog['counts']['sessions']} sessions, {len(notes)} recording notes, "
           f"{len(updates['announcements'])} announcements")
+
+
+def write_json(path, value, *, indent=2):
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=indent) + "\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,37 @@
+{
+  "sessionId": "1787856625239001E4Y4",
+  "offeringId": "1787856625239001E4Y4-1791588197874001CXwR",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 1204,
+      "text": "人の ID を保護する既存の対策と、エージェントの ID、権限、稼働終了までの管理を整理しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 790,
+      "text": "フィッシング耐性のある多要素認証に加え、高保証の資格情報をアクセス条件に使うプレビューの取り組みを紹介しました。",
+      "announcementId": "bon-526"
+    },
+    {
+      "atSeconds": 1977,
+      "text": "Global Secure Access によってエージェントのトラフィックを区別する機能を紹介しました。",
+      "announcementId": "bon-526"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1739,
+      "text": "Entra 管理センターで、エージェント ID のライフサイクルを自動管理する手順を実演しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1204,
+      "text": "登録時の権限だけでなく、不要になったエージェントを廃止する条件も運用の一部として決めるとよいと説明しました。"
+    }
+  ]
+}

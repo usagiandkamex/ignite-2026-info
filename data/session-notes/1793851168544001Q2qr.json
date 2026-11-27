@@ -1,0 +1,21 @@
+{
+  "sessionId": "1793851168544001Q2qr",
+  "offeringId": "1793851168544001Q2qr-AAAAAAAAAAAAAAAAAAAA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 372,
+      "text": "Fabric IQ の役割を、OneLake のデータ、セマンティックモデルの指標、オントロジーの業務関係という三層に分けて解説しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 249,
+      "text": "データをつなぐだけでは判断基準が伝わらない場合、業務上の関係や制約をオントロジーで表現します。"
+    }
+  ]
+}

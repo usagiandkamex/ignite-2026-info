@@ -1,0 +1,58 @@
+{
+  "sessionId": "1787856726055001EpP1",
+  "offeringId": "1787856726055001EpP1-1789751960282001d6eI",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ZR4v1c4CClc",
+  "basis": "captions-and-chapters",
+  "summary": [
+    {
+      "atSeconds": 740,
+      "text": "Satya Nadella は、個人の対話からチームで文脈を共有して作業する Copilot への広がりを説明しました。"
+    },
+    {
+      "atSeconds": 1454,
+      "text": "エージェントの実行基盤だけでなく、Agent 365 でのガバナンスと Perception でのセキュリティ運用を一体として位置付けました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 740,
+      "text": "共有の文脈をメンバーと Copilot が参照する Copilot Workspaces を紹介。",
+      "announcementId": "bon-481"
+    },
+    {
+      "atSeconds": 3549,
+      "text": "Autopilot が、指示を待たずに定期作業やプロジェクトを前に進める仕組みを紹介。",
+      "announcementId": "bon-479"
+    },
+    {
+      "atSeconds": 1454,
+      "text": "Microsoft Perception をエージェント環境全体のセキュリティを担う基盤として紹介。",
+      "announcementId": "bon-531"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 3287,
+      "text": "Chevron のチームが、個々の Cowork 利用から全社での AI 利用状況の把握へ話を広げました。"
+    },
+    {
+      "atSeconds": 3806,
+      "text": "BlackRock とのデモでは、社内ナレッジを参照し、営業責任者が顧客ごとの連絡案と会議の準備を進めました。"
+    },
+    {
+      "atSeconds": 4597,
+      "text": "Unilever IQ のデモでは、契約・データ・判断に関わった人を一つの業務コンテキストでたどりました。"
+    },
+    {
+      "atSeconds": 5273,
+      "text": "Alaska Airlines は、Foundry でエージェントを運用しながら改善する取り組みを紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 4678,
+      "text": "作業結果だけでなく、誰が何を判断したかも組織のコンテキストに戻すと、次の判断で知識を再利用できるという例が示されました。"
+    }
+  ]
+}

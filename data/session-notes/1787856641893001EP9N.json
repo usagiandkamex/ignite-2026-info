@@ -1,0 +1,32 @@
+{
+  "sessionId": "1787856641893001EP9N",
+  "offeringId": "1787856641893001EP9N-1791588245259001C9Dy",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 632,
+      "text": "PostgreSQL 同士の移行と Oracle からの移行を区別し、後者はスキーマ、アプリ、データを別々に変換・検証する構成を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 182,
+      "text": "Azure Database Migration Service で PostgreSQL を Azure HorizonDB に移行する対応を紹介しました。",
+      "announcementId": "bon-458"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1442,
+      "text": "First Advantage が Oracle から Azure Database for PostgreSQL に移行した事例を紹介しました。講演の Azure HorizonDB 向けデモとは別の事例です。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 231,
+      "text": "停止を許容できる長さを先に確認し、停止時間が短い場合は変更データを追随させて最後に切り替えるオンライン方式を検討します。"
+    }
+  ]
+}

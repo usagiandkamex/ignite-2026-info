@@ -1,0 +1,30 @@
+{
+  "sessionId": "1787856577471001EU3q",
+  "offeringId": "1787856577471001EU3q-1791588265567001CAAn",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 241,
+      "text": "ONNX の計算グラフで汎用的な計算ができるかを、ゲームを動かす実験を通して考えました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 336,
+      "text": "ONNX のグラフ内で CPU を模倣して Doom を実行し、動作できても実行効率が低いことを示しました。"
+    },
+    {
+      "atSeconds": 642,
+      "text": "RollerCoaster Tycoon 2 では、多数の来園者の判断を小さな意思決定モデルで処理する例を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 489,
+      "text": "GPU に処理を移すだけで速くなるとは限らないため、処理の並列性やデータ移動などを含め、実際のワークロードで比較します。"
+    }
+  ]
+}

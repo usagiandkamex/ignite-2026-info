@@ -1,0 +1,36 @@
+{
+  "sessionId": "1787856605022001Ezdz",
+  "offeringId": "1787856605022001Ezdz-1791588286877001CISo",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 394,
+      "text": "Copilot Chat と Cowork が参照できるデータを把握し、過剰共有や機密情報の露出を Microsoft Purview の制御で抑える方法を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 2580,
+      "text": "サイト所有者が対応すべき項目を一つの一覧で確認し、その画面から対処できる公開プレビューを紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1444,
+      "text": "機密情報が入った未ラベルのファイルを題材に、DLP ポリシーが Copilot への回答の出力を制御する様子を実演しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1022,
+      "text": "実際に露出している機密情報の種類を先に調べ、その種類を対象としたポリシーから試すと優先付けしやすくなります。"
+    },
+    {
+      "atSeconds": 1688,
+      "text": "関連した複数のルールを同じ DLP ポリシーにまとめると、管理しやすいと紹介しました。"
+    }
+  ]
+}

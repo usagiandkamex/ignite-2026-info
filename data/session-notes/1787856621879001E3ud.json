@@ -1,0 +1,32 @@
+{
+  "sessionId": "1787856621879001E3ud",
+  "offeringId": "1787856621879001E3ud-1791588220447001CZDO",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 71,
+      "text": "AI の普及とサプライチェーンを介する脅威の増加を背景に、セキュリティ担当者が多領域のシグナルを結び付ける必要性を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1576,
+      "text": "Microsoft Defender と Perception による脅威情報の収集・整理の仕組みを紹介しました。",
+      "announcementId": "bon-523"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1576,
+      "text": "製品のデモでは、複数のシグナルから脅威情報をまとめ、対処の判断につなげる流れを扱いました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 909,
+      "text": "個別のシグナルだけで判断せず、端末やクラウドなど領域をまたいだ観測情報を組み合わせて調査します。"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "sessionId": "1787856638224001Ejm6",
+  "offeringId": "1787856638224001Ejm6-1791588310311001CoWQ",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 369,
+      "text": "複数の Linux ディストリビューションで動く業務アプリを Azure に移行し、その後も運用・障害調査を続ける流れを紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 503,
+      "text": "Azure Catalyst が、移行前の棚卸しや計画を支援する例を示しました。",
+      "announcementId": "bon-448"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 709,
+      "text": "架空の物流アプリで、移行先の RHEL が起動しても既存データボリュームを利用できない事象を調べ、サービスの動作を確認しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 503,
+      "text": "移行先を決める前に、維持すべき OS の選択、業務データ、コンポーネント間の接続を明文化します。"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "sessionId": "1787856608608001EBSP",
+  "offeringId": "1787856608608001EBSP-1791588069088001Cwnv",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=-zLfSrdU1a8",
+  "basis": "captions-and-chapters",
+  "summary": [
+    {
+      "atSeconds": 290,
+      "text": "Dynamics 365 のデータや業務機能をエージェントから使い、営業・顧客対応の流れをユーザーが複数画面を行き来せずに進める構成を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 814,
+      "text": "Dynamics 365 Activate が既存プロセスや関係者の棚卸しを支援する仕組みを紹介しました。",
+      "announcementId": "bon-485"
+    },
+    {
+      "atSeconds": 1680,
+      "text": "Copilot Studio がモデルを組み合わせる Copilot harness を活用し、アプリやワークフローに組み込めると説明しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1253,
+      "text": "Visa が参加し、Copilot と Dynamics を営業支援に使う取り組みを紹介しました。"
+    },
+    {
+      "atSeconds": 2640,
+      "text": "クレジットカード申し込みの接客デモで、自由形式の問いを理解しつつ、決められた手続きを進める例を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2881,
+      "text": "コンタクトセンターでは、人と AI の応対に同じ品質評価項目を適用して比較する方法が紹介されました。"
+    }
+  ]
+}

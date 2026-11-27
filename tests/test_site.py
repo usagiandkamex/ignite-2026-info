@@ -1,3 +1,4 @@
+from collections import Counter
 from copy import deepcopy
 from html.parser import HTMLParser
 import json
@@ -10,8 +11,9 @@ from urllib.parse import urlsplit
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 from build import PUBLIC_URL, build, time_range
+from check_recording_notes import caption_url, cue_times
 from import_sessions import snapshot
-from site_data import DATA, FILES, NOTE_SECTIONS, load, validate_catalog, validate_session_notes
+from site_data import DATA, FILES, NOTE_SECTIONS, load, read_session_notes, validate_catalog, validate_session_notes
 
 
 def catalog_row(oid, *, scope=None, hidden=False, block_video=False):
@@ -58,6 +60,34 @@ class SnapshotTests(unittest.TestCase):
             validate_catalog(unexpected)
 
 
+class RecordingEvidenceTests(unittest.TestCase):
+    def test_player_caption_link_selects_language_and_drops_access_query(self):
+        base = "https://mediusdl.event.microsoft.com/video-1/" + "a" * 36 + "/"
+        link = base + "Caption_en-US.vtt"
+        japanese = base + "Caption_ja-JP.vtt"
+        player = "const captionsConfiguration = " + json.dumps({
+            "languageList": [
+                {"srclang": "en", "src": link + "?sig=not-public"},
+                {"srclang": "ja", "src": japanese + "?sig=not-public"},
+            ],
+        })
+        self.assertEqual(caption_url(player), link)
+        self.assertEqual(caption_url(player, "ja"), japanese)
+
+    def test_editorial_note_filename_must_match_session_id(self):
+        with TemporaryDirectory() as temp:
+            directory = Path(temp)
+            (directory / "wrong.json").write_text('{"sessionId": "right"}', encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "filename must match sessionId"):
+                read_session_notes(directory)
+
+    def test_reject_html_and_unordered_captions(self):
+        with self.assertRaisesRegex(ValueError, "Expected public WebVTT"):
+            cue_times("<html>Sign in</html>")
+        with self.assertRaisesRegex(ValueError, "unordered"):
+            cue_times("WEBVTT\n\n00:02.000 --> 00:03.000\n\n00:01.000 --> 00:02.000\n")
+
+
 class Page(HTMLParser):
     def __init__(self, path):
         super().__init__()
@@ -88,10 +118,15 @@ class BuildTests(unittest.TestCase):
         _, catalog, updates, notes = load()
         with TemporaryDirectory() as temp:
             out = Path(temp) / "ignite-2026-info"
+            (out / "data").mkdir(parents=True)
+            (out / "data" / "session-notes.json").write_text('{"notes":[]}', encoding="utf-8")
             build(out)
             pages = {p.name: Page(p) for p in out.glob("*.html")}
             detail_files = {p.stem: p for p in (out / "session").glob("*.html")}
             self.assertEqual(set(detail_files), {s["id"] for s in catalog["sessions"]})
+            detail_data = {p.stem: p for p in (out / "data" / "sessions").glob("*.json")}
+            self.assertEqual(set(detail_data), set(detail_files))
+            self.assertFalse((out / "data" / "session-notes.json").exists())
             self.assertEqual(pages["sessions.html"].result_ids,
                              ["session-" + s["id"] for s in catalog["sessions"]])
             self.assertEqual(pages["updates.html"].result_ids,
@@ -118,9 +153,11 @@ class BuildTests(unittest.TestCase):
             llms = (out / "llms.txt").read_text(encoding="utf-8")
             for filename in FILES:
                 self.assertIn(f"({PUBLIC_URL}data/{filename})", llms)
-                self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
+                if filename != "sessions.json":
+                    self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
             for note in notes["notes"]:
                 detail = detail_files[note["sessionId"]].read_text(encoding="utf-8")
+                self.assertIn("録画全編を確認したことを示すものではありません", detail)
                 for heading in NOTE_SECTIONS.values():
                     self.assertIn(heading, detail)
                 if note["youtubeUrl"]:
@@ -136,6 +173,21 @@ class BuildTests(unittest.TestCase):
                         self.assertTrue(dest.is_file(), url)
                         self.assertTrue(dest.resolve().is_relative_to(out.resolve()), url)
             reviewed = {n["sessionId"] for n in notes["notes"]}
+            by_id = {n["sessionId"]: n for n in notes["notes"]}
+            counts = Counter()
+            for s in catalog["sessions"]:
+                record = json.loads(detail_data[s["id"]].read_text(encoding="utf-8"))
+                self.assertEqual(record["session"], s)
+                note = by_id.get(s["id"])
+                state = "reviewed" if note else "pending" if any(o["hasOnDemand"] for o in s["offerings"]) else "unlisted"
+                counts[state] += 1
+                self.assertEqual(record["recordingReview"], {"status": state, "note": note})
+            published_catalog = json.loads((out / "data" / "sessions.json").read_text(encoding="utf-8"))
+            self.assertEqual(published_catalog.pop("recordingReview"), {
+                "counts": counts, "reviewedSessionIds": sorted(reviewed),
+            })
+            self.assertEqual(published_catalog, catalog)
+            self.assertIn("/data/sessions/", llms)
             for available, expected in [
                 (True, "内容はまだ確認していません"), (False, "公式カタログに録画の掲載がない"),
             ]:

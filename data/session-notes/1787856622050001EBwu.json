@@ -1,0 +1,32 @@
+{
+  "sessionId": "1787856622050001EBwu",
+  "offeringId": "1787856622050001EBwu-1791588323772001CF1T",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 258,
+      "text": "SOC が見つけた端末リスクを IT 側で修正し、結果を確認するまでの引き継ぎを短くする方法を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 504,
+      "text": "Microsoft Perception のエージェントを、既存のセキュリティ製品や Intune を用いた端末管理と組み合わせる構成を紹介しました。",
+      "announcementId": "bon-531"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 822,
+      "text": "Intune のデモで、脆弱性のリスクを把握し、対処を行い、その結果を確認する流れを示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 79,
+      "text": "CVE の件数だけで優先順位を付けず、現実の悪用リスクや自組織の端末への影響を考慮します。"
+    }
+  ]
+}

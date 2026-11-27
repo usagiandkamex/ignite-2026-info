@@ -1,0 +1,25 @@
+{
+  "sessionId": "1793676280642001F1AF",
+  "offeringId": "1793676280642001F1AF-AAAAAAAAAAAAAAAAAAAA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 160,
+      "text": "Agent 365 の運用を通じて得た知見として、Microsoft 以外の環境で作られたエージェントも把握する必要性を議論しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 301,
+      "text": "どのエージェントを横展開するかは、宣伝や登録件数だけで決めず、実際にどのように使われているかを確認します。"
+    },
+    {
+      "atSeconds": 458,
+      "text": "ガバナンスに着手する第一歩として、組織に何があるかを棚卸しします。"
+    }
+  ]
+}
