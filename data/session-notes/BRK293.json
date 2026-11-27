@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK293",
+  "sessionId": "1787856617524001EVUv",
+  "offeringId": "1787856617524001EVUv-1791588071811001C0FN",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 52, "text": "手順、役割分担、規程などの企業固有の知識を、エージェントでも再利用できるように管理する必要性を説明しました。"}],
+  "updates": [{"atSeconds": 704, "text": "Microsoft IQ の業務プラグインを、エージェントが特定の仕事に必要な知識へたどり着くための入口として紹介しました。", "announcementId": "bon-499"}],
+  "cases": [{"atSeconds": 486, "text": "EY の登壇者が、自社の業務知識を AI が利用できるようにする取り組みを共有しました。"}],
+  "tips": [{"atSeconds": 2671, "text": "組織のコンテキストはすべて一か所へ移すのではなく、各分野の担当者が選別・確認して共有できるようにします。"}]
+}

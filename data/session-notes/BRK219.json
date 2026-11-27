@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK219", "sessionId": "1787856606232001EOEz", "offeringId": "1787856606232001EOEz-1791814921046001C62Q",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 103, "text": "OneDrive と SharePoint の業務ファイルが、Copilot が回答や作業を進めるときの根拠になると説明しました。"}],
+  "updates": [{"atSeconds": 1409, "text": "既存の同期を移行する際に、管理者が同期ボタンの表示をより細かく制御できるようにする予定を紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 406, "text": "架空の企業の月次供給レポートを題材に、OneDrive の資料からダッシュボードを用意する例を示しました。"}],
+  "tips": [{"atSeconds": 960, "text": "Copilot のライセンス展開だけでなく、利用者が必要とする業務データに権限を守ってアクセスできる状態を整えます。"}]
+}

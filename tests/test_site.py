@@ -12,8 +12,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
 from build import PUBLIC_URL, build, time_range
 from check_recording_notes import caption_url, cue_times
+from import_azure_updates import IGNITE_TAG, snapshot as azure_snapshot
 from import_sessions import snapshot
-from site_data import DATA, FILES, NOTE_SECTIONS, load, read_session_notes, validate_catalog, validate_session_notes
+from site_data import (
+    DATA, FILES, NOTE_SECTIONS, load, load_references, read_session_notes,
+    validate_catalog, validate_session_links, validate_session_notes,
+)
 
 
 def catalog_row(oid, *, scope=None, hidden=False, block_video=False):
@@ -92,6 +96,23 @@ class RecordingEvidenceTests(unittest.TestCase):
             cue_times("WEBVTT\n\n00:02.000 --> 00:03.000\n\n00:01.000 --> 00:02.000\n")
 
 
+class ReferenceTests(unittest.TestCase):
+    def test_tagged_update_import_rejects_incomplete_page_and_wrong_tag(self):
+        with self.assertRaisesRegex(ValueError, "expected records"):
+            azure_snapshot(lambda _: {"@odata.count": 1, "value": []}, "2026-11-27")
+        row = {"id": "100", "created": "2026-11-17T00:00:00Z", "tags": [IGNITE_TAG.lower()]}
+        with self.assertRaisesRegex(ValueError, "does not match"):
+            azure_snapshot(lambda _: {"@odata.count": 1, "value": [row]}, "2026-11-27")
+
+    def test_unknown_related_update_is_rejected(self):
+        _, catalog, updates, notes = load()
+        _, videos, relations = load_references(catalog, updates, notes)
+        relations["matches"]["BRK240"] = [{"id": "az-0", "context": "example"}]
+        by_code = {s["code"]: s for s in catalog["sessions"]}
+        with self.assertRaisesRegex(ValueError, "unknown or duplicate update"):
+            validate_session_links(videos, relations, by_code, set())
+
+
 class Page(HTMLParser):
     def __init__(self, path):
         super().__init__()
@@ -120,6 +141,7 @@ class BuildTests(unittest.TestCase):
 
     def test_site_matches_data_and_relative_links_resolve(self):
         _, catalog, updates, notes = load()
+        azure, videos, relations = load_references(catalog, updates, notes)
         with TemporaryDirectory() as temp:
             out = Path(temp) / "ignite-2026-info"
             (out / "data").mkdir(parents=True)
@@ -143,10 +165,16 @@ class BuildTests(unittest.TestCase):
             self.assertEqual(pages["sessions.html"].result_ids,
                              ["session-" + s["code"] for s in catalog["sessions"]])
             self.assertEqual(pages["updates.html"].result_ids,
-                             [a["id"] for a in updates["announcements"]])
+                             [a["id"] for a in [*updates["announcements"], *azure["items"]]])
             self.assertIn("KEY01", pages["index.html"].ids)
             self.assertIn("KEY02", pages["index.html"].ids)
             rendered_updates = (out / "updates.html").read_text(encoding="utf-8")
+            self.assertIn('id="az-581358"', rendered_updates)
+            self.assertIn('href="session/BRK240.html">BRK240</a>', rendered_updates)
+            recorded = json.loads(detail_data["BRK222"].read_text(encoding="utf-8"))
+            self.assertEqual(recorded["youtubeUrl"], videos["matches"]["BRK222"])
+            self.assertIn('az-581358', [a["id"] for a in
+                                      json.loads(detail_data["BRK240"].read_text(encoding="utf-8"))["relatedUpdates"]])
             for note in updates["notes"]:
                 self.assertIn(note["text"], rendered_updates)
                 self.assertIn(note["sources"][0]["url"], rendered_updates)
@@ -168,6 +196,9 @@ class BuildTests(unittest.TestCase):
                 self.assertIn(f"({PUBLIC_URL}data/{filename})", llms)
                 if filename != "sessions.json":
                     self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
+            for filename in ("azure-updates.json", "session-videos.json"):
+                self.assertIn(f"({PUBLIC_URL}data/{filename})", llms)
+                self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
             for note in notes["notes"]:
                 path = detail_files[note["sessionCode"]]
                 detail = path.read_text(encoding="utf-8")
@@ -195,10 +226,16 @@ class BuildTests(unittest.TestCase):
                 state = "reviewed" if note else "pending" if any(o["hasOnDemand"] for o in s["offerings"]) else "unlisted"
                 counts[state] += 1
                 self.assertEqual(record["recordingReview"], {"status": state, "note": note})
+                self.assertEqual(record["youtubeUrl"], videos["matches"].get(s["code"]))
+                related = {r["id"] for r in relations["matches"].get(s["code"], [])}
+                if note:
+                    related.update(p["announcementId"] for p in note["updates"] if p["announcementId"])
+                self.assertEqual({r["id"] for r in record["relatedUpdates"]}, related)
             published_catalog = json.loads((out / "data" / "sessions.json").read_text(encoding="utf-8"))
             self.assertEqual(published_catalog.pop("recordingReview"), {
                 "counts": counts, "reviewedSessionCodes": sorted(by_code),
             })
+            self.assertEqual(published_catalog.pop("linkedYouTubeSessionCodes"), sorted(videos["matches"]))
             self.assertEqual(published_catalog, catalog)
             self.assertIn("/data/sessions/", llms)
             for available, expected in [

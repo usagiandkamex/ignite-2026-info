@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK297",
+  "sessionId": "1787856618127001Eh8M",
+  "offeringId": "1787856618127001Eh8M-1791588130096001C7D2",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 235, "text": "Foundry IQ のナレッジベースで、非構造化データを個別のエージェントや Microsoft IQ から使えるようにする構成を紹介しました。"}],
+  "updates": [{"atSeconds": 778, "text": "登壇時には、Foundry IQ Serverless の一般提供を 12 月に予定していると説明しました。", "announcementId": null}],
+  "cases": [],
+  "tips": [{"atSeconds": 970, "text": "単一検索で回答できる場面では既存の RAG を活かし、複数の資料・関係を調べる必要がある質問ではナレッジグラフなどの追加手段を検討します。"}]
+}

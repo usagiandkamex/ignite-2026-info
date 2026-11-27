@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK239",
+  "sessionId": "1787856609398001EjXX",
+  "offeringId": "1787856609398001EjXX-1791814912924001CUg6",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 301, "text": "Employee Self-Service（ESS）を従業員の窓口にし、社内の規程や人事システムにつなぐ構成を説明しました。"}],
+  "updates": [{"atSeconds": 863, "text": "管理者が Copilot 内で ESS をどう呼び出すか設定する仕組みを、今後の体験の一例として紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 1659, "text": "従業員が福利厚生への登録方法や休暇残高を確認する場面と、裏側で人事・IT が設定を担当する流れを実演しました。"}],
+  "tips": [{"atSeconds": 1659, "text": "セルフサービスを展開する際は、IT の設定担当だけでなく、人事システムの担当者や規程の作成・更新担当も参加させます。"}]
+}

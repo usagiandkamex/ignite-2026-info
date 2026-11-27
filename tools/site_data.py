@@ -6,11 +6,13 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 
+from import_azure_updates import AZURE_FEED, AZURE_UPDATES, END, IGNITE_TAG, START, item_url
 from import_sessions import CATALOG_URL, FEED_URL, OFFERING_ID, ON_DEMAND_URL, SESSION_CODE, SESSION_ID, summarize
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 FILES = ("event.json", "sessions.json", "updates.json")
+REFERENCE_FILES = ("azure-updates.json", "session-videos.json", "session-updates.json")
 SESSION_NOTES_DIR = DATA / "session-notes"
 BOOK_URL = "https://news.microsoft.com/events/ignite/2026/book-of-news/"
 
@@ -58,7 +60,11 @@ STAGES = {
     "rollout": "順次展開",
     "planned": "提供予定",
     "announced": "発表",
+    "unlisted": "提供状況の記載なし",
 }
+AZURE_STAGES = {"Launched": "ga", "In preview": "preview", "In development": "planned", None: "unlisted"}
+YOUTUBE_WATCH = re.compile(r"https://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}")
+YOUTUBE_CHANNEL = "https://www.youtube.com/@events_msft/playlists"
 NOTE_SECTIONS = {
     "summary": "話されたこと",
     "updates": "紹介されたアップデート",
@@ -225,6 +231,56 @@ def validate_updates(data):
         sources(note["sources"])
 
 
+def validate_azure_updates(data):
+    keys(data, "schemaVersion checkedOn sourceDataUrl sourceUrl tag publicationFrom publicationBefore count items",
+         "Azure Updates")
+    require((data["sourceDataUrl"], data["sourceUrl"], data["tag"], data["publicationFrom"],
+             data["publicationBefore"]) == (AZURE_FEED, AZURE_UPDATES, IGNITE_TAG, START, END),
+            "Unexpected Azure Updates scope or source")
+    ids = set()
+    for item in data["items"]:
+        keys(item, "id title publishedOn sourceStatus products categories sourceUrl", "Azure update")
+        identity = item["id"]
+        require(re.fullmatch(r"az-[0-9]+", identity) and identity not in ids, f"Invalid Azure update: {identity}")
+        ids.add(identity)
+        iso_date(item["publishedOn"])
+        require(START <= item["publishedOn"] < END, f"{identity}: outside publication window")
+        text(item["title"], f"{identity} title")
+        require(item["sourceStatus"] in AZURE_STAGES, f"{identity}: unknown Azure status")
+        for field in ("products", "categories"):
+            values = item[field]
+            require(isinstance(values, list) and values == sorted(set(values)), f"{identity}: invalid {field}")
+            for value in values:
+                text(value, field)
+        require(item["sourceUrl"] == item_url(identity[3:]), f"{identity}: unexpected official link")
+    require(type(data["count"]) is int and data["count"] == len(ids) and ids, "Incorrect Azure Updates count")
+    return ids
+
+
+def validate_session_links(videos, updates, by_code, ids):
+    keys(videos, "schemaVersion checkedOn channelUrl playlists matches", "session videos")
+    require(videos["channelUrl"] == YOUTUBE_CHANNEL, "Unexpected YouTube channel")
+    require(isinstance(videos["playlists"], list) and videos["playlists"], "Missing official playlists")
+    for url in videos["playlists"]:
+        require(re.fullmatch(r"https://www\.youtube\.com/playlist\?list=[a-zA-Z0-9_-]+", url),
+                "Unexpected official playlist URL")
+    assigned = set()
+    for code, url in videos["matches"].items():
+        require(code in by_code and isinstance(url, str) and YOUTUBE_WATCH.fullmatch(url) and url not in assigned,
+                f"{code}: unknown session, duplicate video or invalid YouTube URL")
+        assigned.add(url)
+    keys(updates, "schemaVersion checkedOn matches", "session updates")
+    for code, references in updates["matches"].items():
+        require(code in by_code and isinstance(references, list) and references, f"{code}: invalid update links")
+        seen = set()
+        for entry in references:
+            keys(entry, "id context", "session update link")
+            identity = entry["id"]
+            require(identity in ids and identity not in seen, f"{code}: unknown or duplicate update {identity}")
+            seen.add(identity)
+            text(entry["context"], f"{code} update context")
+
+
 def validate_session_notes(data, catalog, updates):
     keys(data, "schemaVersion notes", "session notes")
     by_id = {s["id"]: s for s in catalog["sessions"]}
@@ -243,8 +299,7 @@ def validate_session_notes(data, catalog, updates):
         require(note["basis"] in RECORDING_BASIS, f"{sid}: unsupported recording evidence")
         video = note["youtubeUrl"]
         if video is not None:
-            require(isinstance(video, str) and
-                    re.fullmatch(r"https://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}", video),
+            require(isinstance(video, str) and YOUTUBE_WATCH.fullmatch(video),
                     f"{sid}: expected an official YouTube watch URL")
         require(note["basis"] != "captions-and-chapters" or video is not None,
                 f"{sid}: chapter evidence requires a YouTube video")
@@ -278,6 +333,24 @@ def load():
     session_notes = read_session_notes(SESSION_NOTES_DIR)
     validate_session_notes(session_notes, catalog, updates)
     return event, catalog, updates, session_notes
+
+
+def load_references(catalog, updates, notes):
+    records = []
+    for filename in REFERENCE_FILES:
+        record = json.loads((DATA / filename).read_text(encoding="utf-8"))
+        require(type(record["schemaVersion"]) is int and record["schemaVersion"] == 1,
+                f"{filename}: unsupported schema version")
+        iso_date(record["checkedOn"])
+        records.append(record)
+    azure, videos, links = records
+    ids = validate_azure_updates(azure) | {a["id"] for a in updates["announcements"]}
+    validate_session_links(videos, links, {s["code"]: s for s in catalog["sessions"]}, ids)
+    for note in notes["notes"]:
+        if note["youtubeUrl"]:
+            require(videos["matches"].get(note["sessionCode"]) == note["youtubeUrl"],
+                    f'{note["sessionCode"]}: reviewed YouTube URL does not match the session index.')
+    return azure, videos, links
 
 
 def read_session_notes(directory):

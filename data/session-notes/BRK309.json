@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK309",
+  "sessionId": "1787856619943001EJJ0",
+  "offeringId": "1787856619943001EJJ0-1791588352762001C3Gf",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 320, "text": "Web 情報で回答を根拠付けるとき、どの情報源を何回検索し、いつ追加検索を止めるかという実装上の課題を説明しました。"}],
+  "updates": [{"atSeconds": 389, "text": "Web IQ Auto が、複数の検索を組み合わせる処理を引き受ける機能として紹介されました。", "announcementId": "bon-505"}],
+  "cases": [{"atSeconds": 773, "text": "ホノルルの製油所火災を題材に、配送車両の燃料調達への影響を複数の情報源で調べるデモを行いました。"}],
+  "tips": [{"atSeconds": 981, "text": "結果だけでなく検索のトレースを確認し、追加検索がどの根拠を補ったかを調べます。"}]
+}

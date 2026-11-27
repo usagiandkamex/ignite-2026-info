@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK245", "sessionId": "1787856610351001EtOJ", "offeringId": "1787856610351001EtOJ-1791588199498001CmN4",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 40, "text": "AI エージェントが非構造化文書を扱う際、情報を見つけて読み取り、判断に使える形に整える課題を説明しました。"}],
+  "updates": [{"atSeconds": 1234, "text": "Document Intelligence と Content Understanding で、単一の値の抽出だけでなく、文書に分散した情報をもとに回答を推論する機能を紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 304, "text": "自動車ローンの申請書、本人確認、所得確認などを一つにまとめた PDF を使い、文書の分類や項目抽出を説明しました。"}],
+  "tips": [{"atSeconds": 492, "text": "取り込みの評価には、入れ子になった表や複雑なレイアウトなど、本番の文書に出てくる難しい例を含めます。"}]
+}

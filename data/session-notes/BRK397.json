@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK397", "sessionId": "1787856633644001Eort", "offeringId": "1787856633644001Eort-1791587923721001FVwl",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 61, "text": "ブラウザーを情報を見るだけの道具ではなく、人とエージェントが一緒に操作する業務端末として扱う必要性を説明しました。"}],
+  "updates": [{"atSeconds": 664, "text": "ページの見え方や使い方を業務に合わせて調整する Edge の Remix を紹介しました。", "announcementId": "bon-492"}],
+  "cases": [],
+  "tips": [{"atSeconds": 1035, "text": "ブラウザーのエージェント用制御に加え、従来の脅威対策、データ保護、私物端末からのアクセス管理も整えます。"}]
+}

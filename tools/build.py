@@ -9,8 +9,8 @@ import shutil
 
 from import_sessions import JST
 from site_data import (
-    CATEGORIES, DATA, DELIVERY, FILES, LEVELS, NOTE_SECTIONS, NOTE_STATES, RECORDING_BASIS, ROOT,
-    SESSION_TYPES, STAGES, TOPICS, iso_date, load, utc,
+    AZURE_STAGES, CATEGORIES, DATA, DELIVERY, FILES, LEVELS, NOTE_SECTIONS, NOTE_STATES,
+    RECORDING_BASIS, ROOT, SESSION_TYPES, STAGES, TOPICS, iso_date, load, load_references, utc,
 )
 
 WEB = ROOT / "web"
@@ -20,6 +20,7 @@ PAGES = {
     "sessions.html": "セッション",
     "updates.html": "製品発表",
 }
+UPDATE_SOURCES = {"book": "Book of News", "azure": "Azure Updates"}
 
 
 def link(url, label):
@@ -109,7 +110,7 @@ def detail_data_path(session):
     return f"data/sessions/{session['code']}.json"
 
 
-def overview(event, catalog, updates):
+def overview(event, catalog, updates, azure):
     counts = catalog["counts"]
     dates = event_dates(event["startDate"], event["endDate"])
     by_code = {s["code"]: s for s in catalog["sessions"]}
@@ -133,7 +134,7 @@ def overview(event, catalog, updates):
   </section>
   <section class="card">
     <h2>{link("updates.html", "製品発表を読む")}</h2>
-    <p>Book of News の {len(updates["announcements"])} 項目を日本語で要約。分野や、発表時の提供状況から探せます。</p>
+    <p>Book of News の日本語要約 {len(updates["announcements"])} 件と、Ignite タグ付き Azure Updates {azure["count"]} 件を探せます。</p>
   </section>
 </div>
 <section class="section">
@@ -194,29 +195,31 @@ def note_status(s, note):
     return "pending" if any(o["hasOnDemand"] for o in s["offerings"]) else "unlisted"
 
 
-def catalog_entry(s, note):
+def catalog_entry(s, note, video):
     state = note_status(s, note)
     labels = session_labels(s)
     highlights = [p["text"] for key in NOTE_SECTIONS for p in note[key]] if note else []
     filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"], *labels, *highlights])
     return f"""<article id="session-{s['code']}" class="card result" data-result data-text="{h(filters)}"
   data-kind="{h(s['type'])}" data-topic="{h('|'.join(s['topics']))}"
-  data-replay="{'no' if state == 'unlisted' else 'yes'}" data-notes="{state}">
+  data-replay="{'no' if state == 'unlisted' else 'yes'}" data-notes="{state}" data-youtube="{'yes' if video else 'no'}">
   <p class="kicker">{h(s['code'])}</p>
   <h2 lang="en">{link(detail_path(s), s['title'])}</h2>
   <p class="meta">{chips(labels)} · {h(NOTE_STATES[state])}</p>
+  {f'<p>{link(video, "公式 YouTube")}</p>' if video else ''}
   {offerings_list(s)}
 </article>"""
 
 
-def sessions_page(catalog, notes):
+def sessions_page(catalog, notes, videos):
     counts = catalog["counts"]
     lead = (f"公式カタログの公開 {counts['sessions']:,} セッション・{counts['offerings']:,} 開催枠。"
             f"うちオンデマンドは {counts['onDemandSessions']:,} セッション・{counts['onDemandOfferings']:,} 枠です。")
     filters = filter_panel(select("kind", "セッション種別", SESSION_TYPES),
                            select("topic", "テーマ", TOPICS),
                            select("replay", "録画", {"yes": "オンデマンドあり", "no": "オンデマンドの掲載なし"}),
-                           select("notes", "要約の確認状況", NOTE_STATES))
+                           select("notes", "要約の確認状況", NOTE_STATES),
+                           select("youtube", "公式 YouTube", {"yes": "紐づけ済み", "no": "未確認"}))
     body = f"""
 {intro("公式カタログの公開データ", "セッション", lead)}
 <div class="note">
@@ -225,12 +228,12 @@ def sessions_page(catalog, notes):
   タイトルは公式の英語表記、開催枠の時刻は日本標準時（JST）です。
   参加条件・録画の視聴条件は公式ページをご確認ください。</p>
   <p>各セッションに詳細ページがあります。録画資料に基づく要約はオンデマンド
-  {counts["onDemandSessions"]:,} 件のうち {len(notes):,} 件です。</p>
+  {counts["onDemandSessions"]:,} 件のうち {len(notes):,} 件です。公式 YouTube との紐づけは {len(videos):,} 件です。</p>
   <p class="meta">確認日：{h(catalog["checkedOn"])}（日本時間） · {link(catalog["catalogUrl"], "公式カタログ")}
   · {link(catalog["onDemandCatalogUrl"], "公式オンデマンド一覧")} · {link("data/sessions.json", "カタログ JSON")}</p>
 </div>
 {filters}
-<div class="results">{"".join(catalog_entry(s, notes.get(s["id"])) for s in catalog["sessions"])}</div>"""
+<div class="results">{"".join(catalog_entry(s, notes.get(s["id"]), videos.get(s["code"])) for s in catalog["sessions"])}</div>"""
     return site_page("sessions.html", lead, body, filters=True)
 
 
@@ -240,7 +243,7 @@ def timestamp(seconds):
     return (f"{hours:d}:" if hours else "") + f"{minutes:02d}:{seconds:02d}"
 
 
-def detail_page(s, note):
+def detail_page(s, note, video, update_links):
     state = note_status(s, note)
     details = {
         "pending": "公式カタログにオンデマンドの案内がありますが、内容はまだ確認していません。",
@@ -249,8 +252,6 @@ def detail_page(s, note):
     if note:
         source = next(o["sourceUrl"] for o in s["offerings"] if o["id"] == note["offeringId"])
         evidence = link(source, "確認した開催枠の公式録画ページ")
-        if note["youtubeUrl"]:
-            evidence += " · " + link(note["youtubeUrl"], "公式 YouTube 録画")
         sections = []
         for key, title in NOTE_SECTIONS.items():
             items = []
@@ -268,12 +269,19 @@ def detail_page(s, note):
 </div>{"".join(sections)}"""
     else:
         review = f'<div class="note"><p>{details[state]}推測による要約は掲載していません。</p></div>'
+    video_html = f'<p>{link(video, "公式 YouTube 録画")}</p>' if video else "<p>対応する公式 YouTube 動画は未確認です。</p>"
+    related = "".join(
+        f'<li>{link("../updates.html#" + item["id"], item["title"])} — {h(item["context"])}</li>'
+        for item in update_links
+    )
+    update_html = f'<ul>{related}</ul>' if related else "<p>個別に対応付けた製品更新はまだありません。</p>"
     body = f"""
 <p class="section">{link("../sessions.html#session-" + s['code'], "セッション一覧に戻る")}</p>
 <header class="intro">
   <p class="kicker">{h(s["code"])}</p><h1 lang="en">{h(s["title"])}</h1>
   <p>{chips(session_labels(s))} · {NOTE_STATES[state]}</p>
 </header>
+<section class="section card"><h2>録画と関連アップデート</h2>{video_html}{update_html}</section>
 {review}
 <section class="section card"><h2>開催枠・公式リンク</h2>{offerings_list(s)}</section>
 <p class="meta">{link("../" + detail_data_path(s), "このセッションの JSON")}</p>"""
@@ -281,7 +289,7 @@ def detail_page(s, note):
                      body, title=s["title"], prefix="../")
 
 
-def announcement_entry(a, notes):
+def announcement_entry(a, notes, sessions):
     category = CATEGORIES[a["category"]]
     stages = [STAGES[s] for s in a["stages"]]
     search = " ".join([a["title"], a["summary"], a["category"], category, *stages, *(n["text"] for n in notes)])
@@ -290,35 +298,59 @@ def announcement_entry(a, notes):
         f'{source_list(n["sources"])}</div>' for n in notes
     )
     return f"""<article class="card result" id="{a['id']}" data-result data-text="{h(search)}"
-  data-category="{h(a['category'])}" data-stage="{h('|'.join(a['stages']))}">
+  data-source="book" data-category="{h(a['category'])}" data-stage="{h('|'.join(a['stages']))}">
   <p class="kicker">{h(category)}</p>
   <h2>{h(a['title'])}</h2>
   <p class="meta">{chips(stages)}</p>
-  <p>{h(a['summary'])}</p><p>{link(a['sourceUrl'], "公式発表・製品情報")}</p>{additional}
+  <p>{h(a['summary'])}</p><p>{link(a['sourceUrl'], "公式発表・製品情報")}</p>{additional}{update_session_list(sessions)}
 </article>"""
 
 
-def updates_page(data):
-    lead = f"Book of News の {len(data['announcements'])} 発表を、日本語の要約と公式リンクで確認できます。"
-    filters = filter_panel(select("category", "分野", CATEGORIES), select("stage", "提供状況", STAGES))
+def update_session_list(sessions):
+    return (f'<p class="meta">関連セッション：{", ".join(link(detail_path(s), s["code"]) for s in sessions)}</p>'
+            if sessions else "")
+
+
+def azure_update_entry(item, sessions):
+    stage = AZURE_STAGES[item["sourceStatus"]]
+    products = chips(item["products"])
+    search = " ".join([item["title"], *item["products"], *item["categories"], STAGES[stage]])
+    return f"""<article class="card result" id="{item['id']}" data-result data-text="{h(search)}"
+  data-source="azure" data-category="Azure" data-stage="{stage}">
+  <p class="kicker">Azure Updates · Microsoft Ignite</p>
+  <h2 lang="en">{h(item["title"])}</h2>
+  <p class="meta">{h(item["publishedOn"])}（公開日 UTC） · {h(STAGES[stage])}</p>
+  {f'<p>{products}</p>' if products else ''}
+  <p>{link(item["sourceUrl"], "Azure の公式更新情報")}</p>{update_session_list(sessions)}
+</article>"""
+
+
+def updates_page(data, azure, sessions_by_update):
+    lead = (f"Book of News の発表 {len(data['announcements'])} 件と、"
+            f"Azure Updates の「Microsoft Ignite」タグ付き投稿 {azure['count']} 件。")
+    filters = filter_panel(select("source", "出典", UPDATE_SOURCES),
+                           select("category", "分野", CATEGORIES), select("stage", "提供状況", STAGES))
     notes = {}
     for item in data["notes"]:
         notes.setdefault(item["announcementId"], []).append(item)
     body = f"""
-{intro("Book of News", "新サービス・機能", lead)}
+{intro("Book of News / Azure Updates", "新サービス・機能", lead)}
 <div class="note">
-  <p>提供状況は Ignite での発表時点の情報です。1 項目に複数の状態がある場合は、要約で対象の機能を区別しています。
-  日本での提供、言語、契約条件、現在の状況は各公式ページをご確認ください。</p>
+  <p>Book of News は発表時点の日本語要約です。Azure Updates は、2026 年公開で公式タグが付く投稿を原題と
+  フィードの提供状況で掲載しています。同じ機能が両方に載る場合や、公開時期・提供状況の記述が異なる場合があります。
+  日本での提供や契約条件は、各公式ページをご確認ください。</p>
   <p class="meta">確認日：{h(data["checkedOn"])}（日本時間） · {link(data["bookOfNewsUrl"], "公式 Book of News")}
-  · {link("data/updates.json", "製品発表 JSON")}</p>
+  · {link("data/updates.json", "Book of News JSON")} · {link("data/azure-updates.json", "Azure Updates JSON")}</p>
+  <p class="meta">Azure Updates 確認日：{h(azure["checkedOn"])}（日本時間）</p>
   {source_list(data["sources"])}
 </div>
 {filters}
-<div class="results">{"".join(announcement_entry(a, notes.get(a["id"], [])) for a in data["announcements"])}</div>"""
+<div class="results">{"".join(announcement_entry(a, notes.get(a["id"], []), sessions_by_update.get(a["id"], [])) for a in data["announcements"])}
+{"".join(azure_update_entry(a, sessions_by_update.get(a["id"], [])) for a in azure["items"])}</div>"""
     return site_page("updates.html", lead, body, filters=True)
 
 
-def ai_index(event, catalog, updates, notes):
+def ai_index(event, catalog, updates, notes, azure, videos):
     counts = catalog["counts"]
     opening = next(s for s in catalog["sessions"] if s["code"] == "KEY01")
     return f"""# Microsoft Ignite 2026 日本語ガイド
@@ -336,10 +368,13 @@ def ai_index(event, catalog, updates, notes):
 - [セッションカタログ]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。オンデマンド案内 {counts['onDemandSessions']} セッションのうち、{len(notes)} セッションに確認済みの要約があります。`recordingReview.reviewedSessionCodes` で確認済みの個別 JSON を探せます。
 - [個別セッション JSON の例]({PUBLIC_URL}{detail_data_path(opening)}): 開幕キーノート。公式メタデータ、録画の確認状況、話の要点、アップデート、事例、Tips。
 - [製品発表]({PUBLIC_URL}data/updates.json): 確認日 {updates['checkedOn']}。Book of News の全 {len(updates['announcements'])} 項目の日本語要約、提供状況、公式出典。
+- [Azure Updates：Microsoft Ignite タグ]({PUBLIC_URL}data/azure-updates.json): 2026 年公開の公式タグ付き投稿 {azure['count']} 件。原題と公式フィードの提供状況。
+- [公式 YouTube 録画の対応表]({PUBLIC_URL}data/session-videos.json): セッションコードで検索できる照合済みの {len(videos)} 動画リンク。
 
 各セッションの詳細はカタログの `sessions[].code`（例: `BRK449`）を使い、`data/sessions/{{code}}.json` で取得できます。人向け HTML は `session/{{code}}.html` です。
 個別 JSON の `recordingReview.status` は `reviewed`（要約あり）、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（録画の掲載なし）。
 未確認なら `recordingReview.note` は `null` です。記入済みの場合、`offeringId` は確認した開催枠、`atSeconds` はその録画の開始からの秒数です。
+個別 JSON の `relatedUpdates` には、確認した関連資料のみを記録します。`id` が `bon-` の項目は Book of News、`az-` は Azure Updates を参照します。
 
 ## 参照先
 
@@ -352,7 +387,25 @@ def ai_index(event, catalog, updates, notes):
 
 def build(output):
     event, catalog, updates, session_notes = load()
+    azure, video_data, links = load_references(catalog, updates, session_notes)
+    videos = video_data["matches"]
     notes = {n["sessionId"]: n for n in session_notes["notes"]}
+    all_updates = {a["id"]: a for a in [*updates["announcements"], *azure["items"]]}
+    session_updates = {}
+    sessions_by_update = {}
+    for session in catalog["sessions"]:
+        code = session["code"]
+        note = notes.get(session["id"])
+        refs = {entry["id"]: entry["context"] for entry in links["matches"].get(code, [])}
+        for point in note["updates"] if note else []:
+            if point["announcementId"]:
+                refs.setdefault(point["announcementId"], "録画要約に出典時刻のある関連発表です。")
+        session_updates[code] = [
+            {"id": identity, "title": all_updates[identity]["title"], "sourceUrl": all_updates[identity]["sourceUrl"],
+             "context": context} for identity, context in refs.items()
+        ]
+        for identity in refs:
+            sessions_by_update.setdefault(identity, []).append(session)
     output.mkdir(parents=True, exist_ok=True)
     (output / "data").mkdir(exist_ok=True)
     (output / "data" / "session-notes.json").unlink(missing_ok=True)
@@ -366,10 +419,10 @@ def build(output):
             if path.stem not in codes:
                 path.unlink()
     files = {
-        "index.html": overview(event, catalog, updates),
-        "sessions.html": sessions_page(catalog, notes),
-        "updates.html": updates_page(updates),
-        "llms.txt": ai_index(event, catalog, updates, notes),
+        "index.html": overview(event, catalog, updates, azure),
+        "sessions.html": sessions_page(catalog, notes, videos),
+        "updates.html": updates_page(updates, azure, sessions_by_update),
+        "llms.txt": ai_index(event, catalog, updates, notes, azure, videos),
     }
     for name, content in files.items():
         (output / name).write_text(content, encoding="utf-8", newline="\n")
@@ -378,27 +431,35 @@ def build(output):
         note = notes.get(s["id"])
         state = note_status(s, note)
         states[state] += 1
-        (output / detail_path(s)).write_text(detail_page(s, note), encoding="utf-8", newline="\n")
+        video = videos.get(s["code"])
+        related = session_updates[s["code"]]
+        (output / detail_path(s)).write_text(detail_page(s, note, video, related), encoding="utf-8", newline="\n")
         write_json(output / detail_data_path(s), {
             "schemaVersion": 1,
             "catalogCheckedOn": catalog["checkedOn"],
             "session": s,
             "recordingReview": {"status": state, "note": note},
+            "youtubeUrl": video,
+            "relatedUpdates": related,
         })
     for name in FILES:
         if name != "sessions.json":
             shutil.copyfile(DATA / name, output / "data" / name)
+    for name in ("azure-updates.json", "session-videos.json"):
+        shutil.copyfile(DATA / name, output / "data" / name)
     write_json(output / "data" / "sessions.json", {
         **catalog,
         "recordingReview": {
             "counts": {state: states[state] for state in NOTE_STATES},
             "reviewedSessionCodes": sorted(n["sessionCode"] for n in notes.values()),
         },
+        "linkedYouTubeSessionCodes": sorted(videos),
     }, indent=None)
     for name in ("filter.js", "site.css"):
         shutil.copyfile(WEB / name, output / name)
     print(f"Built {output}: {catalog['counts']['sessions']} sessions, {len(notes)} recording notes, "
-          f"{len(updates['announcements'])} announcements")
+          f"{len(updates['announcements'])} announcements, {azure['count']} tagged Azure updates, "
+          f"{len(videos)} YouTube links")
 
 
 def write_json(path, value, *, indent=2):

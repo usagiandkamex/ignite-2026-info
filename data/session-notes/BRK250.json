@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK250", "sessionId": "1787856611091001EATH", "offeringId": "1787856611091001EATH-1791588219089001CpmZ",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 43, "text": "回答するだけのチャットボットから実際に行動するエージェントへ移ると、フレームワークやクラウドにまたがる制御が必要になると説明しました。"}],
+  "updates": [{"atSeconds": 567, "text": "複数の実行環境で方針を適用する基盤として、Agent Hooks と Agent Control Spec の取り組みを紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 215, "text": "部署ごとに異なるフレームワークでエージェントを作った架空の銀行を例に、運用ルールの統一が難しくなる場面を示しました。"}],
+  "tips": [{"atSeconds": 2196, "text": "個別の実装に監視や制御を作り込みすぎず、複数の実行環境で使える仕組みを検討します。"}]
+}

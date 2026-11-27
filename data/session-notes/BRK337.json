@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK337",
+  "sessionId": "1787856624332001E4L2",
+  "offeringId": "1787856624332001E4L2-1791588172254001Cfj2",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [{"atSeconds": 848, "text": "組織内の AI エージェントを可視化し、優先して調査・対処すべきものを見つけるための考え方を説明しました。"}],
+  "updates": [{"atSeconds": 1664, "text": "Entra、Defender、Purview の制御や情報を Perception と組み合わせて使う構成を紹介しました。", "announcementId": "bon-531"}],
+  "cases": [{"atSeconds": 848, "text": "Perception の一覧画面で、エージェントごとの状態を見て調査対象を絞るデモを行いました。"}],
+  "tips": [{"atSeconds": 1144, "text": "リスク評価だけに頼らず、エージェントに渡す権限を必要最小限に抑え、実行環境を分離します。"}]
+}

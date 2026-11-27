@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK202", "sessionId": "1787856603644001EiOR", "offeringId": "1787856603644001EiOR-1791588098392001CZY7",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 248, "text": "Autopilot の特徴を、利用者の仕事を理解すること、時間がたっても作業を続けること、必要な対応を自ら始めることの三つに整理しました。"}],
+  "updates": [{"atSeconds": 248, "text": "指示を一回受けるだけでなく、その後の仕事も継続する個人向け Autopilot を紹介しました。", "announcementId": "bon-479"}],
+  "cases": [{"atSeconds": 370, "text": "Ignite への往復を手配する例で、複数の条件を含む依頼をエージェントに渡す方法を示しました。"}],
+  "tips": [{"atSeconds": 1085, "text": "あらゆる操作で同じように承認を求めるのではなく、どの操作で人が判断する必要があるかを設計します。"}]
+}

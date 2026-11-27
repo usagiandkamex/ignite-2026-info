@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-27",
+  "matches": {
+    "BRK203": [
+      {"id":"bon-483","context":"Copilot Code を使った業務アプリ開発がテーマです。"}
+    ],
+    "BRK214": [
+      {"id":"bon-516","context":"Agent 365 で組織内のエージェントとツールを管理する機能が共通のテーマです。"}
+    ],
+    "BRK215": [
+      {"id":"bon-524","context":"オンプレミスのサーバーを維持する場合のセキュリティ強化に関する関連発表です。"}
+    ],
+    "BRK240": [
+      {"id":"az-581358","context":"セッションで扱う Foundry の人手によるトレース注釈に対応する公式更新です。"}
+    ],
+    "BRK245": [
+      {"id":"az-581318","context":"Document Intelligence と Content Understanding の開発ツールに関する公式更新です。"}
+    ],
+    "BRK297": [
+      {"id":"bon-501","context":"Foundry IQ のナレッジベースと検索機能が共通のテーマです。"}
+    ],
+    "BRK359": [
+      {"id":"bon-457","context":"講演の Microsoft Fabric HorizonDB と、Azure HorizonDB は別製品です。"}
+    ],
+    "BRK361": [
+      {"id":"az-579388","context":"セッションが扱う Azure HorizonDB の一般提供の公式更新です。"},
+      {"id":"az-578314","context":"Azure HorizonDB の提供リージョンについての補足です。セッション内の言及を示すものではありません。"}
+    ],
+    "BRK370": [
+      {"id":"az-563097","context":"セッションで紹介した Azure HorizonDB の AI モデル管理に対応する公式更新です。"},
+      {"id":"az-579602","context":"セッションで実演した AI パイプラインとナレッジグラフの関連更新です。"}
+    ],
+    "BRK369": [
+      {"id":"az-579221","context":"セッションで紹介した Hyperscale のデータベース横断クエリに対応する公式更新です。"}
+    ],
+    "BRK440": [
+      {"id":"az-564451","context":"セッションが扱う Azure Cobalt 200 ベースの VM についての公式更新です。"}
+    ],
+    "BRK449": [
+      {"id":"az-578839","context":"セッション後半で扱う App Service の geo 冗長化に関する公式更新です。"},
+      {"id":"az-578817","context":"セッション後半で紹介された App Service Builder の公式更新です。"}
+    ],
+    "BRK451": [
+      {"id":"az-579612","context":"Azure Database for PostgreSQL から Azure HorizonDB へ移行する機能の公式更新です。"},
+      {"id":"az-579226","context":"Oracle から Azure HorizonDB へ移行する機能の公式更新です。"}
+    ]
+  }
+}

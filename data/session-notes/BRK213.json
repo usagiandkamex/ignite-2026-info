@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK213", "sessionId": "1787856605323001EVio", "offeringId": "1787856605323001EVio-1791588287100001Cq2g",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 120, "text": "Teams の会話や会議を対象とするなりすましを例に、参加者と管理者の両方を守る必要性を説明しました。"}],
+  "updates": [{"atSeconds": 2370, "text": "検知した事象をユーザーに知らせるだけでなく、管理側から把握するためのレポートと運用画面を紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 313, "text": "聞き慣れた声だけでは本人かどうかを判断しにくいことを示すデモを行いました。"}],
+  "tips": [{"atSeconds": 1321, "text": "会議のセキュリティは一つの検知機能に任せず、外部参加者やボットも含め、会議全体のリスクとして扱います。"}]
+}
