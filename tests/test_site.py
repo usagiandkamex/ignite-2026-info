@@ -202,6 +202,14 @@ class SpeakerEditorialTests(unittest.TestCase):
             validate_speaker_editorial({"schemaVersion": 1, "checkedOn": "2026-11-27",
                                         "speakers": invalid}, profiles)
 
+        invalid_profiles = deepcopy(profiles)
+        bas_profile = next(profile for profile in invalid_profiles["BRK233"]["speakers"]
+                           if profile["id"] == "177730559163ignite27-1790281595763001bNYk")
+        bas_profile["sourceUrl"] = "https://ignite.microsoft.com/en-US/speakers/other-speaker"
+        with self.assertRaisesRegex(ValueError, "source does not match"):
+            validate_speaker_editorial({"schemaVersion": 1, "checkedOn": "2026-11-27",
+                                        "speakers": editorial}, invalid_profiles)
+
 
 class Page(HTMLParser):
     def __init__(self, path):

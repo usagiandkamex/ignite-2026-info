@@ -455,17 +455,16 @@ def validate_speaker_editorial(data, speaker_details):
             "Unsupported speaker editorial schema version")
     iso_date(data["checkedOn"])
     require(isinstance(data["speakers"], dict), "speaker editorial: expected speaker map")
-    profiles = {
-        profile["id"]: profile["sourceUrl"]
-        for record in speaker_details.values()
-        for profile in record["speakers"]
-    }
+    profiles = {}
+    for record in speaker_details.values():
+        for profile in record["speakers"]:
+            profiles.setdefault(profile["id"], []).append(profile["sourceUrl"])
     for speaker_id, entry in data["speakers"].items():
         keys(entry, "summaryJa sourceUrl", f"{speaker_id} speaker editorial")
         require(speaker_id in profiles, f"{speaker_id}: unknown speaker editorial ID")
         text(entry["summaryJa"], f"{speaker_id} Japanese speaker summary")
         official_url(entry["sourceUrl"])
-        require(entry["sourceUrl"] == profiles[speaker_id],
+        require(all(entry["sourceUrl"] == source_url for source_url in profiles[speaker_id]),
                 f"{speaker_id}: speaker editorial source does not match the official profile")
     return data["speakers"]
 
