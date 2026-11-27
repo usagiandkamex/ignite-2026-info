@@ -46,11 +46,24 @@ python -m http.server 8000 --directory _site
 
 1. セッションを更新する場合は `python tools/import_sessions.py` をリポジトリのルートから実行します。公式サイトがログインなしで使うセッションカタログとスピーカーディレクトリから、公開に必要なフィールドだけを抽出します。差分に加え、公開・除外の件数およびオンデマンド一覧を公式画面と照合します。
 2. イベント・製品発表は対応する JSON を編集します。Book of News の本文付き発表見出しと突合し、転載ではなく独自に要約します。地域、ライセンス、予定日などを追記する場合は、公式出典を付けて発表時の状態と区別します。
-3. 検証とビルドを行い、PR で出典と差分をレビューします。定期取得や自動書き換えはありません。
+3. 検証とビルドを行い、PR で出典と差分をレビューします。
 
 Azure Updates の更新は `python tools/import_azure_updates.py` で行います。公開年を 2026 年、タグを `Microsoft Ignite` に限定し、ページ件数と重複を検証します。2026 年のイベント週外にも同じタグの投稿があり、掲載はセッションでの発表を意味しません。公式動画は Microsoft Events の Ignite 2026 プレイリスト等でコードとタイトルを照合し、複数候補や未確認の動画を推測で登録しません。関連製品更新は `data/session-updates.json`、録画で確認した Book of News の関係は各要約に記録します。
 
 日本語概要と公式技術記事は `data/update-editorial.json` に追加します。短縮 URL の場合は転送先が同じ製品・機能の記事かを確認してから、最終 URL を記録してください。
+
+### 週次の情報更新
+
+GitHub Agentic Workflows の [`weekly-information-update.md`](.github/workflows/weekly-information-update.md) は毎週月曜 00:23 UTC（日本時間 09:23）と手動実行で公式情報を確認し、変更があれば検証用 PR を作成します。既存の更新 PR が未処理の場合は重複作成を避けます。確認日だけの変更では PR を作りません。取得失敗や不明な情報は推測で補わず、Actions の実行ログと PR の報告を確認してください。
+
+初回実行前に、管理者は Actions のリポジトリ secrets に次を設定してください。
+
+- `COPILOT_GITHUB_TOKEN`: Copilot を利用できる個人アカウントの fine-grained PAT（アカウント権限 **Copilot Requests: Read**）。
+- `GH_AW_PR_TOKEN`: このリポジトリに限定した fine-grained PAT（リポジトリ権限 **Contents: Read and write**、**Pull requests: Read and write**）。PR に対して通常の Actions チェックを起動するため、標準の `GITHUB_TOKEN` とは別に指定します。必要に応じて管理者がトークンを更新してください。
+
+Actions タブの **Ignite 2026 情報の週次更新** から main を選択して手動実行できます。PR は自動マージされません。出典、変更内容、取得漏れと `Ignite guide` のテスト・ビルド結果を確認してから main にマージすると、既存の Pages ワークフローが公開します。フィードの変更で関連データの検証が失敗した場合は、ログを確認して手動で修正・再実行してください。
+
+ワークフローを変更するときは [gh-aw CLI](https://github.github.com/gh-aw/setup/quick-start/) v1.2.2 を使い、`gh aw compile weekly-information-update --action-mode action --action-tag 53d0749e19424a918acd82b4d140264ce48f2f14` で `.lock.yml` を再生成して両方をコミットします。
 
 ### 録画要約を追加する
 
