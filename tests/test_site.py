@@ -21,7 +21,8 @@ from import_sessions import snapshot, speaker_snapshot
 from site_data import (
     DATA, FILES, NOTE_SECTIONS, NOTE_STATES, azure_status, load, load_recording_sources, load_references,
     load_session_speakers, load_update_editorial, read_session_notes,
-    validate_catalog, validate_session_links, validate_session_notes,
+    load_speaker_editorial, validate_catalog, validate_session_links, validate_session_notes,
+    validate_speaker_editorial,
 )
 
 
@@ -179,6 +180,29 @@ class ReferenceTests(unittest.TestCase):
             validate_session_links(videos, relations, by_code, set())
 
 
+class SpeakerEditorialTests(unittest.TestCase):
+    def test_speaker_editorial_requires_a_known_id_and_matching_official_source(self):
+        _, catalog, _, _ = load()
+        profiles = load_session_speakers(catalog)
+        editorial = load_speaker_editorial(profiles)
+        self.assertIn("177730559163ignite27-1791934977759001MoV5", editorial)
+
+        invalid = deepcopy(editorial)
+        invalid["unknown-speaker"] = {
+            "summaryJa": "説明", "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/unknown-speaker",
+        }
+        with self.assertRaisesRegex(ValueError, "unknown speaker editorial ID"):
+            validate_speaker_editorial({"schemaVersion": 1, "checkedOn": "2026-11-27",
+                                        "speakers": invalid}, profiles)
+
+        invalid = deepcopy(editorial)
+        invalid["177730559163ignite27-1791934977759001MoV5"]["sourceUrl"] = (
+            "https://ignite.microsoft.com/en-US/speakers/other-speaker")
+        with self.assertRaisesRegex(ValueError, "source does not match"):
+            validate_speaker_editorial({"schemaVersion": 1, "checkedOn": "2026-11-27",
+                                        "speakers": invalid}, profiles)
+
+
 class Page(HTMLParser):
     def __init__(self, path):
         super().__init__()
@@ -222,6 +246,22 @@ class BuildTests(unittest.TestCase):
         self.assertIn("Azure Catalyst PM · Microsoft", html)
         self.assertNotIn("<Example Speaker>", html)
 
+    def test_speaker_context_is_rendered_and_escaped(self):
+        _, catalog, _, _ = load()
+        session = deepcopy(catalog["sessions"][0])
+        session.update({
+            "speakerNames": "Example Speaker",
+            "speakers": [{
+                "id": "speaker-1", "name": "Example Speaker", "jobTitle": "Software Engineer",
+                "company": "Microsoft", "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/speaker-1",
+                "contextJa": "Copilot <開発>",
+            }],
+            "unresolvedSpeakers": 0,
+        })
+        html = detail_page(session, None, None, [], [], None)
+        self.assertIn("公式プロフィールより：Copilot &lt;開発&gt;", html)
+        self.assertNotIn("公式プロフィールより：Copilot <開発>", html)
+
     def test_site_matches_data_and_relative_links_resolve(self):
         _, catalog, updates, notes = load()
         azure, videos, relations = load_references(catalog, updates, notes)
@@ -247,16 +287,20 @@ class BuildTests(unittest.TestCase):
             detail_data = {p.stem: p for p in (out / "data" / "sessions").glob("*.json")}
             self.assertEqual(set(detail_data), set(detail_files))
             speaker_profiles = load_session_speakers(catalog)
+            speaker_editorial = load_speaker_editorial(speaker_profiles)
             speaker_session = next(s for s in catalog["sessions"]
-                                   if any(profile["jobTitle"] for profile in speaker_profiles[s["code"]]["speakers"]))
+                                   if any(profile["id"] in speaker_editorial
+                                          for profile in speaker_profiles[s["code"]]["speakers"]))
             speaker_record = json.loads(detail_data[speaker_session["code"]].read_text(encoding="utf-8"))
-            self.assertEqual(speaker_record["speakers"], speaker_profiles[speaker_session["code"]]["speakers"])
+            self.assertTrue(any("contextJa" in profile for profile in speaker_record["speakers"]))
             self.assertNotIn("speakers", speaker_record["session"])
             self.assertNotIn("unresolvedSpeakers", speaker_record["session"])
             self.assertFalse((out / "data" / "session-speakers.json").exists())
             role = next(profile["jobTitle"] for profile in speaker_profiles[speaker_session["code"]]["speakers"]
                         if profile["jobTitle"])
             self.assertIn(role,
+                          detail_files[speaker_session["code"]].read_text(encoding="utf-8"))
+            self.assertIn("公式プロフィールより：",
                           detail_files[speaker_session["code"]].read_text(encoding="utf-8"))
             self.assertFalse((out / "data" / "session-notes.json").exists())
             self.assertEqual(pages["sessions.html"].result_ids,
