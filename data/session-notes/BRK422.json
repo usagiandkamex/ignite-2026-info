@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK422","sessionId":"1787856637461001ETKM","offeringId":"1787856637461001ETKM-1791588350040001CQCY","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":266,"text":"AKS で重みを公開したモデルを推論用に配備する方法と、KubeRay で業務データを使った追加学習を分散実行する方法を紹介しました。"}],
+  "updates":[{"atSeconds":775,"announcementId":null,"text":"モデルと推論エンドポイントを AKS に配備する AI Manager のプレビューが実演されました。"}],
+  "cases":[{"atSeconds":1153,"text":"Qwen に COBOL の知識を追加学習させるデモで、既存モデルを特定領域に適応させる流れを示しました。"},{"atSeconds":1450,"text":"法律実務の調査や文書作成を支援する Harvey は、エージェントの処理を隔離した実行環境に載せる構成を紹介しました。"}],
+  "tips":[]
+}

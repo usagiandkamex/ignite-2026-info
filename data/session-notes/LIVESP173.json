@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP173","sessionId":"1787855008569001tMGg","offeringId":"1787855008569001tMGg-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":126,"text":"NVIDIA と Porsche が Azure 上で自動運転向けの学習・評価データを扱い、実走行だけでは集めにくいまれな場面を検証する取り組みを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":307,"text":"Porsche は、走行データからまれな出来事を探し、走行記録を再利用できるシミュレーション素材に変え、条件を少しずつ変えて試す流れを説明しました。"}],
+  "tips":[{"atSeconds":254,"text":"新しいモデルを評価する際は、新しい場面での性能だけでなく、従来できていたことが引き続きできるかも確認します。"}]
+}

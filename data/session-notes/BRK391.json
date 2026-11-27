@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK391","sessionId":"1787856632736001EDzS","offeringId":"1787856632736001EDzS-1791588285068001CR2r","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=g5TgBgMIe58","basis":"captions",
+  "summary":[{"atSeconds":1122,"text":"Windows 上で動くエージェントを、MXC で実行を制御できるものと組織が利用を認めないものに分け、Intune で異なるポリシーを適用する考え方を解説しました。"}],
+  "updates":[{"atSeconds":1700,"announcementId":"bon-529","text":"Intune のソフトウェア インベントリから未承認のエージェントを検出し、その端末を非準拠として Entra の条件付きアクセスで組織データへの接続を制限するプレビューを紹介しました。"}],
+  "cases":[],
+  "tips":[{"atSeconds":925,"text":"ローカル エージェント専用の管理を始める前に、端末ポリシー、条件付きアクセス、インベントリなど既存のエンドポイント管理を整えます。"}]
+}

@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR857",
+  "sessionId": "1787856575778001Efqr",
+  "offeringId": "1787856575778001Efqr-1791588265104001CdcG",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=lWSaJ_BOz4I",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 89, "text": "Microsoft Agent 365 で自社・他社のエージェントを把握し、アクセス権や動作を見ながら調査と管理の優先順位を決める方法を紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 228, "announcementId": "bon-514", "text": "プレビューの Dynamic Agent Risk を使い、構成だけでなく稼働中の動作に関するシグナルも考慮してリスクを評価する考え方を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 332, "text": "エージェントに割り当てられた Microsoft Graph と個別リソースの権限を管理画面で確認する例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 699, "text": "エージェントの活動量は用途によって意味が違うため、継続運用を判断するときは何の仕事を担っているかと合わせて見ます。"}
+  ]
+}

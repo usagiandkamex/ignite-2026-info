@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR882",
+  "sessionId": "1787856579574001Ettf",
+  "offeringId": "1787856579574001Ettf-1791588274282001CUNE",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ip7Nx8MLxzs",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 154, "text": "データベースで異常が起きたときに、エージェントが運用メトリックなどの根拠を先に集め、担当者の原因調査を支援する方法を紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 213, "announcementId": "bon-456", "text": "データベースエージェントは限定公開プレビューとして案内され、VS Code 拡張から調査結果を見る流れが示されました。"}
+  ],
+  "cases": [
+    {"atSeconds": 569, "text": "PostgreSQL の CPU 使用率が上がるデモで、エージェントが不足しているインデックスを指摘し、対処案を提示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 397, "text": "運用変更を実行する前に、エージェントが集めた証拠と推定した原因を分けて確認し、変更の実施は担当者が判断します。"}
+  ]
+}

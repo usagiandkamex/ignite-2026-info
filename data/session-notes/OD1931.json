@@ -1,0 +1,7 @@
+{
+  "sessionCode":"OD1931","sessionId":"1793980351446001iZb0","offeringId":"1793980351446001iZb0-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=KfYnQ9SkGoM","basis":"captions-ja",
+  "summary":[{"atSeconds":2,"text":"重要データと業務を復旧できるようにする観点で、Microsoft 365 Backup と、エージェントによる意図しない変更への対応を紹介しました。"}],
+  "updates":[{"atSeconds":154,"text":"対応するデータや業務で、管理者がエージェントの操作を取り消せるようにする Agent Rewind の非公開プレビューを発表しました。","announcementId":null},{"atSeconds":564,"text":"ワークロード全体を対象とするバックアップの公開プレビューと、バックアップ管理画面の操作ログを紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":338,"text":"Microsoft 365 管理センターで保護する Teams を選び、チャネルのバックアップポリシーを設定する画面を紹介しました。"}],
+  "tips":[{"atSeconds":669,"text":"障害が起きる前から、ストレージの増加やコンテンツのライフサイクルを把握し、エージェントが扱うデータを整理します。"}]
+}

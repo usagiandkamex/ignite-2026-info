@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR875",
+  "sessionId": "1787856578535001ECBr",
+  "offeringId": "1787856578535001ECBr-1791588094638001CDzI",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=096vpb7Yp14",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 51, "text": "端末やアプリ、クラウドに分散するセキュリティのシグナルをつなぎ、複数の防御用エージェントが調査結果を引き継ぐ運用を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 359, "announcementId": "bon-531", "text": "既存の IT サービス管理やセキュリティ運用ツールから Microsoft Perception のプレイブックを呼び出す、プレビューの連携を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 120, "text": "アラート調査のプレイブックが出来事の時系列と影響範囲をまとめ、分析担当者が一つの画面から調査を進める例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 512, "text": "セキュリティ運用での AI 投資は、処理量だけでなく、確認できたアラートや作成できた報告書などの成果で測ります。"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE161","sessionId":"1794781345738001qkpZ","offeringId":"1794781345738001qkpZ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":64,"text":"AI を試験導入から本番に移すと、利用費だけでなく、業務の成果や運用状況も継続的に確認する FinOps が重要になると説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":197,"text":"作業によって必要なモデル性能は異なります。Foundry や Copilot のモデル選択機能を使い、用途に見合う性能と費用になるかを確認します。"}]
+}

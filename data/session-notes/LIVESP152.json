@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP152","sessionId":"1787855008257001tQws","offeringId":"1787855008257001tQws-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":13,"text":"AT&T が、通信ネットワークの内部資料や大量のデータを扱う作業では汎用モデルで十分な結果が得られず、用途に合わせたモデルを作ることにしたと説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":85,"text":"AT&T は Foundry のマネージド計算資源と大容量メモリを備えた AMD MI300 を使い、同じデータ量を以前の半分の GPU 台数で処理できたと報告しました。"}],
+  "tips":[{"atSeconds":85,"text":"GPU を常時確保する代わりに、必要な期間だけクラスターを起動し、処理終了後に解放する方法を紹介しました。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE88","sessionId":"1793670651617001FfjL","offeringId":"1793670651617001FfjL-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":332,"text":"公開後にエージェントの評価と改善を続ける方法を、Microsoft Foundry の製品マーケティングチームが使うブログ原稿の評価システムで説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":190,"text":"原稿を書いた担当者に、自動評価の点数と改善案をメールで返す仕組みを紹介しました。画面で示した例では、マーケティング担当者が直接修正しなくても評価が73点から83点に上がったと報告しました。"}],
+  "tips":[{"atSeconds":382,"text":"評価に異論があれば、専門家が理由付きで正しい評価を登録し、次回の評価用プロンプトに具体例として反映します。"}]
+}

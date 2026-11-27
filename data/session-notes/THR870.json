@@ -1,0 +1,19 @@
+{
+  "sessionCode": "THR870",
+  "sessionId": "1787856577771001E5E7",
+  "offeringId": "1787856577771001E5E7-1791588152954001CCkp",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=tkOiVw-QQK4",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 206, "text": "AT&T は、コンタクトセンターの通話やチャットの記録を分類・要約し、Foundry IQ などを活用して分析や応対に役立てる取り組みを紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 417, "text": "AT&T は通話などのデータを Event Hubs に集め、AKS 上で処理して複数の用途へ提供する構成を説明しました。"},
+    {"atSeconds": 608, "text": "コンタクトセンターで応対前・応対中・応対後に同じ顧客対応の文脈を使い、解決内容や今後の改善点を要約する例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 827, "text": "部門ごとに同種のパイプラインを作る代わりに、取り込みや加工を共通化し、その先のデータを複数部門で使えるようにします。"}
+  ]
+}

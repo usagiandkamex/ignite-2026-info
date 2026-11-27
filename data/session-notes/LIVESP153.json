@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP153","sessionId":"1787855008464001tTvg","offeringId":"1787855008464001tTvg-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":135,"text":"既存の製油所や LNG プラントなどを例に、設備の図面や知識をデジタル化し、シミュレーションや保守の判断に使う可能性を議論しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":107,"text":"2D の配管・計装図をモデルに読み込ませ、シミュレーション用の3D素材を生成し、Azure 上の NVIDIA Omniverse で描画する例を示しました。"}],
+  "tips":[{"atSeconds":277,"text":"設備にモデルを直接つなぐ前に、保守や点検で技術者の判断材料を用意する用途などで、段階的に妥当性を確かめます。"}]
+}

@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR861",
+  "sessionId": "1787856576376001EuuR",
+  "offeringId": "1787856576376001EuuR-1791588265344001CyOa",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=GI7kO3O_6ys",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 270, "text": "Fireworks の推論基盤を Microsoft Foundry の Azure エンドポイントから利用し、用途に合うオープンモデルを本番に展開する方法を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 552, "announcementId": null, "text": "一部モデルの提供拡大に加え、従量課金の Global Standard と Fireworks ネイティブの Responses API へのパススルーを紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 456, "text": "Genspark は、強化学習を用いたファインチューニングと推論性能の調整を組み合わせた事例として紹介されました。"}
+  ],
+  "tips": [
+    {"atSeconds": 605, "text": "遅延に厳しい小規模な用途でも、対象モデルで小さい単位から確保できるプロビジョニング済みスループットが適するか検討します。"}
+  ]
+}

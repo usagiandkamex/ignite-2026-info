@@ -1,0 +1,19 @@
+{
+  "sessionCode": "THR871",
+  "sessionId": "1787856577935001EMGH",
+  "offeringId": "1787856577935001EMGH-1791588161480001CIBR",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=it7kwpXynCU",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 273, "text": "Fabric IQ で既存の Power BI セマンティックモデルから業務用語や関係を整理し、複数のエージェントで共有できるコンテキストを作る方法を紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 481, "text": "複数のセマンティックモデルをもとに、販促効果と採算性の分析に使うオントロジーのたたき台を作りました。"},
+    {"atSeconds": 1303, "text": "構築したオントロジーを MCP 経由で Foundry の独自エージェントにつなぎ、同じ業務定義を再利用する例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 889, "text": "配送時の温度のような値は、項目名だけでなく、業務上許容される範囲も業務モデルに持たせます。"}
+  ]
+}

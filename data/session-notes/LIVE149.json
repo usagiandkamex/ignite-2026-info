@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE149","sessionId":"1793675965297001onQI","offeringId":"1793675965297001onQI-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":106,"text":"Copilot Studio の開発チームが、エージェントを使うと試作までの時間が短くなり、企画と実装の進め方も変わったと話しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":121,"text":"仕様の議論だけに時間をかけず、試作品をチーム内や早期利用者に触ってもらい、本番向けに仕上げるものを判断する進め方を紹介しました。"}],
+  "tips":[{"atSeconds":236,"text":"開発プロセスをすべて整えてから始めるのではなく、小さく試し、何に時間がかかるかという従来の前提を見直します。"}]
+}

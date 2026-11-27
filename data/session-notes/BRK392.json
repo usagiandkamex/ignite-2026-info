@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK392","sessionId":"1787856632886001EI37","offeringId":"1787856632886001EI37-1791588350267001CNOM","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=S9CkU2qmp1E","basis":"captions",
+  "summary":[{"atSeconds":220,"text":"Windows Baseline Protection は端末の保護状態を判断する共通の基準で、アプリ開発者や IT 管理者が保護の不足を把握するための仕組みを説明しました。"}],
+  "updates":[{"atSeconds":1308,"announcementId":"bon-540","text":"端末が Windows Baseline Protection の要件を満たすかをアプリから確認できる Readiness Audit API が、プレビューとして紹介されました。"}],
+  "cases":[{"atSeconds":1132,"text":"Adobe は、正規品と偽造品を判別して利用者を保護する Adobe Genuine Service の取り組みを紹介しました。"}],
+  "tips":[{"atSeconds":1320,"text":"準備状況を利用者へ伝える際は、判定の詳細を使い、設定変更後の再起動が必要な状態などを区別します。"}]
+}

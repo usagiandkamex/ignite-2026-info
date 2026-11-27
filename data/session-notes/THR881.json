@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR881",
+  "sessionId": "1787856579426001E1iD",
+  "offeringId": "1787856579426001E1iD-1791588290004001CmUD",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Bot-T0980BI",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 319, "text": "Microsoft Fabric HorizonDB では、業務用の PostgreSQL テーブルと Fabric にある分析データを一つの PostgreSQL 接続から扱えると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 150, "announcementId": "bon-457", "text": "Azure 版とは別に、サーバーレスの PostgreSQL を利用できる Fabric 版 HorizonDB を公開プレビューとして紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 986, "text": "顧客情報と過去の売上データを組み合わせ、売上上位の顧客を PostgreSQL 側から問い合わせる例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 256, "text": "オンライン処理と分析処理の役割を分ける際は、OneLake にミラーリングされた列指向データを分析に使う構成を検討できます。"}
+  ]
+}

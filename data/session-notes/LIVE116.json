@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE116","sessionId":"1793673991482001g2HJ","offeringId":"1793673991482001g2HJ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":65,"text":"脅威への対応を速めるため、検知に使う情報とケース管理を統合したセキュリティ運用環境を整える意義を話しました。"}],
+  "updates":[{"atSeconds":36,"text":"統合 SOC の中核機能として、行動分析（UEBA）、対応の自動化（SOAR）、ケース管理が Defender で一般提供されたと紹介しました。既存の Sentinel 利用者向けの移行機能はプレビューと説明しました。","announcementId":"bon-521"}],
+  "cases":[],
+  "tips":[]
+}

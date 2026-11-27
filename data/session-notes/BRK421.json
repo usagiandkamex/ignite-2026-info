@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK421","sessionId":"1787856637312001EsdU","offeringId":"1787856637312001EsdU-1791588336733001CAme","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=jzkOnQd_Heg","basis":"captions",
+  "summary":[{"atSeconds":888,"text":"Azure Kubernetes Fleet Manager で、リージョンや配置環境の異なる AKS クラスターをまとめ、変更や更新の適用方法をそろえる構成を紹介しました。"}],
+  "updates":[{"atSeconds":2302,"announcementId":"bon-447","text":"公開プレビューの AKS FlexNodes は、クラウドやオンプレミスにある仮想マシンやベアメタルの CPU・GPU 容量をクラスターへ追加する選択肢です。"}],
+  "cases":[{"atSeconds":839,"text":"JetBlue は、データセンターの大規模アプリを分割して Kubernetes で運用し、クラスターが増えた段階でフリートとして管理する構成に移行しました。"}],
+  "tips":[{"atSeconds":1044,"text":"複数クラスターへの変更は一斉に適用せず、先行グループで確認してから残りのフリートへ広げます。"}]
+}

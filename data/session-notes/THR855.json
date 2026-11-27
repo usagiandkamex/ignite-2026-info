@@ -1,0 +1,21 @@
+{
+  "sessionCode": "THR855",
+  "sessionId": "1787856575481001EroA",
+  "offeringId": "1787856575481001EroA-1791588264882001CNrX",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=dMJaAPR7UHg",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 435, "text": "製品ローンチの目標から Microsoft Planner に計画を起こし、タスクの割り当てや進捗の把握までを AI で支援する流れを紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 648, "announcementId": null, "text": "Cowork 用の Planner プラグインを使い、プランとタスクのデータから進捗ダッシュボードを作るデモを行いました。"},
+    {"atSeconds": 1198, "announcementId": "bon-479", "text": "Frontier で展開が始まった Autopilot の例として、担当者の期限超過タスクを確認し、本人のレビューに下書きを回す流れを示しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 513, "text": "Planner のエージェントが開発や QA の担当候補を提案し、計画の責任者が最終的に採否を決める例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 888, "text": "Excel の計画を Planner に移す際は、対応する項目がない列を確認し、移行後にどう扱うかを決めます。"}
+  ]
+}

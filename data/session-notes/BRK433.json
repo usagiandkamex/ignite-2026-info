@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK433","sessionId":"1787856639139001E7vh","offeringId":"1787856639139001E7vh-1791588117221001Cuk3","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=DsJUyF4Ep48","basis":"captions",
+  "summary":[{"atSeconds":457,"text":"GPU の配置先が電力やスペースの制約で広がるなか、Azure のリージョンと離れた計算拠点をネットワークで結ぶ設計を説明しました。"}],
+  "updates":[{"atSeconds":694,"announcementId":null,"text":"AccessFabric の考え方を、ID が定めたアクセス条件をネットワークで継続的に適用し、利用者だけでなくエージェントも扱う仕組みとして紹介しました。"}],
+  "cases":[{"atSeconds":1116,"text":"Santander は、各国・地域で異なる要件に対応しつつ、拠点を増やしても複雑さを増やさないクラウド基盤への移行を紹介しました。"}],
+  "tips":[]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE195","sessionId":"1793676398582001leRk","offeringId":"1793676398582001leRk-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":120,"text":"Microsoft の Office of the CISO が、エージェントそのものを守る仕事と、エージェントを防御に活用する仕事を区別して説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":52,"text":"Microsoft が自社環境を守る中で得た運用上の知見を、Agent 365 などの製品の開発や改善に反映していると紹介しました。"}],
+  "tips":[{"atSeconds":257,"text":"エージェントの数を把握するだけでなく、利用する ID やデータ、システムとの接続を可視化してリスクを判断します。"}]
+}

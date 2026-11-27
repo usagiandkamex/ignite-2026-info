@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR877",
+  "sessionId": "1787856578828001ERR0",
+  "offeringId": "1787856578828001ERR0-1791588087023001CpZq",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Ym2ESu2-KQM",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 175, "text": "AI エージェントを利用者とは別の ID で識別し、アクセスを常に信頼するのではなくリスクに応じて制御する方法を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 533, "announcementId": "bon-526", "text": "Microsoft Entra のエージェント向け制御の拡張として、機密データへのアクセス制限や、人による承認を求める考え方を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 893, "text": "条件付きアクセスのデモでは、高リスクと中リスクのエージェントに異なる扱いを設定し、必要な業務まで一律に止めない例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 783, "text": "エージェントのリスクを見るときは、挙動だけでなく、持っている権限でどこまで影響が広がり得るかも確認します。"}
+  ]
+}

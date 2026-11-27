@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK428","sessionId":"1787856638383001ER6o","offeringId":"1787856638383001ER6o-1791588270019001CjPZ","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=sU5R4raZkRA","basis":"captions",
+  "summary":[{"atSeconds":565,"text":"Linux、Kubernetes、重みを公開したモデルを組み合わせることで、AI の開発・実行基盤の各層を用途に応じて選べると説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":377,"text":"Microsoft AI がモデルを構築する基盤に Kubernetes とオープンソースのツールを使う事例を紹介しました。"}],
+  "tips":[{"atSeconds":237,"text":"タスクの要件が固まったら、最先端モデルを使い続ける場合と、用途に特化した低コストなモデルへ切り替える場合を比較します。"}]
+}

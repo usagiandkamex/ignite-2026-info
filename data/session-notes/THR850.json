@@ -1,0 +1,19 @@
+{
+  "sessionCode": "THR850",
+  "sessionId": "1787856574691001EA7h",
+  "offeringId": "1787856574691001EA7h-1791587925448001FVZ1",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=7ABLze6HZmw",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 500, "text": "AI の利用量と支出を導入前に見積もり、稼働後は利用実績と業務成果を照らし合わせて投資配分を見直す流れを解説しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 821, "announcementId": "bon-517", "text": "Frontier プレビューの Agent 365 Business Analytics では、クレジット消費量だけでなく、業務ごとにどんな成果が出たかを合わせて見ます。"},
+    {"atSeconds": 1171, "announcementId": null, "text": "AI Flex Plan は Copilot、GitHub、Foundry などの対象サービスに一つの契約額を充当する仕組みとして紹介されました。"}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 258, "text": "導入前の利用量試算では、参照する情報量や推論の深さに応じてタスクを分け、種類ごとの実行回数を見積もります。"}
+  ]
+}

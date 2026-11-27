@@ -132,6 +132,38 @@
     "BRK409": [
       {"id":"bon-448","context":"講演で紹介した Azure Catalyst の調査・計画・実行の機能と提供状況を補足する公式発表です。"}
     ],
+    "BRK417": [
+      {"id":"az-580975","context":"講演で案内した Azure SRE Agent の AWS・Google Cloud 対応の公開プレビューに対応します。"}
+    ],
+    "BRK418": [
+      {"id":"az-581135","context":"講演で案内した Windows Server 2028 の公開プレビューに対応します。"}
+    ],
+    "BRK423": [
+      {"id":"az-580080","context":"講演で紹介された Azure AI Gateway の一般提供に対応します。"}
+    ],
+    "BRK424": [
+      {"id":"az-580589","context":"講演で触れた Logic Apps のハイブリッド配置に関する公式更新です。"}
+    ],
+    "BRK425": [
+      {"id":"az-580080","context":"講演で紹介された Azure AI Gateway の一般提供に対応します。"}
+    ],
+    "BRK426": [
+      {"id":"az-580136","context":"講演で紹介された Azure Red Hat OpenShift のホスト型コントロール プレーンの一般提供に対応します。"}
+    ],
+    "BRK430": [
+      {"id":"az-581259","context":"講演で案内した IBM Spectrum LSF と Azure Compute Fleet の連携の公式更新です。"},
+      {"id":"az-581145","context":"講演で紹介した Azure Compute Spot Plus の公開プレビューの公式更新です。"}
+    ],
+    "BRK431": [
+      {"id":"az-580684","context":"講演で紹介した Agent Grid の公開プレビューの公式更新です。"}
+    ],
+    "BRK434": [
+      {"id":"az-579031","context":"講演で紹介された Azure Blob Storage の Turbo Tier の公開プレビューに対応します。"}
+    ],
+    "BRK435": [
+      {"id":"az-581214","context":"講演で紹介した Oracle 向け Azure Workload Center と運用エージェントの公式更新です。"},
+      {"id":"az-581209","context":"講演で紹介した SAP 向け Azure Workload Center と運用エージェントの公式更新です。"}
+    ],
     "BRK440": [
       {"id":"az-564451","context":"セッションが扱う Azure Cobalt 200 ベースの VM についての公式更新です。"}
     ],
@@ -158,6 +190,23 @@
     "LIVE83": [
       {"id":"bon-460","context":"講演で使った Rayfin と Fabric アプリの提供状況を補足する公式発表です。"}
     ],
+    "LIVE84": [
+      {"id":"bon-499","context":"講演で解説した Microsoft IQ の業務コンテキスト管理に対応する公式発表です。"},
+      {"id":"az-579388","context":"講演で案内した Azure HorizonDB の一般提供に対応する Azure Updates の記事です。"}
+    ],
+    "LIVE88": [
+      {"id":"bon-465","context":"講演で示した本番運用からの改善に関連する、Foundry の評価・最適化機能の公式発表です。"}
+    ],
+    "LIVE91": [
+      {"id":"bon-446","context":"講演で実演した Azure SRE Agent を含む運用支援機能の公式発表です。発表項目のすべてを講演で実演したわけではありません。"}
+    ],
+    "LIVE93": [
+      {"id":"bon-478","context":"講演が扱った AI の支出管理と業務部門向け分析の提供状況を補足する公式発表です。"}
+    ],
+    "LIVE97": [
+      {"id":"az-579216","context":"講演で紹介した Fabric の Database Hub の一般提供に対応する Azure Updates の記事です。"},
+      {"id":"az-579644","context":"講演が扱う CPU やメモリなどの監視機能を補足する公式更新です。"}
+    ],
     "LIVE126": [
       {"id":"bon-453","context":"講演で解説した Azure HorizonDB の機能と提供状況を補足する公式発表です。"}
     ],
@@ -169,6 +218,24 @@
     ],
     "LIVE142": [
       {"id":"az-581135","context":"講演で紹介した Windows Server 2028 の公開プレビューに対応する Azure Updates の記事です。"}
+    ],
+    "LIVE161": [
+      {"id":"bon-478","context":"講演で触れた Agent 365 の AI 支出管理と Business Analytics を補足する公式発表です。"}
+    ],
+    "LIVESP156": [
+      {"id":"bon-526","context":"講演で取り上げたエージェント ID とアクセス管理に関連する Microsoft Entra の公式発表です。"}
+    ],
+    "LIVESP179": [
+      {"id":"bon-526","context":"講演で勧めたエージェントの ID 管理に関連する Microsoft Entra の公式発表です。"}
+    ],
+    "LIVESP183": [
+      {"id":"bon-499","context":"講演で解説した Microsoft IQ による組織のコンテキスト活用を補足する公式発表です。"}
+    ],
+    "LIVESP186": [
+      {"id":"bon-486","context":"講演の終盤で例に挙げた Copilot と Salesforce の連携に対応する公式発表です。"}
+    ],
+    "THR871": [
+      {"id":"bon-503","context":"講演で扱った Fabric IQ のセマンティックモデルの活用に関連する公式発表です。"}
     ]
   }
 }

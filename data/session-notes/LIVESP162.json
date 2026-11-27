@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP162","sessionId":"1787855010350001tlHC","offeringId":"1787855010350001tlHC-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":75,"text":"SAP Business Data Cloud にある取引や業務プロセスのデータを Microsoft Fabric につなぎ、エージェントから利用する構成を説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":156,"text":"すべてのエージェントを自作するのではなく、SAP や Microsoft の既製エージェントを出発点に、Joule Studio や Copilot Studio で個別の業務に合わせて拡張します。"}]
+}

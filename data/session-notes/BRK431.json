@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK431","sessionId":"1787856638839001EFeZ","offeringId":"1787856638839001EFeZ-1791588352078001C1sh","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":78,"text":"Azure の多層防御ではコンピューティング、ストレージ、ネットワークにそれぞれ防御を置き、平常時の状態と比較して予期しない変更を検出します。"}],
+  "updates":[{"atSeconds":1532,"announcementId":"bon-447","text":"エージェントの通信に共通のセキュリティ ポリシーを適用する Agent Grid がプレビューとして紹介されました。"},{"atSeconds":2901,"announcementId":null,"text":"Azure Bastion の RDP Vision と SSH Vision が公開プレビューとして紹介され、管理者がリモート接続を監視する選択肢が追加されました。"}],
+  "cases":[],
+  "tips":[{"atSeconds":858,"text":"ストレージへのアクセスは、処理に必要な対象と操作だけを許可する最小権限から設計します。"}]
+}

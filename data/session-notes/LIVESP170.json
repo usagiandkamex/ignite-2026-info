@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP170","sessionId":"1787855007901001tUN5","offeringId":"1787855007901001tUN5-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":12,"text":"Fireworks AI が、先端モデルだけを使う場合と、公開されているモデルの選択肢も組み合わせる場合の違いを紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":219,"text":"試す場合は Microsoft Foundry で Fireworks を有効にし、対象のモデルで選べる Data Zone や Global の提供方式を確認します。"}]
+}

@@ -1,0 +1,19 @@
+{
+  "sessionCode": "THR867",
+  "sessionId": "1787856577318001ETyh",
+  "offeringId": "1787856577318001ETyh-1791588152714001Cit0",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ocpZHUnAcVw",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 112, "text": "Slack や Teams で出た改善案を GitHub Copilot に渡し、会話からコード変更の提案とプルリクエストのレビューにつなぐ方法を紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 601, "text": "Tiny Clips のダウンロード画面を例に、Mac と Windows の説明をタブに分ける依頼を、参考画像とともに会話から渡しました。"},
+    {"atSeconds": 1174, "text": "モバイルアプリの設計では、会議や Word 文書の内容を Work IQ から参照し、実装依頼に必要な背景を補いました。"}
+  ],
+  "tips": [
+    {"atSeconds": 387, "text": "会話から依頼しても GitHub 側のアクセス権は引き継がれるため、リポジトリで変更やレビューができる担当者を確認しておきます。"}
+  ]
+}

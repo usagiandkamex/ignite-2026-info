@@ -1,0 +1,17 @@
+{
+  "sessionCode": "THR864",
+  "sessionId": "1787856576843001EBg8",
+  "offeringId": "1787856576843001EBg8-1791588145189001CHx8",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=hu8E6NI623Y",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 405, "text": "GitHub Copilot でエージェントを作り、Microsoft Foundry で実行し、配備後は Agent 365 で把握する開発と管理の流れを紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 877, "text": "ペット用品店を想定し、問い合わせに対応するエージェントを既存の店舗サイトに組み込むデモを行いました。"},
+    {"atSeconds": 986, "text": "Foundry に配備したデモ用エージェントを Agent 365 で見つけ、個別の利用状況を確認しました。"}
+  ],
+  "tips": []
+}

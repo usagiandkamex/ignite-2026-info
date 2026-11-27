@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK417","sessionId":"1787856636701001ERm4","offeringId":"1787856636701001ERm4-1791588336506001CinE","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":107,"text":"Azure SRE Agent を、監視アラートの調査や定型運用を担当し、人が対応すべきインシデントに時間を割けるようにする仕組みとして紹介しました。"}],
+  "updates":[{"atSeconds":209,"announcementId":"bon-446","text":"Azure SRE Agent が AWS や Google Cloud も調査対象にできる公開プレビューが紹介されました。"}],
+  "cases":[{"atSeconds":1289,"text":"架空のイベント向けアプリを使い、Azure Monitor のアラートを起点に、SRE Agent が入場待ちキューの設定を調べる様子を実演しました。"}],
+  "tips":[{"atSeconds":326,"text":"障害の調査はアラートを起点にし、繰り返し必要な確認はスケジュールされたタスクに分けてエージェントに任せます。"}]
+}

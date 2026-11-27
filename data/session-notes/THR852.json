@@ -1,0 +1,19 @@
+{
+  "sessionCode": "THR852",
+  "sessionId": "1787856575025001EQOe",
+  "offeringId": "1787856575025001EQOe-1791587925698001FjVS",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=QMQonMHOQNQ",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 87, "text": "AI の回答が外れる原因を、古い情報、重複、メタデータの欠落、過剰な共有権限というナレッジ側の問題から整理しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 450, "text": "Copilot が SharePoint ライブラリのファイル分類に使う列を提案し、整理後の情報をダッシュボードにするデモを行いました。"},
+    {"atSeconds": 615, "text": "ダッシュボードの作成手順をスキルとして保存し、別のチームが自分たちのライブラリで再利用する例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 105, "text": "AI の導入前に、契約書や社内規程の検索に必要な属性と、意図以上に広く付与された閲覧権限を点検します。"}
+  ]
+}

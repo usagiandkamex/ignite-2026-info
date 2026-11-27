@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP160","sessionId":"1787855009947001t2K8","offeringId":"1787855009947001t2K8-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":9,"text":"Lenovo が、Microsoft のデータセンターに処理を集める代わりに、Azure Local で必要な場所に処理を置く構成を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":110,"text":"製造ラインのカメラ画像から製品の異常を探し、現場の品質管理に生かす使い方を例に挙げました。"}],
+  "tips":[{"atSeconds":232,"text":"外部回線に頼りたくない場合でも、施設内で障害が起きる前提で、ローカルな冗長化や業務継続を計画します。"}]
+}

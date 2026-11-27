@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE89","sessionId":"1793670768530001imbW","offeringId":"1793670768530001imbW-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":154,"text":"F5 と Everpure の担当者が、Claude を Microsoft Foundry で利用する理由として、既存の Azure 活用に加え、セキュリティ、ガバナンス、モデルの管理を挙げました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":307,"text":"ある登壇企業は、工数削減の効果が大きい開発業務では高性能なモデルを許可し、重要度が低い作業では低コストのモデルを割り当てる運用を紹介しました。"}],
+  "tips":[{"atSeconds":581,"text":"利用者にモデルを配布する前に、どの業務データを使い、誰が管理し、どのようにアクセスを制御するかを決めます。"}]
+}

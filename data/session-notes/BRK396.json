@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK396","sessionId":"1787856633494001EZjH","offeringId":"1787856633494001EZjH-1791588070182001CQou","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=xXd-6Wg7WQQ","basis":"captions",
+  "summary":[{"atSeconds":196,"text":"利用者から寄せられた問題をもとに、Windows 11 のアプリ切り替え、シェルの応答性、サインイン、更新時の中断を改善する取り組みを紹介しました。"}],
+  "updates":[{"atSeconds":1073,"announcementId":null,"text":"生体認証のある端末で、カメラや指紋認証の完了を待たずに PIN も選べる Windows Hello の改善を説明しました。"}],
+  "cases":[{"atSeconds":385,"text":"Office を含む社内ベンチマークでメモリ 8 GB の端末の改善結果を示しましたが、全機種で同じ効果を示すものではありません。"}],
+  "tips":[{"atSeconds":1248,"text":"端末の更新は導入率だけでなく、利用者への中断と、管理者が確認できる成功・失敗の状況も評価します。"}]
+}

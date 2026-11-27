@@ -1,0 +1,20 @@
+{
+  "sessionCode": "THR876",
+  "sessionId": "1787856578683001ERhF",
+  "offeringId": "1787856578683001ERhF-1791587926432001FYld",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=8l_GgjElFT8",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 332, "text": "AI 導入前に Microsoft 365 E5 に含まれる ID、端末、脅威対策の機能を棚卸しし、既存のセキュリティ運用で活用する方法を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 448, "announcementId": "bon-521", "text": "統合 SOC の更新として、Defender のデータを 90 日間保持するプレビューが紹介されました。"}
+  ],
+  "cases": [
+    {"atSeconds": 1050, "text": "統合 SOC で調査対象のユーザーを手掛かりに、関連するリソースと Microsoft Entra のデータを横断して確認する例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1271, "text": "既存の他社製品を一度に置き換えるのではなく、併用できる E5 の機能で補える範囲を確認します。"}
+  ]
+}

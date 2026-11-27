@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK393","sessionId":"1787856633035001ES8o","offeringId":"1787856633035001ES8o-1791588216792001COCr","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=3-mKS__FgI0","basis":"captions",
+  "summary":[{"atSeconds":51,"text":"Windows の開発端末を構成スクリプトで準備し、Dev Drive や Windows Sandbox で日々のビルドと検証を進める流れを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":304,"text":"構成スクリプトを仮想マシンで動かし、開発ツールのセットアップと、再起動を挟んだ進行状況をデモで示しました。"}],
+  "tips":[{"atSeconds":208,"text":"開発環境のセットアップでは、基本的なツールを入れる標準版と、追加ツールも含む完全版を用途に応じて使い分けます。"}]
+}

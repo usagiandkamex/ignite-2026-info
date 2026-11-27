@@ -1,0 +1,18 @@
+{
+  "sessionCode": "THR851",
+  "sessionId": "1787856574856001EzoB",
+  "offeringId": "1787856574856001EzoB-1791588258447001Cd4G",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=LNGliOD6LFk",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 137, "text": "繰り返す作業の手順やプロンプトを Copilot のスキルにまとめ、同じ業務ノウハウを複数の Copilot の画面で再利用する仕組みを説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 1491, "announcementId": "bon-516", "text": "Microsoft 365 管理センターで、ユーザーが作成したスキルを含むプラグインやツールを管理する画面を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 799, "text": "製品マーケティング担当者が提案資料の作成方法を Copilot Home との対話からスキルにし、別の製品案件にも使えるよう同僚に共有しました。"}
+  ],
+  "tips": []
+}

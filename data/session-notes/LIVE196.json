@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE196","sessionId":"1793670854802001shva","offeringId":"1793670854802001shva-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":9,"text":"GitHub Copilot Fusion の紹介と、コーディングエージェントを作業に使う際の品質・費用の比較を行いました。"}],
+  "updates":[{"atSeconds":259,"text":"GitHub Copilot アプリで Azure DevOps のリポジトリを扱う機能と、プルリクエストの作業を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":139,"text":"同じ JavaScript の課題を複数の選択肢で実行し、生成した解答や消費クレジットを比較するデモを行いました。"}],
+  "tips":[{"atSeconds":535,"text":"Fusion の Standard、High、Max は一律に選ばず、解く課題に求める推論の水準に合わせて試します。"}]
+}

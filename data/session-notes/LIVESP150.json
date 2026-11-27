@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVESP150","sessionId":"1787855007793001tTpl","offeringId":"1787855007793001tTpl-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":55,"text":"Fireworks AI は、すべての処理を単一の AI モデルに任せず、作業に合わせてモデルを使い分ける考え方を紹介しました。"},{"atSeconds":318,"text":"Microsoft Foundry 上で Fireworks を利用し、組織のデータを使うモデル開発を進める取り組みを説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":155,"text":"まず作業の難易度と要件でモデルを選び、既存のモデルでは対応できない場合に、独自の学習が必要かを検討します。"},{"atSeconds":259,"text":"モデルを選び始める前に、どんなデータでどんな質問に答え、何を改善として測るかを決めます。"}]
+}
