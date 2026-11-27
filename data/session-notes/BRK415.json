@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK415", "sessionId": "1787856636396001ETO1", "offeringId": "1787856636396001ETO1-1791588269572001Cvn5",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=5jOWwIbGgrs", "basis": "captions",
+  "summary": [{"atSeconds": 271, "text": "Azure の運用でエージェントを使う際は、一つの工程だけを自動化するのではなく、開発から稼働後の対応までを、環境の情報を共有しながら進めることが重要だと説明しました。"}],
+  "updates": [{"atSeconds": 2152, "text": "Azure リソースの統制に使う Azure Policy を運用エージェントにも適用し、本番環境で許可された範囲に操作を制限する考え方を紹介しました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 410, "text": "Ecolab の取り組みとして、エージェントを運用に取り入れ、異常の検出や原因の調査を速めた事例が紹介されました。"},
+    {"atSeconds": 1063, "text": "コスト急増を調べるデモでは、Azure Copilot が請求情報を Azure Resource Graph のリソース情報と突き合わせ、アプリの構成を踏まえて費用を分析しました。"}
+  ],
+  "tips": [{"atSeconds": 1533, "text": "SRE Agent には安全に任せられる対応を委ね、影響が大きい判断や専門知識が必要な対応では、人への確認や承認を求めるようにします。"}]
+}

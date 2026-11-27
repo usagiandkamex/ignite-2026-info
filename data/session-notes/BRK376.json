@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK376", "sessionId": "1787856630362001EPk2", "offeringId": "1787856630362001EPk2-1791588197416001COdu",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 246, "text": "会議、メール、チャットなど、CRM の外にある営業情報を生かして、案件の記録や次に取る行動の判断を支援する考え方を解説しました。"}],
+  "updates": [{"atSeconds": 1668, "text": "見込み客への最初の連絡を担当し、案件が CRM に入る前から動ける Sales Development Agent を紹介しました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 609, "text": "営業担当者の一日を想定したデモでは、Copilot の Today を起点に顧客との会議を準備しました。"},
+    {"atSeconds": 1238, "text": "英国の Softcat は、Teams に組み込んだ Customer Central で、案件や連絡先の作成を自然言語で始められるようにしたと説明しました。"}
+  ],
+  "tips": []
+}

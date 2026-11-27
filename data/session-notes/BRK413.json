@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK413", "sessionId": "1787856636094001EKJc", "offeringId": "1787856636094001EKJc-1791588309857001CQXL",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=PJAIviKe8pY", "basis": "captions",
+  "summary": [{"atSeconds": 244, "text": "Azure Arc で分散した資産を一つのインベントリにまとめ、パッチ、ポリシー、セキュリティの運用を場所によらず揃える進め方を紹介しました。"}],
+  "updates": [
+    {"atSeconds": 1000, "text": "Essential Machine Management では、Azure VM や Arc 対応サーバーに監視、ポリシー、Azure Update Manager、変更履歴とインベントリをまとめて有効化できると説明しました。", "announcementId": null},
+    {"atSeconds": 1525, "text": "Arc 対応 VM の画面で、TPM を利用する ID が有効かどうかを確認できることをデモで示しました。", "announcementId": null}
+  ],
+  "cases": [{"atSeconds": 733, "text": "マルチクラウドのデモでは、GCP 上の VM やストレージ、ネットワークのメタデータを読み取り専用で収集し、Azure Resource Graph から参照しました。"}],
+  "tips": []
+}

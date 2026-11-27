@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE76","sessionId":"1793671978335001iwn8","offeringId":"1793671978335001iwn8-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":31,"text":"工場向け AI では誤りが現場の稼働に影響するため、精度に加えて応答時間や導入先の環境にも注意が必要だと議論しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":219,"text":"設備トラブルの調査時に、既存のマニュアル、修理履歴、生産データを根拠として利用する場面が例に挙がりました。"}],
+  "tips":[{"atSeconds":113,"text":"現場の応答時間の要件に合わせ、エッジやプライベートクラウドなどで、どの処理をどこで実行するかを決めます。"},{"atSeconds":364,"text":"AI に判断材料の提示を任せる段階と、実際に操作させる段階を分け、人が判断に関与できるようにします。"}]
+}

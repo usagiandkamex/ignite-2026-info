@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK407", "sessionId": "1787856635188001E4B8", "offeringId": "1787856635188001E4B8-1791814920364001CPWy",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=bcIz5XFDJFo", "basis": "captions",
+  "summary": [{"atSeconds": 935, "text": "Windows のセキュリティ更新を速めるには、単に配布を急ぐだけでなく、端末の状態を把握し、適用状況を制御できることが重要だと説明しました。"}],
+  "updates": [{"atSeconds": 1556, "text": "端末の正常性を把握する仕組みとして、ブルースクリーンなどの信頼性の問題を検出・診断し、対処に結びつける機能を紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 776, "text": "Johnson & Johnson は、Autopatch の更新リング、ポリシー、レポートを使って手作業を減らし、品質更新からドライバー、BIOS、ファームウェアへ対象を広げたと説明しました。"}],
+  "tips": [{"atSeconds": 1068, "text": "更新の猶予を短くするだけでなく、レポートで目標期限内に適用できていない端末や、更新を妨げているポリシーを確認します。"}]
+}

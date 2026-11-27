@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE17","sessionId":"1793676448692001gDY9","offeringId":"1793676448692001gDY9-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":33,"text":"Brown University Health が、日々の手順をよく知る医療現場の担当者に業務エージェントを作る機会を提供し、事務負担を減らす取り組みを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":148,"text":"脳神経外科医が、手術の準備に伴う診察記録の作成や請求に関わる事務作業を補助するエージェントを設計した事例が紹介されました。"}],
+  "tips":[{"atSeconds":279,"text":"現場の担当者が試作を始める場には、管理側が可視性と制御を持つ Copilot Studio のサンドボックスを用意します。"},{"atSeconds":517,"text":"外部の公開情報が不要なエージェントは、組織内で選定した SharePoint や Teams の情報に参照先を限定できます。"}]
+}

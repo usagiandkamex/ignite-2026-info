@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK379", "sessionId": "1787856630856001Eccy", "offeringId": "1787856630856001Eccy-1791814920810001CGXz",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 182, "text": "Copilot Studio に組み込まれた、企業と顧客のやりとりに特化した会話エージェント基盤を紹介しました。"}],
+  "updates": [{"atSeconds": 248, "text": "複数言語や利用チャネルに応じた応対に加え、電話が切れた後も、かけ直せば前の会話の続きを扱える例を紹介しました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 1247, "text": "架空の Contoso Bank のデモでは、既存と同じ電話番号で音声エージェントにつなぎ、旅行に合うクレジットカードの相談に応じました。"},
+    {"atSeconds": 2054, "text": "Publix の担当者は、Dynamics 365 Contact Center を使う同社で、AI との会話の経緯を有人対応に引き渡す使い方を説明しました。"}
+  ],
+  "tips": [{"atSeconds": 366, "text": "同じエージェントでも、柔軟な応答が必要な場面は生成 AI に任せ、手順を厳密に管理したい場面は決められた会話フローにします。"}]
+}

@@ -1,0 +1,14 @@
+{
+  "sessionCode": "BRK385", "sessionId": "1787856631787001EYot", "offeringId": "1787856631787001EYot-1791588232300001C1O3",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 149, "text": "既存の CRM に AI を加える使い方と、Copilot や Cowork を営業・サービス業務の入口にする使い方の両方を説明しました。"},
+    {"atSeconds": 1713, "text": "営業活動で得られる情報を継続して取り込み、CRM の案件情報を手入力だけに頼らず充実させる考え方を紹介しました。"}
+  ],
+  "updates": [{"atSeconds": 397, "text": "Dynamics 365 のプラグインを通じて、Copilot で営業の推奨アクションを確認し、商談前の準備や商談後の整理を進める機能を紹介しました。", "announcementId": "bon-482"}],
+  "cases": [
+    {"atSeconds": 552, "text": "営業責任者のデモでは、Copilot が既存顧客への追加提案の機会を見つけ、責任者が提案対象を絞り込んで担当チームに共有しました。"},
+    {"atSeconds": 1150, "text": "EY は、世界規模で Dynamics 365 を CRM として導入するのと並行して、複数年かけて営業の進め方や文化そのものを見直した事例を紹介しました。"}
+  ],
+  "tips": []
+}

@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK378", "sessionId": "1787856630704001Ep9J", "offeringId": "1787856630704001Ep9J-1791588308254001CRyh",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 82, "text": "Copilot Managed Runtime を、さまざまな作成環境から持ち込んだアプリをホストし、Entra で保護して管理者が把握できるようにする共通基盤として紹介しました。"}],
+  "updates": [{"atSeconds": 1214, "text": "Copilot Managed Runtime に載せるアプリの作成環境として、Cowork と Copilot Studio の両方を紹介しました。", "announcementId": "bon-480"}],
+  "cases": [
+    {"atSeconds": 590, "text": "Cowork のデモでは、散在する資料の代わりに、チームの進捗を一か所で追えるアプリを作成しました。"},
+    {"atSeconds": 1831, "text": "Copilot Studio のデモでは、現場の計器点検データを分析するアプリを題材にしました。"}
+  ],
+  "tips": [{"atSeconds": 304, "text": "アプリの要件を文章だけで書き切ろうとせず、関連会議や Loop コンポーネントを示して、Work IQ がチームの業務文脈を参照できるようにします。"}]
+}

@@ -117,6 +117,21 @@
       {"id":"az-579525","context":"講演で使用した Azure SQL Database ローカル コンテナーの公式更新です。"},
       {"id":"az-579009","context":"VS Code の MSSQL 拡張からコンテナーを用意する方法を補足する更新です。"}
     ],
+    "BRK375": [
+      {"id":"bon-452","context":"移行先の Azure DocumentDB について、VS Code での開発や配置の選択肢を補足する公式発表です。"}
+    ],
+    "BRK399": [
+      {"id":"bon-538","context":"講演で取り上げたタスクバーの Windows Search と Copilot の連携を補足する公式発表です。"}
+    ],
+    "BRK406": [
+      {"id":"bon-543","context":"講演で紹介した Windows 上の AI エージェントの分離とアクセス制御に対応する公式発表です。"}
+    ],
+    "BRK407": [
+      {"id":"bon-540","context":"講演が扱う Windows の更新管理と、端末の信頼性を把握する機能を補足する公式発表です。"}
+    ],
+    "BRK409": [
+      {"id":"bon-448","context":"講演で紹介した Azure Catalyst の調査・計画・実行の機能と提供状況を補足する公式発表です。"}
+    ],
     "BRK440": [
       {"id":"az-564451","context":"セッションが扱う Azure Cobalt 200 ベースの VM についての公式更新です。"}
     ],
@@ -127,6 +142,21 @@
     "BRK451": [
       {"id":"az-579612","context":"Azure Database for PostgreSQL から Azure HorizonDB へ移行する機能の公式更新です。"},
       {"id":"az-579226","context":"Oracle から Azure HorizonDB へ移行する機能の公式更新です。"}
+    ],
+    "LIVE75": [
+      {"id":"bon-478","context":"講演が扱う支出管理と Business Analytics の対象、提供状況を補足する発表です。"}
+    ],
+    "LIVE77": [
+      {"id":"az-581323","context":"講演で実演した Foundry の Cost controls に対応する Azure Updates の記事です。"}
+    ],
+    "LIVE81": [
+      {"id":"az-581333","context":"講演で議論した Foundry IQ の知識グラフに対応する Azure Updates の記事です。"}
+    ],
+    "LIVE82": [
+      {"id":"az-581333","context":"講演で紹介した知識グラフに対応する Azure Updates の記事です。"}
+    ],
+    "LIVE83": [
+      {"id":"bon-460","context":"講演で使った Rayfin と Fabric アプリの提供状況を補足する公式発表です。"}
     ],
     "LIVE126": [
       {"id":"bon-453","context":"講演で解説した Azure HorizonDB の機能と提供状況を補足する公式発表です。"}

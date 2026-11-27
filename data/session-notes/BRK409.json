@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK409", "sessionId": "1787856635492001EG3n", "offeringId": "1787856635492001EG3n-1791588132441001CAt3",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=D7tuX_kMWO8", "basis": "captions",
+  "summary": [{"atSeconds": 1168, "text": "Azure Catalyst で既存環境の調査と移行先の判断、計画、実行をつなぎ、インフラ・データベース・アプリの担当者が別々に情報をつなぎ合わせる手間を減らす流れを紹介しました。"}],
+  "updates": [{"atSeconds": 1002, "text": "Azure Catalyst が既存の環境情報に加えて構成管理データベース（CMDB）や監視データを取り込み、アプリとサーバーの依存関係を整理できると説明しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 562, "text": "Aldermore Bank は Azure Migrate で既存環境を調査・評価し、当初は半年以上を見込んでいた工程を、行内の事例では約2週間に短縮したと報告しました。"}],
+  "tips": [{"atSeconds": 1020, "text": "移行計画の単位はサーバー1台ずつではなく、依存するサーバーを束ねたアプリとします。資産一覧だけでは見えにくい業務への影響を把握できます。"}]
+}

@@ -1,0 +1,14 @@
+{
+  "sessionCode": "BRK375", "sessionId": "1787856630208001ERlU", "offeringId": "1787856630208001ERlU-1791588285982001CQ6O",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 47, "text": "MongoDB を使う既存アプリを Azure DocumentDB に移す理由と、顧客ごとに異なる移行上の課題を解説しました。"},
+    {"atSeconds": 213, "text": "Azure DocumentDB に組み込まれたベクトル検索を使えば、検索専用のデータベースを別に用意する必要がないと説明しました。"}
+  ],
+  "updates": [{"atSeconds": 1001, "text": "開発者が使い慣れた環境で移行作業を進められるよう、VS Code 向けの移行拡張機能を紹介しました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 1945, "text": "AB InBev の事例では、500 を超えるクラスターの移行に向けて、ツールで多数の移行を扱うことが課題でした。"},
+    {"atSeconds": 1724, "text": "Abercrombie & Fitch は、初回の転送後もデータの変更が移行先へ反映されることを確認し、都合のよいタイミングで切り替えられたと説明しました。"}
+  ],
+  "tips": []
+}

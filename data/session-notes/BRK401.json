@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK401", "sessionId": "1787856634261001EE74", "offeringId": "1787856634261001EE74-1791588307571001C9P8",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=dZgsjlKHZ_8", "basis": "captions",
+  "summary": [{"atSeconds": 79, "text": "常時専用デスクトップを使う社員と、必要なときだけ使う社員では利用パターンが異なるため、後者には Windows 365 Flex の共有型の構成を検討できると説明しました。"}],
+  "updates": [
+    {"atSeconds": 552, "text": "User Experience Sync は、共有 Cloud PC やクラウドアプリを使い替えても、アプリのデータや設定、アクセシビリティ設定を引き継ぐ仕組みです。", "announcementId": null},
+    {"atSeconds": 755, "text": "Windows 365 Cloud Apps では、デスクトップ全体を割り当てずに、業務に必要なアプリだけを提供できると紹介しました。", "announcementId": null}
+  ],
+  "cases": [{"atSeconds": 1352, "text": "Telefónica Germany は、販売パートナーが所有する端末に顧客データを残さないよう、Windows 365 を採用してクラウド側のセッションを配信したと説明しました。"}],
+  "tips": [{"atSeconds": 275, "text": "同じ端末を交代で使う職場などでは、専用デスクトップを一人ずつ割り当てる前に、共有や短時間利用で業務を回せるかを確認します。"}]
+}

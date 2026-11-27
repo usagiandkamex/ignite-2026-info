@@ -1,0 +1,8 @@
+{
+  "sessionCode": "BRK402", "sessionId": "1787856634424001Eth1", "offeringId": "1787856634424001Eth1-1791588335374001ChBw",
+  "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=075aHrGBSkI", "basis": "captions",
+  "summary": [{"atSeconds": 245, "text": "オンプレミスの VDI を一括で置き換えるのではなく、移行できる業務から Azure Virtual Desktop や Windows 365 に移す進め方を説明しました。"}],
+  "updates": [{"atSeconds": 1599, "text": "AVD Hybrid では、接続基盤をクラウドに移しながら、仮想マシンは既存のデータセンターに残せると紹介しました。", "announcementId": null}],
+  "cases": [{"atSeconds": 1137, "text": "WTW は、顧客データを指定地域に留めつつ海外の処理チームが業務を行えるように VDI を利用してきたと説明しました。"}],
+  "tips": [{"atSeconds": 1584, "text": "移行先を比較するときは、既存設備をどれだけ残すかに加え、接続基盤や仮想マシンの運用を IT 部門がどこまで担うかを整理します。"}]
+}

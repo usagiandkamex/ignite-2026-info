@@ -1,0 +1,11 @@
+{
+  "sessionCode": "BRK388", "sessionId": "1787856632260001ERgd", "offeringId": "1787856632260001ERgd-1791588242987001CGxY",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 313, "text": "Windows ML がハードウェアの違いを吸収し、開発者がチップごとの SDK に深く依存せず、企業内のさまざまな Windows PC にローカル AI を展開できる仕組みを説明しました。"}],
+  "updates": [{"atSeconds": 398, "text": "Windows ML CLI とエージェント用スキルを、モデルの準備、最適化、ベンチマークに使うツールとして紹介しました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 233, "text": "Napster は、Windows ML を使って、小売店の Web サイトや実店舗で買い物客に応対するエージェントを紹介しました。"},
+    {"atSeconds": 710, "text": "架空の Fabrikam の顧客サポートでは、回答候補を作るモデルを最適化前後で比較し、精度と応答の遅延が改善する様子を実演しました。"}
+  ],
+  "tips": [{"atSeconds": 389, "text": "独自モデルを端末に配布する前に、対象業務で必要な精度と応答時間を決め、実際に動かして両方を評価します。"}]
+}

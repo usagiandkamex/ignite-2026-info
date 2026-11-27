@@ -1,0 +1,7 @@
+{
+  "sessionCode":"LIVE46","sessionId":"1794773140698001ayNH","offeringId":"1794773140698001ayNH-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":166,"text":"登壇者が、GitHub と Microsoft が参加した Premier League の開発者ハッカソンで、試合データをファンに届ける新しい方法を募集した背景を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":330,"text":"複数の技術を組み合わせ、複数言語に対応するマルチエージェントの応募作が紹介されました。"},{"atSeconds":537,"text":"優勝作の Pitch Ledger は、選手やボールの動きなどの試合データを根拠に、AI で分析結果を伝える仕組みです。"}],
+  "tips":[{"atSeconds":537,"text":"データの正確さが重要な場面では、AI が伝える内容を元の測定値までたどれるようにします。"}]
+}

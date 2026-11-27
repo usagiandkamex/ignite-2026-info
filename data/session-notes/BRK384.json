@@ -1,0 +1,12 @@
+{
+  "sessionCode": "BRK384", "sessionId": "1787856631625001ELVt", "offeringId": "1787856631625001ELVt-1791588154823001CcTr",
+  "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [{"atSeconds": 910, "text": "Dynamics 365 Finance & Operations を他の Microsoft 製品と組み合わせ、ERP の業務ルールを保ちながらエージェントを使う構成を紹介しました。"}],
+  "updates": [{"atSeconds": 1048, "text": "ERP のデータと業務ロジックに意味を与える層を追加し、Business Skills や Work IQ を通じて、異なるエージェントから同じ業務ルールを使えるようにする取り組みを説明しました。", "announcementId": null}],
+  "cases": [
+    {"atSeconds": 564, "text": "The Adecco Group は、独自エージェントの開発を急がず、Dynamics に含まれる既製のエージェントを自社の用途に合わせて構成したと説明しました。"},
+    {"atSeconds": 1142, "text": "経費処理のデモでは、入力作業をエージェントに任せ、担当者の操作を領収書のアップロードと申請内容の確認・提出にまとめました。"},
+    {"atSeconds": 1584, "text": "レンタル業務のデモでは、サプライチェーンから現場サービスの手配、原価計算と財務処理までを一つの流れとして扱いました。"}
+  ],
+  "tips": []
+}
