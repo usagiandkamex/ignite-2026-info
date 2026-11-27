@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1064","sessionId":"1787858586817001SgTE","offeringId":"1787858586817001SgTE-1791588109673001CKDY","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=JZK3iDzDbnA","basis":"captions",
+  "summary":[{"atSeconds":48,"text":"配送遅延による売上への影響を答える例で、顧客、出荷、返品など別々のシステムにあるデータを関連付ける必要性を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1166,"text":"Azure 上の SQL Server をバックアップし、そのデータを Apache Iceberg テーブルとして Fabric から参照・照会する例を紹介しました。"}],
+  "tips":[{"atSeconds":326,"text":"複数環境のデータを利用する際は、個別にコピーを管理する代わりに、標準の Apache Iceberg REST API でカタログを連携できるかを確認します。"}]
+}

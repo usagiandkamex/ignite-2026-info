@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1066","sessionId":"1787858587109001SxCN","offeringId":"1787858587109001SxCN-1791588122526001CjUv","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=jcdAPqPLiIQ","basis":"captions",
+  "summary":[{"atSeconds":100,"text":"文書を検索に使う際に、OCR で本文を読み取るだけでなく、表やグラフなども取り出し、検索インデックスに渡せる形式に整える流れを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":372,"text":"服飾商品の例で、テキストと画像を組み合わせ、見た目の特徴から候補を探す検索を示しました。"}],
+  "tips":[{"atSeconds":709,"text":"結果の再順位付けを評価する際は『靴』のような単純な質問だけでなく、対象や予算を同時に指定する質問も試します。"}]
+}

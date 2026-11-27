@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2110","sessionId":"1787854994356001t6LG","offeringId":"1787854994356001t6LG-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=WCrdTc0xGEk","basis":"captions",
+  "summary":[{"atSeconds":3,"text":"医療のような規制分野を題材に、新しい言語モデルを本番へ導入する判断の根拠を、再現できる評価パイプラインで用意する方法を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":520,"text":"デモでは Foundry を使い、既存の基準モデルと複数の候補を同じ設定で評価する工程を示しました。"}],
+  "tips":[{"atSeconds":182,"text":"品質、安全性、費用をスコアカードにまとめ、本番トラフィックを自動で切り替えず、担当者が採用するか現行モデルを維持するか判断します。"}]
+}

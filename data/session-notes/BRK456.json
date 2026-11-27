@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK456",
+  "sessionId": "1787856642651001EV2l",
+  "offeringId": "1787856642651001EV2l-1791588353654001CdsK",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=gDnXp-BaNAw",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 375, "text": "通信事業者の AI 導入を、ネットワーク運用、顧客対応、製品、従業員の働き方という四つの変化が同時に進むものとして捉えました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 1289, "text": "KT は、全社への AI 普及を目標に Copilot から着手し、既存のセキュリティ環境とどう両立させるかが課題になったと説明しました。"},
+    {"atSeconds": 1480, "text": "Lumen は、従来の通信事業者からデジタルインフラとネットワークを提供する企業への転換を進めていると説明しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 2590, "text": "本番展開に向けて共通基盤だけを先に作り込むのではなく、具体的なユースケースと達成したい業務成果に結び付けて整備します。"}
+  ]
+}

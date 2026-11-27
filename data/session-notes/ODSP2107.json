@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2107","sessionId":"1787854994049001tpzL","offeringId":"1787854994049001tpzL-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=FmeK1QYi6m8","basis":"captions",
+  "summary":[{"atSeconds":57,"text":"Worldwide Technology（WWT）が、まず現在の技術と管理策を棚卸しし、不足する箇所だけを補いながら AI を本番に広げる枠組み Armor を紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":166,"text":"AI の業務効果を部門ごとの KPI で確認し、モデルの利用量や支出が増えても投資に見合うかを判断します。"},{"atSeconds":345,"text":"エージェントを広げる際は、Entra Agent ID での ID 管理や、既存の Purview の対策をどこまで適用できるかも検討します。"}]
+}

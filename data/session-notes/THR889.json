@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR889", "sessionId": "1787856580631001EAIn", "offeringId": "1787856580631001EAIn-1791588087706001CrHi", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=jlrbW42D0W4", "basis": "captions",
+  "summary": [
+    {"atSeconds": 129, "text": "コード作成やコンテンツ生成でエージェントを頻繁に使う場合でも、すべての処理をクラウドに任せる必要はないと説明しました。端末で処理できるタスクなら、クラウドのトークン使用と端末外へ送るデータを抑えられます。"},
+    {"atSeconds": 314, "text": "Microsoft Execution Containers（MXC）は、エージェントに作業に必要なリソースだけを渡し、不要な個人データなどへのアクセスを Windows 側で制限すると説明しました。"},
+    {"atSeconds": 428, "text": "Windows でエージェントを運用する際は、OS が強制する分離の境界に、エージェントの ID と組織の管理・セキュリティ手段を組み合わせると説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 1006, "text": "OpenClaw を操作者とは別のエージェント用ユーザーの分離セッションで動かし、デスクトップやプロセス、ユーザーの実行コンテキストを共有しない例を実演しました。"}
+  ],
+  "tips": []
+}

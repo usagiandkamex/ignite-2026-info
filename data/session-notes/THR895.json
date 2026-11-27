@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR895", "sessionId": "1787856581551001ERGj", "offeringId": "1787856581551001ERGj-1791588331232001CPVT", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 116, "text": "Azure Resource Manager の MCP とスキルを使い、普段使うエージェントから Azure のコントロールプレーンに接続して、コスト情報を分析する方法を紹介しました。"},
+    {"atSeconds": 1049, "text": "Azure MCP の Advisor コスト最適化スキルで、未使用リソースの削減候補に優先順位を付け、サービス担当者が結果を確かめる流れを説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 606, "text": "FinOps チームを想定し、Azure SRE Agent でレポートの対象範囲を調整して Teams に週次配信する例を示しました。"},
+    {"atSeconds": 830, "text": "VM の稼働率が低い環境を想定し、最適化エージェントに推奨構成、削減見込み、その判断の根拠を提示させるデモを行いました。"}
+  ],
+  "tips": []
+}

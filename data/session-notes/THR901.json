@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR901", "sessionId": "1787856582459001E9pN", "offeringId": "1787856582459001E9pN-1791588180404001CLC9", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 108, "text": "Azure Catalyst で既存のアプリやインフラを評価して移行計画を作り、GitHub Copilot を使ったアプリのモダナイゼーションへ進む流れを説明しました。"},
+    {"atSeconds": 829, "text": "モダナイゼーションでは Azure のリソース構成を Bicep として生成でき、その構成を既存のデプロイ パイプラインでも扱えると説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 391, "text": "サンプルの既存アプリを Windows Server の VM に移した構成を出発点にし、続いて GitHub Copilot に Azure Container Apps への移行を見据えた評価を依頼するデモを行いました。"},
+    {"atSeconds": 1000, "text": "コンテナー化したサンプルでは、最小・最大レプリカ数と、負荷が落ちた後の縮小を調整する設定を示しました。"}
+  ],
+  "tips": []
+}

@@ -1,0 +1,20 @@
+{
+  "sessionCode": "BRK466",
+  "sessionId": "1787856644161001EF3u",
+  "offeringId": "1787856644161001EF3u-1791588286658001CetL",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=ieGAbTRnpv4",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 904, "text": "工場などの現場で動く AI について、モデルや推論処理を改ざん・流出から守ることと、AI の出力や動作による影響を抑えることを別の課題として説明しました。"},
+    {"atSeconds": 779, "text": "デモでは、ファームウェアの分析結果を Azure Device Registry に表示し、担当者が更新の優先度を判断する例を示しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 746, "announcementId": null, "text": "Azure IoT Hub の証明書管理の一般提供を発表しました。デバイス証明書の発行・更新・ローテーションをポリシーに沿って管理します。"},
+    {"atSeconds": 808, "announcementId": null, "text": "OT 機器の保護を支援する Azure IoT パートナープログラムに Forescout が加わったと発表しました。"}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 779, "text": "機器の本人性は初回接続時に確認するだけでは十分ではありません。台数の増加や認証情報の更新を見据えて、証明書の運用を設計します。"}
+  ]
+}

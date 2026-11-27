@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK465",
+  "sessionId": "1787856644012001EVfQ",
+  "offeringId": "1787856644012001EVfQ-1791588338991001CX5E",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=OMjjc4XNp58",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 1, "text": "広告を AI に作らせるだけでなく、Kantar が長年蓄積した広告効果の知見を、根拠のある改善提案に変える仕組みを説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 931, "text": "Kantar は本番環境で、広告素材をまとめて処理する時間を日単位から時間単位に短縮し、累計 22 万件以上の素材を評価したと報告しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 322, "text": "広告の何を改善するのかを先に定義し、長年の調査で裏付けられた指標で提案の良し悪しを評価します。"},
+    {"atSeconds": 2449, "text": "複数のエージェントを組み合わせる場合は、提案数や文章の長さに加え、内容の重複や意味の違いを測り、統合後にも有用な提案が残るかを確認します。"}
+  ]
+}

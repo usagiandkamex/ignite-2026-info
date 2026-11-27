@@ -1,0 +1,17 @@
+{
+  "sessionCode": "BRK463",
+  "sessionId": "1787856643699001E1i2",
+  "offeringId": "1787856643699001E1i2-1791588337854001CPNX",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=xvNNT9Tcj5s",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 454, "text": "患者安全の担当者が別々の場所にある記録を手作業で突き合わせるだけでは、情報が増えたときに兆候を拾いにくくなります。AI で情報をつなぎ、安全管理を支援する方法を取り上げました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 619, "text": "Intermountain Health では、少人数の担当チームが毎日約 300 件の安全報告を仕分けており、大半が患者への影響が軽微か、なかった事象だと説明しました。"},
+    {"atSeconds": 773, "text": "個別のヒヤリ・ハットを関連する報告と突き合わせ、繰り返し現れる兆候に専門チームが注意を向けられるようにする取り組みを紹介しました。"}
+  ],
+  "tips": []
+}

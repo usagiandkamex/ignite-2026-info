@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR884", "sessionId": "1787856579873001EgDB", "offeringId": "1787856579873001EgDB-1791588180168001CRsj", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=kN32RqvG3Vk", "basis": "captions",
+  "summary": [
+    {"atSeconds": 224, "text": "Azure 上の PostgreSQL の選択肢を比較しました。Azure HorizonDB はコンピューティングと分散ストレージを分離し、利用者がストレージ容量の上限を事前に決めなくても拡張できる設計です。"},
+    {"atSeconds": 662, "text": "単一構成では Flexible Server の方が安価になり得る一方、高可用性と性能を求める構成では HorizonDB も候補になると説明しました。障害切り替えの速さも比較の軸です。"}
+  ],
+  "updates": [
+    {"atSeconds": 1, "text": "PostgreSQL ベースのフルマネージドサービス、Azure HorizonDB の一般提供を案内しました。", "announcementId": "bon-453"}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 1322, "text": "小規模で負荷が一時的に跳ね上がる処理には、まず Flexible Server を検討し、求める拡張性や可用性を基に選ぶよう勧めました。"}
+  ]
+}

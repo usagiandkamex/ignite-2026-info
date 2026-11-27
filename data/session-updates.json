@@ -234,8 +234,45 @@
     "LIVESP186": [
       {"id":"bon-486","context":"講演の終盤で例に挙げた Copilot と Salesforce の連携に対応する公式発表です。"}
     ],
+    "ODSP2101": [
+      {"id":"bon-533","context":"講演で扱った過剰共有対策に関連する Microsoft Purview の公式発表です。講演で実演した ShareGate の機能とは別です。"}
+    ],
+    "ODSP2103": [
+      {"id":"bon-526","context":"講演の復旧計画を補足する Microsoft Entra の公式発表です。講演で紹介したパートナーの復旧製品とは別です。"}
+    ],
+    "ODSP2107": [
+      {"id":"bon-526","context":"講演で触れた Entra Agent ID の機能と提供状況を補足する公式発表です。"}
+    ],
+    "ODSP2110": [
+      {"id":"bon-465","context":"講演のモデル評価を補足する Foundry の評価・最適化機能の公式発表です。講演で実演したパイプラインとは別です。"}
+    ],
     "THR871": [
       {"id":"bon-503","context":"講演で扱った Fabric IQ のセマンティックモデルの活用に関連する公式発表です。"}
+    ],
+    "THR884": [
+      {"id":"az-579388","context":"講演で比較したサービスの一つ、Azure HorizonDB の一般提供に対応する公式更新です。"}
+    ],
+    "THR886": [
+      {"id":"bon-482","context":"講演で使った Dynamics 365 の業務プラグインに対応する公式発表です。"}
+    ],
+    "THR889": [
+      {"id":"bon-543","context":"講演で扱った Windows のエージェント分離とアクセス制御に対応する公式発表です。"}
+    ],
+    "THR892": [
+      {"id":"bon-540","context":"講演で触れた Windows Endpoint Security Platform に関連する公式発表です。"}
+    ],
+    "THR898": [
+      {"id":"bon-442","context":"講演で実演した Azure Chaos Studio のワークスペースと AKS 拡張に対応する公式発表です。"}
+    ],
+    "THR901": [
+      {"id":"bon-448","context":"講演の移行計画とアプリのモダナイゼーションに使った Azure Catalyst の公式発表です。"}
+    ],
+    "THR902": [
+      {"id":"az-580080","context":"講演で費用の推定や呼び出し元別の観測を実演した Azure AI Gateway の公式更新です。"},
+      {"id":"az-581398","context":"モデルの振り分けに関連する別のプレビュー機能です。デモの優先順位や重みによる振り分けと同一ではありません。"}
+    ],
+    "THRSP1062": [
+      {"id":"bon-499","context":"講演が取り上げた Work IQ と Fabric IQ による業務コンテキスト活用の公式発表です。Tia 自体の発表ではありません。"}
     ]
   }
 }

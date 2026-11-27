@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1063","sessionId":"1787858586668001SAn1","offeringId":"1787858586668001SAn1-1791588122293001CeBT","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=y_RF7XvTRGk","basis":"captions",
+  "summary":[{"atSeconds":456,"text":"Entra と Intune の設定をバックアップし、利用者のアクセスに問題が起きたときに何が変わったか調べて戻す方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":321,"text":"条件付きアクセスと、端末の OS 最低バージョンを定める Intune の準拠ポリシーがある環境を用意し、架空の利用者がアクセスできなくなった場合をデモに使いました。"}],
+  "tips":[{"atSeconds":966,"text":"設定を保管するだけでなく、変更箇所を特定し、実際に戻せる手順を復旧用ランブックに記録します。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2114","sessionId":"1787854994774001tUF2","offeringId":"1787854994774001tUF2-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=T4jKbUgdT8M","basis":"captions-ja",
+  "summary":[{"atSeconds":4,"text":"Atlassian が、プロジェクトやチームのデータを参照できない AI は実務で期待どおりに動かないことがあると説明し、Rovo を組み込んだ業務を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":511,"text":"Flo Health は、従来数時間かけていた定例の進捗報告の準備を、調整した一つのプロンプトで行えるようになったと説明しました。"},{"atSeconds":1033,"text":"Expedia は、Jira の不具合報告を担当者が一件ずつ読み、不足情報を確認していた振り分け作業を、Rovo エージェントで支援する取り組みを紹介しました。"}],
+  "tips":[{"atSeconds":511,"text":"最初のプロンプトで完成とせず、報告を実際に読む人と出力を確認して、修正と検証を繰り返します。"}]
+}

@@ -1,0 +1,17 @@
+{
+  "sessionCode": "THR894", "sessionId": "1787856581384001EMGH", "offeringId": "1787856581384001EMGH-1791588248872001CQia", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 266, "text": "運用の共通基盤を定めるプラットフォーム ランディングゾーンと、個々のアプリを載せるワークロード ランディングゾーンを分けて説明しました。"},
+    {"atSeconds": 460, "text": "Azure Catalyst が、現行環境と刷新の目的を基に、ネットワーク、セキュリティ、運用管理、ID、コンプライアンス、回復性を考慮した共通基盤を提案する流れを示しました。"},
+    {"atSeconds": 1000, "text": "承認の監査証跡についての質疑では、講演時点では専用の監査証跡が組み込まれておらず、設計をダウンロードして関係チームと確認できると回答しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 25, "text": "今回発表された Azure Catalyst を、現行資産の把握から移行の判断、計画、実行までを一つにつなぐ仕組みとして紹介しました。", "announcementId": "bon-448"}
+  ],
+  "cases": [
+    {"atSeconds": 606, "text": "デモ用の構成では、Web 層に Azure App Service、データベース層に Azure SQL Database の Hyperscale エラスティック プール、ファイル共有に Azure Files を提案しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 830, "text": "どのアプリにも適用する規則を最初に共通基盤で決めておくと、後からアプリごとに直す手間を抑えられると説明しました。"}
+  ]
+}

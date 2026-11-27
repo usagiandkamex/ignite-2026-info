@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1062","sessionId":"1787858586508001SUb8","offeringId":"1787858586508001SUb8-1791588122064001CVan","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=6dQI_WPlpso","basis":"captions",
+  "summary":[{"atSeconds":246,"text":"端末の状態に Work IQ や Fabric IQ を通じて得た業務の文脈を加え、Tia が複数の IT システムから情報を集めて原因を調べる構成を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1027,"text":"端末に関する問題のデモで、Tia が Entra 側の設定を確認し、技術者の承認を経て修正する流れを示しました。"}],
+  "tips":[{"atSeconds":1027,"text":"情報の読み取りと設定の変更を区別し、書き込みを伴う影響の大きい操作は技術者の承認に回します。"}]
+}

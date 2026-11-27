@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1050","sessionId":"1787858591169001SUm7","offeringId":"1787858591169001SUm7-1791588165357001CFAR","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=8Z0gqg-B350","basis":"captions",
+  "summary":[{"atSeconds":307,"text":"Rackspace と Rubrik が、被害を受けたシステムを個別に戻すだけでなく、ID 基盤と各業務の依存関係を踏まえて復旧手順を組み立てる考え方を紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":727,"text":"復旧計画は契約やクラウド全体で一律に決めず、ワークロードごとに優先順位、復旧の目標、担当者を決めます。"}]
+}

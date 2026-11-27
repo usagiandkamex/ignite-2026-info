@@ -1,0 +1,17 @@
+{
+  "sessionCode": "THR885", "sessionId": "1787856580022001El3j", "offeringId": "1787856580022001El3j-1791588087248001CNOO", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=rph2lOB069U", "basis": "captions",
+  "summary": [
+    {"atSeconds": 205, "text": "Dynamics 365 ERP の MCP サーバーを、エージェントから業務データとアプリケーションの処理に接続するための基盤として紹介しました。"},
+    {"atSeconds": 306, "text": "エージェントを介しても、利用者本人がアプリで持つ権限を超えない認証の仕組みを説明しました。"},
+    {"atSeconds": 689, "text": "Work IQ の Ask は読み取り専用で、Finance and Operations のデータについて自然言語で質問できると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 578, "text": "列名やツールチップだけでは分かりにくい業務上の意味をエージェントに補足する AI Descriptions の公開プレビューを案内しました。", "announcementId": null},
+    {"atSeconds": 631, "text": "ERP の業務知識や制約をまとめ、組織内で共有できる Business Skills の公開プレビューを発表しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 1095, "text": "滞留在庫に資金が偏る一方で売れ筋が欠品するという想定で、ERP MCP に直接つないで調べるデモを行いました。"},
+    {"atSeconds": 1309, "text": "別のデモでは、Work IQ を経由し、利用者がアクセスできる在庫健全性の Business Skill を呼び出して分析しました。"}
+  ],
+  "tips": []
+}

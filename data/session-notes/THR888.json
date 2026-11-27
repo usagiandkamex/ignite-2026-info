@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR888", "sessionId": "1787856580477001Ewun", "offeringId": "1787856580477001Ewun-1791588094863001CSvV", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=V9swp6u1niE", "basis": "captions",
+  "summary": [
+    {"atSeconds": 77, "text": "Windows で AI を端末上で動かす利点として、データを端末外に出さずに処理できることや、音声・映像の処理でクラウドとの往復による遅延がないことを説明しました。"},
+    {"atSeconds": 236, "text": "Windows 上で動く小規模言語モデル Ion Instruct を紹介しました。従来の Phi Silica と比べてメモリ使用量を抑えながら、最大 32K トークンのコンテキストを扱えると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 884, "text": "新しい Windows AI API の一つとして、端末上で動画の解像度を高める Video Super Resolution を紹介しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 503, "text": "パートナーのノートアプリ Flux Ink を紹介しました。Windows ML を使う手書き風の文字生成モデルと、次の単語を予測する Ion Instruct を組み合わせる例です。"}
+  ],
+  "tips": []
+}

@@ -1,0 +1,19 @@
+{
+  "sessionCode": "BRK441",
+  "sessionId": "1787856640352001EpXn",
+  "offeringId": "1787856640352001EpXn-1791588117452001CP9h",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=U9dXUkFZnvU",
+  "basis": "captions",
+  "summary": [
+    {"atSeconds": 614, "text": "大規模な AI 推論では、チップの演算性能だけを伸ばしてもシステム全体は速くなりません。チップ上のデータの流れからラック内・ラック間の構成まで、釣り合いを取る設計を説明しました。"},
+    {"atSeconds": 1715, "text": "Maia 200 向けに整備してきたソフトウェアを Maia 300 にも引き継げるよう互換性を考慮していると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 482, "announcementId": null, "text": "セッションの数週間前に発表した Maia 300 について、Azure 向けの次世代 AI 推論アクセラレーターとして設計の考え方を紹介しました。"}
+  ],
+  "cases": [
+    {"atSeconds": 468, "text": "Maia 100 では実データセンターでモデルを動かせることを確かめ、Maia 200 はすでにデータセンターで本番ワークロードを処理していると Microsoft が説明しました。"}
+  ],
+  "tips": []
+}

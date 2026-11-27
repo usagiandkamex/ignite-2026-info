@@ -1,0 +1,7 @@
+{
+  "sessionCode":"THRSP1065","sessionId":"1787858586963001S9Tq","offeringId":"1787858586963001S9Tq-1791588096318001CQkJ","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=9ehGs9eeUNY","basis":"captions",
+  "summary":[{"atSeconds":293,"text":"エージェントが行う計画、実行、調整、確認を分け、すべての工程に大規模な推論モデルを使う必要はないと説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":63,"text":"登壇者は、この講演の資料を作る際にも、聞き手に関する調査や内容の検討などを複数のエージェントに分担させたと説明しました。"}],
+  "tips":[{"atSeconds":436,"text":"処理をクラウドと端末のどちらに置くかは、モデルの能力だけでなく、利用者が待てる時間や、データの保持・保護の要件で判断します。"}]
+}
