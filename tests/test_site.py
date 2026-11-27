@@ -36,12 +36,16 @@ class SnapshotTests(unittest.TestCase):
         ], "2026-11-27")
         validate_catalog(data)
         self.assertEqual(data["counts"], {
-            "sessions": 1, "offerings": 2, "onDemandSessions": 1, "onDemandOfferings": 1,
+            "sessions": 2, "offerings": 4, "onDemandSessions": 1, "onDemandOfferings": 1,
+            "restrictedSessions": 2, "restrictedOfferings": 2,
         })
-        self.assertEqual(data["excludedSessions"], 2)
-        self.assertEqual(data["excludedOfferings"], 3)
+        self.assertEqual(data["excludedSessions"], 1)
+        self.assertEqual(data["excludedOfferings"], 1)
+        self.assertEqual([s["code"] for s in data["sessions"]], ["BRK1", "BRK2"])
+        self.assertTrue(data["sessions"][1]["offerings"][0]["restrictedAccess"])
+        self.assertFalse(data["sessions"][1]["offerings"][0]["hasOnDemand"])
         serialized = json.dumps(data)
-        for value in ("restrictedScopes", "1-restricted", "description", "downloadVideoLink", "3-hidden"):
+        for value in ("restrictedScopes", '"invite"', "description", "downloadVideoLink", "3-hidden"):
             self.assertNotIn(value, serialized)
 
     def test_unexpected_visibility_field_stops_import(self):
@@ -74,11 +78,11 @@ class RecordingEvidenceTests(unittest.TestCase):
         self.assertEqual(caption_url(player), link)
         self.assertEqual(caption_url(player, "ja"), japanese)
 
-    def test_editorial_note_filename_must_match_session_id(self):
+    def test_editorial_note_filename_must_match_session_code(self):
         with TemporaryDirectory() as temp:
             directory = Path(temp)
-            (directory / "wrong.json").write_text('{"sessionId": "right"}', encoding="utf-8")
-            with self.assertRaisesRegex(ValueError, "filename must match sessionId"):
+            (directory / "BRK1.json").write_text('{"sessionCode": "BRK2"}', encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "filename must match sessionCode"):
                 read_session_notes(directory)
 
     def test_reject_html_and_unordered_captions(self):
@@ -120,15 +124,24 @@ class BuildTests(unittest.TestCase):
             out = Path(temp) / "ignite-2026-info"
             (out / "data").mkdir(parents=True)
             (out / "data" / "session-notes.json").write_text('{"notes":[]}', encoding="utf-8")
+            (out / "session").mkdir()
+            (out / "session" / "old-id.html").write_text("old file", encoding="utf-8")
+            (out / "data" / "sessions").mkdir()
+            (out / "data" / "sessions" / "old-id.json").write_text("{}", encoding="utf-8")
             build(out)
             pages = {p.name: Page(p) for p in out.glob("*.html")}
             detail_files = {p.stem: p for p in (out / "session").glob("*.html")}
-            self.assertEqual(set(detail_files), {s["id"] for s in catalog["sessions"]})
+            self.assertEqual(set(detail_files), {s["code"] for s in catalog["sessions"]})
+            self.assertIn("BRK449", detail_files)
+            self.assertIn("LAB700", detail_files)
+            lab = detail_files["LAB700"].read_text(encoding="utf-8")
+            self.assertIn("参加条件あり", lab)
+            self.assertIn("../data/sessions/LAB700.json", lab)
             detail_data = {p.stem: p for p in (out / "data" / "sessions").glob("*.json")}
             self.assertEqual(set(detail_data), set(detail_files))
             self.assertFalse((out / "data" / "session-notes.json").exists())
             self.assertEqual(pages["sessions.html"].result_ids,
-                             ["session-" + s["id"] for s in catalog["sessions"]])
+                             ["session-" + s["code"] for s in catalog["sessions"]])
             self.assertEqual(pages["updates.html"].result_ids,
                              [a["id"] for a in updates["announcements"]])
             self.assertIn("KEY01", pages["index.html"].ids)
@@ -156,7 +169,8 @@ class BuildTests(unittest.TestCase):
                 if filename != "sessions.json":
                     self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
             for note in notes["notes"]:
-                detail = detail_files[note["sessionId"]].read_text(encoding="utf-8")
+                path = detail_files[note["sessionCode"]]
+                detail = path.read_text(encoding="utf-8")
                 self.assertIn("録画全編を確認したことを示すものではありません", detail)
                 for heading in NOTE_SECTIONS.values():
                     self.assertIn(heading, detail)
@@ -165,36 +179,35 @@ class BuildTests(unittest.TestCase):
                 for item in note["updates"]:
                     if item["announcementId"]:
                         self.assertIn(f'../updates.html#{item["announcementId"]}', detail)
-                detail_page = Page(detail_files[note["sessionId"]])
+                detail_page = Page(path)
                 for url in detail_page.local_links:
                     parts = urlsplit(url)
                     if parts.path:
-                        dest = detail_files[note["sessionId"]].parent / parts.path
+                        dest = path.parent / parts.path
                         self.assertTrue(dest.is_file(), url)
                         self.assertTrue(dest.resolve().is_relative_to(out.resolve()), url)
-            reviewed = {n["sessionId"] for n in notes["notes"]}
-            by_id = {n["sessionId"]: n for n in notes["notes"]}
+            by_code = {n["sessionCode"]: n for n in notes["notes"]}
             counts = Counter()
             for s in catalog["sessions"]:
-                record = json.loads(detail_data[s["id"]].read_text(encoding="utf-8"))
+                record = json.loads(detail_data[s["code"]].read_text(encoding="utf-8"))
                 self.assertEqual(record["session"], s)
-                note = by_id.get(s["id"])
+                note = by_code.get(s["code"])
                 state = "reviewed" if note else "pending" if any(o["hasOnDemand"] for o in s["offerings"]) else "unlisted"
                 counts[state] += 1
                 self.assertEqual(record["recordingReview"], {"status": state, "note": note})
             published_catalog = json.loads((out / "data" / "sessions.json").read_text(encoding="utf-8"))
             self.assertEqual(published_catalog.pop("recordingReview"), {
-                "counts": counts, "reviewedSessionIds": sorted(reviewed),
+                "counts": counts, "reviewedSessionCodes": sorted(by_code),
             })
             self.assertEqual(published_catalog, catalog)
             self.assertIn("/data/sessions/", llms)
             for available, expected in [
-                (True, "内容はまだ確認していません"), (False, "公式カタログに録画の掲載がない"),
+                (True, "内容はまだ確認していません"), (False, "公式カタログに公開録画の掲載がない"),
             ]:
-                included = [s for s in catalog["sessions"] if s["id"] not in reviewed and
+                included = [s for s in catalog["sessions"] if s["code"] not in by_code and
                             any(o["hasOnDemand"] for o in s["offerings"]) == available]
                 if included:
-                    detail = detail_files[included[0]["id"]].read_text(encoding="utf-8")
+                    detail = detail_files[included[0]["code"]].read_text(encoding="utf-8")
                     self.assertIn(expected, detail)
                     self.assertNotIn("<h2>事例・デモ</h2>", detail)
 

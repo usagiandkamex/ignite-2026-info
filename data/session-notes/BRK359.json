@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK359",
+  "sessionId": "1787856627685001EqFG",
+  "offeringId": "1787856627685001EqFG-1791588154353001CFZk",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 381,
+      "text": "Fabric 内のサーバーレス PostgreSQL を、OneLake と分析エンジンにつなぐ構成を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 2002,
+      "text": "Microsoft Fabric HorizonDB をプレビューとして発表しました。Azure HorizonDB の一般提供とは別です。",
+      "announcementId": "bon-457"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1097,
+      "text": "PostgreSQL と分析用にミラーリングしたデータの両方でクエリを実行し、大きな集計を Fabric 側で処理するデモを行いました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1462,
+      "text": "運用データと大規模集計を一つのアプリで扱う場合は、全データを運用 DB に引き寄せず、Fabric 側で集計できるか検討します。"
+    }
+  ]
+}

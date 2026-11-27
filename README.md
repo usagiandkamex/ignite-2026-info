@@ -12,15 +12,15 @@ Pages の `/ignite-2026-info/llms.txt` が入口です。次の JSON は同じ�
 | データ | 内容 |
 | --- | --- |
 | [`event.json`](data/event.json) | 開催概要、米国太平洋時間の会期、開幕・パートナーキーノート、日本語要約、出典、確認済みの場合の公開録画 URL。 |
-| [`sessions.json`](data/sessions.json) | 公開セッションのカタログ。`sessions[].id` で個別 JSON を取得できます。公開版には `recordingReview.counts` と `reviewedSessionIds` が加わり、要約閲覧・収録状況の確認に使えます。 |
-| `data/sessions/{id}.json` | 個別セッションの公式メタデータ、収録状況、確認済みの場合は日本語の録画要約。 |
+| [`sessions.json`](data/sessions.json) | 公式カタログの全掲載セッション。`sessions[].code` で個別 JSON を取得できます。公開版には `recordingReview.counts` と `reviewedSessionCodes` が加わります。 |
+| `data/sessions/{code}.json` | 個別セッションの公式メタデータと確認済みの録画要約。例: `data/sessions/BRK449.json`。 |
 | [`updates.json`](data/updates.json) | Book of News 全 59 発表項目の独自の日本語要約。`id` は元の Book of News 項目 ID に対応。各項目に分野、発表時の提供区分と公式出典があります。 |
 
 - `schemaVersion: 1`、`checkedOn` と `reviewedOn` は日本時間の出典確認日（`YYYY-MM-DD`）。`startUtc` / `endUtc` は UTC（末尾 `Z`）。本会期と個々の開催枠の時刻は別に扱います。
 - セッションの英語タイトル・分類値は公式表記。HTML では分類名を日本語にし、日時を JST で表示します。`hasOnDemand` はカタログ上で録画が案内されているという意味で、認証なしの視聴可否ではありません。
-- 全公開セッションの詳細ページは `session/{id}.html`、個別 JSON は `data/sessions/{id}.json` です。`id` はカタログの `sessions[].id` です。個別 JSON の `recordingReview.status` は `reviewed`、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（録画の掲載なし）です。未確認なら `recordingReview.note` は `null`。これは「紹介されたアップデート・事例・Tips が存在しなかった」という意味ではありません。
+- 公式セッションコード（`BRK449` など）を `session/{code}.html` と `data/sessions/{code}.json` に使います。`sessions[].id` は公式の内部 ID で、開催枠との関連付け用です。個別 JSON の `recordingReview.status` は `reviewed`、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（公開録画の案内なし）です。未確認なら `recordingReview.note` は `null`。これは「紹介されたアップデート・事例・Tips が存在しなかった」という意味ではありません。
 - 録画要約の `atSeconds` は `offeringId` で示す公式イベント録画の開始からの秒数です。`basis` は公式英語字幕（`captions`）、英語字幕と YouTube チャプター（`captions-and-chapters`）、公式日本語字幕（`captions-ja`）のいずれかです。各時刻の前後を参照した要約であり、全編を確認したことは示しません。`summary` / `updates` / `cases` / `tips` を分け、確認した範囲で根拠を拾えなかった欄は空配列です。`announcementId` がある更新は `updates.json` の項目に対応します。YouTube 版の編集で時刻がずれる場合があります。
-- `counts` は収録件数。`excludedSessions` は全枠が除外されたセッション数、`excludedOfferings` は除外された枠数です。アクセス制限つきのラボなどは収録せず、公式カタログへ案内します。セッション本文、スライド、動画、認証情報は配布しません。
+- `counts` は収録件数。参加条件のあるラボも、公開ページで確認できるセッション情報と開催枠を収録し、`restrictedAccess` で区別します。参加資格の内部データ、制限付きの録画・資料は収録しません。`excludedSessions` と `excludedOfferings` は、公式にスケジューラー非掲載と指定された項目だけを数えます。
 - `stages` は `ga`（一般提供）、`preview`、`frontier`（Frontier 対象）、`rollout`（順次展開）、`planned`、`announced`。複数の値がある場合は、要約でどの機能がどの状態か区別します。発表時点の情報であり、日本での提供を保証するものではありません。`notes` は地域などの追加情報で、`announcementId`、確認日、個別の出典を持ちます。
 
 ## ビルドと手動更新
@@ -43,7 +43,7 @@ python -m http.server 8000 --directory _site
 
 1. セッション一覧で「オンデマンドあり・内容未確認」を選び、公式ページで対象の開催枠を確認します。別の開催枠や編集版の時刻は混ぜません。
 2. 公開録画の字幕を基本とし、公式 YouTube のチャプターや利用可能な場合の [Ask YouTube](https://support.google.com/youtube/answer/14110396) は該当箇所を探す手掛かりにします。AI の回答だけを根拠にせず、録画・字幕で照合します。
-3. 発言内容を独自の日本語で短く要約し、[`data/session-notes/`](data/session-notes) の `{sessionId}.json` に確認日と時刻を追加します。未確認のセッションに空ファイルは作りません。個別 JSON と HTML はビルド時に生成するので、録画要約の編集はここだけです。タイトルや概要から内容を推測したり、録画や字幕全文をコミットしたりしません。
+3. 発言内容を独自の日本語で短く要約し、[`data/session-notes/`](data/session-notes) の `{code}.json`（例: `BRK449.json`）に確認日と時刻を追加します。ファイル名と `sessionCode` を一致させます。未確認のセッションに空ファイルは作りません。個別 JSON と HTML はビルド時に生成するので、録画要約の編集はここだけです。タイトルや概要から内容を推測したり、録画や字幕全文をコミットしたりしません。
 
 カタログに字幕リンクがなくても、公式の公開プレーヤー内で字幕を選べることがあります。
 `python tools/check_recording_notes.py BRK240 BRK223` は、記入済みの要約について公開カタログとプレーヤーの結び付き、参照した字幕の形式、時刻を確認します。字幕は保存せず、文章の意味や提供状況の正しさは別途レビューしてください。

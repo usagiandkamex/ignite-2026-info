@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 
-from import_sessions import CATALOG_URL, FEED_URL, OFFERING_ID, ON_DEMAND_URL, SESSION_ID, summarize
+from import_sessions import CATALOG_URL, FEED_URL, OFFERING_ID, ON_DEMAND_URL, SESSION_CODE, SESSION_ID, summarize
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -24,6 +24,7 @@ SESSION_TYPES = {
     "Broadcast Stage": "配信ステージ",
     "Pre-recorded": "事前収録",
     "Digital Lab": "デジタルラボ",
+    "Lab": "ハンズオンラボ",
 }
 TOPICS = {
     "Cloud & AI": "クラウドと AI",
@@ -140,7 +141,7 @@ def validate_catalog(data):
     for session in sessions:
         keys(session, "id code title type levels topics offerings", "session")
         sid, code = session["id"], session["code"]
-        text(code, "session code")
+        require(isinstance(code, str) and SESSION_CODE.fullmatch(code), f"Invalid session code: {code!r}")
         text(session["title"], f"{code} title")
         require(SESSION_ID.fullmatch(sid) and sid not in session_ids, f"Invalid or duplicate session: {sid}")
         session_ids.add(sid)
@@ -150,7 +151,7 @@ def validate_catalog(data):
         options(session["topics"], TOPICS, f"{code} topics")
         require(isinstance(session["offerings"], list) and session["offerings"], f"{code}: no offerings")
         for offering in session["offerings"]:
-            keys(offering, "id startUtc endUtc delivery hasOnDemand sourceUrl", f"{code} offering")
+            keys(offering, "id startUtc endUtc delivery hasOnDemand restrictedAccess sourceUrl", f"{code} offering")
             oid = offering["id"]
             require(OFFERING_ID.fullmatch(oid) and oid.split("-")[0] == sid and oid not in offering_ids,
                     f"Invalid or duplicate offering: {oid}")
@@ -159,7 +160,9 @@ def validate_catalog(data):
             require((start is None and end is None) or
                     (start is not None and end is not None and utc(start) < utc(end)), f"{oid}: invalid time range")
             options(offering["delivery"], DELIVERY, f"{oid} delivery")
-            require(type(offering["hasOnDemand"]) is bool, f"{oid}: invalid recording flag")
+            require(type(offering["hasOnDemand"]) is bool and type(offering["restrictedAccess"]) is bool
+                    and not (offering["hasOnDemand"] and offering["restrictedAccess"]),
+                    f"{oid}: invalid recording or access flag")
             require(offering["sourceUrl"] == f"{CATALOG_URL}/{oid}", f"{oid}: unexpected source URL")
         by_code[code] = session
     counts = summarize(sessions)
@@ -229,9 +232,10 @@ def validate_session_notes(data, catalog, updates):
     seen = set()
     require(isinstance(data["notes"], list), "Expected a list of recording notes")
     for note in data["notes"]:
-        keys(note, "sessionId reviewedOn offeringId youtubeUrl basis summary updates cases tips", "session note")
+        keys(note, "sessionId sessionCode reviewedOn offeringId youtubeUrl basis summary updates cases tips", "session note")
         sid = note["sessionId"]
         require(sid in by_id and sid not in seen, f"Unknown or duplicate reviewed session: {sid}")
+        require(note["sessionCode"] == by_id[sid]["code"], f"{sid}: session code does not match the catalog")
         seen.add(sid)
         iso_date(note["reviewedOn"])
         require(any(o["id"] == note["offeringId"] and o["hasOnDemand"] for o in by_id[sid]["offerings"]),
@@ -281,7 +285,7 @@ def read_session_notes(directory):
     notes = []
     for path in sorted(directory.glob("*.json")):
         note = json.loads(path.read_text(encoding="utf-8"))
-        require(isinstance(note, dict) and note.get("sessionId") == path.stem,
-                f"{path.name}: filename must match sessionId")
+        require(isinstance(note, dict) and note.get("sessionCode") == path.stem,
+                f"{path.name}: filename must match sessionCode")
         notes.append(note)
     return {"schemaVersion": 1, "notes": notes}

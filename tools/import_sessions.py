@@ -12,6 +12,7 @@ ON_DEMAND_URL = CATALOG_URL + "?filter=&onDemand=1"
 FEED_URL = "https://ignite.microsoft.com/api/session/all/en-US"
 JST = timezone(timedelta(hours=9), "JST")
 SESSION_ID = re.compile(r"[A-Za-z0-9]+")
+SESSION_CODE = re.compile(r"[A-Z]+[0-9]+[A-Z]*")
 OFFERING_ID = re.compile(r"[A-Za-z0-9]+(?:-[A-Za-z0-9]+)?")
 
 
@@ -21,6 +22,8 @@ def summarize(sessions):
         "offerings": sum(len(s["offerings"]) for s in sessions),
         "onDemandSessions": sum(any(o["hasOnDemand"] for o in s["offerings"]) for s in sessions),
         "onDemandOfferings": sum(o["hasOnDemand"] for s in sessions for o in s["offerings"]),
+        "restrictedSessions": sum(any(o["restrictedAccess"] for o in s["offerings"]) for s in sessions),
+        "restrictedOfferings": sum(o["restrictedAccess"] for s in sessions for o in s["offerings"]),
     }
 
 
@@ -43,7 +46,7 @@ def snapshot(rows, checked_on):
         scopes = row["restrictedScopes"]
         if not isinstance(scopes, list) or type(row["excludeFromSessionScheduler"]) is not bool:
             raise ValueError("Catalog visibility fields changed; review before publishing.")
-        if scopes or row["excludeFromSessionScheduler"]:
+        if row["excludeFromSessionScheduler"]:
             excluded.add(session_id)
             excluded_count += 1
             continue
@@ -67,7 +70,8 @@ def snapshot(rows, checked_on):
             "startUtc": row["startDateTime"],
             "endUtc": row["endDateTime"],
             "delivery": sorted({v["displayValue"] for v in row["deliveryTypes"]}),
-            "hasOnDemand": row["hasOnDemand"] and not row["doNotPublishVideo"],
+            "hasOnDemand": row["hasOnDemand"] and not row["doNotPublishVideo"] and not scopes,
+            "restrictedAccess": bool(scopes),
             "sourceUrl": f"{CATALOG_URL}/{offering_id}",
         })
 

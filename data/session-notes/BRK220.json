@@ -1,0 +1,37 @@
+{
+  "sessionCode": "BRK220",
+  "sessionId": "1787856606383001ErBZ",
+  "offeringId": "1787856606383001ErBZ-1791588269136001Ch0z",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 215,
+      "text": "Copilot Connectors を使い、社外サービスにある知識や業務データを、既存のアクセス権を尊重しながら Copilot の作業につなぐ仕組みを解説しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1771,
+      "text": "管理者が登録・制御するコネクターに加え、組織独自の業務アプリを接続するカスタム MCP コネクターを紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 291,
+      "text": "架空の営業担当者が、複数システムに分かれた顧客情報から契約更新のリスクを調べる例を示しました。"
+    },
+    {
+      "atSeconds": 723,
+      "text": "契約更新案の作成など、複数の段階がある業務を Cowork で進める録画デモを紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1183,
+      "text": "組織への導入時は、利用可能なコネクターのカタログと、利用者向け・管理者向けの設定手順を分けて確認します。"
+    }
+  ]
+}

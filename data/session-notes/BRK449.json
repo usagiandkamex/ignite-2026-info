@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK449",
+  "sessionId": "1787856641576001E9cm",
+  "offeringId": "1787856641576001E9cm-1791588196702001CBnU",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 395,
+      "text": "古い Windows Server アプリを Azure App Service へ移し、移行してからセキュリティや Azure サービスとの連携を段階的に見直す進め方を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 585,
+      "text": "Managed Instance on Azure App Service で、必要な Windows Server の役割や依存関係を維持したまま PaaS へ移す方法を説明しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 940,
+      "text": "店舗向けのサンプルアプリを使い、Windows の設定やストレージを必要とするアプリを Managed Instance で動かす流れを実演しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 492,
+      "text": "コードの書き換えに着手する前に、必要な Windows 機能、外部依存、状態や構成を棚卸しし、どれを移行時に維持するか決めます。"
+    }
+  ]
+}

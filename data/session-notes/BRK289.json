@@ -1,0 +1,42 @@
+{
+  "sessionCode": "BRK289",
+  "sessionId": "1787856616924001Efgs",
+  "offeringId": "1787856616924001Efgs-1791588070871001CRTW",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=3BPEyTu-8mw",
+  "basis": "captions-and-chapters",
+  "summary": [
+    {
+      "atSeconds": 127,
+      "text": "GitHub をコード生成だけでなく、課題整理、実装、レビューまで人とエージェントが協働する基盤と位置付けました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 534,
+      "text": "Copilot Fusion の考え方と、複数のエージェント作業を製品に統合する方向性を紹介しました。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 2611,
+      "text": "Agent Merge がレビューやチェックの待ち時間を減らすために用意された機能として紹介されました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 943,
+      "text": "同じ課題に対する実行結果を比較し、成功したかどうかとコストを合わせて見るデモを行いました。"
+    },
+    {
+      "atSeconds": 1718,
+      "text": "Copilot アプリから GitHub と Azure DevOps の PR を開き、並行作業を確認できる様子を実演しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 127,
+      "text": "モデルを選ぶ際はトークン数だけでなく、目的とする作業を完了できたか、完了までにいくら掛かったかを一緒に比較することを勧めました。"
+    }
+  ]
+}

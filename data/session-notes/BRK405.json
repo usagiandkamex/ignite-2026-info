@@ -1,0 +1,38 @@
+{
+  "sessionCode": "BRK405",
+  "sessionId": "1787856634892001EbQS",
+  "offeringId": "1787856634892001EbQS-1791588323101001Cu2t",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 403,
+      "text": "Windows の安全な初期設定、管理者権限、デバイスに保存される情報の保護、AI エージェント分離を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 403,
+      "text": "重要な保護設定の状態をまとめて確認する Windows baseline protection を紹介しました。",
+      "announcementId": "bon-540"
+    },
+    {
+      "atSeconds": 1656,
+      "text": "Windows App 向けの Intune アプリ保護ポリシーが公開プレビューと説明しました。",
+      "announcementId": "bon-539"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1321,
+      "text": "従来の MDM と宣言型管理を同じ端末条件で並べ、設定の適用方式を比較するデモを行いました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 547,
+      "text": "日常作業は標準ユーザーとして実行し、管理者権限を実際に必要とする操作でだけ昇格する構成を勧めました。"
+    }
+  ]
+}

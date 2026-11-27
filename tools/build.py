@@ -102,11 +102,11 @@ def intro(kicker, title, lead):
 
 
 def detail_path(session):
-    return f"session/{session['id']}.html"
+    return f"session/{session['code']}.html"
 
 
 def detail_data_path(session):
-    return f"data/sessions/{session['id']}.json"
+    return f"data/sessions/{session['code']}.json"
 
 
 def overview(event, catalog, updates):
@@ -183,7 +183,8 @@ def offerings_list(s):
         when = "日時の掲載なし" if o["startUtc"] is None else time_range(o["startUtc"], o["endUtc"])
         delivery = [DELIVERY[v] for v in o["delivery"]]
         recorded = "オンデマンドあり" if o["hasOnDemand"] else "オンデマンドの掲載なし"
-        items.append(f"<li>{when} · {chips([*delivery, recorded])} · {link(o['sourceUrl'], '公式詳細')}</li>")
+        access = ["参加条件あり"] if o["restrictedAccess"] else []
+        items.append(f"<li>{when} · {chips([*delivery, *access, recorded])} · {link(o['sourceUrl'], '公式詳細')}</li>")
     return f'<ul class="offerings">{"".join(items)}</ul>'
 
 
@@ -198,7 +199,7 @@ def catalog_entry(s, note):
     labels = session_labels(s)
     highlights = [p["text"] for key in NOTE_SECTIONS for p in note[key]] if note else []
     filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"], *labels, *highlights])
-    return f"""<article id="session-{s['id']}" class="card result" data-result data-text="{h(filters)}"
+    return f"""<article id="session-{s['code']}" class="card result" data-result data-text="{h(filters)}"
   data-kind="{h(s['type'])}" data-topic="{h('|'.join(s['topics']))}"
   data-replay="{'no' if state == 'unlisted' else 'yes'}" data-notes="{state}">
   <p class="kicker">{h(s['code'])}</p>
@@ -219,9 +220,10 @@ def sessions_page(catalog, notes):
     body = f"""
 {intro("公式カタログの公開データ", "セッション", lead)}
 <div class="note">
-  <p>タイトルは公式の英語表記、開催枠の時刻は日本標準時（JST）です。アクセス制限などで除外したのは
-  {catalog["excludedSessions"]:,} セッション・{catalog["excludedOfferings"]:,} 枠です。
-  録画の表示は公式カタログ上の状態で、再生にはサインインが必要な場合があります。</p>
+  <p>録画の有無にかかわらず、公式カタログの掲載セッションをすべて表示します。参加条件がある
+  {counts["restrictedSessions"]:,} セッション・{counts["restrictedOfferings"]:,} 枠も掲載しています。
+  タイトルは公式の英語表記、開催枠の時刻は日本標準時（JST）です。
+  参加条件・録画の視聴条件は公式ページをご確認ください。</p>
   <p>各セッションに詳細ページがあります。録画資料に基づく要約はオンデマンド
   {counts["onDemandSessions"]:,} 件のうち {len(notes):,} 件です。</p>
   <p class="meta">確認日：{h(catalog["checkedOn"])}（日本時間） · {link(catalog["catalogUrl"], "公式カタログ")}
@@ -242,7 +244,7 @@ def detail_page(s, note):
     state = note_status(s, note)
     details = {
         "pending": "公式カタログにオンデマンドの案内がありますが、内容はまだ確認していません。",
-        "unlisted": "公式カタログに録画の掲載がないため、話された内容・アップデート・事例・Tips は未確認です。",
+        "unlisted": "公式カタログに公開録画の掲載がないため、話された内容・アップデート・事例・Tips は未確認です。",
     }
     if note:
         source = next(o["sourceUrl"] for o in s["offerings"] if o["id"] == note["offeringId"])
@@ -267,7 +269,7 @@ def detail_page(s, note):
     else:
         review = f'<div class="note"><p>{details[state]}推測による要約は掲載していません。</p></div>'
     body = f"""
-<p class="section">{link("../sessions.html#session-" + s['id'], "セッション一覧に戻る")}</p>
+<p class="section">{link("../sessions.html#session-" + s['code'], "セッション一覧に戻る")}</p>
 <header class="intro">
   <p class="kicker">{h(s["code"])}</p><h1 lang="en">{h(s["title"])}</h1>
   <p>{chips(session_labels(s))} · {NOTE_STATES[state]}</p>
@@ -325,16 +327,17 @@ def ai_index(event, catalog, updates, notes):
 
 イベント会期は米国太平洋時間。開催枠の JSON の時刻は UTC（末尾 Z）、HTML は日本標準時（JST）です。
 提供状況は Ignite 発表時点のもので、現在または日本で利用できることは保証しません。
-カタログに非公開・制限付きの枠は含まれません。録画フラグは認証なしでの視聴を保証しません。
+公式カタログに掲載された参加条件付きの枠も含みます。`restrictedAccess` は参加条件ありを示し、条件の詳細や制限された資料は掲載しません。
+録画フラグは認証なしでの視聴を保証しません。
 
 ## 公開データ
 
 - [イベントとキーノート]({PUBLIC_URL}data/event.json): 確認日 {event['checkedOn']}。開催概要、両キーノート、公式出典。
-- [セッションカタログ]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。オンデマンド案内 {counts['onDemandSessions']} セッションのうち、{len(notes)} セッションに確認済みの要約があります。`recordingReview.reviewedSessionIds` で確認済みの個別 JSON を探せます。
+- [セッションカタログ]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。オンデマンド案内 {counts['onDemandSessions']} セッションのうち、{len(notes)} セッションに確認済みの要約があります。`recordingReview.reviewedSessionCodes` で確認済みの個別 JSON を探せます。
 - [個別セッション JSON の例]({PUBLIC_URL}{detail_data_path(opening)}): 開幕キーノート。公式メタデータ、録画の確認状況、話の要点、アップデート、事例、Tips。
 - [製品発表]({PUBLIC_URL}data/updates.json): 確認日 {updates['checkedOn']}。Book of News の全 {len(updates['announcements'])} 項目の日本語要約、提供状況、公式出典。
 
-各セッションの詳細はカタログの `sessions[].id` を使い、`data/sessions/{{id}}.json` で取得できます。人向け HTML は `session/{{id}}.html` です。
+各セッションの詳細はカタログの `sessions[].code`（例: `BRK449`）を使い、`data/sessions/{{code}}.json` で取得できます。人向け HTML は `session/{{code}}.html` です。
 個別 JSON の `recordingReview.status` は `reviewed`（要約あり）、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（録画の掲載なし）。
 未確認なら `recordingReview.note` は `null` です。記入済みの場合、`offeringId` は確認した開催枠、`atSeconds` はその録画の開始からの秒数です。
 
@@ -353,7 +356,15 @@ def build(output):
     output.mkdir(parents=True, exist_ok=True)
     (output / "data").mkdir(exist_ok=True)
     (output / "data" / "session-notes.json").unlink(missing_ok=True)
-    (output / "data" / "sessions").mkdir(exist_ok=True)
+    details = output / "session"
+    data_details = output / "data" / "sessions"
+    details.mkdir(exist_ok=True)
+    data_details.mkdir(exist_ok=True)
+    codes = {s["code"] for s in catalog["sessions"]}
+    for folder, extension in ((details, ".html"), (data_details, ".json")):
+        for path in folder.glob(f"*{extension}"):
+            if path.stem not in codes:
+                path.unlink()
     files = {
         "index.html": overview(event, catalog, updates),
         "sessions.html": sessions_page(catalog, notes),
@@ -362,7 +373,6 @@ def build(output):
     }
     for name, content in files.items():
         (output / name).write_text(content, encoding="utf-8", newline="\n")
-    (output / "session").mkdir(exist_ok=True)
     states = Counter()
     for s in catalog["sessions"]:
         note = notes.get(s["id"])
@@ -382,7 +392,7 @@ def build(output):
         **catalog,
         "recordingReview": {
             "counts": {state: states[state] for state in NOTE_STATES},
-            "reviewedSessionIds": sorted(notes),
+            "reviewedSessionCodes": sorted(n["sessionCode"] for n in notes.values()),
         },
     }, indent=None)
     for name in ("filter.js", "site.css"):
