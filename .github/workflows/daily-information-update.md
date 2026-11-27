@@ -62,6 +62,24 @@ jobs:
     if: github.ref == 'refs/heads/main'
   safe_outputs:
     if: needs.agent.result == 'success'
+  merge_daily_update:
+    needs: [safe_outputs]
+    if: needs.safe_outputs.outputs.created_pr_number != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: read
+    steps:
+      - name: Check out trusted base
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Verify and merge the generated PR
+        env:
+          GH_TOKEN: ${{ secrets.GH_AW_PR_TOKEN }}
+          PR_NUMBER: ${{ needs.safe_outputs.outputs.created_pr_number }}
+        run: python tools/merge_daily_update.py
 
 safe-outputs:
   create-pull-request:
