@@ -90,6 +90,15 @@ class SnapshotTests(unittest.TestCase):
             "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/speaker-1",
         }], "unresolvedSpeakers": 1})
 
+    def test_missing_speaker_ids_remain_unverified(self):
+        row = catalog_row("1-alpha")
+        del row["speakerIds"]
+        details = speaker_snapshot([row], [{"speakerId": "speaker-1", "displayName": "Ada Example"}],
+                                  "2026-11-27")
+        self.assertEqual(details["sessions"]["BRK1"], {
+            "speakers": [], "unresolvedSpeakers": None,
+        })
+
     def test_published_schema_rejects_raw_content_fields(self):
         data = snapshot([catalog_row("1-alpha")], "2026-11-27")
         unexpected = deepcopy(data)

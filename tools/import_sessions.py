@@ -135,15 +135,18 @@ def speaker_snapshot(rows, speaker_rows, checked_on):
         if row.get("excludeFromSessionScheduler"):
             continue
         session_id, code = row["sessionId"], row["sessionCode"]
-        speaker_ids = row.get("speakerIds", [])
-        if not isinstance(speaker_ids, list) or any(
-                not isinstance(value, str) or not value for value in speaker_ids):
-            raise ValueError(f"Unexpected speaker IDs for session {session_id}.")
-        unique_ids = list(dict.fromkeys(speaker_ids))
-        record = {
-            "speakers": [directory[speaker_id] for speaker_id in unique_ids if speaker_id in directory],
-            "unresolvedSpeakers": sum(speaker_id not in directory for speaker_id in unique_ids),
-        }
+        if "speakerIds" not in row:
+            record = {"speakers": [], "unresolvedSpeakers": None}
+        else:
+            speaker_ids = row["speakerIds"]
+            if not isinstance(speaker_ids, list) or any(
+                    not isinstance(value, str) or not value for value in speaker_ids):
+                raise ValueError(f"Unexpected speaker IDs for session {session_id}.")
+            unique_ids = list(dict.fromkeys(speaker_ids))
+            record = {
+                "speakers": [directory[speaker_id] for speaker_id in unique_ids if speaker_id in directory],
+                "unresolvedSpeakers": sum(speaker_id not in directory for speaker_id in unique_ids),
+            }
         if code in sessions and sessions[code] != record:
             raise ValueError(f"Inconsistent speaker metadata for session {session_id}.")
         sessions[code] = record
