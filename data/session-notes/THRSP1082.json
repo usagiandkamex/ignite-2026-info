@@ -1,0 +1,32 @@
+{
+  "sessionCode": "THRSP1082",
+  "sessionId": "1787858589511001SVYY",
+  "offeringId": "1787858589511001SVYY-1791588354094001CCDY",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=csjpV0geWDA",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 199,
+      "text": "Oracle は、業務データを別の場所へ複製するよりも、データベース内のセキュリティとガバナンスを保ちながら AI エージェントにつなぐ方針を説明しました。"
+    },
+    {
+      "atSeconds": 365,
+      "text": "Azure 上で提供する Exadata Database Service について、Oracle Database 向けに設計したハードウェアとソフトウェアを組み合わせる構成を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 255,
+      "text": "Oracle Database の MCP サーバーとベクトル検索を通じて、既存アプリケーションの業務データを AI に結び付ける方向性を紹介しました。提供時期の断定はしていません。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 745,
+      "text": "Azure に移したアプリケーションと Oracle の基幹データベースを近接配置する際は、Exadata が Azure リージョン内に置かれる構成と既存の Azure 契約の利用条件を確認する観点を示しました。"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1087",
+  "sessionId": "1787858590268001SINo",
+  "offeringId": "1787858590268001SINo-1791588229313001CEuK",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Dl5pRMbRHWg",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 331,
+      "text": "onsemi と LTM は、ユースケースを個別に作り続けるのではなく、次の AI アプリを速く確実に届ける共通プラットフォームへ転換した取り組みを説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 353,
+      "text": "onsemi は Snowflake のデータに意味の定義、系統、所有者を整備し、Microsoft Purview の秘密度ラベルを活用することで、エージェントが正規の情報源を参照できる土台を作ったと紹介しました。"
+    },
+    {
+      "atSeconds": 619,
+      "text": "開発、UAT、本番の三環境を持つソフトウェアファクトリーでは、UAT 前にアーキテクチャとセキュリティ、本番前に業務承認とテスト・評価の証拠を確認するゲートを設けています。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 183,
+      "text": "部門ごとのコネクタや MCP サーバーの重複開発を避けるため、既存の接続先やツールを発見できる中央カタログを整える重要性を指摘しました。"
+    }
+  ]
+}

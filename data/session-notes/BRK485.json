@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK485",
+  "sessionId": "1787856647047001Ezwq",
+  "offeringId": "1787856647047001Ezwq-1791588242070001CocU",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 304,
+      "text": "AI の活用が単一ユースケースから複数の業務・アプリへ広がるにつれ、個別開発だけでなく共有プラットフォームの整備が必要になると説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 980,
+      "text": "ReadyWorks の CEO が、インフラのサービス事業で蓄積した知識を SaaS にし、さらにサービスと SaaS の知見を AI プラットフォームへ転換してきた経緯を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2546,
+      "text": "パートナーには、チームのスキル習得、自社 IP と専門性による差別化、市場開拓支援の活用を勧めました。Azure Catalyst は顧客への提案前に自社でも試し、最初の利用者になるよう呼び掛けました。"
+    }
+  ]
+}

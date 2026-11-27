@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2152","sessionId":"1787854998771001t7OQ","offeringId":"1787854998771001t7OQ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=hh6evHEG5ZY","basis":"captions",
+  "summary":[{"atSeconds":143,"text":"Microsoft 365 で使うエージェントの中には利用者本人のアクセス権で動くものがあり、人とエージェントが参照できるデータの両方を把握する必要があると説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":290,"text":"規制対象のファイルに秘密度ラベルと暗号化を適用し、アクセスできる利用者を指定したグループに限定する例を示しました。"}],
+  "tips":[{"atSeconds":480,"text":"保護設定だけでなく、Purview の監査記録から、どのエージェントがどのファイルを参照し、どのポリシーが作動したかを確認します。"}]
+}

@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1100",
+  "sessionId": "1787858593384001SWcm",
+  "offeringId": "1787858593384001SWcm-1791588215887001CZtg",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=o-SFDRQPuKA",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 373,
+      "text": "Huntress は Microsoft 365 の ID 侵害調査を題材に、SOC の監視、脅威調査、封じ込めを連携させる防御上の重要性を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 601,
+      "text": "調査事例では、担当者間で連携してアカウントとセッションの状態を是正し、侵害が継続していないか確認したと説明しました。攻撃の再現方法は扱いません。"
+    },
+    {
+      "atSeconds": 1250,
+      "text": "製品の報告画面はデモポータルのスクリーンショットであり、実顧客の情報ではないと明示しました。検知した事実と次の対応を読み取れる報告の形を紹介しています。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1152,
+      "text": "MFA は重要でも万能ではないため、利用者教育と継続的な ID 監視を組み合わせ、見慣れた依頼でも接続先を確認する習慣が必要だと述べました。"
+    }
+  ]
+}

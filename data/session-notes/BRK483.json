@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK483",
+  "sessionId": "1787856646751001Eyi3",
+  "offeringId": "1787856646751001Eyi3-1791588216115001CsDE",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=sP8lMnk9P_g",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 11,
+      "text": "パートナー向けに、エージェントを組み込んだソフトウェア開発ライフサイクルを取り上げました。Azure Catalyst について、既存環境の把握、移行計画、移行の実行、GitHub Copilot によるモダナイゼーションを支援する仕組みとして紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 279,
+      "text": "Microsoft 内部の事例として、GitHub Copilot SDK のランタイムを TypeScript から Rust へ変換した取り組みを紹介しました。一括置換ではなく、相互運用を使って既存コードと新コードを本番で共存させながら段階的に移行したと説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 576,
+      "text": "最初から製品変更を大量に任せるのではなく、小さなチームで明確な成果を定め、障害・テレメトリ・性能回帰・テストなど品質を支える仕組みを先に改善するよう勧めました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2158","sessionId":"1787854999410001tytV","offeringId":"1787854999410001tytV-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=R4XeF9oAPWA","basis":"captions",
+  "summary":[{"atSeconds":273,"text":"EfficientIP が、既存の Windows Server DNS・DHCP や Azure DNS を置き換えず、SOLIDserver から IP アドレス管理と合わせて扱う方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":693,"text":"デモ用のネットワークで管理対象のアドレス範囲から空き IP を選び、DNS レコードとひも付ける例を示しました。"}],
+  "tips":[{"atSeconds":440,"text":"ネットワーク上の出来事を調べる際、IP アドレスだけで判断せず、必要に応じて利用者や時刻の情報と突き合わせます。"}]
+}

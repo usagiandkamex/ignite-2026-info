@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1105",
+  "sessionId": "1787858594120001SZiv",
+  "offeringId": "1787858594120001SZiv-1791588294418001C5be",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=AgOkQFPUBVI",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 375,
+      "text": "Equinix は、従来のネットワーク接続拠点に AI ゲートウェイ、ガードレール、可観測性を加える分散 AI ハブの考え方を紹介しました。既存設備をすべて置き換えるのではなく機能を追加する構成です。"
+    },
+    {
+      "atSeconds": 559,
+      "text": "Microsoft は Equinix との協業において、ExpressRoute によるプライベート接続がオンプレミスと Azure をつなぐ基盤になると説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 829,
+      "text": "配置例として、店舗ごとに推論用機器を置かず、Equinix 拠点の Azure Local や Azure Arc と Azure を組み合わせて複数店舗を支える構想を示しました。特定顧客の導入成果の数値ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 829,
+      "text": "推論基盤の配置は遅延だけでなく、拠点への技術者派遣などの運用費やデータ主権の条件も合わせて検討すべきだと説明しました。"
+    }
+  ]
+}

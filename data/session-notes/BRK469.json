@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK469",
+  "sessionId": "1787856644615001EMWj",
+  "offeringId": "1787856644615001EMWj-1791588308717001ChGN",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=5_GMx0wglxU",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 247,
+      "text": "製造業の設計情報や業務システムのデータ・プロセス・モデルを結び、Microsoft IQ のコンテキストをエージェントに渡し、Copilot と Agent 365 を通じて利用・統制する構成を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 524,
+      "text": "SICK の登壇者が、要求仕様の構造化からシステム設計、ソフトウェアとハードウェアへの機能配分、詳細設計へ情報をつなぐデジタルスレッドを説明しました。"
+    },
+    {
+      "atSeconds": 1099,
+      "text": "設計例では、まだ製造していないセンサーが用途に適合するかを仮想環境で評価しました。視覚・センシング・機能などのモデルを整備し、OpenUSD の資産を Omniverse ベースのシミュレーションへ渡す流れを示しました。"
+    }
+  ],
+  "tips": []
+}

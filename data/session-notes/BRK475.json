@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK475",
+  "sessionId": "1787856645522001ESfS",
+  "offeringId": "1787856645522001ESfS-1791588217467001CtzI",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=8AARLSbxbts",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 14,
+      "text": "Physical AI を、製造・品質・サプライチェーンの実世界を知覚し、推論し、行動する知能と説明しました。分析結果を見せるだけでなく、人・設備・システムをつないで実際の対応に結び付ける考え方を示しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1408,
+      "text": "Unilever の紹介映像では、Pondicherry の工場で小停止や段取り替えの非効率を改善するため、Accenture、NVIDIA、Microsoft と Physical AI デジタルツインを構築中だと説明しました。生産能力やコストの数値は目標として示され、達成済みの成果とは区別されていました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 874,
+      "text": "即時性や安全性が重要な判断は現場に近いエッジに残しつつ、Arc による管理、データと意味付け、インテリジェンスの各層をクラウドと共通化する構成を説明しました。"
+    }
+  ]
+}

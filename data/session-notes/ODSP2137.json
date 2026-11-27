@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2137","sessionId":"1787854997202001thw1","offeringId":"1787854997202001thw1-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=R_wrXxbOoA0","basis":"captions-ja",
+  "summary":[{"atSeconds":1,"text":"PowerSyncPro が、ディレクトリの同期と Windows 端末の移行を組み合わせ、既存の Active Directory から Microsoft Entra ID に参加する構成へ移す選択肢を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1097,"text":"デモでは端末を再起動して移行が続く間も、移行サーバーからバッチごとに進捗を確認できることを示しました。"}],
+  "tips":[{"atSeconds":611,"text":"移行で端末に適用する手順はランブックにまとめ、対象の端末と実行時刻はバッチで指定します。"}]
+}

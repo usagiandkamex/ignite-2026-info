@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2151","sessionId":"1787854998664001tRwZ","offeringId":"1787854998664001tRwZ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=o26fu5be_YU","basis":"captions",
+  "summary":[{"atSeconds":264,"text":"Active Directory のドメイン コントローラーを冗長化していても、設定やアプリの ID が削除された場合に元へ戻せるとは限らないため、別に復旧手順が必要だと説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":961,"text":"アプリが利用するサービス プリンシパルが削除された企業の例を挙げ、ハイブリッド環境では同期されるデータ以外にも復旧対象があると説明しました。"}],
+  "tips":[]
+}

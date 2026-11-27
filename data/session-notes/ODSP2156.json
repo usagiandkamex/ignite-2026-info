@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2156","sessionId":"1787854999208001tVly","offeringId":"1787854999208001tVly-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=uYMastWJwmc","basis":"captions",
+  "summary":[{"atSeconds":201,"text":"Splashtop が、提供済みのアプリだけでなく、自社で用意したインストーラーも Intune 配布用にパッケージ化する Agentic Packer を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":534,"text":"Intune の配布テンプレートを作り、所有者や参照 URL、会社ポータルでの表示設定を入力するデモを行いました。"}],
+  "tips":[{"atSeconds":925,"text":"パッケージングを自動化しても、何が作られ、どのような設定で配布されるかを管理者が確認できるようにします。"}]
+}

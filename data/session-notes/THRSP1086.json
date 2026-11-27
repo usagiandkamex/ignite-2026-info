@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1086",
+  "sessionId": "1787858590121001Sovz",
+  "offeringId": "1787858590121001Sovz-1791588215428001CLYk",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=pGLR853XYC8",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 179,
+      "text": "ASUS と Intel は、クラウドの ID・ポリシーによる判断を、端末の健全性を示す信頼できるハードウェアの証拠で支える必要性を説明しました。"
+    },
+    {
+      "atSeconds": 381,
+      "text": "ASUS Expert Guardian ではファームウェアの保護、改ざん検知、復旧を重視し、OS より下の層も含めて端末を守る設計を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 623,
+      "text": "製品デモでは ASUS Config Manager for Intune を紹介し、普段の Intune コンソールから BIOS 設定や管理者パスワード、BIOS・ドライバー更新を一元管理する画面を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1317,
+      "text": "耐量子暗号への備えは次回の端末更新だけの問題ではなく、データの機密保持期間とハードウェア内の信頼の起点の寿命を考慮して調達時点から検討すべきだと述べました。"
+    }
+  ]
+}

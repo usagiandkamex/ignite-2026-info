@@ -1,0 +1,26 @@
+{
+  "sessionCode": "THRSP1101",
+  "sessionId": "1787858593527001STqP",
+  "offeringId": "1787858593527001STqP-1791588230018001CYI1",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 26,
+      "text": "Commvault はオンプレミス、Azure、SaaS にまたがる保護・復旧を説明し、エージェントを使う業務も含めて復旧対象を考える必要性を示しました。"
+    },
+    {
+      "atSeconds": 678,
+      "text": "Azure ネイティブの利用体験として、Azure ポータルでの発見と購入から、保護計画や保持期間の設定、復旧に至る一連の流れを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 375,
+      "text": "年に一度の復旧訓練に頼るのではなく、隔離された復旧環境を使って日常的に練習し、障害時の対応を普段の運用に組み込むよう勧めました。"
+    }
+  ]
+}

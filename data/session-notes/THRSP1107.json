@@ -1,0 +1,37 @@
+{
+  "sessionCode": "THRSP1107",
+  "sessionId": "1787858594429001Scya",
+  "offeringId": "1787858594429001Scya-1791588266663001CgEM",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions-ja",
+  "summary": [
+    {
+      "atSeconds": 1161,
+      "text": "Lucidity は複数のディスクをプール化し、その上の仮想ディスクを介して容量を調整する方式を説明しました。Azure の個別ディスクを単純に縮小する機能とは区別しています。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 247,
+      "text": "Ignite に合わせて公開した AI Actions Engine について、費用削減の推奨表示だけでなく、アプリケーションやポリシーの文脈を踏まえて実行につなげる狙いを紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 416,
+      "text": "Commvault SaaS はバックアップ本体に Azure Blob Storage を使う一方、インデックスやメタデータ処理には SSD を使っており、処理ごとに容量や IOPS の要件が異なると説明しました。"
+    },
+    {
+      "atSeconds": 1064,
+      "text": "Commvault の登壇者は、Lucidity を 2 年以上利用し、管理対象ストレージの費用を 40%削減、純削減額を 200 万ドル、関連するアラート・インシデントを約半分に減らしたと報告しました。同社事例の数値であり、一般的な削減保証ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 703,
+      "text": "容量と性能を一緒に増やしていた Premium SSD v1 の構成を見直す際は、容量、IOPS、スループットを独立して調整できる Premium SSD v2 との違いを確認する観点を示しました。"
+    }
+  ]
+}

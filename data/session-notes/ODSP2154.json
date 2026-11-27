@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2154","sessionId":"1787854999002001tAbJ","offeringId":"1787854999002001tAbJ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=cqnEjyCBoAQ","basis":"captions-ja",
+  "summary":[{"atSeconds":316,"text":"SAP を正本として残しながら、Microsoft Fabric や Azure Databricks などで業務データを整理し、エージェントが判断材料にできるようにする構成を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":110,"text":"在庫切れの原因を調べる例で、注文、設備の保全、拠点、IoT の情報を人が個別に照合すると時間がかかることを示しました。"},{"atSeconds":924,"text":"社名非公開の飲料メーカーでは、在庫、荷さばき、物流に情報が分散し、出荷遅延の理由を現場で特定しにくかったと報告しました。"}],
+  "tips":[]
+}

@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK471",
+  "sessionId": "1787856644921001EHQp",
+  "offeringId": "1787856644921001EHQp-1791814918034001CG4d",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=8o-9GuUck90",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 3,
+      "text": "製造現場の作業者が抱える問題を起点に、Microsoft、Big River Steel、Sight Machine が、仕事の流れの中で AI による判断支援を届ける取り組みを議論しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 802,
+      "text": "Big River Steel は、めっき工程の品質に関する取り組みで、業務データと工程・設備データをつなぐ難しさを説明しました。現場では複数のシステムを見比べる必要があり、Sight Machine と共通の改善パターンを作ったと述べました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 802,
+      "text": "展開のたびに一から構築せず、データ接続、改善に効く要因のモデル化、作業者へのガイダンス、効果の実証と反復という流れを再利用する方法を紹介しました。"
+    }
+  ]
+}

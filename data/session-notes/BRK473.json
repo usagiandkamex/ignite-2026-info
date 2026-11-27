@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRK473",
+  "sessionId": "1787856645220001EUhq",
+  "offeringId": "1787856645220001EUhq-1791588268917001CGsN",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=VO0pjIubjXE",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 7,
+      "text": "金融機関がアプリ・エージェント・フローの作成を促しながら、企業規模で安全に本番運用するための Power Platform ガバナンスを説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 446,
+      "text": "State Farm の Power Platform 管理担当者が、情報セキュリティ、プライバシー、コンプライアンス、法務の関係者と協力し、Power Platform と Copilot Studio を安全に利用できる環境を整えた取り組みを紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 784,
+      "text": "研修・ワークショップから個人用環境での課題解決へ進み、次にチームの生産性向上へ広げる段階的な作成者育成を紹介しました。"
+    },
+    {
+      "atSeconds": 1924,
+      "text": "業務が依存するアプリやエージェントは本番ソフトウェアとして扱い、実行基盤、開発環境から本番への昇格、稼働状態の監視を一体で設計するよう説明しました。"
+    }
+  ]
+}

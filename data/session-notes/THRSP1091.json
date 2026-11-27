@@ -1,0 +1,26 @@
+{
+  "sessionCode": "THRSP1091",
+  "sessionId": "1787858590854001S249",
+  "offeringId": "1787858590854001S249-1791588238182001CrdG",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=c-6wFuYz7h0",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 429,
+      "text": "HPE は Azure Local を、Azure のポータル、API、管理・セキュリティ・ガバナンスをオンプレミスへ広げる基盤として位置付けました。"
+    },
+    {
+      "atSeconds": 790,
+      "text": "クラウド接続を利用する通常の運用に加え、切断された環境で運用する選択肢にも触れ、配置場所の制約と Azure に一貫した運用を両立する考え方を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 193,
+      "text": "近代化の判断ではサーバー台数だけでなく、既存世代の消費電力、集約可能性、電力あたりの性能を確認するよう勧めました。"
+    }
+  ]
+}

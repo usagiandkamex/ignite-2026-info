@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2135","sessionId":"1787854996972001tKbw","offeringId":"1787854996972001tKbw-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=RSs4IgSBQxc","basis":"captions-ja",
+  "summary":[{"atSeconds":406,"text":"StackGen が、サイト信頼性エンジニアリングに AI を使う際、観測データを渡す仕組み、エージェントの実行基盤、操作のポリシーを一緒に設計する方法を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":762,"text":"検証用の GPU クラスターでメモリ不足が発生したとき、AI を使った分析だけでは正しい修正にたどり着けなかった例が紹介されました。"}],
+  "tips":[]
+}

@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK474",
+  "sessionId": "1787856645372001Euij",
+  "offeringId": "1787856645372001Euij-1791588243916001CFOX",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=13TfqEcB3dw",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 512,
+      "text": "Aon は、顧客のリスク判断を支えるには信頼できるデータ層が不可欠だと説明し、Azure へのデータセンター移行を含むモダナイゼーションを AI 活用の基盤に位置付けました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1565,
+      "text": "Aon は、複数文書を読み取って構造化データにする処理を Azure AI Foundry 上の共通パターンとして定義し、証明書、保険証券、保険金請求など異なる業務へ再利用したと説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2422,
+      "text": "多数の PoC を無差別に試すのではなく、まず実現したい業務成果を定めることが重要だと述べました。技術そのものより成果を起点にする方針が、Aon の取り組みを支えたと振り返りました。"
+    }
+  ]
+}

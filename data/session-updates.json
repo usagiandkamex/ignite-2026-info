@@ -195,6 +195,29 @@
       {"id":"az-581634","context":"講演で発表した次世代 Azure Elastic SAN の公式更新です。"},
       {"id":"az-579031","context":"講演で紹介した Azure Blob Storage の Turbo Tier の公式更新です。"}
     ],
+    "BRK469": [
+      {"id":"bon-499","context":"講演で説明した Microsoft IQ による業務コンテキストの活用を補足する公式発表です。"}
+    ],
+    "BRK482": [
+      {"id":"az-581323","context":"講演で実演した Microsoft Foundry の支出上限と通知に対応する公式更新です。"}
+    ],
+    "BRK483": [
+      {"id":"bon-448","context":"講演で紹介した Azure Catalyst と GitHub Copilot による移行・刷新の公式発表です。"}
+    ],
+    "BRK486": [
+      {"id":"bon-460","context":"講演で触れた Rayfin と Fabric アプリの公式発表です。"},
+      {"id":"bon-503","context":"講演で紹介した Fabric IQ の業務コンテキスト統合を補足する公式発表です。"},
+      {"id":"bon-453","context":"講演で比較した Azure HorizonDB の公式発表です。"},
+      {"id":"bon-457","context":"講演で比較した Microsoft Fabric HorizonDB の公式発表です。Azure HorizonDB とは別です。"}
+    ],
+    "BRK488": [
+      {"id":"bon-448","context":"講演で取り上げた Azure Catalyst の既存環境の調査・移行・刷新に関する公式発表です。"}
+    ],
+    "BRK489": [
+      {"id":"az-581220","context":"講演で紹介した Sovereign Control Panel の公開プレビューに対応する公式更新です。"},
+      {"id":"az-581226","context":"講演で紹介した Data Guardian を Sovereign Control Panel から確認する機能の公式更新です。"},
+      {"id":"az-581221","context":"講演で触れた Production Touch Ledger の第三者評価報告書です。地域ごとの提供を保証するものではありません。"}
+    ],
     "BRKSP595": [
       {"id":"bon-516","context":"講演で示したエージェントや MCP ツールの可視化・統制を補足する Agent 365 の公式発表です。"}
     ],
@@ -275,6 +298,12 @@
     "ODSP2110": [
       {"id":"bon-465","context":"講演のモデル評価を補足する Foundry の評価・最適化機能の公式発表です。講演で実演したパイプラインとは別です。"}
     ],
+    "ODSP2151": [
+      {"id":"bon-526","context":"講演が扱った ID 基盤の復旧と関係する、Microsoft Entra のバックアップ・復旧機能の公式発表です。"}
+    ],
+    "ODSP2152": [
+      {"id":"bon-533","context":"講演で取り上げた Copilot とエージェントのデータ保護を補足する Microsoft Purview の公式発表です。"}
+    ],
     "THR871": [
       {"id":"bon-503","context":"講演で扱った Fabric IQ のセマンティックモデルの活用に関連する公式発表です。"}
     ],
@@ -331,6 +360,9 @@
     ],
     "THRSP1062": [
       {"id":"bon-499","context":"講演が取り上げた Work IQ と Fabric IQ による業務コンテキスト活用の公式発表です。Tia 自体の発表ではありません。"}
+    ],
+    "THRSP1085": [
+      {"id":"bon-460","context":"講演で用いた Fabric アプリの公式発表です。Replit 向けテンプレートの発表とは別です。"}
     ]
   }
 }
