@@ -18,6 +18,7 @@ REFERENCE_FILES = ("azure-updates.json", "session-videos.json", "session-updates
 UPDATE_EDITORIAL = DATA / "update-editorial.json"
 RECORDING_SOURCES = DATA / "recording-sources.json"
 SESSION_SPEAKERS = DATA / "session-speakers.json"
+SPEAKER_EDITORIAL = DATA / "speaker-editorial.json"
 SESSION_NOTES_DIR = DATA / "session-notes"
 BOOK_URL = "https://news.microsoft.com/events/ignite/2026/book-of-news/"
 
@@ -446,6 +447,31 @@ def load_session_speakers(catalog):
     require(type(data["schemaVersion"]) is int and data["schemaVersion"] == 1,
             "session-speakers.json: unsupported schema version")
     return validate_session_speakers(data, {s["code"]: s for s in catalog["sessions"]})
+
+
+def validate_speaker_editorial(data, speaker_details):
+    keys(data, "schemaVersion checkedOn speakers", "speaker editorial")
+    require(type(data["schemaVersion"]) is int and data["schemaVersion"] == 1,
+            "Unsupported speaker editorial schema version")
+    iso_date(data["checkedOn"])
+    require(isinstance(data["speakers"], dict), "speaker editorial: expected speaker map")
+    profiles = {}
+    for record in speaker_details.values():
+        for profile in record["speakers"]:
+            profiles.setdefault(profile["id"], []).append(profile["sourceUrl"])
+    for speaker_id, entry in data["speakers"].items():
+        keys(entry, "summaryJa sourceUrl", f"{speaker_id} speaker editorial")
+        require(speaker_id in profiles, f"{speaker_id}: unknown speaker editorial ID")
+        text(entry["summaryJa"], f"{speaker_id} Japanese speaker summary")
+        official_url(entry["sourceUrl"])
+        require(all(entry["sourceUrl"] == source_url for source_url in profiles[speaker_id]),
+                f"{speaker_id}: speaker editorial source does not match the official profile")
+    return data["speakers"]
+
+
+def load_speaker_editorial(speaker_details):
+    data = json.loads(SPEAKER_EDITORIAL.read_text(encoding="utf-8"))
+    return validate_speaker_editorial(data, speaker_details)
 
 
 def load_references(catalog, updates, notes):

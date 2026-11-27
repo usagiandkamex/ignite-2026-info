@@ -13,7 +13,7 @@ Pages の `/ignite-2026-info/llms.txt` が入口です。次の JSON は同じ�
 | --- | --- |
 | [`event.json`](data/event.json) | 開催概要、米国太平洋時間の会期、開幕・パートナーキーノート、日本語要約、出典、確認済みの場合の公開録画 URL。 |
 | [`sessions.json`](data/sessions.json) | 一覧・検索用の軽量カタログ。タイトル、コード、開催枠、スピーカー名を収録。`sessions[].code` から対象の個別 JSON を取得できます。 |
-| `data/sessions/{code}.json` | 個別セッションの公式メタデータ、スピーカーの役職・所属・プロフィール URL、確認済みの録画要約。例: `data/sessions/BRK449.json`。 |
+| `data/sessions/{code}.json` | 個別セッションの公式メタデータ、スピーカーの役職・所属・プロフィール URLと、一部スピーカーの担当製品・活動内容の日本語要約、確認済みの録画要約。例: `data/sessions/BRK449.json`。 |
 | [`updates.json`](data/updates.json) | Book of News 全 59 発表項目の独自の日本語要約。`id` は元の Book of News 項目 ID に対応。各項目に分野、発表時の提供区分と公式出典があります。 |
 | [`azure-updates.json`](data/azure-updates.json) | 公式 Azure Updates の `Microsoft Ignite` タグ付き・2026 年公開の投稿。公開版は確認済みの日本語概要と技術記事も収録します。 |
 | [`session-videos.json`](data/session-videos.json) | 公式 YouTube 動画の対応表。要約の有無にかかわらず、照合できたセッションだけを掲載します。 |
@@ -21,6 +21,7 @@ Pages の `/ignite-2026-info/llms.txt` が入口です。次の JSON は同じ�
 
 - `schemaVersion: 1`、`checkedOn` と `reviewedOn` は日本時間の出典確認日（`YYYY-MM-DD`）。`startUtc` / `endUtc` は UTC（末尾 `Z`）。本会期と個々の開催枠の時刻は別に扱います。
 - `sessions.json` は一覧向けにスピーカー名だけを含み、役職・所属・プロフィール URL は含みません。AI はこの一覧で対象を特定してから `data/sessions/{code}.json` を取得してください。個別 JSON の `speakers` に公式プロフィールを収録し、`unresolvedSpeakers` は照合できなかった ID 数です。プロフィールの確認日は個別 JSON の元データ `data/session-speakers.json` に記録しています。スピーカー名の文字列を分割して ID と推測で結び付けません。
+- `speaker-editorial.json` は、公式 Ignite スピーカープロフィールで確認した担当製品・活動内容の日本語要約です。公式プロフィール ID と URL で照合し、情報のあるスピーカーだけ個別 JSON と詳細ページに表示します。公式プロフィールへのリンクは各スピーカー名にあります。
 - セッションの英語タイトル・分類値は公式表記。HTML では分類名を日本語にし、日時を JST で表示します。`hasOnDemand` はカタログ上で録画が案内されているという意味で、認証なしの視聴可否ではありません。
 - 公式セッションコード（`BRK449` など）を `session/{code}.html` と `data/sessions/{code}.json` に使います。`sessions[].id` は公式の内部 ID で、開催枠との関連付け用です。個別 JSON の `recordingReview.status` は `reviewed`、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（公開録画の案内なし）です。未確認なら `recordingReview.note` は `null`。これは「紹介されたアップデート・事例・Tips が存在しなかった」という意味ではありません。
 - 録画要約の `atSeconds` は録画開始からの秒数です。公式イベント録画を参照した場合、`offeringId` が開催枠を示し、`basis` は公式英語字幕（`captions`）、英語字幕と YouTube チャプター（`captions-and-chapters`）、公式日本語字幕（`captions-ja`）のいずれかです。公式 YouTube の文字起こしを参照した場合は `basis` が `youtube-transcript` になり、時刻は `youtubeUrl` の録画を指します。版によって編集が異なることがあります。各時刻の前後を参照した要約であり、全編を確認したことは示しません。`summary` / `updates` / `cases` / `tips` を分け、確認した範囲で根拠を拾えなかった欄は空配列です。`announcementId` がある更新は `updates.json` の項目に対応します。
