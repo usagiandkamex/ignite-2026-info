@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRKSP601",
+  "sessionId": "1787854983514001tUM8",
+  "offeringId": "1787854983514001tUM8-1791588196008001CfTD",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=KBKMHowkRmE",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 330,
+      "text": "現場で作られたエージェントを管理する際、どんなエージェントが社内にあるか見えないことと、問題が起きた際の責任者が分からないことを代表的な課題に挙げました。"
+    },
+    {
+      "atSeconds": 579,
+      "text": "Agent 365 でエージェントを把握する方法として、Copilot Studio や Foundry などからの自動同期、他社基盤との連携、自社開発エージェントの取り込みを説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1678,
+      "text": "デモでは、Python 製の給与関連エージェントに固有の ID を割り当て、Microsoft Entra Agent ID の画面で所有者とスポンサーを確認できるようにしました。"
+    }
+  ],
+  "tips": []
+}

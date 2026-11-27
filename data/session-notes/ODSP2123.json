@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2123","sessionId":"1787854995743001tVop","offeringId":"1787854995743001tVop-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=wKlCg4qX0mI","basis":"captions-ja",
+  "summary":[{"atSeconds":1,"text":"端末やサーバーにセキュリティポリシーを適用していても、紙や PDF で届く請求書を処理する流れは、別に点検が必要だと説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":439,"text":"請求書の項目を読み取り、確認が必要なものを一覧にするアシスタントをデモで作成しました。"}],
+  "tips":[{"atSeconds":960,"text":"例外に当たる請求書は自動処理に任せず、人が確認する手順に回し、その結果を記録します。"}]
+}

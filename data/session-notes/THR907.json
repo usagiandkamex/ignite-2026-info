@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR907", "sessionId": "1787856583350001Eojv", "offeringId": "1787856583350001Eojv-1791846356649001bg0t", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=RX-ZLBNpz4E", "basis": "captions",
+  "summary": [
+    {"atSeconds": 379, "text": "Duke Health の責任者は、ランサムウェアからの復旧が遅れると、紙での診療や検査結果を共有できない状態が長引くと指摘しました。システム停止が診療に及ぼす影響を重視しています。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 734, "text": "Duke Health は、電子健康記録（EHR）の災害復旧をクラウド活用の出発点にしました。従来のデータセンターに大きな設備投資を重ねずに、復旧環境を刷新できるかを検討しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1090, "text": "クラウドへの移行を一度に進めず、対象を段階的に広げたことを Duke Health の教訓として紹介しました。どの順序で進めるかは、組織ごとに異なるとも付け加えました。"}
+  ]
+}

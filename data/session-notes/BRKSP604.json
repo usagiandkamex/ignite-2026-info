@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRKSP604",
+  "sessionId": "1787854984164001t0t5",
+  "offeringId": "1787854984164001t0t5-1791588200649001Caph",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=DzHNJ6quMHQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 200,
+      "text": "Dell は Azure Local を、組織が所有する機器を自ら選んだ場所に置いて Azure の機能を使う方法として説明し、導入を支援する取り組みを紹介しました。"
+    },
+    {
+      "atSeconds": 652,
+      "text": "Microsoft 365 Local の構成例では、Azure Local 上に Exchange、SharePoint、Skype for Business をテンプレートで展開し、組織が自ら管理する仕組みを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1998,
+      "text": "顧客事例では、製造の処理やデータはオンプレミスに置き、ERP と CRM は Azure、データ活用の一部は Fabric と、用途に応じて配置先を分けていました。"
+    }
+  ],
+  "tips": []
+}

@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRKSP592",
+  "sessionId": "1787854982894001tEoN",
+  "offeringId": "1787854982894001tEoN-1791588219541001CBfy",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=aeUJS2Tvd0U",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 210,
+      "text": "クラウド販売では新規顧客や追加提案で事業を伸ばすだけでなく、顧客が実際にサービスを使い、業務に定着させることが収益や契約更新につながると説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1801,
+      "announcementId": null,
+      "text": "Arrow は、単独ではなく複数のエージェントが連携する営業支援の仕組みを披露しました。"
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 934,
+      "text": "ArrowSphere のセキュリティダッシュボードでは、複数の顧客について Microsoft や他ベンダーのチェック結果をまとめて確認し、顧客ごと、さらにリソース単位の詳細に進めると紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1825,
+      "text": "選択肢の多さに顧客が戸惑っているときは、販売するエージェントを先に決めず、顧客が解決したい問題から提案を組み立てます。"
+    }
+  ]
+}

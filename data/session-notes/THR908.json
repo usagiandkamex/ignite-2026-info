@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR908", "sessionId": "1787856583500001E4Ri", "offeringId": "1787856583500001E4Ri-1789752115318001dQWu", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=CYhy09vFmxo", "basis": "captions",
+  "summary": [
+    {"atSeconds": 628, "text": "OS の保護機能に加え、社外にある PC でも更新やパッチを受け取れるように、ネットワーク接続をどう確保するかを論じました。Verizon は選択肢として携帯回線を挙げました。"}
+  ],
+  "updates": [
+    {"atSeconds": 244, "text": "Windows の管理者保護が一般提供になり、Windows Baseline Protection はプレビュー段階にあると説明しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 1180, "text": "登壇者は会場に着くまでの作業を例に、5G 接続の PC なら、会場の Wi-Fi のパスワードを確認したり混雑を避けたりするために作業を中断せずに済むと紹介しました。"}
+  ],
+  "tips": []
+}

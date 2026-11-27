@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2128","sessionId":"1787854996247001tt0T","offeringId":"1787854996247001tt0T-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=d56wat04n3Y","basis":"captions",
+  "summary":[{"atSeconds":1,"text":"Nutanix が、VMware 環境の更改や移行先を考える企業に対し、Nutanix Cloud Clusters on Azure を選択肢として紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":181,"text":"移行するワークロードごとに、ビジネスが受け入れられる変更量と、移行期間、リスク、費用を見比べます。"},{"atSeconds":429,"text":"移行計画には、Azure のサブネットと既存拠点への接続を含め、ネットワーク担当者と先に確認します。"}]
+}

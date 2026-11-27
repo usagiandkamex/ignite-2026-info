@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2120","sessionId":"1787854995397001trHv","offeringId":"1787854995397001trHv-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=lMSd0evhtFk","basis":"captions-ja",
+  "summary":[{"atSeconds":4,"text":"Canonical が、企業向け Linux の選定で、開発者が使い慣れた環境と、本番のセキュリティ、コンプライアンス、サポートの要件を両立させる考え方を説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":445,"text":"対応する重大なカーネル脆弱性に対し、すぐに再起動できない環境では Livepatch を検討し、必要な再起動や更新の計画と組み合わせます。"}]
+}

@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR905", "sessionId": "1787856583052001EXeB", "offeringId": "1787856583052001EXeB-1791588165124001CITu", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=xkhd4M68WyM", "basis": "captions",
+  "summary": [
+    {"atSeconds": 146, "text": "Azure IoT Operations が現場ネットワーク上の産業機器を検出し、Azure Resource Manager の管理対象に登録する流れを紹介しました。接続先の例には OPC UA や SQL Server が挙がりました。"},
+    {"atSeconds": 720, "text": "Azure IoT Operations と IoT Hub のデータを、Fabric Real-Time Intelligence で同じ Eventhouse に送ります。工場設備と車両のデータを別々に分析せず、共通の基盤に集約する構成です。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 26, "text": "シアトルのトラックをまとめたグループにソフトウェア更新を配信し、管理画面のジョブ実行履歴から配信状況を確認しました。"},
+    {"atSeconds": 326, "text": "工場の搬送機を題材に、設備の扉が閉じていることを運転条件として情報モデルに加える例を示しました。Sight Machine は、Fabric に取り込むデータの形式を整える役割を担います。"}
+  ],
+  "tips": []
+}

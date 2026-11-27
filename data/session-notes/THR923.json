@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR923", "sessionId": "1787856675900001ECWM", "offeringId": "1787856675900001ECWM-1791588282849001CsvI", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=BTDET2w52dM", "basis": "captions",
+  "summary": [
+    {"atSeconds": 559, "text": "Azure のオープンソース系マネージドデータベースで、AI を使うアプリの開発と、既存ワークロードをより大規模に運用するための機能という二つの方向から更新を解説しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 559, "text": "発表週に Azure HorizonDB が一般提供になったと案内しました。従来の Azure Database for PostgreSQL や Azure Database for MySQL と並ぶ選択肢です。", "announcementId": "bon-453"},
+    {"atSeconds": 1040, "text": "Azure Database for PostgreSQL で追加されたコンピューティングの選択肢と、Ultra Disk ストレージのプレビュー、SSD v2 ストレージの自動拡張を取り上げました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": [
+    {"atSeconds": 1740, "text": "PostgreSQL への移行を検討する人向けに、AI を使った移行支援や、既存のデータベース群を刷新した事例を扱う別セッションを案内しました。"}
+  ]
+}

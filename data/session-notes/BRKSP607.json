@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRKSP607",
+  "sessionId": "1787854984803001tDfb",
+  "offeringId": "1787854984803001tDfb-1791588221578001CQK6",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=tCs5G4JaAm4",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 121,
+      "text": "SAP Joule Work では、利用者が自然言語でやりたいことを伝え、SAP の業務情報を踏まえた回答を得たり、ワークフローを実行したりできると紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 600,
+      "text": "SAP と Microsoft の連携を設定すると、Teams や Copilot Chat から Joule を呼び出せるほか、Joule Work 側からも Copilot のデータを参照できると説明しました。"
+    },
+    {
+      "atSeconds": 855,
+      "text": "ローカルファイルをクラウドにアップロードできない組織向けに、Joule Work Desktop が端末内のファイルやアプリを扱えることを紹介しました。"
+    }
+  ],
+  "tips": []
+}

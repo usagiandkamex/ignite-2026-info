@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR931", "sessionId": "1787856587050001EojS", "offeringId": "1787856587050001EojS-1791588277661001C83v", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=wqk8KiAdAsg", "basis": "captions",
+  "summary": [
+    {"atSeconds": 51, "text": "従業員だけでなくエージェントも認証済みのブラウザーで作業するため、ブラウザーの設定と保護を中小企業向けの管理サービスとして取り上げました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 431, "text": "複数の顧客テナントの中から対象を選び、Edge for Business の推奨セキュリティ設定を割り当て、テナントごとに推奨設定との一致状況を確認しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 244, "text": "マネージドサービスとして提供する作業を、現状評価、導入、保守、見直しの四段階に分けます。最初の現状評価で、現在の設定と目指す設定の差を顧客に示します。"},
+    {"atSeconds": 1063, "text": "Edge for Business の MSP キットを使うと、サービスガイドで初期作業と継続支援の範囲を決め、機能表で顧客のライセンスに含まれる項目を確認できます。"}
+  ]
+}

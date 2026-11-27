@@ -11,7 +11,9 @@
   ],
   "updates": [
     {"atSeconds": 506, "announcementId": null, "text": "VM Scale Sets の Flexible オーケストレーションと連携し、障害ドメインの割り当てと管理を行うブロックストレージの機能をプレビューとして紹介しました。"},
-    {"atSeconds": 2689, "announcementId": null, "text": "大容量データを低遅延・高スループットで扱う AI ワークロード向けに、Azure Blob Storage の Turbo Tier を紹介しました。"}
+    {"atSeconds": 543, "announcementId": null, "text": "Azure Disk Storage では、指定期間中の書き換えや削除を防ぐ変更不可のスナップショットがプレビューになりました。"},
+    {"atSeconds": 1406, "announcementId": null, "text": "次世代 Azure Elastic SAN を発表し、新しい二つの階層によって、より高い性能や規模が必要なワークロードに対応すると説明しました。"},
+    {"atSeconds": 2724, "announcementId": null, "text": "大容量データを低遅延・高スループットで扱う AI ワークロード向けに、Azure Blob Storage の Turbo Tier を公開プレビューとして紹介しました。"}
   ],
   "cases": [],
   "tips": [

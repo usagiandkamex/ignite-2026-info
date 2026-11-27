@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR913", "sessionId": "1787856584265001EOXo", "offeringId": "1787856584265001EOXo-1791588290668001CAgP", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=43fx2rU6O0k", "basis": "captions",
+  "summary": [
+    {"atSeconds": 839, "text": "ABB の Genix は、設備データに現場での意味を持たせた上で、エージェントを既存の業務フローに組み込みます。エージェントの連携やトークン費用の管理も取り上げました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 1199, "text": "デモでは、制御システムの測定点と、IT システムの設備分類やエンジニアリング情報との対応付けを Copilot で作成しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1449, "text": "現場に影響する操作を含むフローでは、人による承認が必要だと作成時に警告し、判断をエージェントだけに任せない設計を示しました。"}
+  ]
+}

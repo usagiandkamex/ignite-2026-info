@@ -164,8 +164,20 @@
       {"id":"az-581214","context":"講演で紹介した Oracle 向け Azure Workload Center と運用エージェントの公式更新です。"},
       {"id":"az-581209","context":"講演で紹介した SAP 向け Azure Workload Center と運用エージェントの公式更新です。"}
     ],
+    "BRK439": [
+      {"id":"az-581221","context":"講演で紹介した Production Touch Ledger の第三者評価報告書です。製品の一般提供を示すものではありません。"}
+    ],
     "BRK440": [
       {"id":"az-564451","context":"セッションが扱う Azure Cobalt 200 ベースの VM についての公式更新です。"}
+    ],
+    "BRK443": [
+      {"id":"bon-443","context":"講演で実演・解説した複数 GPU の機密コンピューティングに関連する公式発表です。"}
+    ],
+    "BRK445": [
+      {"id":"az-579766","context":"講演で触れた Azure Multicloud Interconnect の接続先拡充に対応する更新です。接続先によって提供段階が異なります。"}
+    ],
+    "BRK447": [
+      {"id":"bon-457","context":"講演で言及した Microsoft Fabric HorizonDB の公式発表です。Azure HorizonDB とは別です。"}
     ],
     "BRK449": [
       {"id":"az-578839","context":"セッション後半で扱う App Service の geo 冗長化に関する公式更新です。"},
@@ -174,6 +186,23 @@
     "BRK451": [
       {"id":"az-579612","context":"Azure Database for PostgreSQL から Azure HorizonDB へ移行する機能の公式更新です。"},
       {"id":"az-579226","context":"Oracle から Azure HorizonDB へ移行する機能の公式更新です。"}
+    ],
+    "BRK452": [
+      {"id":"az-580748","context":"講演で案内した Azure Infrastructure Resiliency Manager の一般提供に対応する公式更新です。"}
+    ],
+    "BRK453": [
+      {"id":"az-581503","context":"講演で紹介した Azure Disk Storage の変更不可スナップショットの公式更新です。"},
+      {"id":"az-581634","context":"講演で発表した次世代 Azure Elastic SAN の公式更新です。"},
+      {"id":"az-579031","context":"講演で紹介した Azure Blob Storage の Turbo Tier の公式更新です。"}
+    ],
+    "BRKSP595": [
+      {"id":"bon-516","context":"講演で示したエージェントや MCP ツールの可視化・統制を補足する Agent 365 の公式発表です。"}
+    ],
+    "BRKSP596": [
+      {"id":"az-581308","context":"講演で紹介した第6世代 AMD EPYC 搭載 Azure VM の非公開プレビューに対応する公式更新です。"}
+    ],
+    "BRKSP601": [
+      {"id":"bon-526","context":"講演で実演したエージェント ID の管理に関連する Microsoft Entra の公式発表です。"}
     ],
     "LIVE75": [
       {"id":"bon-478","context":"講演が扱う支出管理と Business Analytics の対象、提供状況を補足する発表です。"}
@@ -270,6 +299,35 @@
     "THR902": [
       {"id":"az-580080","context":"講演で費用の推定や呼び出し元別の観測を実演した Azure AI Gateway の公式更新です。"},
       {"id":"az-581398","context":"モデルの振り分けに関連する別のプレビュー機能です。デモの優先順位や重みによる振り分けと同一ではありません。"}
+    ],
+    "THR908": [
+      {"id":"bon-540","context":"講演で説明した Windows Baseline Protection を含む、Windows 端末の保護に関する公式発表です。"}
+    ],
+    "THR916": [
+      {"id":"bon-503","context":"講演の Vanguard の事例で使われた Fabric IQ を補足する公式発表です。"}
+    ],
+    "THR923": [
+      {"id":"az-579388","context":"講演で案内した Azure HorizonDB の一般提供に対応する公式更新です。"},
+      {"id":"bon-458","context":"講演が扱った Azure Database for PostgreSQL のコンピューティングやストレージの更新を補足する公式発表です。"}
+    ],
+    "THR924": [
+      {"id":"az-579216","context":"講演で紹介した Microsoft Fabric の Database Hub の公式更新です。"},
+      {"id":"az-579525","context":"講演で紹介したローカル開発用 Azure SQL Database コンテナーの公式更新です。"}
+    ],
+    "THR925": [
+      {"id":"bon-460","context":"講演で扱った Rayfin と Fabric アプリに対応する公式発表です。"}
+    ],
+    "THR926": [
+      {"id":"bon-507","context":"講演で使った Work IQ による業務コンテキストの取得に関する公式発表です。デモの Power BI プロジェクト作成とは区別しています。"}
+    ],
+    "THR927": [
+      {"id":"bon-503","context":"講演の Microsoft 社内事例を補足する Fabric IQ の公式発表です。"}
+    ],
+    "THR931": [
+      {"id":"bon-492","context":"講演のブラウザー管理と保護を補足する Edge for Business の公式発表です。すべての発表項目を講演で実演したわけではありません。"}
+    ],
+    "THR933": [
+      {"id":"bon-507","context":"講演で説明した Work IQ での他社エージェント連携を補足する公式発表です。"}
     ],
     "THRSP1062": [
       {"id":"bon-499","context":"講演が取り上げた Work IQ と Fabric IQ による業務コンテキスト活用の公式発表です。Tia 自体の発表ではありません。"}

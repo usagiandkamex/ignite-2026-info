@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRKSP598",
+  "sessionId": "1787854982474001t9tR",
+  "offeringId": "1787854982474001t9tR-1791588158189001CUUF",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=VxbJPy32TAg",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 787,
+      "text": "Atera の IT サポートエージェント Robin を紹介しました。利用者や端末、ネットワークの情報を手掛かりに、短い問い合わせから診断を重ねて原因を探ります。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 827,
+      "text": "利用者に対処手順を案内してチケット対応を待つ例と、Robin が診断結果を踏まえて許可された対処を実行する例を比較しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1924,
+      "text": "Robin には初期状態で管理者権限を与えず、個別に認めた操作だけを許可すると説明しました。任せる範囲は、自社の方針や運用実績に合わせて広げます。"
+    }
+  ]
+}

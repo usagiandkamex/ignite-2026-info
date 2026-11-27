@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRKSP608",
+  "sessionId": "1787854985011001tbAl",
+  "offeringId": "1787854985011001tbAl-1791956570360001OrSR",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=BbPRdQK9CDw",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 722,
+      "text": "AI を使いこなすには、基本スキルを身に付け、小さな試行を習慣にする段階を経て、業務プロセスそのものを見直す段階に進むと説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 245,
+      "text": "Accenture は Microsoft 365 Copilot をまず 2,500 人で試し、ユースケースとセキュリティの挙動を確かめてから 2 万人に広げた経緯を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1679,
+      "text": "利用量で費用が変わる Copilot Cowork は、全員に同じように展開するのではなく、対象業務、実証したい成果、検証期間を決めて試す方針を示しました。"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR926", "sessionId": "1787856586280001Eb6m", "offeringId": "1787856586280001Eb6m-1793309963015001YM30", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=3s3AOEHD96Y", "basis": "captions",
+  "summary": [
+    {"atSeconds": 639, "text": "まず Teams で依頼者と話し、事業上どの問いに答えたいかを整理します。デモでは、その会話をもとに Work IQ プラグインを使うエージェントに仕様書を作らせました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 779, "text": "Markdown の仕様書、デザインの参考画像、元データの Excel ファイルを入力にして、エージェントに Power BI プロジェクト（PBIP）の作成を依頼しました。"},
+    {"atSeconds": 1300, "text": "財務グラフに注釈を付けたい理由と注釈の例を伝え、エージェントが追加した注釈を画面で確認しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 971, "text": "依頼どおりの外観になっていても完了とはせず、生成されたレポートに加え、その裏で使われるセマンティックモデルを検証します。"}
+  ]
+}

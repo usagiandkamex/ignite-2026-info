@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRKSP606",
+  "sessionId": "1787854984594001tMcj",
+  "offeringId": "1787854984594001tMcj-1791588201133001CHwZ",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=Gh3K6nRrhnQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 204,
+      "text": "Anthropic は、安全性をモデル完成後の検査に任せず、規模の拡大に伴うリスクの管理や、モデルの挙動を解明する研究を開発に組み込むと説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1051,
+      "text": "架空の銀行でカード利用への異議申し立てを扱うデモでは、エージェントの権限外の操作は拒否され、その動きを Foundry の監視機能と Azure Monitor で追跡できることを示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 406,
+      "text": "深い推論や長時間の処理には Opus、範囲が明確で能力・速度・費用のバランスを取りたい仕事には Sonnet、量の多い処理には速く低コストな Haiku と、用途に応じた使い分けを勧めました。"
+    }
+  ]
+}

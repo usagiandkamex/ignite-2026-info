@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2132","sessionId":"1787854996663001tBaJ","offeringId":"1787854996663001tBaJ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=qQ5IXxSQSQc","basis":"captions",
+  "summary":[{"atSeconds":102,"text":"HCLTech の Agent Passport は、エージェントの運用段階、リスク区分、実行できる場所を記録し、次の段階へ進む前に必要な確認を行う取り組みです。"}],
+  "updates":[],
+  "cases":[{"atSeconds":151,"text":"チーム内で使う低リスクのエージェントと、部門や企業全体に影響するエージェントを区別し、承認の方法を変える例を示しました。"}],
+  "tips":[{"atSeconds":324,"text":"実装前に業務価値と実現可能性を比較し、試作から廃止まで同じライフサイクルで記録を追えるようにします。"}]
+}

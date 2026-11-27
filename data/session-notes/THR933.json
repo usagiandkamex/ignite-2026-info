@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR933", "sessionId": "1787856587353001EqNK", "offeringId": "1787856587353001EqNK-1791588277887001CdCj", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=CSs0BI0_kVM", "basis": "captions",
+  "summary": [
+    {"atSeconds": 681, "text": "Microsoft 側から SAP を使う既存の導入例では、従来の API 連携が多く、Copilot のスキルやプラグインから SAP の特定の操作を呼び出していると説明しました。"},
+    {"atSeconds": 808, "text": "SAP など Microsoft 以外のエージェントから、Microsoft 側の業務情報を Work IQ 経由で利用できると説明しました。接続の選択肢として A2A と REST API にも触れました。"}
+  ],
+  "updates": [
+    {"atSeconds": 261, "text": "基調講演で発表された Copilot の Autopilot について、デモで使う版は Microsoft Frontier プログラムで提供されていると案内しました。", "announcementId": "bon-479"}
+  ],
+  "cases": [
+    {"atSeconds": 294, "text": "Autopilot に SAP の連携情報サイトを開かせ、Joule に SAP と Microsoft の連携方法を尋ねました。ブラウザー画面を介して質問を渡す連携例です。"}
+  ],
+  "tips": []
+}

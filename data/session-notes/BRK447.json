@@ -11,7 +11,8 @@
   ],
   "updates": [
     {"atSeconds": 333, "announcementId": null, "text": "GitHub Copilot Fusion を取り上げ、同じコーディング作業に対する複数モデルの結果を比べ、品質と費用の兼ね合いを見極める使い方を説明しました。"},
-    {"atSeconds": 392, "announcementId": "bon-473", "text": "Microsoft Copilot SDK の更新に触れ、Copilot のエージェント機能を自社アプリの中に組み込む用途を紹介しました。"}
+    {"atSeconds": 392, "announcementId": "bon-473", "text": "Microsoft Copilot SDK の更新に触れ、Copilot のエージェント機能を自社アプリの中に組み込む用途を紹介しました。"},
+    {"atSeconds": 440, "announcementId": "bon-453", "text": "PostgreSQL 互換のマネージドデータベース Azure HorizonDB を、大規模なアプリを支える選択肢として紹介し、Fabric の HorizonDB にも言及しました。"}
   ],
   "cases": [
     {"atSeconds": 409, "text": "Microsoft 自身の例として、オンプレミスのシステムをクラウドへ移行・刷新する Azure Catalyst で GitHub Copilot を使っていることを紹介しました。"}

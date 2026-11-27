@@ -1,0 +1,31 @@
+{
+  "sessionCode": "BRKSP603",
+  "sessionId": "1787854983954001tJat",
+  "offeringId": "1787854983954001tJat-1791588175797001CqTz",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=NJKvRFDWsjc",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 279,
+      "text": "保険は顧客との信頼や担当者の専門的な判断に支えられる一方、顧客の期待が高まり、判断に必要な情報は複数のシステムに分散していると課題を整理しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 754,
+      "text": "High Street は、各地の担当者が顧客のための判断に必要な情報をすぐ取り出せるよう、データを整理・構造化して届ける独自の基盤 Aura を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1371,
+      "text": "何に AI を使えるかではなく、業務で何を解決し、どんな成果を出したいかを先に決めるべきだと述べました。"
+    },
+    {
+      "atSeconds": 1394,
+      "text": "AI 導入の土台として、データの品質と接続性を整え、必要以上に共有された情報がないかも確認するよう勧めました。"
+    }
+  ]
+}

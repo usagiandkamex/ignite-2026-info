@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR927", "sessionId": "1787856586433001EpXm", "offeringId": "1787856586433001EpXm-1791588228415001CRIY", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=Bi8ES9r0TrI", "basis": "captions",
+  "summary": [
+    {"atSeconds": 63, "text": "顧客、製品、サポートなどの情報が分散しているため、顧客担当者が「まず何をすべきか」とその理由をすぐに判断できないことが、取り組みの出発点でした。"},
+    {"atSeconds": 390, "text": "Microsoft 社内の約 1 万 5 千人に向けた仕組みでは、複数のデータソースを扱う各層にまたがって、ID、セキュリティ、稼働状況の把握を一元管理しています。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 628, "text": "顧客データをつないだ基盤の上で、Fabric IQ を利用する Cowork に次の対応を尋ね、提案を起点に理由や詳細を掘り下げる使い方を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1212, "text": "試行のたびに担当チームが専用のデータ基盤を作るのではなく、一つのデータ基盤から複数の利用方法を提供する設計を勧めました。"}
+  ]
+}

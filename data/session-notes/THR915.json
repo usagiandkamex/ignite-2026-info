@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR915", "sessionId": "1787856584566001ECtm", "offeringId": "1787856584566001ECtm-1791588342148001C3OT", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=_PN7RYyImbI", "basis": "captions",
+  "summary": [
+    {"atSeconds": 305, "text": "Microsoft の財務部門は事業に必要な資金を管理する中で、市場の専門知識に加え、監督や、メール・チャットでの繰り返しの調整を必要としていました。"},
+    {"atSeconds": 649, "text": "担当者が取引を起こすと、エージェント間の交渉プロトコルが、登録済みの候補から取引目的に合う相手を探す仕組みを説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 1029, "text": "Microsoft と BNY のエージェントが交渉した最初の実取引は、100 万米ドルの米国短期国債でした。約 63 秒という説明は、取引全体ではなく交渉開始から合意までの時間です。"}
+  ],
+  "tips": [
+    {"atSeconds": 906, "text": "実取引に適用する前に、BNY の模擬債券市場でエージェント同士の取引を繰り返し、交渉の動作を検証しました。"}
+  ]
+}

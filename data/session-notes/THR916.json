@@ -1,0 +1,12 @@
+{
+  "sessionCode": "THR916", "sessionId": "1787856584719001EqrK", "offeringId": "1787856584719001EqrK-1791588293549001CGwG", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=LxPfVekNy5U", "basis": "captions",
+  "summary": [
+    {"atSeconds": 122, "text": "Vanguard の営業担当者が訪問準備に必要とする情報は、Dynamics の顧客管理、Outlook、Teams、社内のマルチクラウド・データレイクに分散していました。"},
+    {"atSeconds": 603, "text": "営業エージェントは、担当者が個別のシステムを検索して情報を照合する手間を減らし、収集した材料から次に取るべき行動を検討できるようにします。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 415, "text": "ニューヨークへの出張に合わせて追加の訪問先を探す例では、Fabric IQ を通じて近隣の取引先とそれぞれの推奨アクションを取得し、訪問候補を絞り込みました。"}
+  ],
+  "tips": []
+}
