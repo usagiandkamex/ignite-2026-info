@@ -55,6 +55,8 @@ post-steps:
       python tools/build.py
 
 jobs:
+  agent:
+    if: github.ref == 'refs/heads/main'
   safe_outputs:
     if: needs.agent.result == 'success'
 
