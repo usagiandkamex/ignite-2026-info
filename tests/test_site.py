@@ -13,14 +13,14 @@ from urllib.parse import urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 
-from build import PUBLIC_URL, build, time_range
+from build import PUBLIC_URL, build, detail_page, time_range
 import check_recording_notes
 from check_recording_notes import caption_url, cue_times
 from import_azure_updates import IGNITE_TAG, snapshot as azure_snapshot
-from import_sessions import snapshot
+from import_sessions import snapshot, speaker_snapshot
 from site_data import (
     DATA, FILES, NOTE_SECTIONS, NOTE_STATES, azure_status, load, load_recording_sources, load_references,
-    load_update_editorial, read_session_notes,
+    load_session_speakers, load_update_editorial, read_session_notes,
     validate_catalog, validate_session_links, validate_session_notes,
 )
 
@@ -32,6 +32,7 @@ def catalog_row(oid, *, scope=None, hidden=False, block_video=False):
         "sessionLevel": [], "topic": [], "restrictedScopes": scope if scope is not None else [],
         "excludeFromSessionScheduler": hidden, "startDateTime": None, "endDateTime": None,
         "deliveryTypes": [], "hasOnDemand": True, "doNotPublishVideo": block_video,
+        "speakerNames": None, "speakerIds": [],
         "description": "Not part of the published schema", "downloadVideoLink": "Not a public link",
     }
 
@@ -64,6 +65,39 @@ class SnapshotTests(unittest.TestCase):
     def test_duplicate_offering_stops_import(self):
         with self.assertRaisesRegex(ValueError, "Duplicate catalog offering"):
             snapshot([catalog_row("1-alpha"), catalog_row("1-alpha")], "2026-11-27")
+
+    def test_speakers_are_joined_by_unique_directory_id(self):
+        row = catalog_row("1-alpha")
+        row["speakerNames"] = "Mika Tanaka, Ada Example"
+        row["speakerIds"] = ["speaker-1", "speaker-2", "speaker-2"]
+        speaker_rows = [
+            {"speakerId": "speaker-1", "displayName": "Ada Example",
+             "jobTitle": "Azure Catalyst PM", "company": "Microsoft"},
+            {"speakerId": "speaker-2", "displayName": "Mika Tanaka",
+             "jobTitle": "Director", "company": "Microsoft"},
+            {"speakerId": "speaker-2", "displayName": "Mika Tanaka",
+             "jobTitle": "VP", "company": "Microsoft"},
+        ]
+        data = snapshot([row], "2026-11-27")
+        validate_catalog(data)
+        session = data["sessions"][0]
+        self.assertEqual(session["speakerNames"], "Mika Tanaka, Ada Example")
+        self.assertNotIn("speakers", session)
+        details = speaker_snapshot([row], speaker_rows, "2026-11-27")
+        self.assertEqual(details["sessions"]["BRK1"], {"speakers": [{
+            "id": "speaker-1", "name": "Ada Example", "jobTitle": "Azure Catalyst PM",
+            "company": "Microsoft",
+            "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/speaker-1",
+        }], "unresolvedSpeakers": 1})
+
+    def test_missing_speaker_ids_remain_unverified(self):
+        row = catalog_row("1-alpha")
+        del row["speakerIds"]
+        details = speaker_snapshot([row], [{"speakerId": "speaker-1", "displayName": "Ada Example"}],
+                                  "2026-11-27")
+        self.assertEqual(details["sessions"]["BRK1"], {
+            "speakers": [], "unresolvedSpeakers": None,
+        })
 
     def test_published_schema_rejects_raw_content_fields(self):
         data = snapshot([catalog_row("1-alpha")], "2026-11-27")
@@ -171,6 +205,23 @@ class BuildTests(unittest.TestCase):
         self.assertIn("2026/11/18 00:30", times)
         self.assertIn('datetime="2026-11-17T14:30:00Z"', times)
 
+    def test_speaker_roles_are_rendered_and_escaped(self):
+        _, catalog, _, _ = load()
+        session = deepcopy(catalog["sessions"][0])
+        session.update({
+            "speakerNames": "Example Speaker",
+            "speakers": [{
+                "id": "speaker-1", "name": "<Example Speaker>", "jobTitle": "Azure Catalyst PM",
+                "company": "Microsoft", "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/speaker-1",
+            }],
+            "unresolvedSpeakers": 0,
+        })
+        html = detail_page(session, None, None, [], [], None)
+        self.assertIn("スピーカー", html)
+        self.assertIn("&lt;Example Speaker&gt;", html)
+        self.assertIn("Azure Catalyst PM · Microsoft", html)
+        self.assertNotIn("<Example Speaker>", html)
+
     def test_site_matches_data_and_relative_links_resolve(self):
         _, catalog, updates, notes = load()
         azure, videos, relations = load_references(catalog, updates, notes)
@@ -195,6 +246,18 @@ class BuildTests(unittest.TestCase):
             self.assertIn("../data/sessions/LAB700.json", lab)
             detail_data = {p.stem: p for p in (out / "data" / "sessions").glob("*.json")}
             self.assertEqual(set(detail_data), set(detail_files))
+            speaker_profiles = load_session_speakers(catalog)
+            speaker_session = next(s for s in catalog["sessions"]
+                                   if any(profile["jobTitle"] for profile in speaker_profiles[s["code"]]["speakers"]))
+            speaker_record = json.loads(detail_data[speaker_session["code"]].read_text(encoding="utf-8"))
+            self.assertEqual(speaker_record["speakers"], speaker_profiles[speaker_session["code"]]["speakers"])
+            self.assertNotIn("speakers", speaker_record["session"])
+            self.assertNotIn("unresolvedSpeakers", speaker_record["session"])
+            self.assertFalse((out / "data" / "session-speakers.json").exists())
+            role = next(profile["jobTitle"] for profile in speaker_profiles[speaker_session["code"]]["speakers"]
+                        if profile["jobTitle"])
+            self.assertIn(role,
+                          detail_files[speaker_session["code"]].read_text(encoding="utf-8"))
             self.assertFalse((out / "data" / "session-notes.json").exists())
             self.assertEqual(pages["sessions.html"].result_ids,
                              ["session-" + s["code"] for s in catalog["sessions"]])
@@ -299,6 +362,11 @@ class BuildTests(unittest.TestCase):
                 else:
                     self.assertIsNone(record["recordingSource"])
             published_catalog = json.loads((out / "data" / "sessions.json").read_text(encoding="utf-8"))
+            self.assertTrue(all("speakers" not in session and "unresolvedSpeakers" not in session
+                                for session in published_catalog["sessions"]))
+            catalog_json = json.dumps(published_catalog)
+            self.assertNotIn('"jobTitle"', catalog_json)
+            self.assertNotIn('"company"', catalog_json)
             self.assertEqual(published_catalog.pop("recordingReview"), {
                 "counts": {status: counts[status] for status in NOTE_STATES},
                 "reviewedSessionCodes": sorted(by_code),
@@ -306,6 +374,7 @@ class BuildTests(unittest.TestCase):
             self.assertEqual(published_catalog.pop("linkedYouTubeSessionCodes"), sorted(videos["matches"]))
             self.assertEqual(published_catalog, catalog)
             self.assertIn("/data/sessions/", llms)
+            self.assertIn("まず軽量な `sessions.json` の一覧", llms)
             for available, expected in [
                 (True, "内容はまだ確認していません"), (False, "公式カタログに公開録画の掲載がない"),
             ]:

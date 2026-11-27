@@ -11,7 +11,7 @@ from import_sessions import JST
 from site_data import (
     CATEGORIES, DATA, DELIVERY, FILES, LEVELS, NOTE_SECTIONS, NOTE_STATES, RECORDING_BASIS, ROOT,
     SESSION_TYPES, STAGES, TOPICS, azure_status, iso_date, load, load_recording_sources,
-    load_references, load_update_editorial, utc,
+    load_references, load_session_speakers, load_update_editorial, utc,
 )
 
 WEB = ROOT / "web"
@@ -252,7 +252,9 @@ def catalog_entry(s, note, video):
     state = note_status(s, note)
     labels = session_labels(s)
     highlights = [p["text"] for key in NOTE_SECTIONS for p in note[key]] if note else []
-    filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"], *labels, *highlights])
+    speaker_terms = [s["speakerNames"] or ""]
+    filters = " ".join([s["code"], s["title"], s["type"], *s["levels"], *s["topics"],
+                        *labels, *speaker_terms, *highlights])
     return f"""<article id="session-{s['code']}" class="card result" data-result data-text="{h(filters)}"
   data-kind="{h(s['type'])}" data-topic="{h('|'.join(s['topics']))}"
   data-replay="{'no' if state == 'unlisted' else 'yes'}" data-notes="{state}" data-youtube="{'yes' if video else 'no'}">
@@ -294,6 +296,28 @@ def timestamp(seconds):
     hours, rest = divmod(seconds, 3600)
     minutes, seconds = divmod(rest, 60)
     return (f"{hours:d}:" if hours else "") + f"{minutes:02d}:{seconds:02d}"
+
+
+def speaker_section(s):
+    profiles = []
+    for speaker in s["speakers"]:
+        details = [value for value in (speaker["jobTitle"], speaker["company"]) if value]
+        profile = f' — {h(" · ".join(details))}' if details else ""
+        profiles.append(f'<li>{link(speaker["sourceUrl"], speaker["name"])}{profile}</li>')
+
+    content = f'<ul>{"".join(profiles)}</ul>' if profiles else ""
+    unresolved = s["unresolvedSpeakers"]
+    if unresolved:
+        if s["speakerNames"]:
+            content = f'<p>公式カタログの表記：{h(s["speakerNames"])}</p>{content}'
+        content += f'<p class="meta">{unresolved} 名分の公式プロフィールを照合できませんでした。</p>'
+    elif not profiles and s["speakerNames"]:
+        content = f'<p>{h(s["speakerNames"])}</p>'
+    elif not profiles and unresolved is None:
+        content = "<p>公式スピーカー情報を確認できませんでした。</p>"
+    elif not profiles:
+        content = "<p>公式カタログにスピーカー情報の掲載はありません。</p>"
+    return f'<section class="section card"><h2>スピーカー</h2>{content}</section>'
 
 
 def detail_page(s, note, video, update_links, technical_articles, recording_source):
@@ -361,6 +385,7 @@ def detail_page(s, note, video, update_links, technical_articles, recording_sour
   <p class="card-eyebrow">{badge(s["code"], "accent")} {status_badge(state)}</p>
   <h1 lang="en">{h(s["title"])}</h1><p class="meta">{chips(session_labels(s))}</p>
 </header>
+{speaker_section(s)}
 <section class="section card"><h2>録画と関連アップデート</h2>{video_html}{recording_html}{update_html}</section>
 <section class="section card"><h2>公式技術ブログ・解説</h2>{article_html}</section>
 {review}
@@ -458,14 +483,14 @@ def ai_index(event, catalog, updates, notes, azure, videos, recordings):
 ## 公開データ
 
 - [イベントとキーノート]({PUBLIC_URL}data/event.json): 確認日 {event['checkedOn']}。開催概要、両キーノート、公式出典。
-- [セッションカタログ]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。オンデマンド案内 {counts['onDemandSessions']} セッションのうち、{len(notes)} セッションに確認済みの要約があります。`recordingReview.reviewedSessionCodes` で確認済みの個別 JSON を探せます。
-- [個別セッション JSON の例]({PUBLIC_URL}{detail_data_path(opening)}): 開幕キーノート。公式メタデータ、録画の確認状況、話の要点、アップデート、事例、Tips。
+- [セッションカタログ]({PUBLIC_URL}data/sessions.json): 確認日 {catalog['checkedOn']}。公開 {counts['sessions']} セッション、{counts['offerings']} 開催枠。軽量な一覧用で、スピーカー名は含みますがプロフィール詳細は含みません。オンデマンド案内 {counts['onDemandSessions']} セッションのうち、{len(notes)} セッションに確認済みの要約があります。
+- [個別セッション JSON の例]({PUBLIC_URL}{detail_data_path(opening)}): 開幕キーノート。公式メタデータ、スピーカーの役職・所属、録画の確認状況、話の要点、アップデート、事例、Tips。
 - [製品発表]({PUBLIC_URL}data/updates.json): 確認日 {updates['checkedOn']}。Book of News の全 {len(updates['announcements'])} 項目の日本語要約、提供状況、公式出典。
 - [Azure Updates：Microsoft Ignite タグ]({PUBLIC_URL}data/azure-updates.json): 2026 年公開の公式タグ付き投稿 {azure['count']} 件。公式メタデータ、日本語概要 {azure['editorialCoverage']['summaries']} 件、原題とフィードの提供状況の照合結果。
 - [公式 YouTube 録画の対応表]({PUBLIC_URL}data/session-videos.json): セッションコードで検索できる照合済みの {len(videos)} 動画リンク。
 - [公式録画の探し方]({PUBLIC_URL}data/recording-sources.json): {len(recordings['matches'])} セッションの録画枠と字幕言語・チャプター時刻。内容の要約とは別です。
 
-各セッションの詳細はカタログの `sessions[].code`（例: `BRK449`）を使い、`data/sessions/{{code}}.json` で取得できます。人向け HTML は `session/{{code}}.html` です。
+まず軽量な `sessions.json` の一覧でタイトル・コード・スピーカー名から対象を探し、必要なセッションだけ `data/sessions/{{code}}.json` を取得してください。この個別 JSON の `speakers` にのみ公式プロフィールの役職・所属・URLを収録しています。人向けの詳細ページは `session/{{code}}.html` です。
 個別 JSON の `recordingReview.status` は `reviewed`（要約あり）、`pending`（オンデマンド案内あり・内容未確認）、`unlisted`（録画の掲載なし）。
 未確認なら `recordingReview.note` は `null` です。記入済みの場合、`offeringId` は対応する開催枠です。
 `atSeconds` は録画開始からの秒数です。`basis` が `youtube-transcript` の場合は `youtubeUrl` の公式 YouTube 録画、その他は公式イベント録画の時刻です。
@@ -483,6 +508,7 @@ def ai_index(event, catalog, updates, notes, azure, videos, recordings):
 
 def build(output):
     event, catalog, updates, session_notes = load()
+    speaker_details = load_session_speakers(catalog)
     azure, video_data, links = load_references(catalog, updates, session_notes)
     recordings = load_recording_sources(catalog)
     editorial = load_update_editorial(updates, azure)
@@ -554,12 +580,15 @@ def build(output):
         if recording:
             offering = next(o for o in s["offerings"] if o["id"] == recording["offeringId"])
             recording = {**recording, "sourceUrl": offering["sourceUrl"], "checkedOn": recordings["checkedOn"]}
-        page = detail_page(s, note, video, related, technical, recording)
+        details = {**s, **speaker_details[s["code"]]}
+        page = detail_page(details, note, video, related, technical, recording)
         (output / detail_path(s)).write_text(page, encoding="utf-8", newline="\n")
         write_json(output / detail_data_path(s), {
             "schemaVersion": 1,
             "catalogCheckedOn": catalog["checkedOn"],
             "session": s,
+            "speakers": speaker_details[s["code"]]["speakers"],
+            "unresolvedSpeakers": speaker_details[s["code"]]["unresolvedSpeakers"],
             "recordingReview": {"status": state, "note": note},
             "youtubeUrl": video,
             "relatedUpdates": related,
