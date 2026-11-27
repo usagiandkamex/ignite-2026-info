@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 FILES = ("event.json", "sessions.json", "updates.json")
 REFERENCE_FILES = ("azure-updates.json", "session-videos.json", "session-updates.json")
+UPDATE_EDITORIAL = DATA / "update-editorial.json"
+RECORDING_SOURCES = DATA / "recording-sources.json"
 SESSION_NOTES_DIR = DATA / "session-notes"
 BOOK_URL = "https://news.microsoft.com/events/ignite/2026/book-of-news/"
 
@@ -61,8 +63,15 @@ STAGES = {
     "planned": "提供予定",
     "announced": "発表",
     "unlisted": "提供状況の記載なし",
+    "restricted-preview": "限定プレビュー",
 }
 AZURE_STAGES = {"Launched": "ga", "In preview": "preview", "In development": "planned", None: "unlisted"}
+AZURE_HEADLINE_STAGES = {
+    "generally available": "ga",
+    "public preview": "preview",
+    "private preview": "preview",
+    "limited preview": "preview",
+}
 YOUTUBE_WATCH = re.compile(r"https://www\.youtube\.com/watch\?v=[a-zA-Z0-9_-]{11}")
 YOUTUBE_CHANNEL = "https://www.youtube.com/@events_msft/playlists"
 NOTE_SECTIONS = {
@@ -118,7 +127,7 @@ def options(values, allowed, label, *, required=False):
 def official_url(value):
     text(value, "URL")
     url = urlsplit(value)
-    hosts = ("microsoft.com", "aka.ms", "youtube.com", "blogs.windows.com", "github.blog")
+    hosts = ("microsoft.com", "aka.ms", "youtube.com", "blogs.windows.com", "blogs.bing.com", "github.blog")
     require(url.scheme == "https" and url.netloc == url.hostname and url.hostname is not None
             and any(url.hostname == host or url.hostname.endswith("." + host) for host in hosts)
             and not any(c.isspace() for c in value), f"Not an official HTTPS URL: {value}")
@@ -279,6 +288,67 @@ def validate_session_links(videos, updates, by_code, ids):
             require(identity in ids and identity not in seen, f"{code}: unknown or duplicate update {identity}")
             seen.add(identity)
             text(entry["context"], f"{code} update context")
+
+
+def azure_status(item):
+    """Keep the provider's two status signals separate if they disagree."""
+    feed = AZURE_STAGES[item["sourceStatus"]]
+    prefix = item["title"].partition(":")[0].strip().casefold()
+    headline = AZURE_HEADLINE_STAGES.get(prefix)
+    restricted = prefix in {"private preview", "limited preview"}
+    compatible = {headline, "planned"} if restricted else {headline}
+    conflict = headline is not None and feed != "unlisted" and feed not in compatible
+    return {"feedStage": feed, "headlineStage": headline, "restrictedPreview": restricted, "conflict": conflict}
+
+
+def load_update_editorial(book, azure):
+    data = json.loads(UPDATE_EDITORIAL.read_text(encoding="utf-8"))
+    keys(data, "schemaVersion checkedOn articles summaries", "update editorial")
+    require(type(data["schemaVersion"]) is int and data["schemaVersion"] == 1,
+            "Unsupported update editorial schema version")
+    iso_date(data["checkedOn"])
+    all_ids = {a["id"] for a in [*book["announcements"], *azure["items"]]}
+    azure_ids = {a["id"] for a in azure["items"]}
+    for identity, links in data["articles"].items():
+        require(identity in all_ids and isinstance(links, list) and links, f"{identity}: invalid technical articles")
+        sources(links)
+        for item in links:
+            url = urlsplit(item["url"])
+            path = url.path.casefold()
+            require(url.hostname in {"devblogs.microsoft.com", "blogs.windows.com", "blogs.bing.com",
+                                     "github.blog", "commandline.microsoft.com", "blog.fabric.microsoft.com"}
+                    or ("/blog/" in path and url.hostname in {"azure.microsoft.com", "www.microsoft.com",
+                                                              "techcommunity.microsoft.com",
+                                                              "community.fabric.microsoft.com"}),
+                    f"{identity}: technical article must use a direct official publisher URL")
+    for identity, summary in data["summaries"].items():
+        require(identity in azure_ids, f"{identity}: unknown Azure update summary ID")
+        text(summary, f"{identity} Japanese summary")
+    require(data["summaries"].keys() == azure_ids, "Japanese summaries must cover all tagged Azure updates")
+    return data
+
+
+def load_recording_sources(catalog):
+    data = json.loads(RECORDING_SOURCES.read_text(encoding="utf-8"))
+    keys(data, "schemaVersion checkedOn matches", "recording sources")
+    require(type(data["schemaVersion"]) is int and data["schemaVersion"] == 1,
+            "Unsupported recording sources schema version")
+    iso_date(data["checkedOn"])
+    public = {
+        s["code"]: {o["id"] for o in s["offerings"] if o["hasOnDemand"]}
+        for s in catalog["sessions"] if any(o["hasOnDemand"] for o in s["offerings"])
+    }
+    require(data["matches"].keys() == public.keys(),
+            "Recording sources must cover exactly the current public on-demand sessions.")
+    for code, value in data["matches"].items():
+        keys(value, "offeringId captionLanguages chapterSeconds", "recording source")
+        require(code in public and value["offeringId"] in public[code],
+                f"{code}: invalid public recording source")
+        options(value["captionLanguages"], {"en", "ja"}, f"{code} caption languages")
+        times = value["chapterSeconds"]
+        require(isinstance(times, list) and all(type(t) is int and t >= 0 for t in times)
+                and times == sorted(set(times)), f"{code}: invalid chapter timestamps")
+    return data
 
 
 def validate_session_notes(data, catalog, updates):

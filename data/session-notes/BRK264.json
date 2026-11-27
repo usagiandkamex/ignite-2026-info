@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK264","sessionId":"1787856613195001Eigo","offeringId":"1787856613195001Eigo-1791588173931001C2oW","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":182,"text":"Copilot Studio のエージェント実行基盤を、対話の性質や複数段階の作業が必要かどうかで使い分ける考え方を説明しました。"}],
+  "updates":[{"atSeconds":1939,"text":"コンタクトセンターや音声などの顧客との会話向けに、Customer Conversation Harness を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":498,"text":"実行基盤の選定では、同じ業務を使って品質、処理時間、費用を比較します。"}]
+}

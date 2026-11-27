@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK259","sessionId":"1787856612459001EfZu","offeringId":"1787856612459001EfZu-1791588174633001COAZ","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":278,"text":"Copilot Studio が、会話中心の従来の実行基盤に加え、複数の作業を進めるための Copilot ハーネスを採用する理由を説明しました。"}],
+  "updates":[{"atSeconds":985,"text":"複数の作業をその場で分担する Dynamic Task Agents をプレビュー機能として紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":985,"text":"提案内容を複数の観点で確認する課題を使い、エージェントが作業を分担する様子を実演しました。"}],
+  "tips":[{"atSeconds":576,"text":"実行基盤を比較するときは、実務を代表する同じ課題を繰り返し使って評価します。"}]
+}

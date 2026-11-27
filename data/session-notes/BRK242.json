@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK242","sessionId":"1787856609892001EgHv","offeringId":"1787856609892001EgHv-1791588100232001CFk6","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":1031,"text":"Microsoft Foundry で、評価をもとにモデルを選び、運用後のトレースを使ってエージェントを改善する流れを紹介しました。"}],
+  "updates":[{"atSeconds":1031,"text":"用途に合う意思決定モデルや、評価と運用データを使う最適化機能を取り上げました。","announcementId":"bon-465"}],
+  "cases":[{"atSeconds":208,"text":"出張の申請を扱うアプリを題材に、利用者、コンプライアンス担当、財務担当で必要な出力が違う例を示しました。"}],
+  "tips":[{"atSeconds":1031,"text":"候補モデルを評判だけで選ばず、対象業務の評価で選んでから最適化します。"}]
+}

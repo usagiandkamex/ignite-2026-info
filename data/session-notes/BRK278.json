@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK278","sessionId":"1787856615279001E134","offeringId":"1787856615279001E134-1791588324909001CfQj","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":122,"text":"Copilot Code Review の一連の流れを示し、差分だけでは分からない背景をレビューに取り入れる方法を説明しました。"}],
+  "updates":[{"atSeconds":964,"text":"レビューに使う推論やモデルの組み合わせを、設定する段階に応じて使い分ける仕組みを紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":568,"text":"PR を元の Issue に紐づけておくと、修正の目的が差分に反映されているかを確認しやすくなります。"}]
+}

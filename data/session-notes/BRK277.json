@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK277","sessionId":"1787856615129001ELFm","offeringId":"1787856615129001ELFm-1791588322657001CZrz","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":173,"text":"Copilot SDK で試作品を運用へ移す際に、利用者ごとのセッションと、処理を実行する環境の境界を考える必要があると説明しました。"}],
+  "updates":[{"atSeconds":173,"text":"Copilot SDK 2.0 が、一つのランタイムで複数の利用者を扱えるようにする仕組みを紹介しました。","announcementId":"bon-473"}],
+  "cases":[{"atSeconds":611,"text":"表計算ファイルを処理する業務を題材に、処理用ツールをどの実行環境に置くべきかを比較しました。"}],
+  "tips":[{"atSeconds":1584,"text":"すべての処理に専用環境を常時割り当てるのではなく、必要なときにだけ分離された処理環境を用意する方法も検討します。"}]
+}

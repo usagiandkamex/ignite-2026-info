@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK287","sessionId":"1787856616625001EWVs","offeringId":"1787856616625001EWVs-1791814914100001CGCB","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":159,"text":"開発の速度だけを追うと技術的負債や本番の問題が増え得るとして、コードの品質とセキュリティを同じ開発過程で扱う考え方を説明しました。"}],
+  "updates":[{"atSeconds":1304,"text":"個別の変更に加え、組織レベルでコード品質の変化を確認できるレポートを紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":472,"text":"コードの品質を一つの点数として扱わず、保守性、信頼性、テストの網羅性を分けて見ます。"}]
+}

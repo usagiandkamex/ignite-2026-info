@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK251","sessionId":"1787856611240001E5kl","offeringId":"1787856611240001E5kl-1791588219313001COjb","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":109,"text":"本番運用では稼働しているかだけでなく、エージェントが目的を達成できているかを観測・評価する必要があると説明しました。"}],
+  "updates":[{"atSeconds":1556,"text":"観測時に見つかった問題を起点に Agent Optimizer で改善する機能を紹介しました。","announcementId":"bon-465"}],
+  "cases":[{"atSeconds":2199,"text":"TCS の担当者が、AKS に関するエージェントを計測した事例を紹介しました。"}],
+  "tips":[{"atSeconds":950,"text":"開発時に使った評価基準を、本番の一部のトラフィックにも適用して品質の差を見つけます。"}]
+}

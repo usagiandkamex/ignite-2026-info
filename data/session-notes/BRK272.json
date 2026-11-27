@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK272","sessionId":"1787856614396001ENAG","offeringId":"1787856614396001ENAG-1791588288203001CJ3J","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":184,"text":"ブラジルの Bradesco が、既存のシステムをクラウドと Kubernetes に移していく取り組みを説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":609,"text":"初期のクラウド移行で、既存環境の複雑さをそのまま持ち込むことが課題になった経験を共有しました。"}],
+  "tips":[{"atSeconds":1656,"text":"オンプレミスとクラウドの間をつなぐ統合層を設計し、単なる配置先の変更と構成自体の見直しを区別します。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK292","sessionId":"1787856617376001E61G","offeringId":"1787856617376001E61G-1791814922219001CGjY","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":219,"text":"Azure DevOps で管理する仕事に GitHub Copilot を取り入れるための、MCP、Copilot アプリ、コードレビューの三つの接点を紹介しました。"}],
+  "updates":[{"atSeconds":545,"text":"Azure DevOps の情報をエージェントから参照するローカル MCP サーバーとリモート MCP サーバーを説明しました。","announcementId":null}],
+  "cases":[{"atSeconds":1610,"text":"Azure DevOps の PR を対象に、Copilot のコードレビューを組み込む流れを示しました。"}],
+  "tips":[]
+}

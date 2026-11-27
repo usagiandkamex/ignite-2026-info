@@ -11,11 +11,23 @@
     "BRK215": [
       {"id":"bon-524","context":"オンプレミスのサーバーを維持する場合のセキュリティ強化に関する関連発表です。"}
     ],
+    "BRK244": [
+      {"id":"az-581353","context":"講演で取り上げる HD Voices V3 の音声の表現を調整する機能についての関連更新です。"}
+    ],
     "BRK240": [
       {"id":"az-581358","context":"セッションで扱う Foundry の人手によるトレース注釈に対応する公式更新です。"}
     ],
     "BRK245": [
       {"id":"az-581318","context":"Document Intelligence と Content Understanding の開発ツールに関する公式更新です。"}
+    ],
+    "BRK249": [
+      {"id":"az-581483","context":"Foundry Agent Optimizer のインサイトを起点とした改善についての関連更新です。"}
+    ],
+    "BRK251": [
+      {"id":"az-581483","context":"講演で紹介した、インサイトから改善候補を作る Foundry の機能の公式更新です。"}
+    ],
+    "BRK253": [
+      {"id":"az-581498","context":"Foundry Agent Service で MCP ツールに組織のゲートウェイを使う関連更新です。"}
     ],
     "BRK297": [
       {"id":"bon-501","context":"Foundry IQ のナレッジベースと検索機能が共通のテーマです。"}

@@ -9,11 +9,13 @@ const records = [...document.querySelectorAll("[data-result]")].map((element) =>
 }));
 const count = panel.querySelector("[data-count]");
 const empty = document.querySelector("[data-empty]");
+const clear = panel.querySelector("[data-clear-filters]");
 const format = new Intl.NumberFormat("ja-JP");
 
 function filter() {
   const words = normalize(query.value).split(/\s+/).filter(Boolean);
   const values = selects.map((select) => select.value);
+  clear.disabled = query.value === "" && values.every((value) => !value);
   let visible = 0;
   for (const { element, text, facets } of records) {
     const matches = words.every((word) => text.includes(word))
@@ -27,6 +29,12 @@ function filter() {
 
 query.addEventListener("input", filter);
 panel.addEventListener("change", filter);
+clear.addEventListener("click", () => {
+  query.value = "";
+  selects.forEach((select) => { select.value = ""; });
+  filter();
+  query.focus();
+});
 window.addEventListener("pageshow", filter);
 filter();
 panel.hidden = false;

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK288","sessionId":"1787856616775001Ekzd","offeringId":"1787856616775001Ekzd-1791814921741001CZK4","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":560,"text":"組織が承認した Visual Studio の構成を維持し、次の承認済み更新を配布する流れを説明しました。"}],
+  "updates":[{"atSeconds":919,"text":"Visual Studio の拡張を組織が管理できる、プライベート マーケットプレースを紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":919,"text":"開発者が組織向けマーケットプレースを利用する流れを実演しました。"}],
+  "tips":[{"atSeconds":560,"text":"承認済みバージョンを配る際は、Visual Studio のレイアウトを再利用し、最初からすべてを取得し直す必要があるかを確認します。"}]
+}

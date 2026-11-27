@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK268","sessionId":"1787856613787001EPg6","offeringId":"1787856613787001EPg6-1791587924492001FOHJ","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":160,"text":"開発チームに合わせて GitHub Copilot を調整するため、スキル、指示ファイル、ツール、キャンバスを使い分ける方法を紹介しました。"}],
+  "updates":[{"atSeconds":2130,"text":"リポジトリ単位で自動化を設定し、繰り返し発生するレビューや QA を支援する使い方を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":690,"text":"一度の生成結果をそのまま採用せず、複数の出力を比較し、スキルやプラグインの期待する動作を評価します。"}]
+}

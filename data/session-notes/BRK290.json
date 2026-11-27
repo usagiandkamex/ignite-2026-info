@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK290","sessionId":"1787856617072001Enkq","offeringId":"1787856617072001Enkq-1791814918271001CUPi","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":205,"text":"GitHub Enterprise で AI を組織管理する際に、モデルのアクセス、エージェントの設定、利用の把握を別の課題として整理しました。"}],
+  "updates":[{"atSeconds":1869,"text":"ガバナンスに必要な情報を管理者が把握するための新しい画面を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":535,"text":"モデルを全員に一律で開放するかどうかだけでなく、チームごとの用途と必要な選択肢を整理します。"}]
+}

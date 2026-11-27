@@ -15,7 +15,8 @@ from check_recording_notes import caption_url, cue_times
 from import_azure_updates import IGNITE_TAG, snapshot as azure_snapshot
 from import_sessions import snapshot
 from site_data import (
-    DATA, FILES, NOTE_SECTIONS, load, load_references, read_session_notes,
+    DATA, FILES, NOTE_SECTIONS, azure_status, load, load_recording_sources, load_references,
+    load_update_editorial, read_session_notes,
     validate_catalog, validate_session_links, validate_session_notes,
 )
 
@@ -97,6 +98,15 @@ class RecordingEvidenceTests(unittest.TestCase):
 
 
 class ReferenceTests(unittest.TestCase):
+    def test_headline_and_feed_status_are_not_collapsed(self):
+        self.assertEqual(azure_status({"title": "Generally Available: test", "sourceStatus": "In preview"}), {
+            "feedStage": "preview", "headlineStage": "ga", "restrictedPreview": False, "conflict": True,
+        })
+        for feed in ("In development", "In preview"):
+            status = azure_status({"title": "Private Preview: test", "sourceStatus": feed})
+            self.assertTrue(status["restrictedPreview"])
+            self.assertFalse(status["conflict"])
+
     def test_tagged_update_import_rejects_incomplete_page_and_wrong_tag(self):
         with self.assertRaisesRegex(ValueError, "expected records"):
             azure_snapshot(lambda _: {"@odata.count": 1, "value": []}, "2026-11-27")
@@ -142,6 +152,8 @@ class BuildTests(unittest.TestCase):
     def test_site_matches_data_and_relative_links_resolve(self):
         _, catalog, updates, notes = load()
         azure, videos, relations = load_references(catalog, updates, notes)
+        editorial = load_update_editorial(updates, azure)
+        recordings = load_recording_sources(catalog)
         with TemporaryDirectory() as temp:
             out = Path(temp) / "ignite-2026-info"
             (out / "data").mkdir(parents=True)
@@ -170,6 +182,8 @@ class BuildTests(unittest.TestCase):
             self.assertIn("KEY02", pages["index.html"].ids)
             rendered_updates = (out / "updates.html").read_text(encoding="utf-8")
             self.assertIn('id="az-581358"', rendered_updates)
+            self.assertIn('data-stage="conflict"', rendered_updates)
+            self.assertIn("原題 一般提供（GA） ／ フィード プレビュー", rendered_updates)
             self.assertIn('href="session/BRK240.html">BRK240</a>', rendered_updates)
             recorded = json.loads(detail_data["BRK222"].read_text(encoding="utf-8"))
             self.assertEqual(recorded["youtubeUrl"], videos["matches"]["BRK222"])
@@ -196,9 +210,20 @@ class BuildTests(unittest.TestCase):
                 self.assertIn(f"({PUBLIC_URL}data/{filename})", llms)
                 if filename != "sessions.json":
                     self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
-            for filename in ("azure-updates.json", "session-videos.json"):
+            for filename in ("azure-updates.json", "session-videos.json", "recording-sources.json"):
                 self.assertIn(f"({PUBLIC_URL}data/{filename})", llms)
-                self.assertEqual((out / "data" / filename).read_bytes(), (DATA / filename).read_bytes())
+            self.assertEqual((out / "data" / "session-videos.json").read_bytes(),
+                             (DATA / "session-videos.json").read_bytes())
+            enriched = json.loads((out / "data" / "azure-updates.json").read_text(encoding="utf-8"))
+            self.assertEqual(enriched["editorialCoverage"]["summaries"], len(editorial["summaries"]))
+            self.assertEqual(enriched["editorialCoverage"]["summaries"], azure["count"])
+            self.assertEqual(enriched["editorialCoverage"]["statusConflicts"],
+                             sum(azure_status(item)["conflict"] for item in azure["items"]))
+            enrichment = {item["id"]: item for item in enriched["items"]}
+            self.assertEqual(enrichment["az-574153"]["statusComparison"],
+                             {"feedStage": "preview", "headlineStage": "ga",
+                              "restrictedPreview": False, "conflict": True})
+            self.assertIn("Private Link", enrichment["az-574153"]["summaryJa"])
             for note in notes["notes"]:
                 path = detail_files[note["sessionCode"]]
                 detail = path.read_text(encoding="utf-8")
@@ -231,6 +256,20 @@ class BuildTests(unittest.TestCase):
                 if note:
                     related.update(p["announcementId"] for p in note["updates"] if p["announcementId"])
                 self.assertEqual({r["id"] for r in record["relatedUpdates"]}, related)
+                self.assertEqual({a["url"] for a in record["technicalArticles"]},
+                                 {a["url"] for identity in related for a in editorial["articles"].get(identity, [])})
+                for article in record["technicalArticles"]:
+                    self.assertEqual(set(article["relatedUpdateIds"]), {
+                        i for i in related if any(a["url"] == article["url"] for a in editorial["articles"].get(i, []))
+                    })
+                source = recordings["matches"].get(s["code"])
+                if source:
+                    detail = record["recordingSource"]
+                    self.assertEqual(detail["captionLanguages"], source["captionLanguages"])
+                    self.assertEqual(detail["chapterSeconds"], source["chapterSeconds"])
+                    self.assertIn(detail["sourceUrl"], [o["sourceUrl"] for o in s["offerings"]])
+                else:
+                    self.assertIsNone(record["recordingSource"])
             published_catalog = json.loads((out / "data" / "sessions.json").read_text(encoding="utf-8"))
             self.assertEqual(published_catalog.pop("recordingReview"), {
                 "counts": counts, "reviewedSessionCodes": sorted(by_code),

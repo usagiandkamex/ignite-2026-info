@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK280","sessionId":"1787856615575001EV8S","offeringId":"1787856615575001EV8S-1791588325360001CVIe","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":147,"text":"新しいモデルが増えても利用者が毎回選び直す必要がないよう、仕事に合わせてモデルを選ぶ仕組みを説明しました。"}],
+  "updates":[{"atSeconds":374,"text":"GitHub Copilot Fusion の一般提供に至るまで、実際の利用場面をプレビューで調べたことを紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":637,"text":"モデル構成を選ぶ際は、必要な推論、コード生成、デバッグ、ツール利用を分けて考えます。"}]
+}

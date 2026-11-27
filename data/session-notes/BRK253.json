@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK253","sessionId":"1787856611535001Ejk2","offeringId":"1787856611535001Ejk2-1791588235003001CQhT","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":197,"text":"エージェントが増えると個別のチケットや表計算で管理しきれないため、Foundry の基盤でガバナンスをそろえる設計を説明しました。"}],
+  "updates":[{"atSeconds":2161,"text":"Foundry で組織のエージェントのコンプライアンスを確認する画面を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":436,"text":"架空の銀行で、顧客対応エージェントと面談準備エージェントに異なる役割を持たせるデモを行いました。"}],
+  "tips":[{"atSeconds":737,"text":"セキュリティ担当が利用を許すツールを先に決め、開発者はその範囲内でエージェントを作ります。"}]
+}

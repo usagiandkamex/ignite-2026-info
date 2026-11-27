@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK291","sessionId":"1787856617222001EdSN","offeringId":"1787856617222001EdSN-1791814918968001CFEm","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":256,"text":"GitHub 上の情報や開発の履歴を組み合わせ、エージェントがコードの背景を理解して作業できるようにする構成を説明しました。"}],
+  "updates":[{"atSeconds":670,"text":"作業中に使う記憶とは別に、繰り返されるレビューの傾向から学ぶ Dreaming の考え方を紹介しました。","announcementId":null}],
+  "cases":[],
+  "tips":[{"atSeconds":1354,"text":"複雑な変更を調べる際は、コードだけでなく依存関係、以前の変更、レビューでの判断も探します。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK270","sessionId":"1787856614099001Ef93","offeringId":"1787856614099001Ef93-1791588270465001C7CE","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":217,"text":"GitHub Copilot アプリで、複数のエージェントによるソフトウェア開発作業を並行して進める体験を紹介しました。"}],
+  "updates":[{"atSeconds":624,"text":"複数の作業から得た成果や判断に必要な情報をキャンバスにまとめる使い方を紹介しました。","announcementId":null}],
+  "cases":[{"atSeconds":964,"text":"登壇者の開発作業を題材に、独自のキャンバスや自動化を使うデモを行いました。"}],
+  "tips":[{"atSeconds":624,"text":"並行作業が増えたら、セッションのログをすべて追うのではなく、レビューに必要な差分と判断材料をまとめます。"}]
+}

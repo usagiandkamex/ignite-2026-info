@@ -1,0 +1,7 @@
+{
+  "sessionCode":"BRK296","sessionId":"1787856617981001EHsD","offeringId":"1787856617981001EHsD-1791588173465001CwIH","reviewedOn":"2026-11-27","youtubeUrl":null,"basis":"captions",
+  "summary":[{"atSeconds":126,"text":"Work IQ とエージェントを使う際、エージェントに許す操作を決めることと、読み取る業務情報を信頼できるようにすることを分けて考えました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":769,"text":"エージェント単位とテナント単位のポリシーを組み合わせ、人の承認が必要な操作を管理する例を示しました。"}],
+  "tips":[{"atSeconds":521,"text":"個別のエージェントにだけ対策が適用されていないかを確認し、組織全体で一貫した制御にします。"}]
+}
