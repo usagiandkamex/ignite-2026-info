@@ -244,6 +244,7 @@ class BuildTests(unittest.TestCase):
             self.assertEqual(speaker_record["speakers"], speaker_profiles[speaker_session["code"]]["speakers"])
             self.assertNotIn("speakers", speaker_record["session"])
             self.assertNotIn("unresolvedSpeakers", speaker_record["session"])
+            self.assertFalse((out / "data" / "session-speakers.json").exists())
             role = next(profile["jobTitle"] for profile in speaker_profiles[speaker_session["code"]]["speakers"]
                         if profile["jobTitle"])
             self.assertIn(role,
@@ -354,6 +355,9 @@ class BuildTests(unittest.TestCase):
             published_catalog = json.loads((out / "data" / "sessions.json").read_text(encoding="utf-8"))
             self.assertTrue(all("speakers" not in session and "unresolvedSpeakers" not in session
                                 for session in published_catalog["sessions"]))
+            catalog_json = json.dumps(published_catalog)
+            self.assertNotIn('"jobTitle"', catalog_json)
+            self.assertNotIn('"company"', catalog_json)
             self.assertEqual(published_catalog.pop("recordingReview"), {
                 "counts": {status: counts[status] for status in NOTE_STATES},
                 "reviewedSessionCodes": sorted(by_code),
