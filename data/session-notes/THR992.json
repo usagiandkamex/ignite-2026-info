@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR992", "sessionId": "1787856596548001Euhx", "offeringId": "1787856596548001Euhx-1791588214960001CKMK", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=g_KTnZHEQj8", "basis": "captions",
+  "summary": [
+    {"atSeconds": 2, "text": "Copilot Studio でのエージェント作成が、Entra や管理者側の仕組みにどうつながるかを説明しました。新しいものだけでなく、以前から存在するエージェントも対象にしています。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 140, "text": "入社時の質問に答えるだけでなく操作も行う Onboarding buddy を、Copilot harness で作る録画デモを示しました。"},
+    {"atSeconds": 1059, "text": "Agent 365 の一覧から二つのデモエージェントを開き、管理者が Copilot Studio に入らなくても ID や関連情報を把握できる様子を紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1400, "text": "古いエージェントはエンタープライズアプリとして見つかっても、新しい Agent ID と同じ管理情報や制御を備えるとは限らないと説明しました。既存資産も棚卸しする必要があります。"}
+  ]
+}

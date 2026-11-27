@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK513",
+  "sessionId": "1787856651272001EUOu",
+  "offeringId": "1787856651272001EUOu-1791588335150001Cc9h",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=tSNwYLKuWPk",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 6,
+      "text": "Microsoft AI Cloud Partner Program を、製品特典、マーケティング、共同販売、インセンティブ、認定と専門性の評価をまとめてパートナーへ投資する仕組みとして説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 337,
+      "text": "agentic partner capability score を将来の方向性として紹介しました。エージェントの構築、助言、統制、保護などの活動を能力評価やインセンティブ資格へ結び付ける構想であり、まだ稼働していないと明示しました。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 854,
+      "text": "既存のパートナー特典パッケージや Solutions Partner designation に Copilot の特典を拡充し、適切なプログラム区分へ E7 と Agent 365 も取り込む変更を紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 337,
+      "text": "将来の評価指標の点数だけを追うのではなく、顧客のワークフローを実際に変える構築・助言・ガバナンス・セキュリティの活動を進めるよう説明しました。"
+    }
+  ]
+}

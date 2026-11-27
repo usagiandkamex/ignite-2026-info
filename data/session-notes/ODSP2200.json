@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2200","sessionId":"1787855003898001tyIq","offeringId":"1787855003898001tyIq-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=z7ZlnnA3l9s","basis":"captions-ja",
+  "summary":[{"atSeconds":209,"text":"Azure での災害復旧を、リージョンやゾーンの障害、誤操作や不正変更などの状況に分け、同じ手段ですべてに対応できるとは限らないと説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":433,"text":"アプリを復旧できるか判断する際は、VM とバックアップだけでなく、ネットワーク、コンテナー基盤、データベースなどの依存先も対象に含めます。"}]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2207","sessionId":"1787855004613001t51l","offeringId":"1787855004613001t51l-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=06rjrCxRXWU","basis":"captions",
+  "summary":[{"atSeconds":220,"text":"Reltio で管理したデータを Microsoft Fabric に共有し、レポート、セマンティックモデル、機械学習やエージェント向けに再利用する構成を示しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":86,"text":"データ管理用エージェントを使い、重複の可能性がある記録を見つけたり、誤って結合された可能性がある記録を調べたりする例を紹介しました。"},{"atSeconds":336,"text":"顧客環境の Foundry エージェントが、MCP 経由で Reltio のデータ管理ツールを利用する構成を示しました。"}],
+  "tips":[]
+}

@@ -1,0 +1,32 @@
+{
+  "sessionCode": "THRSP1108",
+  "sessionId": "1787858594574001SCJm",
+  "offeringId": "1787858594574001SCJm-1791588317250001CzhL",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=L6PvMh5XHcE",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 74,
+      "text": "Microsoft 365 テナントはデータと ID が集まる AI 活用の基盤であり、複数テナントを扱う MSP には、セキュリティとデータガバナンスを継続的に管理する仕組みが必要だと説明しました。"
+    },
+    {
+      "atSeconds": 412,
+      "text": "複数顧客の設定とポリシーのずれを一つの画面で管理し、脅威対応で得た情報を予防設定の改善へ戻す、循環型の運用を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 643,
+      "text": "最近公開したエージェント型の脅威検知機能について、Microsoft 365 のログを横断して検知・封じ込めを行い、他の管理対象テナントの保護にも知見を生かすと説明しました。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 1256,
+      "text": "Microsoft と数週間前に開始した Security and AI Growth Academy を紹介しました。MSP がセキュリティサービスを設計し、対象顧客の選定、提供開始、設定基準の展開まで進めるための支援です。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": []
+}

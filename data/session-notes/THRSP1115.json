@@ -1,0 +1,37 @@
+{
+  "sessionCode": "THRSP1115",
+  "sessionId": "1787858595620001Sbng",
+  "offeringId": "1787858595620001Sbng-1791588342813001CvQE",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 8,
+      "text": "AT&T は、エージェントが社内外のデータや複数のモデルを行き来する環境では、ネットワークが接続の手段にとどまらず、AI の利用を制御する重要な場所になると説明しました。"
+    },
+    {
+      "atSeconds": 764,
+      "text": "Intelligent NaaS では接続先や経路に応じてセキュリティと費用の制御を組み合わせ、AT&T の基盤から Azure などへ接続する考え方を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 1299,
+      "text": "Microsoft は会期中に紹介した Azure Firewall の新機能として、小型の AI モデルをネットワーク上で動かし、ファイルをリアルタイムに分類する防御機能を説明しました。",
+      "announcementId": null
+    },
+    {
+      "atSeconds": 1399,
+      "text": "Azure Firewall Premium のアドオンとして、Web リクエストを AI でリアルタイムに分類する機能も発表したと説明しました。一般提供時期はこの要約では断定していません。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 304,
+      "text": "自律的な運用判断には質の高い入力が欠かせないため、ネットワークのテレメトリと可観測性を AI 運用の基盤に組み込むよう勧めました。"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR961", "sessionId": "1787856591737001Ewwa", "offeringId": "1787856591737001Ewwa-1791588258906001C3wf", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=zFzu50x3ZFs", "basis": "captions",
+  "summary": [
+    {"atSeconds": 123, "text": "プロフィールにスキル名を列挙するだけでは実力の差が分かりにくく、採用側が学歴や職歴に頼ることで、異業種からの転職者などを見落とす可能性があると説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 186, "text": "架空のエンジニアを例に、日常の GitHub Copilot 利用から得た能力の証明を LinkedIn のプロフィールにつなぐ考え方を紹介しました。"},
+    {"atSeconds": 296, "text": "プロフィールの Connected apps から対応アプリを選び、サインインして連携する流れを紹介しました。連携後は、製品側が裏づけた情報を継続的に反映すると説明しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 542, "text": "求職者には日々使う対応アプリを連携して実績を示すことを、採用担当者には Connected apps の情報を確認することを勧めました。"}
+  ]
+}

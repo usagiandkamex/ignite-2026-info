@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2174","sessionId":"1787855001132001tlwL","offeringId":"1787855001132001tlwL-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=PyxQFc9bw4Y","basis":"captions",
+  "summary":[{"atSeconds":81,"text":"C# で型に依存しない数値処理を書くうえで、静的メンバーを持つインターフェイスを整数型と浮動小数点型に共通して使う方法を説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":994,"text":"RavenDB の例として、JSON を読み書きする際にプロパティへのアクセスを効率化する独自の表現を取り上げました。"}],
+  "tips":[{"atSeconds":339,"text":"同期で結果が得られる処理と待機が必要な処理を見分け、同期・非同期を組み合わせる設計で ValueTask を検討します。"}]
+}

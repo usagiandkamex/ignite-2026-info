@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR970", "sessionId": "1787856593148001ELAZ", "offeringId": "1787856593148001ELAZ-1791588327380001CaMg", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=d3C74KP_NJU", "basis": "captions",
+  "summary": [
+    {"atSeconds": 240, "text": "データを一か所に集めるだけでは、エージェントは業務上の意味まで理解できないと説明しました。表、列、行へのアクセスに加え、用語や関係性の文脈が必要です。"},
+    {"atSeconds": 530, "text": "Fabric IQ を、データをまとめる OneLake、指標を表すセマンティックモデル、業務の関係性を表すオントロジーという層で説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 102, "text": "説明用のコーヒーチェーン 4th Coffee を題材に、生産者から加工、焙煎、店舗までの流れと、品質基準を共有する必要性を示しました。"},
+    {"atSeconds": 873, "text": "店舗、設備、作業指示などのエンティティと関係、業務ルールを持つオントロジーをデモしました。実在企業の導入実績ではなく、業務文脈を表す構成例です。"}
+  ],
+  "tips": []
+}

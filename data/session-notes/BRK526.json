@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK526",
+  "sessionId": "1787856653285001E5FA",
+  "offeringId": "1787856653285001E5FA-1791588311210001C1Hn",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=xDyI3j-PHKM",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 70,
+      "text": "法務テクノロジー企業 Litera は、契約の作成・確認に AI を取り入れる際、もっともらしい回答では足りず、正確性、セキュリティ、ガバナンスへの信頼が必要だと説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 520,
+      "text": "Litera は、自社内で Microsoft 365 と Entra の ID を基盤に使い、増え続けるエージェントの識別・監視・管理に Agent 365 を活用する取り組みを紹介しました。"
+    },
+    {
+      "atSeconds": 1781,
+      "text": "法務文書のデモでは、Word 内で変更履歴を持つ契約書を認識し、契約の種類や交渉姿勢などを踏まえて各変更の扱いを支援する機能を示しました。法的判断の実績ではなく、文書確認の操作例として説明しました。"
+    }
+  ],
+  "tips": []
+}

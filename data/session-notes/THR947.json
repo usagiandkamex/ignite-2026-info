@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR947", "sessionId": "1787856589543001Er3V", "offeringId": "1787856589543001Er3V-1791588095313001CQ3P", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=Ow9v_JoUVHo", "basis": "captions",
+  "summary": [
+    {"atSeconds": 102, "text": "LexisNexis Risk Solutions の技術最適化担当者が、技術者としての経験を経て、チームの能力開発と支援を担うようになった経緯を紹介しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 275, "text": "同社の Tech Accelerate では、新卒エンジニアが二つの半年間のローテーションに参加し、初日から GitHub Copilot や Microsoft 365 Copilot を使って実際のチーム業務に取り組むと説明しました。"},
+    {"atSeconds": 656, "text": "チームで課題を解く AI ワークショップを紹介しました。通常なら長くかかる作業を短期間で形にできた経験を共有することが、周囲への活用拡大につながったと述べました。"}
+  ],
+  "tips": [
+    {"atSeconds": 915, "text": "ツール配布より先に、人の不安や役割の変化を理解するべきだったと振り返りました。AI に置き換えるという伝え方ではなく、人の価値と支援の目的を明確にするよう勧めました。"}
+  ]
+}

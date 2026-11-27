@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2166","sessionId":"1787855000261001tlg8","offeringId":"1787855000261001tlg8-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=VQelfUXdozg","basis":"captions",
+  "summary":[{"atSeconds":41,"text":"Palo Alto Networks が、Azure のリソースを把握し、AI 基盤の内部通信に適用したネットワーク ポリシーの結果を確認する流れを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":228,"text":"AKS の名前空間間で、必要な通信だけを許可し、許可されていない通信は遮断されることを実演しました。"}],
+  "tips":[{"atSeconds":350,"text":"ポリシーを設定した後は、通信ログで実際に使われたルールと、許可・遮断の結果を確認します。"}]
+}

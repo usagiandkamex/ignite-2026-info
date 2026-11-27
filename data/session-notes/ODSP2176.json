@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2176","sessionId":"1787855001334001tNIt","offeringId":"1787855001334001tNIt-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=tLp_b3nHziY","basis":"captions-ja",
+  "summary":[{"atSeconds":79,"text":"CloudFuze が、古い共有リンクやアクセス権をそのまま Microsoft 365 へ移すと、Copilot の導入後も同じ問題が残ると説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":391,"text":"移行元の Box を接続し、ファイルを移す前に共有状況などをスキャンするデモを行いました。"}],
+  "tips":[{"atSeconds":240,"text":"移行前に、古いファイル、重複、所有者不明のコンテンツを整理し、公開範囲や退職者のアクセスも見直します。"}]
+}

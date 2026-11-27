@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2244","sessionId":"1788986932031001usBa","offeringId":"1788986932031001usBa-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=kKCb8Bfbu4s","basis":"captions",
+  "summary":[{"atSeconds":319,"text":"VAST が、アプリや地域ごとに分かれたファイルとオブジェクトのデータを、同じ名前空間と権限管理で扱うクラウド向けの基盤を紹介しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":746,"text":"複数拠点からデータを参照する場合は、書き込みを受け付ける正本の場所と、読み取りを速めるキャッシュを置く場所を区別します。"}]
+}

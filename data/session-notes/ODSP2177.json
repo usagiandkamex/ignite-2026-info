@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2177","sessionId":"1787855001449001tSik","offeringId":"1787855001449001tSik-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=Exe27JKKh2U","basis":"captions",
+  "summary":[{"atSeconds":5,"text":"MigrationWiz を使い、Teams の個人チャットを別の環境へ移行する手順を、準備から移行結果の確認まで紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":356,"text":"個人チャット用のプロジェクトを作り、移行元と移行先を指定するデモを行いました。"}],
+  "tips":[{"atSeconds":800,"text":"完了表示だけで判断せず、移行先の利用者からチャットがどう見えるかを確認し、従来と表示が異なる点を把握します。"}]
+}

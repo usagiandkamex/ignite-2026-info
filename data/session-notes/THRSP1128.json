@@ -1,0 +1,30 @@
+{
+  "sessionCode": "THRSP1128",
+  "sessionId": "1787858597554001S13J",
+  "offeringId": "1787858597554001S13J-1791588354319001Cfm8",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=zbOnrvIEiQo",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 290,
+      "text": "ProsperOps はクラウド費用最適化を、予約・節約プランなどで単価を下げる方法と、適正サイズ化・自動スケールなどで使用量を効率化する方法に分けて説明しました。"
+    },
+    {
+      "atSeconds": 629,
+      "text": "削減成果を示す Effective Savings Rate と、長期契約による柔軟性低下を示す Commitment Lock-in Risk を併せて見る考え方を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 290,
+      "text": "特定チームだけの節約で終わらせず、最適化の手順を組織全体の日常運用と文化へ組み込むよう勧めました。"
+    },
+    {
+      "atSeconds": 629,
+      "text": "AI のように変動が大きい処理や、今後使用量を減らす予定の環境では、割引率だけでなく契約期間と利用量変化のリスクを評価する必要があります。"
+    }
+  ]
+}

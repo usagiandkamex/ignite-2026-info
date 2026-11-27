@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2225","sessionId":"1787855006519001tzQd","offeringId":"1787855006519001tzQd-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=lYDeGObIrGk","basis":"captions",
+  "summary":[{"atSeconds":197,"text":"規制を受ける組織で AI を使う前に、通話やチャットの最新・過去の記録をつなぎ、検証と保存を行うデータ基盤を整える方法を説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":285,"text":"記録が存在するだけで十分とせず、対象のやり取りと収集した音声やメタデータを照合し、欠落があれば早めに把握できるようにします。"}]
+}

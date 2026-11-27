@@ -1,0 +1,37 @@
+{
+  "sessionCode": "THRSP1131",
+  "sessionId": "1787858598006001SHo9",
+  "offeringId": "1787858598006001SHo9-1791814923599001CvUl",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=enk9_9PlrTU",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 212,
+      "text": "Docusign は署名前後も含む契約の作成・締結・管理を IAM プラットフォームでつなぎ、主要条項、期日、当事者の抽出やワークフローに AI を活用する考え方を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 500,
+      "text": "Copilot Studio で利用可能な Docusign MCP コネクタを紹介しました。Microsoft アプリ内のエージェントから契約情報へアクセスし、業務処理につなぐ仕組みです。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 700,
+      "text": "資産運用を題材にしたデモでは、契約変更の署名後に Dynamics の口座レコードへ文書を添付し、契約情報を CRM と同期する流れを示しました。実顧客の取引実績ではありません。"
+    },
+    {
+      "atSeconds": 949,
+      "text": "営業と法務のデモでは、Dynamics の商談から契約依頼を作り、同じ画面に埋め込まれた Agreement Desk で承認待ちの状態を共有する構成を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2,
+      "text": "将来構想を含む説明もあるため、購入判断は実際に提供されている機能の公式掲載内容に基づいて行うよう冒頭で注意しました。"
+    }
+  ]
+}

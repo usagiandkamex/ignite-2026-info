@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK543",
+  "sessionId": "1787856655942001EVFB",
+  "offeringId": "1787856655942001EVFB-1791588322880001CY4U",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=xovJYj-tGnQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 11,
+      "text": "Scott Hanselman と Mark Russinovich が、AI によってソフトウェアを作るコストが下がる中、開発者の仕事と学びがどう変わるかを実演と対話で考えました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 1281,
+      "text": "GPU Taskman という試作アプリで、プロセスが使う GPU と、その中で動く AI モデルの情報を分かりやすく示す例を紹介しました。通常の利用量表示だけではモデルの状態を理解しにくいという課題を説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 2350,
+      "text": "経験者が AI を生かしやすくなる一方、若手を採用・育成しなければ将来の熟練者が育たないと警鐘を鳴らしました。効率化だけでなく、キャリア初期の学びと育成を重視するよう述べました。"
+    }
+  ]
+}

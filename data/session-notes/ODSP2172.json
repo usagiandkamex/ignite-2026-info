@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2172","sessionId":"1787855000923001tdVj","offeringId":"1787855000923001tdVj-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=do0ZmqUgyEY","basis":"captions-ja",
+  "summary":[{"atSeconds":76,"text":"Dragonfly の登壇者は、エージェントが人より短い間隔でサービスを使うため、人間の利用頻度を前提にした同時接続数や処理量の見積もりでは足りなくなる可能性があると説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":255,"text":"AI 向けの特徴量ストアでは、現在の処理性能だけでなく、蓄積するデータ量が増えたときの拡張方法も確認します。"}]
+}

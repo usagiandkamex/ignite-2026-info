@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK502",
+  "sessionId": "1787856649622001EGbZ",
+  "offeringId": "1787856649622001EGbZ-1791588288655001COyp",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=i57CkO3Wl7g",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 1309,
+      "text": "Copilot のパートナー事業を、利用ライセンスの拡大だけでなく、usage-based billing による継続的な利用の拡大から捉えました。顧客が実際にクレジットを消費して価値を得ることを、新たな支援機会として説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 6,
+      "text": "Infinity Group は、自社を最初の適用先にする Customer Zero の方針で、Dynamics 365 Sales から各部門の基盤を見直し、約50のエージェントを運用していると紹介しました。Microsoft 365 を土台に、Purview、Agent 365、ID とアクセスの管理も整備したと説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 6,
+      "text": "自社導入を、効果の実証だけでなく顧客が経験する移行の難しさを理解する機会にし、その経験を提供サービスと組織設計へ反映する考え方を紹介しました。"
+    }
+  ]
+}

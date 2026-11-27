@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR973", "sessionId": "1787856593604001EHuM", "offeringId": "1787856593604001EHuM-1791588249540001CMok", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=epFSIpjLxRU", "basis": "captions",
+  "summary": [
+    {"atSeconds": 15, "text": "数式を作るだけでなく、見えない人も読み扱える形式で共有することが STEM 教育や仕事への参加に重要だと説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 339, "text": "Windows のナレーターに追加された数式ナビゲーションモードを紹介しました。数式を階層的に移動し、部分ごとに内容を理解できると説明しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 151, "text": "Word の Copilot に二次方程式の解の公式を説明する文書を作らせ、見た目が整うだけでなく、編集と読み上げに対応した数式を生成するデモを示しました。"},
+    {"atSeconds": 616, "text": "Mac 上のブラウザーから数式を含む内容を OneNote に貼り付けるデモを示しました。MathML を取り込むことで、数式を編集・利用できる状態で移せると説明しました。"}
+  ],
+  "tips": []
+}

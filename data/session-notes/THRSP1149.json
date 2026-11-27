@@ -1,0 +1,33 @@
+{
+  "sessionCode": "THRSP1149",
+  "sessionId": "1787858600661001SjTP",
+  "offeringId": "1787858600661001SjTP-1791588317934001CLpU",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=FdZ8TxPzAY8",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 470,
+      "text": "Adobe は CX Enterprise Coworker を通じて複数のマーケティング製品を自然言語で扱い、利用者が製品ごとの操作を覚えずに顧客や施策の情報を得る考え方を説明しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 861,
+      "text": "Coworker が Copilot 内でもエージェントとして利用できると紹介しました。Adobe の画面へ切り替えずに質問や作業を進める連携です。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 1102,
+      "text": "キャンペーンの例では、既存の顧客層・施策・素材について質問し、対象顧客層の作成からジャーニーの実行までを Copilot 内で進めるデモを紹介しました。特定顧客の売上改善実績ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 700,
+      "text": "個人の質問応答だけでなく、ブランド、配信チャネル、コンテンツ制作など異なる担当者が一つのマーケティングプロジェクトで協働できる設計を重視しました。"
+    }
+  ]
+}

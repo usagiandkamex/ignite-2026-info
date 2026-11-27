@@ -1,0 +1,15 @@
+{
+  "sessionCode": "THR952", "sessionId": "1787856590323001EyL3", "offeringId": "1787856590323001EyL3-1791588177933001CHWp", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=VWw66NWGBCI", "basis": "captions",
+  "summary": [
+    {"atSeconds": 56, "text": "AI Skills Navigator は個人向けの教材推薦に加え、組織の従業員育成にも対応すると説明しました。役割と好みの学習形式に合わせた体験を重視しています。"}
+  ],
+  "updates": [
+    {"atSeconds": 523, "text": "最近導入したオンデマンドラボを紹介しました。無料で Microsoft の技術を実際に試し、読む・見るだけでは得にくい実践経験を積めると説明しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 211, "text": "営業担当者の学習目標を題材に、Microsoft Learn、LinkedIn Learning、Microsoft の動画などからプレイリストを作成するデモを行いました。生成後も対話で調整できると示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 855, "text": "教材を発見して終わらず、自分向けに整理し、学び、実習するまでを一続きで進める使い方を勧めました。複数言語で学習できる点にも触れました。"}
+  ]
+}

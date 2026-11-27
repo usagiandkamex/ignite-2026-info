@@ -1,0 +1,26 @@
+{
+  "sessionCode": "THRSP1132",
+  "sessionId": "1787858598158001SnDc",
+  "offeringId": "1787858598158001SnDc-1791814923826001CieA",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=k40vjWJDjAQ",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 67,
+      "text": "AI データセンターの需要増加と GPU の高密度化を背景に、計算機、電力供給、冷却を別々にではなく一体で設計する必要性を説明しました。"
+    },
+    {
+      "atSeconds": 435,
+      "text": "設備の方向性として直流給電、空冷と液冷の併用、プレハブ型の納入を取り上げ、高密度化と展開の速さを両立する考え方を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 625,
+      "text": "高圧受電から低圧・直流変換、GPU への供給まで、各層の部品や保護を協調させ、電力と冷却の相互依存を確認するよう勧めました。"
+    }
+  ]
+}

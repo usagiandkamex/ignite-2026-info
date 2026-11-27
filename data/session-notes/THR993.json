@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR993", "sessionId": "1787856596697001EuAn", "offeringId": "1787856596697001EuAn-1791588259340001CULN", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=J8RxHdm-1Aw", "basis": "captions",
+  "summary": [
+    {"atSeconds": 64, "text": "ID、端末管理、社内リソースへの接続、DLP を別々のサービスで扱う複雑さを挙げ、連携した職場の防御をデモする構成を示しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 288, "text": "Cloud Kerberos Trust を使い、クラウド側の端末からオンプレミスのファイルサーバーへ、パスワードを入力し直さずアクセスするデモを行いました。"},
+    {"atSeconds": 769, "text": "機密文書を使おうとした際に、Purview の DLP ポリシーが Copilot での取り扱いを制限するデモを行いました。"},
+    {"atSeconds": 1047, "text": "説明用の外部 AI サービスを未承認として遮断するデモを行いました。Defender for Endpoint と Defender for Cloud Apps の連携による組織の制御例です。"}
+  ],
+  "tips": []
+}

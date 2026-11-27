@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2189","sessionId":"1787855002717001t85a","offeringId":"1787855002717001t85a-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=PAFnXL6aMIw","basis":"captions-ja",
+  "summary":[{"atSeconds":15,"text":"Teams や Slack などから従業員の相談を受け、端末の情報と過去の問い合わせを照らし合わせて支援するエージェントを紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":209,"text":"ノート PC で Chrome が繰り返し終了する問い合わせを受け、端末情報と過去のやり取りを調べる例を示しました。"}],
+  "tips":[{"atSeconds":330,"text":"運用担当者が、エージェントが支援したチケットと、完了・進行中の処理を管理画面で確認できるようにします。"}]
+}

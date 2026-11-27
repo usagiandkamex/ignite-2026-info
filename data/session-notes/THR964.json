@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR964", "sessionId": "1787856592220001EVen", "offeringId": "1787856592220001EVen-1791588108990001CPQG", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=lpZCLh0baas", "basis": "captions",
+  "summary": [
+    {"atSeconds": 212, "text": "Copilot Studio の複数の harness を比較し、Microsoft Copilot harness は複雑で多段階の処理に、顧客との会話向けのものは音声やチャットの場面に適すると説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 512, "text": "IT ヘルプデスクを題材に、指示とトラブル対応用のスキルを組み合わせたエージェントを作成するライブデモを行いました。"},
+    {"atSeconds": 873, "text": "端末の不調と交換希望を入力し、エージェントが対応用スキルを選ぶ様子を確認しました。公開前のデバッグ画面であり、利用者に見える画面とは異なると説明しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1152, "text": "手動で数件を試すだけでなく、想定質問と期待する応答を評価機能に登録し、まとめて確認するよう紹介しました。デモでは事前に用意した評価結果も示しました。"}
+  ]
+}

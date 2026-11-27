@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2233","sessionId":"1787855007373001tHrU","offeringId":"1787855007373001tHrU-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=YyzX-qkPpMs","basis":"captions",
+  "summary":[{"atSeconds":83,"text":"Microsoft と Snowflake が、Copilot Studio のエージェントから MCP を通じて Snowflake の機能を利用する構成を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":332,"text":"顧客別の平均売上を自然な言葉で尋ねると、Cortex Analyst が業務データの意味を定義したビューを利用して SQL に変換し、Snowflake の結果を返す例を示しました。"}],
+  "tips":[]
+}

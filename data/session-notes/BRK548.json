@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK548",
+  "sessionId": "1787856656693001E0cK",
+  "offeringId": "1787856656693001E0cK-1791588221349001CeSB",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=mzQiTgfOabc",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 540,
+      "text": "Replit のセル単位の Azure 構成を紹介し、Kubernetes 上の状態・セッション管理とエージェントを組み合わせる仕組みを説明しました。永続的な状態遷移により、障害や画面の再読み込みでも進捗を失わない設計を示しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 222,
+      "text": "Replit の Microsoft Fabric 統合を、その週に一般提供したと紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 222,
+      "text": "自社ドキュメントの Fabric functions に関する不足を直すデモで、クラウドエージェントへ作業を委任しました。専用の隔離実行環境にコードを用意し、発表中にバックグラウンドで変更を進める流れを示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 950,
+      "text": "コードの永続ファイルシステムとエージェントの永続実行は別の構成要素として説明しました。実行環境の開始時にファイルを接続し、状態管理には Restate を利用すると述べました。"
+    }
+  ]
+}

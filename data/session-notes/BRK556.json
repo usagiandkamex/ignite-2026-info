@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK556",
+  "sessionId": "1790807653601001lsfR",
+  "offeringId": "1790807653601001lsfR-1791814921511001Ca8S",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=DL3_91x7gM8",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 549,
+      "text": "Kelsey Hightower と Scott Hanselman は、AI でコードを大量に作ることと、良い技術判断で問題を解くことは異なると議論しました。人の価値を、コンピューター上で実行した作業量だけで測らない視点を示しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 966,
+      "text": "自動操縦が信頼できるのは、その下に冗長性や堅牢な設計があるためだという比喩を使い、脆い社内業務に AI を重ねるだけでは信頼できる自動化にならないと説明しました。"
+    },
+    {
+      "atSeconds": 2480,
+      "text": "問い合わせを多く処理する活動と、機能を改善して問い合わせ自体を減らす効果を区別しました。AI 利用やコード生成の量より、何が最も大きな影響を生むかを見極めるよう勧めました。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2210","sessionId":"1787855004926001tI3n","offeringId":"1787855004926001tI3n-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=O8c_Cn6wDlo","basis":"captions-ja",
+  "summary":[{"atSeconds":189,"text":"Improving が、Microsoft Fabric でデータを段階的に整え、検証済みのセマンティックモデルをエージェントに渡す考え方を説明しました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":647,"text":"次に改善する本番業務を決める際は、必要なデータと業務の背景がそろっているか、結果の責任を誰が持つかを確認します。"}]
+}

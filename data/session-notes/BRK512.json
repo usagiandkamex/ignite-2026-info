@@ -1,0 +1,33 @@
+{
+  "sessionCode": "BRK512",
+  "sessionId": "1787856651124001EwCc",
+  "offeringId": "1787856651124001EwCc-1791588235251001CQbq",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=0S3Dy1aWoio",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 10,
+      "text": "Marketplace を、ソフトウェアを作る企業と販売を担うチャネルパートナーが協業する基盤として説明し、パートナー主導の取引を広げる方法を紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 253,
+      "text": "ソフトウェア、導入、サポートなどを一つのオファーとして購入できるバンドル機能を、今後提供する予定として紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 850,
+      "text": "resell-enabled offer のデモでは、フランス語の営業や現地関係を持たないソフトウェア企業が、チャネルパートナーに販売を委ねてフランスへ展開する想定例を示しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 1998,
+      "text": "ソフトウェア企業は、まず Marketplace 上で取引可能な掲載と Azure benefit eligibility を整え、顧客の契約コミットメントへの充当を含め、MPO・REO などの取引方式を使い分けるよう勧めました。"
+    }
+  ]
+}

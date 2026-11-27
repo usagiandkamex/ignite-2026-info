@@ -1,0 +1,30 @@
+{
+  "sessionCode": "THRSP1146",
+  "sessionId": "1787858600227001ShOV",
+  "offeringId": "1787858600227001ShOV-1791588347984001CVcC",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=1R75E30MZSM",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 17,
+      "text": "Cribl は、AI エージェント自体とその接続先から生まれるログによりテレメトリが増える一方、分析予算を同じ割合では増やしにくい課題を説明しました。"
+    },
+    {
+      "atSeconds": 295,
+      "text": "ログやメトリクスを発生源に近い場所で収集し、分析先へ送る前に整える、テレメトリ用のプラットフォームを紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 654,
+      "text": "すべてのイベントを高価な分析先へ送るのではなく、価値の低いデータは低費用の保存先へ回し、必要になったときに取り出す方法を勧めました。"
+    },
+    {
+      "atSeconds": 1181,
+      "text": "Sentinel に渡す量だけでなく形式も制御し、Microsoft 以外の情報源を含めて同じ整理済みデータを使えるようにする考え方を示しました。"
+    }
+  ]
+}

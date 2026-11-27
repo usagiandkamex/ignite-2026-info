@@ -1,0 +1,37 @@
+{
+  "sessionCode": "THRSP1133",
+  "sessionId": "1787858598306001SSO4",
+  "offeringId": "1787858598306001SSO4-1791588346861001CzHJ",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 527,
+      "text": "Red Hat は、GitHub と Ansible をつなぎ、コンテナーと VM の両方に対して修正候補の検証から展開までを統制する流れを紹介しました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 58,
+      "text": "GitHub と協力して進めたランナーの一般提供を当日開始したと説明し、Project Lightwell とともに紹介しました。具体的な利用条件は別途公式情報との照合が必要です。",
+      "announcementId": null
+    }
+  ],
+  "cases": [
+    {
+      "atSeconds": 305,
+      "text": "デモでは一つの GitHub リポジトリを正規のソースとし、同じチケット受付アプリをコンテナーと RHEL VM で動かしました。実顧客の基幹アプリではなく説明用のアプリです。"
+    },
+    {
+      "atSeconds": 1039,
+      "text": "検証後にコンテナーと VM の両方を更新するデモを示し、一連の処理は約 2 分と説明しました。この実演の所要時間であり、任意の本番環境への保証ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 527,
+      "text": "配置先が Azure とオンプレミスに分かれていても、変更をプルリクエストとテストで確認してから展開する、一貫した運用経路を持つことを重視しました。"
+    }
+  ]
+}

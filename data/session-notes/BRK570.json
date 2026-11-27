@@ -1,0 +1,27 @@
+{
+  "sessionCode": "BRK570",
+  "sessionId": "1791404048974001d13C",
+  "offeringId": "1791404048974001d13C-1791930977477001a2wC",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=cFAuSQssEq8",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 172,
+      "text": "Copilot Studio を開発者向けの基盤として捉え、標準のハーネスと Microsoft Copilot Harness を区別して説明しました。エージェントやワークフローの複雑さを扱い、開発ライフサイクルへ取り込む視点を示しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 733,
+      "text": "既に Copilot Studio に作ったエージェントとワークフローを、Git に接続したローカルの作業ディレクトリへ取り出すデモを示しました。画面で作成した資産を、ソース管理と展開パイプラインへ引き継ぐ例として説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 733,
+      "text": "ローコードで作り始めても、他者へ引き渡す段階ではソース管理、展開の手順、環境間の移行を考える必要があると説明しました。作成体験と継続的な運用を切り離さない進め方を示しました。"
+    }
+  ]
+}

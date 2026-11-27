@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1121",
+  "sessionId": "1787858596526001S5QZ",
+  "offeringId": "1787858596526001S5QZ-1791588294635001CnZL",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=UR_9HBCXkMQ",
+  "basis": "captions-ja",
+  "summary": [
+    {
+      "atSeconds": 4,
+      "text": "NinjaOne は Entra、Intune、Microsoft 365、Azure を置き換えるのではなく、それらをつなぐ単一の運用層を提供する方針を説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 442,
+      "text": "Entra 連携のデモでは、ユーザーやグループの情報を NinjaOne へ取り込み、技術者・利用者などの役割に応じたアクセス制御へつなぐ画面を紹介しました。"
+    },
+    {
+      "atSeconds": 859,
+      "text": "チケット管理の画面説明では、利用者や端末の履歴をナレッジベースと結び付け、Katana や Copilot、MCP・API を通じた運用支援へ広げる構成を紹介しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 181,
+      "text": "マルチテナントの分離は MSP の顧客管理だけでなく、社内 IT の組織・拠点・部署の管理単位にも使えると説明しました。"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "sessionCode": "THR955", "sessionId": "1787856590804001E89B", "offeringId": "1787856590804001E89B-1791814915758001C4mD", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=oC1jf-0Jq8A", "basis": "captions",
+  "summary": [
+    {"atSeconds": 184, "text": "開発者の能力には知識と実践の両面があり、既存の資格で示す知識に加えて、日々の仕事での熟練度を捉える必要があると説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 366, "text": "Pro Badge を新しい認定種別として紹介しました。独立した試験だけではなく、製品の中で普段どのように作業しているかに基づいて能力を評価する仕組みです。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 1030, "text": "GitHub アカウントでサインインし、GitHub Copilot の熟練度を算出してダッシュボードを確認する流れを紹介しました。過去の利用が前提になると説明しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 680, "text": "利用回数やトークン量よりも使い方の質が重要だと説明しました。AI と計画・反復・改善を行うことや、リポジトリの文脈を伝えることを評価観点として挙げました。"}
+  ]
+}

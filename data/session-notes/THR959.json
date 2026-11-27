@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR959", "sessionId": "1787856591411001EAUC", "offeringId": "1787856591411001EAUC-1791814923343001CSB4", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=LunB4ximhQ4", "basis": "captions",
+  "summary": [
+    {"atSeconds": 205, "text": "Credly では発行組織を確認し、その組織が評価した結果を署名付きのデジタル資格情報として発行すると説明しました。自己申告とは異なる検証可能な情報として位置づけています。"},
+    {"atSeconds": 373, "text": "採用時の資格確認に手間がかかる一方、社内でも役職名や自己申告だけでは能力を把握しにくいという課題を説明しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 798, "text": "検証済み資格データを人事システムで活用するため、SAP SuccessFactors と Workday の標準連携を準備中だと説明しました。提供済みではなく、今後の計画として紹介しています。", "announcementId": null},
+    {"atSeconds": 1068, "text": "翌年半ばごろを目指すウォレットの構想として、本人確認を資格情報に結びつけ、共有者と取得者の同一性をより確実に確認する仕組みを紹介しました。", "announcementId": null}
+  ],
+  "cases": [],
+  "tips": []
+}

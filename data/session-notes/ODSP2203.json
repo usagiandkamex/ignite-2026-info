@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2203","sessionId":"1787855004210001tbfZ","offeringId":"1787855004210001tbfZ-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=mEY0FQ4heQ0","basis":"captions",
+  "summary":[{"atSeconds":1119,"text":"Autoheal が、エージェントを作って終わりにせず、実行履歴や対応結果を見て継続的に評価する開発・運用の構成を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":474,"text":"複数のエージェントに作業を割り当て、入力や承認を待っているものを画面で確認するデモを行いました。"}],
+  "tips":[{"atSeconds":223,"text":"開発での効果は変更件数だけでなく、プルリクエストの完了までの時間や、マージ後に取り消した件数でも測ります。"}]
+}

@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1145",
+  "sessionId": "1787858600081001STy3",
+  "offeringId": "1787858600081001STy3-1791588347763001CUbd",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": null,
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 147,
+      "text": "Fortinet は Azure 上の AI を、利用者からアプリへの経路、アプリとモデルの経路などに分け、ネットワークとアプリの保護を組み合わせる考え方を説明しました。"
+    },
+    {
+      "atSeconds": 431,
+      "text": "FortiAI Gate をエージェントとモデルの間に置き、要求と応答の保護、やり取りの可視化、予算の制御を担わせる構成を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 964,
+      "text": "Stanford Medicine Children's Health は、Azure の柔軟性を利用しながら従来の運用で理解している制御を維持するため、FortiGate、FortiWeb、FortiManager、FortiAnalyzer を組み合わせたと説明しました。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 964,
+      "text": "導入する製品名を並べるだけでなく、インシデント時にどこで一元的に状況を確認し、誰が管理するかという運用モデルを重視するよう勧めました。"
+    }
+  ]
+}

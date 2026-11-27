@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2215","sessionId":"1787855005459001tYDf","offeringId":"1787855005459001tYDf-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=diUwaGec2xc","basis":"captions-ja",
+  "summary":[{"atSeconds":98,"text":"エージェントにはあらかじめ指示と知識を設定でき、質問への回答に加えて操作も行うため、SharePoint 内で何が作成され、使われているかを把握する必要があると説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":492,"text":"SharePoint 管理センターにある Agent Insights のレポートを開き、データ収集の設定を確認するデモを行いました。"}],
+  "tips":[{"atSeconds":492,"text":"レポートを使い始める前に収集を有効にし、出力がない場合は活動がゼロと判断せずに設定を確認します。"}]
+}

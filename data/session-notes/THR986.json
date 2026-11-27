@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR986", "sessionId": "1787856595612001EVl7", "offeringId": "1787856595612001EVl7-1791588207171001Cgrt", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=kivfd_pg4k8", "basis": "captions",
+  "summary": [
+    {"atSeconds": 174, "text": "正しい数値を答えるだけでなく、利用者が見る権限を持つ情報だけを返すことも必要だと説明しました。信頼できるデータと適切なアクセス管理を出発点に挙げました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 480, "text": "Fabric のデモで、整備済みのデータ層にセマンティックモデルを作り、さらにオントロジーを加える構成を紹介しました。"},
+    {"atSeconds": 1051, "text": "会計期間と月次レポートなどの関係をオントロジーで示し、表に説明を加えるだけでは表せない関連性をエージェントに伝える例を示しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 248, "text": "Bronze、Silver、Gold の構成に加え、数値、通貨、合計、複数システム間の整合性を確認する品質ゲートを設けるよう勧めました。"}
+  ]
+}

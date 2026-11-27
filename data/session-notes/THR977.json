@@ -1,0 +1,13 @@
+{
+  "sessionCode": "THR977", "sessionId": "1787856594216001EjZ4", "offeringId": "1787856594216001EjZ4-1791588088168001CIec", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=DLIcYB-SfGs", "basis": "captions",
+  "summary": [
+    {"atSeconds": 85, "text": "プロジェクト群の管理では、Power BI で確認し、Excel に出して変更を試し、PowerPoint にまとめる作業を繰り返していたと説明しました。この分断を改善することを課題に挙げました。"},
+    {"atSeconds": 194, "text": "予算や人員の制約を踏まえてシナリオを比較し、利用者の判断を案内する機能と、複数の AI モデルを選べる構成を重視したと説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 653, "text": "モデル駆動型アプリで、対象ポートフォリオと必須のプロジェクトを選び、優先順位づけを段階的に進めるデモを行いました。"},
+    {"atSeconds": 935, "text": "ローカルの LM Studio 上のモデルに、作成したポートフォリオのシナリオを要約させるデモを行いました。端末側の計算資源も必要だと説明しました。"}
+  ],
+  "tips": []
+}

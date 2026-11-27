@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2179","sessionId":"1787855001654001tdIb","offeringId":"1787855001654001tdIb-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=mR-7GKKnQZA","basis":"captions",
+  "summary":[{"atSeconds":693,"text":"Entra ID では、削除したオブジェクトを作り直すことと、オブジェクト間の関係を含めて元に戻すことは異なると説明しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":1280,"text":"ControlMonkey で Entra ID の構成を検出し、正常だった時点のスナップショットを元に復旧を検討する例を紹介しました。"}],
+  "tips":[{"atSeconds":91,"text":"バックアップや論理削除があるだけで復旧できると判断せず、必要な設定と関係が復旧対象に含まれるかを確認します。"}]
+}

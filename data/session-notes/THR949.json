@@ -1,0 +1,16 @@
+{
+  "sessionCode": "THR949", "sessionId": "1787856589863001EnX0", "offeringId": "1787856589863001EnX0-1791588145661001CQEU", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=tUI0CNM3aUU", "basis": "captions",
+  "summary": [
+    {"atSeconds": 10, "text": "AI Skills Navigator を、学習開始時の知識量を問わず、AI が学習内容を個別化する無料のサービスとして紹介しました。"}
+  ],
+  "updates": [
+    {"atSeconds": 789, "text": "Ignite で追加されたオンデマンドのハンズオンラボを紹介しました。利用者側で環境を準備したり、サブスクリプションを用意したりせずに実習できると説明しました。", "announcementId": null},
+    {"atSeconds": 1089, "text": "AI Skills Navigator を Copilot の Learning agent に統合し、別のサイトへ移動しなくても業務中に学習できるようにしたと案内しました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 147, "text": "営業リーダーの架空の利用者として、職務と学習の好みを登録し、個別化された教材やプレイリストを利用するデモを行いました。"}
+  ],
+  "tips": [
+    {"atSeconds": 309, "text": "長い教材をそのまま読むだけでなく、要約や音声など、自分の学び方に合う形式を選べると紹介しました。"}
+  ]
+}

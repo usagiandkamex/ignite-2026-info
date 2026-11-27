@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR978", "sessionId": "1787856594371001ENmu", "offeringId": "1787856594371001ENmu-1791588095543001CYGc", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=Hyx12qdA0D0", "basis": "captions",
+  "summary": [
+    {"atSeconds": 71, "text": "大規模なアクセス増加にも対応する AI 基盤では、性能だけでなく、悪意ある利用を想定した防御を考える必要があると説明しました。"},
+    {"atSeconds": 883, "text": "MCP 経由でもプロンプトインジェクションへの注意が必要で、入力を無条件に信頼しない設計が重要だと説明しました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 1234, "text": "Azure 上の防御構成例として、Front Door と WAF、API Management、Microsoft Entra による ID 管理を紹介しました。認証の検証と追跡可能性を重視した提案例です。"}
+  ],
+  "tips": [
+    {"atSeconds": 538, "text": "不正な接続を拒否するだけで終わらず、監視・記録・報告を行い、リスクの把握や対応判断につなげるよう勧めました。"}
+  ]
+}

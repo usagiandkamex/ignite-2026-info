@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK536",
+  "sessionId": "1787856654883001EYY7",
+  "offeringId": "1787856654883001EYY7-1791588217020001C3Ii",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=UY8a6gXazsM",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 275,
+      "text": "安全な AI 活用に向けた経営・IT・セキュリティの対話を、基本統制、エージェントと所有者の把握、データ・ID・権限の保護、継続的なリスク低減の四つに整理しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 495,
+      "text": "データ保護を分類やラベルだけで終えず、使われていないアカウント、人以外の ID、過剰なアプリ権限も含めて見直すよう勧めました。AI が価値ある情報を使いながら、過剰共有を広げないための考え方を示しました。"
+    },
+    {
+      "atSeconds": 2515,
+      "text": "Microsoft 自身の取り組みとリスク判断を知る資料として Secure Future Initiative の報告書を、現在の推奨事項や AI 準備の確認先として Secure Now を紹介しました。"
+    }
+  ]
+}

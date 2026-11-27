@@ -1,0 +1,15 @@
+{
+  "sessionCode": "THR934", "sessionId": "1787856587507001EwPo", "offeringId": "1787856587507001EwPo-1791588353875001CXhp", "reviewedOn": "2026-11-27", "youtubeUrl": null, "basis": "captions",
+  "summary": [
+    {"atSeconds": 118, "text": "エージェントの作成自体よりも、本番移行後の統制、再利用、規模拡大が難しいと説明しました。利用が広がる速度に、組織の管理体制が追いつかないことを課題に挙げました。"}
+  ],
+  "updates": [
+    {"atSeconds": 887, "text": "Microsoft Foundry の継続的改善や評価、Agent 365 などを紹介し、エージェントを運用・管理するための機能群として位置づけました。", "announcementId": null}
+  ],
+  "cases": [
+    {"atSeconds": 1250, "text": "TCS が AI Governance Toolkit を紹介しました。最初のエージェント開発で得た知見をパターンや共通基盤に取り込み、後続開発の信頼性と効率を高める取り組みです。"}
+  ],
+  "tips": [
+    {"atSeconds": 345, "text": "モデルの差し替えは簡単でも出力の振る舞いは変わるため、モデル更新に追随できる設計と評価が必要だと説明しました。"}
+  ]
+}

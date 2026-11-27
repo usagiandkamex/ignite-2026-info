@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1136",
+  "sessionId": "1787858598744001SGxU",
+  "offeringId": "1787858598744001SGxU-1791588343479001CzTS",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=9eYLzn2FRwE",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 26,
+      "text": "IGEL は事業継続計画が基盤やアプリの復旧に偏り、利用者の端末から再び仕事を始めるまでの空白が見落とされがちだと指摘しました。"
+    },
+    {
+      "atSeconds": 431,
+      "text": "普段は Windows を使いながら、問題時にはあらかじめ用意した IGEL の環境へ切り替えて業務を続ける、補完的な復旧方式を紹介しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 915,
+      "text": "Emergency Mode のデモでは、Windows の領域を保持したまま、管理コンソールから端末を代替の IGEL 環境へ切り替える仕組みを説明しました。実顧客の災害復旧実績ではありません。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 255,
+      "text": "端末を再イメージすれば終わりとは考えず、原因調査、証拠保全、再発防止の確認に必要な時間も事業継続計画へ含めるよう勧めました。"
+    }
+  ]
+}

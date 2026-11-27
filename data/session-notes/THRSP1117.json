@@ -1,0 +1,32 @@
+{
+  "sessionCode": "THRSP1117",
+  "sessionId": "1787858595928001SBNK",
+  "offeringId": "1787858595928001SBNK-1791588317472001CCuw",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=UW4knCqhD2g",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 51,
+      "text": "Copilot 導入前に過剰共有、権限継承、DLP、秘密度ラベル、ゲストや管理者のアクセスを整えても、その状態が将来まで続くとは限らないと説明しました。"
+    },
+    {
+      "atSeconds": 201,
+      "text": "設定と ID は日常的に変わるため、導入時に承認したテナントと現在の状態には差が生じます。悪意のない変更も含めた継続確認が必要だと述べました。"
+    }
+  ],
+  "updates": [
+    {
+      "atSeconds": 824,
+      "text": "新たに公開した Tenant Observer は、100 を超えるセキュリティチェック、重要度別スコア、基準からの差分、設定履歴を提供する、無料で読み取り専用のセルフサービス製品だと紹介しました。",
+      "announcementId": null
+    }
+  ],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 407,
+      "text": "権限、構成、バックアップ、復旧を別々の担当ツールで見るだけでなく、テナント全体の状態を誰が持ち、以前の状態へ戻せるかを確認するよう勧めました。"
+    }
+  ]
+}

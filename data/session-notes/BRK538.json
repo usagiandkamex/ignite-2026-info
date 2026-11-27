@@ -1,0 +1,26 @@
+{
+  "sessionCode": "BRK538",
+  "sessionId": "1787856655182001EDIv",
+  "offeringId": "1787856655182001EDIv-1791588311437001CfRB",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=qyc1qpjuDqU",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 2,
+      "text": "AI の利用を Ask・Act・Automate へ進める流れを、アクセシビリティの観点から説明しました。速く働くためだけでなく、従来難しかった仕事を可能にする道具として AI を位置付けました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 330,
+      "text": "車いすを使う登壇者が、利用可能なホテル、タクシー、段差のない飲食店などを個別に探す代わりに、必要条件を Copilot に伝えて旅行計画をまとめる使い方を紹介しました。"
+    },
+    {
+      "atSeconds": 687,
+      "text": "スクリーンリーダーを使う弁護士が、色や書式で示された契約書の変更を一行ずつ読み比べる負担を説明し、Copilot で確認を支援するデモを示しました。登壇者は、実演内容が日常でも使っている仕組みだと述べました。"
+    }
+  ],
+  "tips": []
+}

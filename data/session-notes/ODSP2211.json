@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2211","sessionId":"1787855005049001toJp","offeringId":"1787855005049001toJp-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=oviQ0QzdhyU","basis":"captions-ja",
+  "summary":[{"atSeconds":76,"text":"CyberMSI が、AI のセキュリティリスクを、利用状況の把握、ID と権限、データの保護、運用上の検知・対応の四つに分けました。"}],
+  "updates":[],
+  "cases":[],
+  "tips":[{"atSeconds":217,"text":"まず AI アプリやエージェントを棚卸しし、Entra ID で権限を確認するとともに、機密情報に対するアクセスやデータ損失防止の設定を見直します。"}]
+}

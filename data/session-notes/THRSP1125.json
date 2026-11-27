@@ -1,0 +1,30 @@
+{
+  "sessionCode": "THRSP1125",
+  "sessionId": "1787858597116001SBbE",
+  "offeringId": "1787858597116001SBbE-1791588332374001C7xT",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=yjfQERuTypU",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 24,
+      "text": "EY と Tech Mahindra の対談では、Copilot による個人・職場の生産性向上から、業務全体の変革へ進む際の課題を議論しました。"
+    },
+    {
+      "atSeconds": 447,
+      "text": "AI への期待を測定可能な成果に変えるには、モデルの導入だけでなく業務プロセスの再設計が必要だと説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [],
+  "tips": [
+    {
+      "atSeconds": 601,
+      "text": "エージェントを万能の解決策と捉えず、基盤となる各層の準備と責任ある AI の検討を先に進めるよう勧めました。"
+    },
+    {
+      "atSeconds": 1242,
+      "text": "データの所在、品質、所有者、ガバナンス、説明責任を把握し、メタデータまで見通せる状態を AI 活用の前提に挙げました。"
+    }
+  ]
+}

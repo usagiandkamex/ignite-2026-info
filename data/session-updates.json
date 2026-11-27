@@ -218,6 +218,18 @@
       {"id":"az-581226","context":"講演で紹介した Data Guardian を Sovereign Control Panel から確認する機能の公式更新です。"},
       {"id":"az-581221","context":"講演で触れた Production Touch Ledger の第三者評価報告書です。地域ごとの提供を保証するものではありません。"}
     ],
+    "BRK491": [
+      {"id":"bon-497","context":"講演が扱った Microsoft IQ と企業固有の知識の活用に関する公式発表です。"}
+    ],
+    "BRK493": [
+      {"id":"bon-478","context":"講演で取り上げた Agent 365 と AI の費用管理を補足する公式発表です。"}
+    ],
+    "BRK494": [
+      {"id":"bon-531","context":"講演で案内した Microsoft Perception の中核機能の一般提供と、追加機能の提供状況をまとめた公式発表です。"}
+    ],
+    "BRK501": [
+      {"id":"bon-526","context":"講演で触れたエージェント ID と統制を補足する Microsoft Entra の公式発表です。"}
+    ],
     "BRKSP595": [
       {"id":"bon-516","context":"講演で示したエージェントや MCP ツールの可視化・統制を補足する Agent 365 の公式発表です。"}
     ],
@@ -304,6 +316,18 @@
     "ODSP2152": [
       {"id":"bon-533","context":"講演で取り上げた Copilot とエージェントのデータ保護を補足する Microsoft Purview の公式発表です。"}
     ],
+    "ODSP2179": [
+      {"id":"bon-526","context":"講演が比較した Microsoft Entra のバックアップ・復旧を含む公式発表です。ControlMonkey の製品発表ではありません。"}
+    ],
+    "ODSP2181": [
+      {"id":"bon-444","context":"講演で紹介した Arm ベースの Azure Cobalt 200 VM の公式発表です。"}
+    ],
+    "ODSP2201": [
+      {"id":"bon-541","context":"講演で説明した開発エージェントの実行環境に関連する Windows 365 for Agents の公式発表です。"}
+    ],
+    "ODSP2211": [
+      {"id":"bon-521","context":"講演で取り上げた Microsoft の統合セキュリティ運用（ISOC）の公式発表です。"}
+    ],
     "THR871": [
       {"id":"bon-503","context":"講演で扱った Fabric IQ のセマンティックモデルの活用に関連する公式発表です。"}
     ],
@@ -358,11 +382,26 @@
     "THR933": [
       {"id":"bon-507","context":"講演で説明した Work IQ での他社エージェント連携を補足する公式発表です。"}
     ],
+    "THR934": [
+      {"id":"bon-465","context":"講演で扱ったエージェントの本番運用と継続評価に関連する Foundry の公式発表です。"}
+    ],
     "THRSP1062": [
       {"id":"bon-499","context":"講演が取り上げた Work IQ と Fabric IQ による業務コンテキスト活用の公式発表です。Tia 自体の発表ではありません。"}
     ],
     "THRSP1085": [
       {"id":"bon-460","context":"講演で用いた Fabric アプリの公式発表です。Replit 向けテンプレートの発表とは別です。"}
+    ],
+    "THRSP1109": [
+      {"id":"bon-446","context":"講演で扱った Azure SRE Agent の Ignite 更新です。Dynatrace との構成は講演の事例です。"}
+    ],
+    "THRSP1112": [
+      {"id":"bon-526","context":"講演で扱ったエージェントの ID とアクセス管理を補足する Microsoft Entra の公式発表です。"}
+    ],
+    "THRSP1115": [
+      {"id":"az-580694","context":"講演で紹介した Azure Firewall Premium の AI Security アドオンの公式更新です。"}
+    ],
+    "THRSP1137": [
+      {"id":"bon-501","context":"講演で取り上げた Foundry IQ によるナレッジの活用を補足する公式発表です。ServiceNow 連携の提供状況は講演内容と個別に確認してください。"}
     ]
   }
 }

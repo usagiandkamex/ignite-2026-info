@@ -1,0 +1,31 @@
+{
+  "sessionCode": "THRSP1123",
+  "sessionId": "1787858596822001SJyI",
+  "offeringId": "1787858596822001SJyI-1791588317707001CTZO",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=zizHGMZTwcs",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 2,
+      "text": "Microsoft 365 や Microsoft Places にある予定・予約の情報を、実際に働く場所で使える形にするため、会議室や座席の表示機器との連携を説明しました。"
+    },
+    {
+      "atSeconds": 163,
+      "text": "予約が示すのは利用意図であり実際の行動ではないため、予約数だけでは部屋の不足、サイズの不一致、空予約を見分けられないと指摘しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 311,
+      "text": "Intuit の試行では、100 人のマーケティングチーム向けに座席表示機器を設置したところ、予定した説明会の前に利用者が自力で使い始めたと紹介しました。登壇者は、その使いやすさを確認して世界の拠点へ展開していると説明しています。"
+    }
+  ],
+  "tips": [
+    {
+      "atSeconds": 163,
+      "text": "働く場所の改善は予約の埋まり具合ではなく、実利用と必要な部屋の大きさを併せて確認するよう勧めました。"
+    }
+  ]
+}

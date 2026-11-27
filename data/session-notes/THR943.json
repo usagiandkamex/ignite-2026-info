@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR943", "sessionId": "1787856588932001EJjm", "offeringId": "1787856588932001EJjm-1791588316353001CMwn", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=xmIoSfXdZck", "basis": "captions",
+  "summary": [
+    {"atSeconds": 250, "text": "経営層にはエージェント数の報告だけでなく、顧客情報と意思決定が管理されているか、誰が責任を持つか、問題時にどう対応するかを説明する必要があると述べました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 103, "text": "架空の製造・設計企業 Trey Research を題材に、AI 導入に伴う判断を考えるシナリオを提示しました。実在企業の導入成果ではありません。"},
+    {"atSeconds": 495, "text": "シナリオでは Agent 365 の登録情報と Defender によるデスクトップ上の検出情報を合わせ、所有者が不在のまま利用されていたエージェントを発見しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1256, "text": "可視化に加え、Entra で責任主体を明らかにし、エージェントのアクセス範囲を定め、Purview の情報で機密データの利用を把握するという防御側の整理を示しました。"}
+  ]
+}

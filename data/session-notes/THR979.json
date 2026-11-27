@@ -1,0 +1,14 @@
+{
+  "sessionCode": "THR979", "sessionId": "1787856594520001EBik", "offeringId": "1787856594520001EBik-1791588088397001C7vB", "reviewedOn": "2026-11-27", "youtubeUrl": "https://www.youtube.com/watch?v=HM78LZecuJM", "basis": "captions",
+  "summary": [
+    {"atSeconds": 126, "text": "プロンプトがトークン化されて処理される流れを説明し、入力と出力の利用量を把握することがモデル費用の理解につながると述べました。"}
+  ],
+  "updates": [],
+  "cases": [
+    {"atSeconds": 352, "text": "Azure の価格 API を使い、モデルの配置先リージョンや通貨を指定して価格情報を取得するデモを行いました。契約形態によって参照する価格が異なる点にも触れました。"},
+    {"atSeconds": 720, "text": "天気を尋ねるサンプルのエージェント呼び出しを題材に、リクエスト処理と利用量を確認し、費用を見積もる流れを紹介しました。"}
+  ],
+  "tips": [
+    {"atSeconds": 1217, "text": "リソース単位の請求だけでなく、リクエスト情報や Azure Monitor の計測を組み合わせ、モデル別の利用状況を見えるようにする考え方を紹介しました。"}
+  ]
+}

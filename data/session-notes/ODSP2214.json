@@ -1,0 +1,7 @@
+{
+  "sessionCode":"ODSP2214","sessionId":"1787855005354001t93b","offeringId":"1787855005354001t93b-AAAAAAAAAAAAAAAAAAAA","reviewedOn":"2026-11-27","youtubeUrl":"https://www.youtube.com/watch?v=ja0Y_scydGU","basis":"captions",
+  "summary":[{"atSeconds":5,"text":"Slalom が、詳しく知る担当者がいない既存のコードを、言語別のエージェントで調査し、刷新に必要な作業を整理する方法を紹介しました。"}],
+  "updates":[],
+  "cases":[{"atSeconds":374,"text":"コードを調べて使用言語に合うエージェントを選び、最初は全体を浅く調べる設定で進めるデモを示しました。"}],
+  "tips":[{"atSeconds":194,"text":"移行に着手する前に、アプリの入口、設定、構成を調査し、既存の機能をどの単位で分けて進められるかを考えます。"}]
+}

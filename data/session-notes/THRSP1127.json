@@ -1,0 +1,30 @@
+{
+  "sessionCode": "THRSP1127",
+  "sessionId": "1787858597407001SNIM",
+  "offeringId": "1787858597407001SNIM-1791588346637001CEv4",
+  "reviewedOn": "2026-11-27",
+  "youtubeUrl": "https://www.youtube.com/watch?v=u72PodqEKZc",
+  "basis": "captions",
+  "summary": [
+    {
+      "atSeconds": 1,
+      "text": "ControlUp は Intune を置き換えるのではなく、デジタル従業員体験の情報を補い、AVD、Windows 365、端末の運用を深く把握して総保有コストを減らす考え方を示しました。"
+    },
+    {
+      "atSeconds": 160,
+      "text": "端末イベントを収集し、検知できる状態に対してトリガーとアクションを設定することで、障害対応などを自動化する仕組みを説明しました。"
+    }
+  ],
+  "updates": [],
+  "cases": [
+    {
+      "atSeconds": 390,
+      "text": "ログオン診断の画面では、グループポリシー、スクリプト、プリンター、ファイル共有などの待ち時間を分解し、遅さの原因を調べる例を紹介しました。"
+    },
+    {
+      "atSeconds": 1090,
+      "text": "Canvas のデモでは、アプリのクラッシュを調査する自然言語の依頼から、チャットと同時に掘り下げ可能なライブデータの画面を作る様子を示しました。"
+    }
+  ],
+  "tips": []
+}
