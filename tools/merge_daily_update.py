@@ -15,17 +15,29 @@ def api(path):
     return json.loads(gh("api", path))
 
 
-def require_protection(protection):
-    checks = protection.get("required_status_checks") or {}
-    if not (
-        protection.get("enforce_admins", {}).get("enabled") is True
-        and checks.get("strict") is True
-        and any(
-            check.get("context") == "build" and check.get("app_id") == 15368
-            for check in checks.get("checks", [])
-        )
-    ):
-        raise ValueError("main must enforce the GitHub Actions build check, up-to-date branches, and administrators")
+def require_protection(repo):
+    prefix = f"repos/{repo}"
+    for rule in api(f"{prefix}/rules/branches/main?per_page=100"):
+        if not (
+            rule["type"] == "required_status_checks"
+            and rule["ruleset_source_type"] == "Repository"
+            and rule["ruleset_source"] == repo
+        ):
+            continue
+        checks = rule["parameters"]
+        if checks["strict_required_status_checks_policy"] is not True or not any(
+            check["context"] == "build" and check.get("integration_id") == 15368
+            for check in checks["required_status_checks"]
+        ):
+            continue
+        # The effective branch rules do not include bypass actors.
+        ruleset = api(f"{prefix}/rulesets/{rule['ruleset_id']}")
+        if ruleset["enforcement"] == "active" and ruleset.get("bypass_actors") == []:
+            return
+    raise ValueError(
+        "main must have an active repository ruleset requiring the GitHub Actions build check "
+        "and up-to-date branches, with a verifiably empty bypass list"
+    )
 
 
 def require_pr(pr, repo, base_sha, head_sha=None):
@@ -85,12 +97,12 @@ def main():
         raise ValueError("Invalid PR number")
     number = int(number_text)
     prefix = f"repos/{repo}"
-    require_protection(api(f"{prefix}/branches/main/protection"))
+    require_protection(repo)
     pr_path = f"{prefix}/pulls/{number}"
     sha = require_pr(api(pr_path), repo, base_sha)
     require_files(json.loads(gh("api", "--paginate", "--slurp", f"{pr_path}/files?per_page=100")))
     wait_for_build(repo, number, sha)
-    require_protection(api(f"{prefix}/branches/main/protection"))
+    require_protection(repo)
     require_pr(api(pr_path), repo, base_sha, sha)
     gh("pr", "merge", number_text, "--repo", repo, "--squash", "--match-head-commit", sha)
     print(f"Merged daily update PR #{number} at {sha}")
