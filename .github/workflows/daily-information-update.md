@@ -51,11 +51,64 @@ pre-agent-steps:
       done
 
 post-steps:
+  - name: Prepare trusted validation checkout
+    run: rm -rf "$GITHUB_WORKSPACE/.trusted-validation"
+  - name: Check out trusted base for validation
+    uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+    with:
+      ref: ${{ github.sha }}
+      path: .trusted-validation
+      persist-credentials: false
   - name: Validate updated data and build the site
+    working-directory: .trusted-validation
+    env:
+      SOURCE_WORKSPACE: ${{ github.workspace }}
+      GITHUB_TOKEN: ""
+      GH_TOKEN: ""
+      GH_AW_GITHUB_TOKEN: ""
+      GH_AW_GITHUB_MCP_SERVER_TOKEN: ""
+      GH_AW_PR_TOKEN: ""
+      COPILOT_GITHUB_TOKEN: ""
+      OTEL_EXPORTER_OTLP_HEADERS: ""
+      GH_AW_OTLP_ENDPOINTS: ""
     run: |
-      set -e
-      git diff --quiet "$GITHUB_SHA" -- tools tests
-      test -z "$(git ls-files --others --exclude-standard -- tools tests)"
+      set -euo pipefail
+      git -C "$SOURCE_WORKSPACE" diff --quiet "$GITHUB_SHA" -- tools tests
+      test -z "$(git -C "$SOURCE_WORKSPACE" ls-files --others --exclude-standard -- tools tests)"
+      python - <<'PY'
+      import os
+      import re
+      import shutil
+      import subprocess
+      from pathlib import Path
+
+      source = Path(os.environ["SOURCE_WORKSPACE"])
+      destination = Path.cwd()
+      allowed = re.compile(r"(?:data/[^/]+\.json|data/session-notes/[^/]+\.json)\Z")
+      if (source / "data").is_symlink():
+          raise SystemExit("The source data directory must not be a symlink")
+
+      changed = set()
+      for command in (
+          ["git", "-C", str(source), "diff", "--no-renames", "--name-only", "-z", os.environ["GITHUB_SHA"], "--", "data"],
+          ["git", "-C", str(source), "ls-files", "--others", "--exclude-standard", "-z", "--", "data"],
+      ):
+          result = subprocess.run(command, check=True, stdout=subprocess.PIPE)
+          changed.update(os.fsdecode(path) for path in result.stdout.split(b"\0") if path)
+
+      for relative_path in sorted(changed):
+          if not allowed.fullmatch(relative_path):
+              continue
+          original = source / relative_path
+          target = destination / relative_path
+          if original.is_symlink():
+              raise SystemExit(f"Refusing symlink data file: {relative_path}")
+          if original.is_file():
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(original, target)
+          elif target.exists() or target.is_symlink():
+              target.unlink(missing_ok=True)
+      PY
       python -m unittest discover -s tests
       python tools/build.py
 
