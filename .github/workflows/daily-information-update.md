@@ -21,6 +21,8 @@ network:
     - ignite.microsoft.com
     - microsoft.com
     - azure.microsoft.com
+    - blogs.windows.com
+    - blogs.bing.com
     - aka.ms
     - youtube.com
 
@@ -101,7 +103,8 @@ safe-outputs:
 公式ページは必要に応じて Python 標準ライブラリの `urllib.request` で取得してください。
 
 1. `main` を対象とする `[日次情報更新]` または `[週次情報更新]` で始まる未クローズの PR があれば、
-   重複 PR を作らずに終了してください。
+   前処理で変更された `data/sessions.json`、`data/session-speakers.json`、
+   `data/azure-updates.json` を `GITHUB_SHA` の状態に戻し、重複 PR を作らずに終了してください。
 2. 前処理で更新したセッション・スピーカーと Azure の公式フィードの差分を確認してください。
    取得はそれぞれ最大 3 回試行し、どちらかが失敗した場合は PR を作成しません。
 3. 既存データの公式出典を確認し、イベント、Book of News、Azure 更新、
