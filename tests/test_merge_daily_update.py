@@ -20,28 +20,44 @@ class MergeDailyUpdateTests(TestCase):
             "base": {"ref": "main", "sha": self.base, "repo": {"full_name": self.repo}},
             "head": {"sha": self.sha, "repo": {"full_name": self.repo}},
         }
-        self.protection = {
-            "enforce_admins": {"enabled": True},
-            "required_status_checks": {
-                "strict": True, "checks": [{"context": "build", "app_id": 15368}],
+        self.branch_rule = {
+            "type": "required_status_checks", "ruleset_id": 123,
+            "ruleset_source_type": "Repository", "ruleset_source": self.repo,
+            "parameters": {
+                "strict_required_status_checks_policy": True,
+                "required_status_checks": [{"context": "build", "integration_id": 15368}],
             },
         }
+        self.ruleset = {"enforcement": "active", "bypass_actors": []}
 
-    def test_requires_enforced_and_authenticated_up_to_date_check(self):
-        merge.require_protection(self.protection)
-        for field in ("strict", "checks"):
-            altered = deepcopy(self.protection)
-            altered["required_status_checks"][field] = False if field == "strict" else []
-            with self.assertRaises(ValueError):
-                merge.require_protection(altered)
-        altered = deepcopy(self.protection)
-        altered["enforce_admins"]["enabled"] = False
-        with self.assertRaises(ValueError):
-            merge.require_protection(altered)
-        altered = deepcopy(self.protection)
-        altered["required_status_checks"]["checks"][0]["app_id"] = 1
-        with self.assertRaises(ValueError):
-            merge.require_protection(altered)
+    @patch.object(merge, "api")
+    def test_requires_authenticated_up_to_date_check_on_main(self, api):
+        parameters = self.branch_rule["parameters"]
+        for rules in (
+            [],
+            [{**self.branch_rule, "parameters": {
+                **parameters, "strict_required_status_checks_policy": False,
+            }}],
+            [{**self.branch_rule, "parameters": {
+                **parameters, "required_status_checks": [{"context": "build", "integration_id": 1}],
+            }}],
+        ):
+            with self.subTest(rules=rules):
+                api.return_value = rules
+                with self.assertRaisesRegex(ValueError, "active repository ruleset"):
+                    merge.require_protection(self.repo)
+
+    @patch.object(merge, "api")
+    def test_requires_active_ruleset_with_visible_empty_bypass_list(self, api):
+        for ruleset in (
+            {"enforcement": "evaluate", "bypass_actors": []},
+            {"enforcement": "active"},
+            {"enforcement": "active", "bypass_actors": [{"actor_type": "OrganizationAdmin"}]},
+        ):
+            with self.subTest(ruleset=ruleset):
+                api.side_effect = [[self.branch_rule], ruleset]
+                with self.assertRaisesRegex(ValueError, "empty bypass list"):
+                    merge.require_protection(self.repo)
 
     def test_rejects_changed_head_base_or_foreign_pr(self):
         self.assertEqual(merge.require_pr(self.pr, self.repo, self.base), self.sha)
@@ -87,13 +103,21 @@ class MergeDailyUpdateTests(TestCase):
     @patch.object(merge, "api")
     @patch.object(merge, "gh")
     def test_merge_uses_only_validated_head(self, gh, api, wait):
-        api.side_effect = [self.protection, self.pr, self.protection, self.pr]
+        api.side_effect = [
+            [self.branch_rule], self.ruleset, self.pr,
+            [self.branch_rule], self.ruleset, self.pr,
+        ]
         gh.side_effect = [json.dumps([[{"filename": "data/event.json"}]]), ""]
         with patch.dict(merge.os.environ, {
             "GITHUB_REPOSITORY": self.repo, "GITHUB_SHA": self.base, "PR_NUMBER": "7",
         }):
             merge.main()
         wait.assert_called_once_with(self.repo, 7, self.sha)
+        self.assertEqual([call.args[0] for call in api.call_args_list], [
+            f"repos/{self.repo}/rules/branches/main?per_page=100",
+            f"repos/{self.repo}/rulesets/123",
+            f"repos/{self.repo}/pulls/7",
+        ] * 2)
         self.assertEqual(gh.call_args_list[-1].args, (
             "pr", "merge", "7", "--repo", self.repo, "--squash", "--match-head-commit", self.sha,
         ))
@@ -102,7 +126,7 @@ class MergeDailyUpdateTests(TestCase):
     @patch.object(merge, "api")
     @patch.object(merge, "gh", return_value='[[{"filename":"data/event.json"}]]')
     def test_failed_build_never_requests_merge(self, gh, api, wait):
-        api.side_effect = [self.protection, self.pr]
+        api.side_effect = [[self.branch_rule], self.ruleset, self.pr]
         with patch.dict(merge.os.environ, {
             "GITHUB_REPOSITORY": self.repo, "GITHUB_SHA": self.base, "PR_NUMBER": "7",
         }), self.assertRaisesRegex(ValueError, "build failed"):
