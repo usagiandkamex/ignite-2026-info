@@ -11,7 +11,7 @@ from import_sessions import JST
 from site_data import (
     CATEGORIES, DATA, DELIVERY, FILES, LEVELS, NOTE_SECTIONS, NOTE_STATES, RECORDING_BASIS, ROOT,
     SESSION_TYPES, STAGES, TOPICS, azure_status, iso_date, load, load_recording_sources,
-    load_references, load_session_speakers, load_update_editorial, utc,
+    load_references, load_session_speakers, load_speaker_editorial, load_update_editorial, utc,
 )
 
 WEB = ROOT / "web"
@@ -303,7 +303,9 @@ def speaker_section(s):
     for speaker in s["speakers"]:
         details = [value for value in (speaker["jobTitle"], speaker["company"]) if value]
         profile = f' — {h(" · ".join(details))}' if details else ""
-        profiles.append(f'<li>{link(speaker["sourceUrl"], speaker["name"])}{profile}</li>')
+        context = (f'<p class="meta">公式プロフィールより：{h(speaker["contextJa"])}</p>'
+                   if speaker.get("contextJa") else "")
+        profiles.append(f'<li>{link(speaker["sourceUrl"], speaker["name"])}{profile}{context}</li>')
 
     content = f'<ul>{"".join(profiles)}</ul>' if profiles else ""
     unresolved = s["unresolvedSpeakers"]
@@ -509,6 +511,7 @@ def ai_index(event, catalog, updates, notes, azure, videos, recordings):
 def build(output):
     event, catalog, updates, session_notes = load()
     speaker_details = load_session_speakers(catalog)
+    speaker_editorial = load_speaker_editorial(speaker_details)
     azure, video_data, links = load_references(catalog, updates, session_notes)
     recordings = load_recording_sources(catalog)
     editorial = load_update_editorial(updates, azure)
@@ -580,14 +583,19 @@ def build(output):
         if recording:
             offering = next(o for o in s["offerings"] if o["id"] == recording["offeringId"])
             recording = {**recording, "sourceUrl": offering["sourceUrl"], "checkedOn": recordings["checkedOn"]}
-        details = {**s, **speaker_details[s["code"]]}
+        speakers = [
+            {**profile, **({"contextJa": speaker_editorial[profile["id"]]["summaryJa"]}
+                           if profile["id"] in speaker_editorial else {})}
+            for profile in speaker_details[s["code"]]["speakers"]
+        ]
+        details = {**s, **speaker_details[s["code"]], "speakers": speakers}
         page = detail_page(details, note, video, related, technical, recording)
         (output / detail_path(s)).write_text(page, encoding="utf-8", newline="\n")
         write_json(output / detail_data_path(s), {
             "schemaVersion": 1,
             "catalogCheckedOn": catalog["checkedOn"],
             "session": s,
-            "speakers": speaker_details[s["code"]]["speakers"],
+            "speakers": speakers,
             "unresolvedSpeakers": speaker_details[s["code"]]["unresolvedSpeakers"],
             "recordingReview": {"status": state, "note": note},
             "youtubeUrl": video,

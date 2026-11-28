@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-27",
+  "speakers": {
+    "177730559163ignite27-1790031568296001kZO2": {
+      "summaryJa": "Copilot Code のプロダクトを担当し、AI を活用した制作体験に取り組む。エンジニアリング、プロダクトリーダーシップ、起業の経験を持つ。",
+      "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/177730559163ignite27-1790031568296001kZO2"
+    },
+    "177730559163ignite27-1789673153957001TTnX": {
+      "summaryJa": "Azure Container Apps のエンジニアで、.NET とネットワーク分野の経験を持つ。",
+      "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/177730559163ignite27-1789673153957001TTnX"
+    },
+    "177730559163ignite27-1791934977759001MoV5": {
+      "summaryJa": "Foundry Local の開発を率い、生成 AI を利用者の端末上で動かす取り組みを担当。モデルの効率的な実行と開発者向けツールを通じ、ローカルで動作する AI アプリの開発を支援する。",
+      "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/177730559163ignite27-1791934977759001MoV5"
+    },
+    "177730559163ignite27-1790281595763001bNYk": {
+      "summaryJa": "Copilot Cowork プロジェクトを立ち上げ、Microsoft 365 をまたぐ複数ステップの作業を計画・実行するクラウドホスト型エージェントの開発に携わる。Dynamics、Power BI、Customer Insights、AI Builder、Power Virtual Agents、Copilot Studio での経験も持つ。",
+      "sourceUrl": "https://ignite.microsoft.com/en-US/speakers/177730559163ignite27-1790281595763001bNYk"
+    }
+  }
+}
