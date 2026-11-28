@@ -47,11 +47,26 @@ python -m http.server 8000 --directory _site
 
 1. セッションを更新する場合は `python tools/import_sessions.py` をリポジトリのルートから実行します。公式サイトがログインなしで使うセッションカタログとスピーカーディレクトリから、公開に必要なフィールドだけを抽出します。差分に加え、公開・除外の件数およびオンデマンド一覧を公式画面と照合します。
 2. イベント・製品発表は対応する JSON を編集します。Book of News の本文付き発表見出しと突合し、転載ではなく独自に要約します。地域、ライセンス、予定日などを追記する場合は、公式出典を付けて発表時の状態と区別します。
-3. 検証とビルドを行い、PR で出典と差分をレビューします。定期取得や自動書き換えはありません。
+3. 検証とビルドを行い、PR で出典と差分をレビューします。
 
 Azure Updates の更新は `python tools/import_azure_updates.py` で行います。公開年を 2026 年、タグを `Microsoft Ignite` に限定し、ページ件数と重複を検証します。2026 年のイベント週外にも同じタグの投稿があり、掲載はセッションでの発表を意味しません。公式動画は Microsoft Events の Ignite 2026 プレイリスト等でコードとタイトルを照合し、複数候補や未確認の動画を推測で登録しません。関連製品更新は `data/session-updates.json`、録画で確認した Book of News の関係は各要約に記録します。
 
 日本語概要と公式技術記事は `data/update-editorial.json` に追加します。短縮 URL の場合は転送先が同じ製品・機能の記事かを確認してから、最終 URL を記録してください。
+
+### 日次の情報更新
+
+GitHub Agentic Workflows の [`daily-information-update.md`](.github/workflows/daily-information-update.md) は毎日 00:23 UTC（日本時間 09:23）と手動実行で公式情報を確認し、変更があれば PR を作成します。作成した PR の `Ignite guide` が成功し、main の保護条件を満たすと自動的に squash マージします。既存の更新 PR が未処理の場合は重複作成を避けます。確認日だけの変更では PR を作りません。取得失敗や不明な情報は推測で補わず、Actions の実行ログと PR の報告を確認してください。
+
+初回実行前に、管理者は Actions のリポジトリ secrets に次を設定してください。
+
+- `COPILOT_GITHUB_TOKEN`: Copilot を利用できる個人アカウントの fine-grained PAT（アカウント権限 **Copilot Requests: Read**）。
+- `GH_AW_PR_TOKEN`: このリポジトリに限定した fine-grained PAT（リポジトリ権限 **Contents: Read and write**、**Pull requests: Read and write**、**Actions: Read**、**Administration: Read**）。PR の作成・マージ、CI 結果とブランチ保護の確認に使います。PR に対して通常の Actions チェックを起動するため、標準の `GITHUB_TOKEN` とは別に指定します。有効期限前に更新してください。
+
+管理者は **Settings → Branches** の `main` 保護ルールで「Require status checks to pass before merging」と「Require branches to be up to date before merging」を有効にし、GitHub Actions 提供の `build` チェックを必須にしてください。「Do not allow bypassing the above settings」も有効にします。リポジトリで squash merge を許可し、トークンに保護ルールや ruleset のバイパス権限を与えないでください。これらの保護は自動マージに必須です。承認が必須の場合は、未承認の PR の自動マージは失敗し、承認後に手動でマージする必要があります。
+
+Actions タブの **Ignite 2026 情報の日次更新** から main を選択して手動実行できます。自動マージはこの実行で作成した同一リポジトリの PR に限り、データ以外の変更、検証失敗、main や PR の更新、保護不足、30 分以内の CI 未完了などの場合は停止します。保護や承認の未充足、競合、トークン期限切れも Actions ログを確認し、必要に応じて PR を確認・修正してください。再実行時に既存 PR があれば自動マージ対象にしません。マージ後は既存の Pages ワークフローが公開します。AI による更新内容が自動公開されるため、PR と出典を定期的に確認し、誤りは PR の revert で戻してください。
+
+ワークフローを変更するときは [gh-aw CLI](https://github.github.com/gh-aw/setup/quick-start/) v1.2.2 を使い、`gh aw compile daily-information-update --action-mode action --action-tag 53d0749e19424a918acd82b4d140264ce48f2f14` で `.lock.yml` を再生成して両方をコミットします。
 
 ### 録画要約を追加する
 
